@@ -45,18 +45,18 @@
 \author{
 % 1st. author
 \alignauthor
-Linda N. Lee
-       \affaddr{University of California Berkeley}\\
+Linda N. Lee\\
+       \affaddr{UC Berkeley}\\
        \email{lnl@berkeley.edu}
 % 2nd. author
 \alignauthor
-Serge Egelman
-       \affaddr{University of California Berkeley}\\
-       \affaddr{International Computer Science Institute}\\
+Serge Egelman\\
+       \affaddr{UC Berkeley}\\
+       \affaddr{ICSI}\\
        \email{serge@cs.berkeley.edu}
 % 3rd. author
-\alignauthor David Wagner
-       \affaddr{University of California Berkeley}\\
+\alignauthor David Wagner\\
+       \affaddr{UC Berkeley}\\
        \email{daw@cs.berkeley.edu}
 }
 
@@ -65,64 +65,92 @@ Serge Egelman
 
 
 \begin{abstract}
-This paper provides a sample of a \LaTeX\ document which conforms to
-the formatting guidelines for ACM SIG Proceedings.
-It complements the document \textit{Author's Guide to Preparing
-ACM SIG Proceedings Using \LaTeX$2_\epsilon$\ and Bib\TeX}. This
-source file has been written with the intention of being
-compiled under \LaTeX$2_\epsilon$\ and BibTeX.
-
-The developers have tried to include every imaginable sort
-of ``bells and whistles", such as a subtitle, footnotes on
-title, subtitle and authors, as well as in the text, and
-every optional component (e.g. Acknowledgments, Additional
-Authors, Appendices), not to mention examples of
-equations, theorems, tables and figures.
-
-To make best use of this sample document, run it through \LaTeX\
-and BibTeX, and compare this source code with the printed
-output produced by the dvi file.
+Hello world.
 \end{abstract}
 
 % A category with the (minimum) three required fields
-\category{H.4}{Information Systems Applications}{Miscellaneous}
+\category{look it up}{keyword1}{keyword2}{keyword3}
 %A category including the fourth, optional field follows...
-\category{D.2.8}{Software Engineering}{Metrics}[complexity measures, performance measures]
+%\category{D.2.8}{Software Engineering}{Metrics}[complexity measures, performance measures]
 
-\terms{Theory}
+\terms{term1} {term2} {term3}
 
 \keywords{Privacy, User Studies, Ubiquitous Computing,Internet of Things} % NOT required for Proceedings
 
+%%%%%%%%%%%%%%%%%%%
+%%%         PAPER BODY         %%%
+%%%%%%%%%%%%%%%%%%%
+
 \section{Introduction}
+
+\section{Related Work}
+\subsection{Privacy for Wearables}
+\subsection{Privacy for Smartphones}
+\subsection{User Perception}
+\subsection{User Attitude}
+
+\section{Approach}
+\section{Scope}
+\section{Calibration}
+
+\section{Methodology}
+\subsection{Rationale}
+\subsection{Design}
+\subsubsection{Question Synthesis}
+\subsubsection{Validation}
+focus group here
+\subsection{Deployment}
+\subsection{Recruitment}
+
+\section{Survey}
+say numbers here
+\subsection{Format}
+\subsubsection{Cubetastic}
+\subsubsection{Tech Rankings}
+\subsubsection{Open-Ended Question}
+\subsubsection{Additional Questions}
+demographics and IUIPC
+
+\section{Results}
+takeaways
+\subsection{How Upset}
+\subsection{Tech Perceptions}
+\subsection{Risk Perceptions}
+
+\section{Discussion}
+\subsection{Limitations}
+\subsection{Future Research Directions}
+
+\section{Conclusion}
+
+
 
 %\end{document}  % This is where a 'short' article might terminate
 
 %ACKNOWLEDGMENTS are optional
 \section{Acknowledgments}
-This section is optional; it is a location for you
-to acknowledge grants, funding, editing assistance and
-what have you.  In the present case, for example, the
-authors would like to thank Gerald Murray of ACM for
-his help in codifying this \textit{Author's Guide}
-and the \textbf{.cls} and \textbf{.tex} files that it describes.
+NSF funding, SCRUB, BLUES. Also any people who helped.
 
-%
-% The following two commands are all you need in the
-% initial runs of your .tex file to
-% produce the bibliography for the citations in your paper.
+
+%%%%%%%%%%%%%%%%%%%
+%%%            BIB & ACKS          %%%
+%%%%%%%%%%%%%%%%%%%
+
+% The following two commands are all you need in the initial runs of your .tex file to produce the bib
+%  and remember to run: latex bibtex latex latex to resolve all references
+
 \bibliographystyle{abbrv}
 \bibliography{wearables_survey}  % wearables_survey.bib is the name of the Bibliography
-
-%  and remember to run:
-% latex bibtex latex latex
-% to resolve all references
 
 
 %APPENDICES are optional
 %\balancecolumns
 \appendix
 %Appendix A
-\section{Appendix Title}
+\section{Full Survey}
+\section{Detailed Situation Rankings}
+\section{Detailed Tech Rankings}
+\section{Focus Group Script}
 
 \balancecolumns
 
