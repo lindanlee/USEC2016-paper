@@ -4,6 +4,7 @@ Wearables Survey Paper Git Repo
 ## Surveying Users' Perceptions of Security Threats for Wearable Devices
 
 This is a paper for [IoTPTS](https://sites.google.com/site/iotpts/).
+
 Authors: Linda Lee, Serge Egelman, David Wagner
 
 ## Important Dates:
