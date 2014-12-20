@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  19 DEC 2014 21:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  20 DEC 2014 07:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -285,94 +285,94 @@ LaTeX Warning: Citation `Neilsen' on page \thepage  undefined on input line 87.
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
 
-Overfull \hbox (16.7207pt too wide) in paragraph at lines 202--203
+Overfull \hbox (16.7207pt too wide) in paragraph at lines 211--212
 []\T1/aer/m/n/9 a photo of you that is in-crim-i-nat-ing/embarrassing (96.36%) 
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
 
-Overfull \hbox (16.7207pt too wide) in paragraph at lines 232--233
+Overfull \hbox (16.7207pt too wide) in paragraph at lines 241--242
 []\T1/aer/m/n/9 a photo of you that is in-crim-i-nat-ing/embarrassing (78.05%) 
 
  []
 
-
-Overfull \hbox (11.32085pt too wide) in paragraph at lines 236--237
+[2]
+Overfull \hbox (11.32085pt too wide) in paragraph at lines 245--246
 []\T1/aer/m/n/9 a video of you that is in-crim-i-nat-ing/embarassing (71.88%) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
 
 
-Overfull \hbox (5.03024pt too wide) in paragraph at lines 245--246
+Overfull \hbox (5.03024pt too wide) in paragraph at lines 254--255
 []\T1/aer/m/n/9 how much you like the peo-ple you in-ter-act with (13.79%) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--252
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
 
  []
 
-<recipient.png, id=11, 362.7954pt x 217.7736pt>
+<recipient.png, id=17, 362.7954pt x 217.7736pt>
 File: recipient.png Graphic file (type png)
  <use recipient.png>
-Package pdftex.def Info: recipient.png used on input line 260.
+Package pdftex.def Info: recipient.png used on input line 269.
 (pdftex.def)             Requested size: 252.0pt x 151.27078pt.
-
-Overfull \hbox (12.0pt too wide) in paragraph at lines 260--261
- [][] 
- []
-
-<device-type.png, id=13, 534.99875pt x 318.18875pt>
-File: device-type.png Graphic file (type png)
- <use device-type.png>
-Package pdftex.def Info: device-type.png used on input line 269.
-(pdftex.def)             Requested size: 252.0pt x 149.87888pt.
 
 Overfull \hbox (12.0pt too wide) in paragraph at lines 269--270
  [][] 
  []
 
-[2] <techplot.png, id=20, 626.34pt x 452.892pt>
+<device-type.png, id=19, 534.99875pt x 318.18875pt>
+File: device-type.png Graphic file (type png)
+ <use device-type.png>
+Package pdftex.def Info: device-type.png used on input line 278.
+(pdftex.def)             Requested size: 252.0pt x 149.87888pt.
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 278--279
+ [][] 
+ []
+
+<techplot.png, id=20, 626.34pt x 452.892pt>
 File: techplot.png Graphic file (type png)
  <use techplot.png>
-Package pdftex.def Info: techplot.png used on input line 279.
+Package pdftex.def Info: techplot.png used on input line 288.
 (pdftex.def)             Requested size: 252.0pt x 182.2178pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 279--280
+Overfull \hbox (12.0pt too wide) in paragraph at lines 288--289
  [][] 
  []
 
@@ -391,7 +391,7 @@ Overfull \hbox (6.23537pt too wide) in paragraph at lines 10--14
 Here is how much of TeX's memory you used:
  2796 strings out of 493315
  35715 string characters out of 6137904
- 104930 words of memory out of 5000000
+ 101930 words of memory out of 5000000
  6178 multiletter control sequences out of 15000+600000
  48451 words of font info for 65 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -406,7 +406,7 @@ sy9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 /usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/lo
 cal/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texliv
 e/2013/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on wearables_survey.pdf (4 pages, 396523 bytes).
+Output written on wearables_survey.pdf (4 pages, 398234 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
