@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  20 DEC 2014 08:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  20 DEC 2014 08:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -281,11 +281,6 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 LaTeX Warning: Citation `Neilsen' on page \thepage  undefined on input line 87.
 
 
-
-Overfull \hbox (4.8827pt too wide) in paragraph at lines 97--98
-\T1/aer/m/n/9 (REDO) Men-tion Adri-enne's work here, and other cool smart-
- []
-
 [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -304,7 +299,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
 
-
+[2]
 Overfull \hbox (16.7207pt too wide) in paragraph at lines 210--211
 []\T1/aer/m/n/9 a photo of you that is in-crim-i-nat-ing/embarrassing (96.36%) 
 
@@ -315,7 +310,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
-[2]
+
 Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
@@ -392,13 +387,13 @@ Overfull \hbox (6.23537pt too wide) in paragraph at lines 10--14
 \T1/aer/m/n/9 http://www.nielsen.com/us/en/insights/news/2014/tech- 
  []
 
-) [4] [5
+[4]) [5
 
 ] (./wearables_survey.aux) ) 
 Here is how much of TeX's memory you used:
  2796 strings out of 493315
  35715 string characters out of 6137904
- 100930 words of memory out of 5000000
+ 99930 words of memory out of 5000000
  6178 multiletter control sequences out of 15000+600000
  48451 words of font info for 65 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -413,7 +408,7 @@ b></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr
 /local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/
 texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/20
 13/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on wearables_survey.pdf (5 pages, 401078 bytes).
+Output written on wearables_survey.pdf (5 pages, 401619 bytes).
 PDF statistics:
  63 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
