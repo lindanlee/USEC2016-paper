@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  20 DEC 2014 08:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  20 DEC 2014 08:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -295,114 +295,109 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--149
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 177--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
+Overfull \hbox (5.83699pt too wide) in paragraph at lines 188--189
+\T1/aer/m/n/9 Lastly, af-ter in-ves-ti-gat-ing user per-cep-tions of per-sonal 
+threats,
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--184
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
-
- []
-
-
-Overfull \hbox (16.7207pt too wide) in paragraph at lines 244--245
+Overfull \hbox (16.7207pt too wide) in paragraph at lines 246--247
 []\T1/aer/m/n/9 a photo of you that is in-crim-i-nat-ing/embarrassing (96.36%) 
 
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--267
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
 
  []
 
 
-Overfull \hbox (16.7207pt too wide) in paragraph at lines 274--275
+Overfull \hbox (16.7207pt too wide) in paragraph at lines 276--277
 []\T1/aer/m/n/9 a photo of you that is in-crim-i-nat-ing/embarrassing (78.05%) 
 
  []
 
 
-Overfull \hbox (11.32085pt too wide) in paragraph at lines 278--279
+Overfull \hbox (11.32085pt too wide) in paragraph at lines 280--281
 []\T1/aer/m/n/9 a video of you that is in-crim-i-nat-ing/embarassing (71.88%) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
 
  []
 
 
-Overfull \hbox (5.03024pt too wide) in paragraph at lines 287--288
+Overfull \hbox (5.03024pt too wide) in paragraph at lines 289--290
 []\T1/aer/m/n/9 how much you like the peo-ple you in-ter-act with (13.79%) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
 
  []
 
-<recipient.png, id=20, 362.7954pt x 217.7736pt>
+<recipient.png, id=21, 362.7954pt x 217.7736pt>
 File: recipient.png Graphic file (type png)
  <use recipient.png>
-Package pdftex.def Info: recipient.png used on input line 302.
+Package pdftex.def Info: recipient.png used on input line 304.
 (pdftex.def)             Requested size: 252.0pt x 151.27078pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 302--303
+Overfull \hbox (12.0pt too wide) in paragraph at lines 304--305
  [][] 
  []
 
-<device-type.png, id=22, 534.99875pt x 318.18875pt>
+<device-type.png, id=23, 534.99875pt x 318.18875pt>
 File: device-type.png Graphic file (type png)
  <use device-type.png>
-Package pdftex.def Info: device-type.png used on input line 311.
+Package pdftex.def Info: device-type.png used on input line 313.
 (pdftex.def)             Requested size: 252.0pt x 149.87888pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 311--312
+Overfull \hbox (12.0pt too wide) in paragraph at lines 313--314
  [][] 
  []
 
-<techplot.png, id=23, 626.34pt x 452.892pt>
+<techplot.png, id=24, 626.34pt x 452.892pt>
 File: techplot.png Graphic file (type png)
  <use techplot.png>
-Package pdftex.def Info: techplot.png used on input line 321.
+Package pdftex.def Info: techplot.png used on input line 323.
 (pdftex.def)             Requested size: 252.0pt x 182.2178pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 321--322
+Overfull \hbox (12.0pt too wide) in paragraph at lines 323--324
  [][] 
  []
 
-[4 <./recipient.png> <./device-type.png> <./techplot.png>]
-(./wearables_survey.bbl
+[4 <./recipient.png> <./device-type.png>] (./wearables_survey.bbl
 Overfull \hbox (19.53731pt too wide) in paragraph at lines 4--8
 \T1/aer/m/n/9 http://www.forbes.com/sites/ewanspence/2013/11/02/2014- 
  []
@@ -412,13 +407,13 @@ Overfull \hbox (6.23537pt too wide) in paragraph at lines 10--14
 \T1/aer/m/n/9 http://www.nielsen.com/us/en/insights/news/2014/tech- 
  []
 
-[5]) [6
+[5 <./techplot.png>]) [6
 
 ] (./wearables_survey.aux) ) 
 Here is how much of TeX's memory you used:
  2796 strings out of 493315
  35715 string characters out of 6137904
- 100930 words of memory out of 5000000
+ 101930 words of memory out of 5000000
  6178 multiletter control sequences out of 15000+600000
  48451 words of font info for 65 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -433,7 +428,7 @@ b></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr
 /local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/
 texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/20
 13/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on wearables_survey.pdf (6 pages, 408870 bytes).
+Output written on wearables_survey.pdf (6 pages, 412604 bytes).
 PDF statistics:
  66 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream
