@@ -132,7 +132,7 @@ We recruited 2,250 participants August 7th-13th 2014 via Amazon's Mechanical Tur
  %%%%%%%%%%%%%%%%%%%
  
 \section{Questions}
-The survey consisted of questions regarding concerns with respect to a factious wearable device called the Cubetastic3000 (this was done to prevent any biases in answers from participants with respect to specific companies), smartphone concerns, risk and benefit assessment of technologies, and exit questions. Details on the question ordering, question formatting, and sample questions are below. The full survey can be found at <LINK HERE>. 
+The survey consisted of questions regarding concerns with respect to a factious wearable device called the Cubetastic3000 (this was done to prevent any biases in answers from participants with respect to specific companies), smartphone concerns, risk and benefit assessment of technologies, and exit questions. Details on the question ordering, question formatting, and sample questions are below. The full survey can be found at http://www.surveygizmo.com/s3/1657924 /Wearables-Threats-User-Survey. 
 
 \subsection{Format}
 In total, the survey consisted of 367 unique questions, with each participant answering 27 questions. Out of the 27 seen by the participant, 10 of the questions are randomly selected from a particular set of questions (see below).   \\[-.8cm]
@@ -151,10 +151,40 @@ In total, the survey consisted of 367 unique questions, with each participant an
 To mitigate any biases, we randomized the order in which users saw groups of questions. That is; the participant has an equal chance of seeing questions related to threat perceptions or questions related to risk and benefit assessment of technologies. Additionally, each question in the sections about various scenarios, questions about smartphone scenarios, and IUIPC questions were randomly selected. A participant was also equally likely to see the risk or benefit questions first when they got to the section pertaining to risk and benefit assessment of technologies. (Ugh this is bad, re-write later)
 
 \subsubsection{Threat Perceptions}
-Format of question explanation, list the edge case questions here. Show an example of the question. 
+Before they get to the wearable device question, they must answer these two questions about the Cubetastic3000. people who did not answer these two comprehension questions were filtered out (this was about 4\% of our participants). These questions both filtered out people who were not paying attention, people who were rushing through it for money, etc. \\[-.8cm]
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+\item Where and when would you wear the Cubetastic3000?
+\item What can the Cubetastic3000 do? \\[-.8cm]
+\end{itemize}
+
+
+The purpose of the 6/305 questions were to determine how much the device, data type, and data recipient played a role in determining if a person was upset by an event or not. These are word for word modeled after the mobile user study. You can see that in the first example question, these three controls are highlighted. Other questions were used for calibration with the smartphone study, where we literally ask the same questions as the study, but toggling the device type, to see if this plays a role in risk perception. \\[-.8cm]
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+\item How would you feel if an app on your Cubetastic3000 learned how you were feeling based on your heart rate and shared that with the public, without asking you first?
+\item How would you feel if an app on your smartphone connected to a Bluetooth device (like a headset) without asking you first? \\[-.8cm]
+\end{itemize}
+
+Concluding blurb here about how we were actually able to tease those dimensions out and have a regression model in section <later section which doesn't exist yet>.  
 
 \subsubsection{Technology Perceptions}
-Format of the question explanation, list the technologies here (is this too many?). Show an example of the question. 
+The next set of questions are with respect to the Fischoff study on users’ perception of benefit and risk. We wanted to study personal but also broad perceptions of wearble risks. the We prompted the users with the same prompt that the participants in the Fischoff study was presented with, giving instructions to consider gross risk and gross benefits for a long period of time for all people, with specific instructions to numerical rankings. We did this so that we can calibrate the new technologies that we ask about with the existing seminal study. Prompt can be seen at <appendix something, add in soon>. 
+
+After that prompt, users were given this question and asked to fill in the numbers according to the previous prompt’s instructions. Each person got the same four calibration questions (handguns, motorcycles, lawnmowers, electricity), and 1/20 randomized new technology.  People rated the same randomized new technology for both benefit and risk.
+
+Fill in your benefit numbers for the following technologies:\\
+Fill in your risk numbers for the following technologies:
+
+Handguns: \_\_\_\_\_\_\_ \\
+Motorcycles: \_\_\_\_\_\_\_\\
+Lawnmowers: \_\_\_\_\_\_\_\\
+Voice-Based Emotion Detection: \_\_\_\_\_\_\_\\
+Electricity: \_\_\_\_\_\_\_\\
+
+The list of technologies included: internet, email, laptops, smartphones, smart watches, fitness trackers, Google Glass, Cubetastic3000, discrete camera, discrete microphone, facial recognition, facial detection, voice recognition, voice based emotion detection, location tracking, speech to text, language detection, heart rate detection, age detection, and gender detection. 
+
+Note that some of these technologies were general technologies (internet), other were devices (smartphones), but most of them were new capabilities (facial detection). We were more interested in the capabilities, but found those other points to be useful for understanding where the risk/benefit of those capabilities stand respectively. 
 
 \subsubsection{User Concerns}
 This is an open-ended question. Show the question here. Say that the participants had as much space as they wanted, although they were shown a line. 
