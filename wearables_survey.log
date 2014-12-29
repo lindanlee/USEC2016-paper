@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 DEC 2014 11:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 DEC 2014 12:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -362,59 +362,59 @@ LaTeX Warning: Citation `woodruff2014would' on page \thepage  undefined on inpu
 t line 180.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
 
-Overfull \hbox (16.7207pt too wide) in paragraph at lines 240--241
+Overfull \hbox (16.7207pt too wide) in paragraph at lines 238--239
 []\T1/aer/m/n/9 a photo of you that is in-crim-i-nat-ing/embarrassing (96.36%) 
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
 
  []
 
 
-Overfull \hbox (16.7207pt too wide) in paragraph at lines 270--271
+Overfull \hbox (16.7207pt too wide) in paragraph at lines 268--269
 []\T1/aer/m/n/9 a photo of you that is in-crim-i-nat-ing/embarrassing (78.05%) 
 
  []
 
 
-Overfull \hbox (14.93875pt too wide) in paragraph at lines 274--275
+Overfull \hbox (14.93875pt too wide) in paragraph at lines 272--273
 []\T1/aer/m/n/9 a video of you that is in-crim-i-nat-ing/embarrassing (71.88%) 
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--276
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
 
  []
 
 
-Overfull \hbox (5.03024pt too wide) in paragraph at lines 283--284
+Overfull \hbox (5.03024pt too wide) in paragraph at lines 281--282
 []\T1/aer/m/n/9 how much you like the peo-ple you in-ter-act with (13.79%) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--290
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
 
  []
 
-<recipient.png, id=20, 362.7954pt x 217.7736pt>
+[4] <recipient.png, id=23, 362.7954pt x 217.7736pt>
 File: recipient.png Graphic file (type png)
  <use recipient.png>
 Package pdftex.def Info: recipient.png used on input line 301.
@@ -424,92 +424,82 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 301--302
  [][] 
  []
 
-[4] <device-type.png, id=25, 534.99875pt x 318.18875pt>
+<device-type.png, id=25, 534.99875pt x 318.18875pt>
 File: device-type.png Graphic file (type png)
  <use device-type.png>
-Package pdftex.def Info: device-type.png used on input line 310.
+Package pdftex.def Info: device-type.png used on input line 316.
 (pdftex.def)             Requested size: 252.0pt x 149.87888pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 310--311
+Overfull \hbox (12.0pt too wide) in paragraph at lines 316--317
  [][] 
  []
 
 
-LaTeX Warning: Citation `cmo' on page \thepage  undefined on input line 328.
+LaTeX Warning: Citation `cmo' on page \thepage  undefined on input line 334.
 
 <techplot.png, id=26, 626.34pt x 452.892pt>
 File: techplot.png Graphic file (type png)
  <use techplot.png>
-Package pdftex.def Info: techplot.png used on input line 336.
+Package pdftex.def Info: techplot.png used on input line 343.
 (pdftex.def)             Requested size: 252.0pt x 182.2178pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 336--337
+Overfull \hbox (12.0pt too wide) in paragraph at lines 343--344
  [][] 
  []
 
-[5 <./recipient.png> <./device-type.png> <./techplot.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 345--349
+[5 <./recipient.png> <./device-type.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 353--357
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--355
+Underfull \hbox (badness 10000) in paragraph at lines 358--363
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 356--359
+Underfull \hbox (badness 10000) in paragraph at lines 364--367
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--363
+Underfull \hbox (badness 10000) in paragraph at lines 368--371
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--368
+Underfull \hbox (badness 10000) in paragraph at lines 372--376
 
  []
 
 
-LaTeX Warning: Citation `Nilsen' on page \thepage  undefined on input line 387.
+LaTeX Warning: Citation `Nilsen' on page \thepage  undefined on input line 395.
 
 
 
 LaTeX Warning: Citation `WearableStatNews' on page \thepage  undefined on input
- line 387.
+ line 395.
 
 
 LaTeX Warning: Citation `kittur2008crowdsourcing' on page \thepage  undefined o
-n input line 389.
+n input line 397.
 
 
 LaTeX Warning: Citation `ross2010crowdworkers' on page \thepage  undefined on i
-nput line 389.
+nput line 397.
 
 
 LaTeX Warning: Citation `kelley2010conducting' on page \thepage  undefined on i
-nput line 389.
+nput line 397.
 
 
 LaTeX Warning: Citation `kang2014privacy' on page \thepage  undefined on input 
-line 389.
+line 397.
 
-[6]
+[6 <./techplot.png>]
 No file wearables_survey.bbl.
 
-Underfull \hbox (badness 10000) in paragraph at lines 430--431
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 432--433
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 434--435
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
 
  []
 
@@ -524,31 +514,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 442--443
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 444--445
+Underfull \hbox (badness 10000) in paragraph at lines 448--449
 
  []
 
-[7] [8
 
-] (./wearables_survey.aux) ) 
+Underfull \hbox (badness 10000) in paragraph at lines 450--451
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
+
+ []
+
+[7] [8] (./wearables_survey.aux) ) 
 Here is how much of TeX's memory you used:
- 2801 strings out of 493315
- 35762 string characters out of 6137904
- 103933 words of memory out of 5000000
- 6186 multiletter control sequences out of 15000+600000
+ 2802 strings out of 493315
+ 35776 string characters out of 6137904
+ 103941 words of memory out of 5000000
+ 6187 multiletter control sequences out of 15000+600000
  47315 words of font info for 64 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  41i,10n,28p,1080b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips
-/base/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmbx9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.
-pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pf
-b></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr
-/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/
-texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-Output written on wearables_survey.pdf (8 pages, 410645 bytes).
+{/usr/local/texlive/2013/texmf-dist/fonts/enc
+/dvips/base/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ti9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/
+local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
+Output written on wearables_survey.pdf (8 pages, 411909 bytes).
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
