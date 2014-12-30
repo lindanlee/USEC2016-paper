@@ -1,3 +1,4 @@
+participantID, age, gender, education, IUIPC, data, device, recipient, likert
 1242, 34, Male, Somecollege, 41, unmuted a call, smartphone, noone, 2 
 1242, 34, Male, Somecollege, 41, sent premium texts or calls, smartphone, noone, 1 
 1242, 34, Male, Somecollege, 41,  your gender , cubetastic3000, work, 2 
