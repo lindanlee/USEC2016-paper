@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 DEC 2014 12:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  30 DEC 2014 09:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -417,48 +417,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--288
 [4] <recipient.png, id=23, 362.7954pt x 217.7736pt>
 File: recipient.png Graphic file (type png)
  <use recipient.png>
-Package pdftex.def Info: recipient.png used on input line 301.
+Package pdftex.def Info: recipient.png used on input line 303.
 (pdftex.def)             Requested size: 252.0pt x 151.27078pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 301--302
+Overfull \hbox (12.0pt too wide) in paragraph at lines 303--304
  [][] 
  []
 
 <device-type.png, id=25, 534.99875pt x 318.18875pt>
 File: device-type.png Graphic file (type png)
  <use device-type.png>
-Package pdftex.def Info: device-type.png used on input line 316.
+Package pdftex.def Info: device-type.png used on input line 320.
 (pdftex.def)             Requested size: 252.0pt x 149.87888pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 316--317
+Overfull \hbox (12.0pt too wide) in paragraph at lines 320--321
  [][] 
  []
 
 
-LaTeX Warning: Citation `cmo' on page \thepage  undefined on input line 334.
-
-<techplot.png, id=26, 626.34pt x 452.892pt>
-File: techplot.png Graphic file (type png)
- <use techplot.png>
-Package pdftex.def Info: techplot.png used on input line 343.
-(pdftex.def)             Requested size: 252.0pt x 182.2178pt.
-
-Overfull \hbox (12.0pt too wide) in paragraph at lines 343--344
- [][] 
- []
+LaTeX Warning: Citation `cmo' on page \thepage  undefined on input line 338.
 
 [5 <./recipient.png> <./device-type.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 353--357
+<techplot.png, id=30, 626.34pt x 452.892pt>
+File: techplot.png Graphic file (type png)
+ <use techplot.png>
+Package pdftex.def Info: techplot.png used on input line 347.
+(pdftex.def)             Requested size: 252.0pt x 182.2178pt.
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 347--348
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--361
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 358--363
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 364--367
+Underfull \hbox (badness 10000) in paragraph at lines 362--367
 
  []
 
@@ -468,63 +464,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 368--371
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 372--376
+Underfull \hbox (badness 10000) in paragraph at lines 372--375
 
  []
 
 
-LaTeX Warning: Citation `Nilsen' on page \thepage  undefined on input line 395.
+Underfull \hbox (badness 10000) in paragraph at lines 376--380
+
+ []
+
+[6 <./techplot.png>]
+
+LaTeX Warning: Citation `Nilsen' on page \thepage  undefined on input line 399.
 
 
 
 LaTeX Warning: Citation `WearableStatNews' on page \thepage  undefined on input
- line 395.
+ line 399.
 
 
 LaTeX Warning: Citation `kittur2008crowdsourcing' on page \thepage  undefined o
-n input line 397.
+n input line 401.
 
 
 LaTeX Warning: Citation `ross2010crowdworkers' on page \thepage  undefined on i
-nput line 397.
+nput line 401.
 
 
 LaTeX Warning: Citation `kelley2010conducting' on page \thepage  undefined on i
-nput line 397.
+nput line 401.
 
 
 LaTeX Warning: Citation `kang2014privacy' on page \thepage  undefined on input 
-line 397.
+line 401.
 
-[6 <./techplot.png>]
 No file wearables_survey.bbl.
-
-Underfull \hbox (badness 10000) in paragraph at lines 438--439
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 440--441
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 442--443
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 448--449
+Underfull \hbox (badness 10000) in paragraph at lines 444--445
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 450--451
+Underfull \hbox (badness 10000) in paragraph at lines 446--447
 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 452--453
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 454--455
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 456--457
 
  []
 
@@ -546,7 +547,7 @@ cmsy9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ti9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/
 local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-Output written on wearables_survey.pdf (8 pages, 411909 bytes).
+Output written on wearables_survey.pdf (8 pages, 412839 bytes).
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream

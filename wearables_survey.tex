@@ -291,6 +291,8 @@ Commonly, bank info, SSN, PIN, embarrassing photo, naked photo, naked video were
 
 On the other hand, exercise details, age, tv shows, gender, heart rate, and language were commonly considered to be lease concerning. When people perceived that the data would be shared with the app only, the other indifferent data included phone use, how much one liked the people around, when and what you ate, and eye patterns. When people perceived that the data would be shared with a human audience, the least concerning data included one's name, if one was having fun, music on the device, and if one was busy or interruptible. When sharing with an application, information otherwise considered personal such as phone use, opinions of people, food eaten, or eye patterns were okay to share, since these seem like useful information to improve one's device experience. However, people are not likely to share the same with people, but are more comfortable with sharing data about topics which would come up in causal conversation.
 
+SAY THIS: full on stats test on all 74 data types seems unreasonable. Look at the regression model below. 
+
 \subsection{Data Recipient}
 People are upset when their data is shared without their permission, regardless of who the recipient is. Generally, there isn't a statistically significant difference between how upset people would be if data were to be shared with friends, work, and public, although when considering each scenario, there are certain scenarios which are considered to be more sensitive with one recipient than another.
 
@@ -301,6 +303,8 @@ Out of all the recipients, friends are considered to be the least upsetting audi
 	\includegraphics[width=0.5\textwidth]{recipient.png}
 	\caption{(This is a placeholder! TODO: generate a better plot for data recipient)}
 \end{figure}
+
+SAY THIS: we performed an exploratory analysis to examine the effect of data recipient using a chi square test; in order to do this, the assumption about independence of observations was violated.However, we do not believe that this impacted the outcome of the statistical test based on the randomization of treatments across all conditions, as well as the very large sample size. To examine whether the violation of this assumption impacted our results, we further created a mixed effects model, in order to isolate the subjects variable (i.e., to examine the extent to which random effects stemming from individual differences may be responsible for the effects that we observed) !!!report effect sizes
 
 \subsection{Device Type}
 %For the between-subjects comparison (i.e., participants who received one question, but not the other), you can do either a chi-square test or Fisher's exact test. Both use a 2 x 2 contingency matrix (i.e., rows are outcomes---upset or not---and columns are conditions---wearable or smartphone). The way to choose between the two tests is based on sample size, generally you use chi-square when there are more than 10-20 samples per cell in the table, but using either is just as valid. (A chi-square test can also accommodate more than 2 outcomes, whereas Fisher's exact test only works for 2 x 2; 2 outcomes and 2 conditions). http://en.wikipedia.org/wiki/Fisher%27s_exact_test
