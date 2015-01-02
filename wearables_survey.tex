@@ -215,35 +215,49 @@ In this section, we present the results of our multiple-part survey. We first di
 \subsection{Data Type}
 To determine the most concerning and least concerning data types, we consider the very upset rate (VUR) of various scenarios. To calculate these rates, we take the rate of responses where participants had indicated that they would be ``very upset'' (the maximum rating) with respect to the total number of responses for the question. Since people considered different things more or less sensitive with respect to the data recipient, we present the most and least concerning shared data along with the most and least concerning ``not shared'' data:
 
-For all recipients \\[-.8cm]
+\begin{table}%[h]
+\begin{center}
+\begin{tabular}{ll}
 
-\begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
-  %\setcounter{enumi}{0}
-  \item a video of you unclothed (95.97\%)
-  \item bank account information (95.91\%)
-  \item social security number (94.84\%)
-  \item video of you entering in your PIN (92.67\%)
-  \item a photo of you unclothed (92.59\%)
-  \item a photo of you that is incriminating or embarrassing (91.39\%)
-  \item username and password for websites (89.55\%)
-  \item credit card information (88.98\%)
-  \item a video of you that is incriminating or embarrassing (88.41\%)
-  \item a photo you at home taken randomly by an inward-facing camera (87.50\%) \\[-.8cm]
-\end{enumerate}
+<data> &  VUR  \\
+a video of you unclothed & 95.97\% \\
+bank account information & 95.91\% \\
+social security number & 94.84\% \\
+video of you entering in your PIN & 92.67\% \\
+a photo of you unclothed & 92.59\% \\
+an incriminating/embarrassing photo of you & 91.39\% \\
+username and password for websites & 89.55\% \\
+credit card information & 88.98\% \\
+an incriminating/embarrassing video of you & 88.41\% \\
+a random (inward-facing) photo you at home & 87.50\% \\
 
-\begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
-  \setcounter{enumi}{63}
-  \item eye movement patterns (for eye tracking) (40.51\%) 
-  \item when and how much you exercise (38.66\%)
-  \item when you are happy or having fun (34.51\%)
-  \item which television shows you watch (30.20\%)
-  \item when you are busy or interruptible (29.50\%)
-  \item music from your device (28.06\%)
-  \item your heart rate (27.50\%)
-  \item your age (24.29\%)
-  \item the language you speak (15.86\%)
-  \item your gender (14.91\%) \\[-.8cm]
-\end{enumerate}
+\end{tabular}
+\caption{A table of the top 10 upsetting <data> types, irregardless of recipient or data type.}
+\label{top10}
+\end{center}
+\end{table}
+
+\begin{table}%[h]
+\begin{center}
+\begin{tabular}{ll}
+%starting from #63
+<data> &  VUR  \\
+eye movement patterns (for eye tracking) & 40.51\% \\
+when and how much you exercise  & 38.66\% \\
+when you are happy or having fun  & 34.51\% \\
+which television shows you watch & 30.20\% \\
+when you are busy or interruptible  & 29.50\% \\
+music from your device  & 28.06\% \\
+your heart rate & 27.50\% \\
+your age & 24.29\% \\
+the language you speak & 15.86\% \\
+your gender & 14.91\% \\ 
+
+\end{tabular}
+\caption{A table of the bottom 10 upsetting <data> types, irregardless of recipient or data type.}
+\label{bottom10}
+\end{center}
+\end{table}
 
 TALK ABOUT WHAT WAS SENSITIVE AND WHAT WAS NOT, and generally why. A statistical analysis with respect to all 74 <data> is not feasible to explore within this paper. However, we consider these data types in our regression model.  
 
@@ -398,7 +412,7 @@ When assessing new technologies, participants generally had rated the technologi
 	\label{fig:techplot}
 \end{figure}
 
-Notably, technologies perceived to be beneficial include location tracking and heart rate detection. Again, this is probably do to the exposure people have to these technologies--most people use GPS or other location-based applications on their smart phones and fitness trackers are the most popular type of wearable device. Technologies considered to be risky, such as a discrete camera and facial detection, seemed to be based on media exposure or general aversion to privacy invasion. However, people are becoming increasingly aware of such risks and are comparing these risks of privacy invasion to real physical risks--for instance, the capacity for facial detection on a wearable device is perceived to be almost as risky as interacting with a physical lawnmower. As a takeaway, these assessments of the most risky or beneficial technologies may not be the most accurate, but do reflect the exposure of various technologies to the general public and also prove that people do perceive risks in a real way related to these technologies. 
+Notably, technologies perceived to be beneficial include location tracking and heart rate detection. Again, we believe this is the result of exposure people have to these technologies--most people use GPS or other location-based applications on their smart phones and fitness trackers are the most popular type of wearable device. Technologies considered to be risky, such as a discrete camera and facial detection, seemed to be based on media exposure or general aversion to privacy invasion. However, people are becoming increasingly aware of such risks and are comparing these risks of privacy invasion to real physical risks--for instance, the capacity for facial detection on a wearable device is perceived to be almost as risky as interacting with a physical lawnmower. It is fair to say that, these assessments of the most risky or beneficial technologies may not be the most accurate, but do reflect the exposure of various technologies to the general public and also prove that people do perceive risks in a real way related to these technologies. 
 
 \subsection{Perceived Concerns for Wearable Devices}
 So far, participants had responded to questions regarding specific scenarios or assessed technologies presented to them. For completeness of the survey, we also wanted to capture the participants' general reactions to wearable devices as a whole. To do this, we asked the participants an open-ended question regarding the most likely risks associated with owning and interacting with wearable devices.
@@ -414,24 +428,24 @@ Without any doubt, the open-ended responses state that the most common concern f
 \begin{tabular}{lll}
 
 Concern &  Responses &  Frequency &   \\
-Privacy & 452 & (25.32\%) \\
-Being Unaware & 275 & (15.40\%) \\
+Privacy & 452 & 25.32\% \\
+Being Unaware & 275 & 15.40\ \\
 %Unaware Use & 167 & (9.36\%)\\
 %Unaware Collection & 64 & (3.59\%)\\
 %Unaware Access & 44 & (2.46\%)\\
-Health Risk & 191 & (10.70\%)\\
-Safety & 186 & (10.42\%)\\
-Financial Cost & 151 & (8.46\%)\\
-Security &	144 & (8.07\%)\\
-Social Impact &	157 & (8.80\%)\\
-Accidental Sharing &	69 & (3.87\%)\\
-Miscellaneous &	57 & (3.19\%)\\
-None	& 51 & (2.86\%)\\
-Social Stigma &	39 & (2.18\%)\\
-False Information & 33 & (1.85\%)\\
-Don't know & 31 & (1.74\%)\\
-Aesthetics 	& 19 & (1.06\%)\\
-Don't care 	& 11 & (0.62\%)\\
+Health Risk & 191 & 10.70\%\\
+Safety & 186 & 10.42\%\\
+Financial Cost & 151 & 8.46\%\\
+Security &	144 & 8.07\%\\
+Social Impact &	157 & 8.80\%\\
+Accidental Sharing &	69 & 3.87\%\\
+Miscellaneous &	57 & 3.19\%\\
+None	& 51 & 2.86\%\\
+Social Stigma &	39 & 2.18\%\\
+False Information & 33 & 1.85\%\\
+Don't know & 31 & 1.74\%\\
+Aesthetics 	& 19 & 1.06\%\\
+Don't care 	& 11 & 0.62\%\\
 
 \end{tabular}
 \caption{A table listing the self-reported most common risks associated with owning a wearable device.}
