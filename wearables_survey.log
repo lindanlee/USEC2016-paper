@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  2 JAN 2015 06:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  2 JAN 2015 07:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -326,90 +326,90 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--191
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
 
 <recipient.png, id=21, 362.7954pt x 217.7736pt>
 File: recipient.png Graphic file (type png)
  <use recipient.png>
-Package pdftex.def Info: recipient.png used on input line 256.
+Package pdftex.def Info: recipient.png used on input line 257.
 (pdftex.def)             Requested size: 252.0pt x 151.27078pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 256--257
+Overfull \hbox (12.0pt too wide) in paragraph at lines 257--258
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--267
+Underfull \hbox (badness 10000) in paragraph at lines 261--268
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 269--275
+Underfull \hbox (badness 10000) in paragraph at lines 270--276
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--279
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
  []
 
 
-Overfull \hbox (16.7207pt too wide) in paragraph at lines 286--287
+Overfull \hbox (16.7207pt too wide) in paragraph at lines 287--288
 []\T1/aer/m/n/9 a photo of you that is in-crim-i-nat-ing/embarrassing (96.36%) 
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--306
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--309
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
 
  []
 
 
-Overfull \hbox (16.7207pt too wide) in paragraph at lines 316--317
+Overfull \hbox (16.7207pt too wide) in paragraph at lines 317--318
 []\T1/aer/m/n/9 a photo of you that is in-crim-i-nat-ing/embarrassing (78.05%) 
 
  []
 
 
-Overfull \hbox (14.93875pt too wide) in paragraph at lines 320--321
+Overfull \hbox (14.93875pt too wide) in paragraph at lines 321--322
 []\T1/aer/m/n/9 a video of you that is in-crim-i-nat-ing/embarrassing (71.88%) 
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--322
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
 
  []
 
 
-Overfull \hbox (5.03024pt too wide) in paragraph at lines 329--330
+Overfull \hbox (5.03024pt too wide) in paragraph at lines 330--331
 []\T1/aer/m/n/9 how much you like the peo-ple you in-ter-act with (13.79%) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--336
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
@@ -417,62 +417,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 335--336
 File: device-type.png Graphic file (type png)
 
 <use device-type.png>
-Package pdftex.def Info: device-type.png used on input line 348.
+Package pdftex.def Info: device-type.png used on input line 349.
 (pdftex.def)             Requested size: 252.0pt x 149.87888pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 348--349
+Overfull \hbox (12.0pt too wide) in paragraph at lines 349--350
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--358
+Underfull \hbox (badness 10000) in paragraph at lines 353--359
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--366
+Underfull \hbox (badness 10000) in paragraph at lines 360--367
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--374
+Underfull \hbox (badness 10000) in paragraph at lines 368--375
 
  []
 
 <techplot.png, id=31, 626.34pt x 452.892pt>
 File: techplot.png Graphic file (type png)
  <use techplot.png>
-Package pdftex.def Info: techplot.png used on input line 395.
+Package pdftex.def Info: techplot.png used on input line 396.
 (pdftex.def)             Requested size: 252.0pt x 182.2178pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 395--396
+Overfull \hbox (12.0pt too wide) in paragraph at lines 396--397
  [][] 
  []
 
 [6 <./device-type.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 405--409
+Underfull \hbox (badness 10000) in paragraph at lines 406--407
 
  []
 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.416 Concern &  Responses &  Frequency &
+                                            \\
+? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 410--415
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 416--419
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 420--423
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 424--428
-
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7 <./techplot.png>] (./wearables_survey.bbl
 ! Missing $ inserted.
@@ -529,36 +518,33 @@ Overfull \hbox (3.48119pt too wide) in paragraph at lines 46--51
 \T1/aer/m/n/9 https://www.npd.com/wps/portal/npd/us/news/press- 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8])
-Underfull \hbox (badness 10000) in paragraph at lines 487--488
+[8])
+Underfull \hbox (badness 10000) in paragraph at lines 500--501
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--490
+Underfull \hbox (badness 10000) in paragraph at lines 502--503
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--492
+Underfull \hbox (badness 10000) in paragraph at lines 504--505
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--498
+Underfull \hbox (badness 10000) in paragraph at lines 510--511
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--500
+Underfull \hbox (badness 10000) in paragraph at lines 512--513
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--502
+Underfull \hbox (badness 10000) in paragraph at lines 514--515
 
  []
 
@@ -566,10 +552,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 501--502
 
 ] (./wearables_survey.aux) ) 
 Here is how much of TeX's memory you used:
- 2808 strings out of 493315
- 35848 string characters out of 6137904
- 102992 words of memory out of 5000000
- 6190 multiletter control sequences out of 15000+600000
+ 2810 strings out of 493315
+ 35870 string characters out of 6137904
+ 103000 words of memory out of 5000000
+ 6192 multiletter control sequences out of 15000+600000
  48451 words of font info for 65 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  41i,10n,28p,1351b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -584,7 +570,7 @@ b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
 ocal/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on wearables_survey.pdf (10 pages, 447410 bytes).
+Output written on wearables_survey.pdf (10 pages, 449119 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream
