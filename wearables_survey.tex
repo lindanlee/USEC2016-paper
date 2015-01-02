@@ -91,23 +91,27 @@ Serge Egelman\\
 %-I would limit these bullets to the top 3-4 most interesting findings that we found.
 
 \section{Introduction}
-Wearable technology has many potential benefits, ranging from a more natural, human-centered interface for computing to healthier living through fitness tracking. Wearable devices, or wearables, are the new front of ubiquitous computing and big data, constantly capturing data and interpreting information to deliver insights to the user. Wearbles are gaining lots of attention: Forbes has named 2014 the ``Year of Wearable Technology, \cite{Forbes},'' and market research companies estimate that 52\% are aware of wearables and among those, 33\% said they were likely to buy one \cite{NPD}. 
+Wearable technology has many potential benefits, ranging from a more natural, human-centered interface for computing to healthier living through fitness tracking. Wearable devices, or ``wearables,'' are the new frontier of ubiquitous computing and big data, constantly capturing data and interpreting information to deliver insights to the user. Wearbles are gaining lots of attention. Forbes has named 2014 the ``Year of Wearable Technology \cite{Forbes},'' and market research companies estimate that 52\% are aware of wearables and among those, 33\% said they were likely to buy one \cite{NPD}. 
 
-More formally, a survey consisting of 3,956 respondents who are either current users or non-users with high interest in wearables says that most popular devices are fitness bands (61\%), followed by smart watches (45\%) and mobile health devices (17\%)\cite{Nilsen}. It is estimated that 20\% the general population owns at least one wearable and 10\% uses at least one wearable in their daily lives \cite{WearableStatNews}. The demographics of wearables consumers are young and rich--48\% of owners are between 18 and 34 years old, and 29\% make over \$100,000 per year. However, it is expected that this \$700 million industry will reach other demographics soon as the prices of wearable devices drop \cite{cmo}. 
+A survey consisting of 3,956 respondents who are either current users or non-users with high interest in wearables found that most popular devices are fitness bands (61\%), followed by smart watches (45\%) and mobile health devices (17\%)\cite{Nilsen}. It is estimated that 20\% of the general population own at least one wearable and 10\% use at least one wearable in their daily lives \cite{WearableStatNews}. The demographics of wearables consumers are young and affluent--48\% of owners are between 18 and 34 years old, and 29\% make over \$100,000 per year. However, it is expected that this \$700 million industry will reach other demographics soon as the prices of wearable devices drop \cite{cmo}. 
 
-Even in early adoption, security and privacy concerns regarding wearable devices are becoming heightened as companies make headlines for incidents resulting in users' sexual activities exposed to the public. This occured when Fitbit's fitness profiles were public by default and allowed users to track sex as an exercise\cite{Fitbit}. In other instances, public discomfort prevented certain capabilities from being enabled. Google's Glass had to disable facial recognition for Glass \cite{GlassDetection} upon release. To avoid both scandalous breaches of privacy and public opposition for new capabilities, it is critical that we understand the threat landscape for wearable devices and which issues users most care about--before wearbles get increasingly more ubiquitous and powerful \cite{Implants}. In this work, we contribute the following: \\[-0.8cm]
+Even in early adoption, security and privacy concerns regarding wearable devices are becoming heightened. Many of these concerns relate to users' activities being exposed to the public without awareness or consent. For instance, Fitbit's fitness profiles were public by default and also allowed users to track sex as an exercise\cite{Fitbit}, resulting in disclosing sensitive information about the user. In other instances, public discomfort prevented certain capabilities from being enabled. Google's Glass had to disable facial recognition for Glass upon release \cite{GlassDetection}. 
+
+To avoid both scandalous breaches of privacy and public opposition to new capabilities, it is critical that we understand the threat landscape for wearable devices and which issues users most care about--before wearbles become increasingly more ubiquitous and powerful \cite{Implants}. A better understanding of the threat landscape will enable researchers and companies alike to focus on the most concerning factors for the user--allowing research for effective warnings of relevant events and an informed focus of protecting the data of high priority.
+
+We surveyed 2,250 internet users to determine what data is sensitive, which technologies are risky, and what users think are the biggest risk for operating wearable devices. In this work, we contribute the following: \\[-0.8cm]
 
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-\item We show users' perceptions of a wide range of wearables threats. We contribute a topmost and bottommost concerns , along with an evaluation of which factors contribute to the severity of a threat. We find that data type, data recipient, and device type matter A\%, B\%, C\%, respectively. See section <todo> for details.  
+\item We show users' perceptions of a wide range of wearables threats, along with an evaluation of which factors contribute to the severity of a threat. We find that data type and data recipient matter, but the device type does not.  
 \item We investigate how people's privacy preferences differ when data is perceived to be shared with people or a server.
-\item We show risk and benefit assessments of new technologies and capabilities; most are seen as low risk low benefit, but we hypothesize this is  the result of limited exposure. 
-\item We report people's self-reported top concerns for wearable devices. Privacy, by far, is the top concern. Other notable risks include information security, long-term health risks from use, finances, and change in social norms. 
+\item We show risk and benefit assessments of new technologies and capabilities relative to better understood technologies.  Most are perceived as low-risk/low-benefit, but we hypothesize this is  the result of limited exposure. 
+\item We report people's self-reported top concerns for wearable devices. Privacy, by far, is the top concern. Other notable risks include information security, long-term health risks from use, high financial cost, and change in social norms. 
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%
 
 \section{Related Work}
-In this paper, we explore user perceptions of security threats for wearable devices. In this section, we discuss related works which explore threats for smartphones and wearable devices, discuss emerging challenges related to ubiquitous computing, and study user perceptions of threats and technologies. 
+In this section, we discuss related work which explores threats for smartphones and wearable devices, discusses emerging challenges related to ubiquitous computing, and studies user perceptions of threats and technologies. 
 
 \subsection{Concerns for Smartphones and Wearables}
 (REDO) Mention Adrienne's work here, and other relevant smartphone studies of any sort. I will talk about how I model Adrienne's work in the next section, Survey, just give a nod to it here and go into it later. Since my results were that people care about privacy, security, health, and social change/social stigma, any phone studies which hint at any of those things will be good to put here. Be sure to go cite a fair number of them. Related work section is the part where it looks like I know stuff. 
@@ -127,22 +131,24 @@ We also study risk. Mention Fischoff here. This is a very seminal paper in risk 
 %%%%%%%%%%%%%%%%%%%
 
 \section{Methodology}
-The survey consisted of questions regarding concerns with respect to a factious wearable device called the Cubetastic3000 (done to prevent biases in answers from participants with respect to specific artifacts or companies), smartphone concerns, risk and benefit assessment of technologies, and exit questions. Details on the question ordering, question formatting, and sample questions are below. The full survey can be found at http://www.surveygizmo.com/s3/1657924 /Wearables-Threats-User-Survey. 
+Our survey was conducted in multiple parts. The first section of the survey consisted of questions regarding individual and situational concerns with respect to a fictitious wearable device called the Cubetastic3000 (done to prevent biases in answers from participants with respect to specific artifacts or companies). The next section of questions consisted of questions regarding individual and situational smartphone concerns, which were questions more familiar to our participant base and are used for calibrating results. The following section of the survey consisted of risk and benefit assessment of technologies, where participants were asked to consider general, multi-situational concerns regarding specific technologies. The final section of the survey consisted of demographics questions on basic information, privacy concerns, and wearable device ownership. Details on the question ordering, question formatting, and sample questions are discussed in the remainder of this section. 
 
-In total, the survey consisted of 367 unique questions, with each participant answering 27 questions. Out of the 27 seen by each participant, 17 of the questions were constant, whereas 10 of the questions were selected at random from larger sets of questions. During the course of the survey, each participant answered:   \\[-.8cm]
+%%% commented out for anonymity; can comment back in later.
+%The full survey can be found at http://www.surveygizmo.com/s3/1657924 /Wearables-Threats-User-Survey. 
+
+%In total, the survey consisted of 367 unique questions, with each participant answering 27 questions. Out of the 27 seen by each participant, 17 of the questions were constant, whereas 10 of the questions were selected at random from larger sets of questions.
+
+During the course of the survey, each participant answered 27 questions:   \\[-.8cm]
 
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-\item 2 comprehension questions 
-\item 6/304 questions about various wearables scenarios 
-\item 2/5 questions about smartphone scenarios 
-\item 1/20 benefit questions 
-\item 1/20 risk questions (same technology) 
-\item 4 demographics
-\item 1 open-ended question 
-\item 10 questions of IUIPC \\[-.8cm]
+\item 2 comprehension questions (attention checks)
+\item 6 questions about various wearables scenarios 
+\item 2 questions about smartphone scenarios 
+\item 2 risk/benefit questions 
+\item 15 demographics questions \\[-.8cm]
 \end{itemize}
 
-To mitigate any biases, the order in which question groups appeared to the user was randomized. Specifically, a participant had an equal chance of seeing questions related to the Cubetastic3000 or questions related to risk and benefit assessment. When a participant saw the risk and benefit assessment questions, risk or benefit questions were equally likely to be shown first. Whenever applicable, questions were randomly selected. For risk and benefit assessment, a technology was randomly selected for each participant, then risk and benefit questions for the same technology were selected for the participant. 
+To mitigate any biases, the order in which question groups appeared to the user, the ordering within each group, and, when applicable, the order of the answers for questions, were randomized for each user. Details with respect to the relevant section of the survey are discussed in the respective subsections below.  
 
 \subsection{Comprehension Questions}
 Because we were asking questions about a fictitious device, participants were presented with two comprehension questions before the start of the wearable device scenarios questions. These questions served to ensure that participants would be informed of the device which we were going to be referring to, but also served as a filter for people who were inattentive or chose not to answer questions correctly. Filtering incomplete and incorrect responses to either of these comprehension questions filtered out 16\% (n = 366) of our participants, which were 79\% of all incomplete or bad responses (n = 465). 
@@ -150,82 +156,119 @@ Because we were asking questions about a fictitious device, participants were pr
 \subsection{Wearables Scenarios}
 %okay, this section is kind of confusing, I must admit..  
 
-After participants had answered the two comprehension questions, participants were presented with 6 randomly selected questions from a set of 304 questions on various scenarios which can occur when wearing the Cubetastic3000 fictitious wearable device. Out of these 304 questions, 292 (73 data * 4 recipients) were questions of the format: \textit{``How would you feel if an app on your Cubetastic3000 learned <data> and shared it with <recipient>, without asking you first?''}. Additionally, there were 13 questions which did not follow the above format, lacking data to be shared and/or a recipient of any data. Of these questions, 5 questions were to calibrate with Felt's study on smartphones and the other 7  were exploratory questions. An example of a regular question, a calibration question, and exploratory question, respectively, are below:  
+After participants answered the two comprehension questions, participants were presented with 6 randomly selected questions from a set of 304 questions on various scenarios which can occur when wearing the Cubetastic3000. Out of these 304 questions, 292 (73 <data> * 4 <recipient>) were questions of the format: \textit{``How would you feel if an app on your Cubetastic3000 learned <data> and shared it with <recipient>, without asking you first?''}. 
 
-\textit{How would you feel if an app on your Cubetastic3000 learned how you were feeling based on your heart rate and shared that with the public, without asking you first?}\\[-.5cm]
+The main purposes of these questions were to, firstly, determine how much the device, data type, and data recipient played a role in determining if a person was upset by an event or not and, secondly, to investigate what information would most upset users when shared. Additionally, there were 13 questions which did not follow the above format, lacking <data> to be shared and/or a <recipient>. Of these questions, 5 questions were to calibrate with existing privacy work for smartphones and the other 7  were exploratory questions. The calibration questions were modeled after a mobile user study conducted by Felt et. al \cite{Felt}, where we ask the same questions but with respect to wearables rather than smart phones, to see if a change in device changes users' risk perception. The remaining exploratory questions were additional scenarios which did not fit the standard question format but were relevant to ask our participants. An example of a regular question, a calibration question, and exploratory question, respectively, are below:  
 
-\textit{How would you feel if an app on your Cubetastic3000 connected to a Bluetooth device (like a headset) without asking you first?} \\[-.5cm]
+standard: \textit{How would you feel if an app on your Cubetastic3000 learned how you were feeling based on your heart rate and shared that with the public, without asking you first?}\\[-.5cm]
 
-\textit{How would you feel if an app on your Cubetastic3000 turned your device off, without asking you first?}\\[-.5cm]
+calibration: \textit{How would you feel if an app on your Cubetastic3000 connected to a Bluetooth device (like a headset) without asking you first?} \\[-.5cm]
 
-The main purposes of these questions were to, firstly, determine how much the device, data type, and data recipient played a role in determining if a person was upset by an event or not and, secondly, to investigate what information would most upset users when shared and which recipient of the shared data would most upset users. The calibration questions were modeled after Felt's mobile user study, where we ask the same questions but with respect to wearables rather than smart phones, to see if a change in device changes users' risk perception. The remaining exploratory questions were additional scenarios which did not fit the standard question format but were relevant to ask our participants. 
+exploratory: \textit{How would you feel if an app on your Cubetastic3000 turned your device off, without asking you first?}\\[-.5cm]
 
 \subsection{Smartphone Scenarios}
-Following the wearables scenario questions were 2 randomly selected questions from a set of 5 questions on various scenarios which can occur when using a smartphone. These five scenarios, ranging from the most upsetting scenario to the least upsetting scenario, were purposefully selected from Felt's mobile user study for eliciting varying reactions from users. These questions were the basis for the five calibration wearables scenarios from the above section. Because we asked users questions differing only by the device in question, we are able to see how the change in device changes users' risk perception. Additionally, we compare our participants' perceptions of wearable device scenarios with existing perceptions of mobile device scenarios.
+Following the wearables scenario questions were 2 randomly selected questions from a set of 5 questions on various scenarios which can occur when using a smartphone. These five scenarios, ranging from the most upsetting scenario to the least upsetting scenario, were purposefully selected from Felt et. al's mobile user study \cite{Felt} for eliciting varying reactions from users. These questions were the basis for the five calibration wearables scenarios from the above section. Because we asked users questions differing only by the device in question, we are able to see how the change in device changes users' risk perception. Additionally, we compare our participants' perceptions of wearable device scenarios with existing perceptions of mobile device scenarios.
+
+MENTION VUR AND WHY WE USED IT. 
 
 \subsection{Risk and Benefit Assessment}
-In addition to investigating personal reactions to particular scenarios, we also wanted to study broad perceptions of various new technologies. Each participant saw 1 risk assessment question and 1 benefit assessment question regarding the same four previously studied technologies from the the seminal risk perception study by Fischhoff (handguns, motorcycles, lawnmowers, electricity), and 1 of the 20 new technologies.  Participants were asked to rate the same randomized new technology for both risk and benefit assessment. The format of the questions were as follows:
 
-\textit{Fill in your risk (benefit) numbers for the following technologies:}\\[-.5cm]
+In addition to investigating personal reactions to particular scenarios, we also wanted to study broad perceptions of various new technologies.We asked participants to evaluate the of following 20 new technologies: internet, email, laptops, smartphones, smart watches, fitness trackers, Google Glass, Cubetastic3000, discrete camera, discrete microphone, facial recognition, facial detection, voice recognition, voice based emotion detection, location tracking, speech to text, language detection, heart rate detection, age detection, and gender detection. 
+
+For risk and benefit assessment, a technology was randomly selected for each participant, then risk and benefit questions for the same technology were selected for the participant. Each participant saw 1 risk assessment question and 1 benefit assessment question, in a randomized order. These questions ask about four previously studied technologies from the the seminal risk perception study by Fischhoff \cite{Fischhoff} (handguns, motorcycles, lawnmowers, and electricity), and 1 of the 20 new technologies.  Participants were asked to rate the same randomized new technology for both risk and benefit assessment. The format of the questions were as follows:
+
+\textit{Fill in your risk/benefit numbers for the following technologies:}\\[-.5cm]
 
 \textit{Handguns}: \_\_\_\_\_\_\_ \\
 \textit{Motorcycles}: \_\_\_\_\_\_\_\\
 \textit{Lawnmowers}: \_\_\_\_\_\_\_\\
-\textit{<Randomized>}: \_\_\_\_\_\_\_\\
+\textit{<Wearable Technology>}: \_\_\_\_\_\_\_\\
 \textit{Electricity}: \_\_\_\_\_\_\_\\ [-.5cm]
 
-To parallel the risk perception study, we gave our participants a similar prompt which instructed the participants to numerically express the conceived gross risk (gross benefit) for a long period of time for all parties involved. The prompt can be seen at appendix \ref{sec:prompt}. Specifically, we asked participants to evaluate the of following 20 new technologies: internet, email, laptops, smartphones, smart watches, fitness trackers, Google Glass, Cubetastic3000, discrete camera, discrete microphone, facial recognition, facial detection, voice recognition, voice based emotion detection, location tracking, speech to text, language detection, heart rate detection, age detection, and gender detection. 
+To parallel the risk perception study, we gave our participants a similar prompt which instructed them to numerically express the conceived gross risk/gross benefit for a long period of time for all parties involved. The prompt can be seen in appendix \ref{sec:prompt}. 
 
 \subsection{Additional Questions}
-The exit portion of the survey consisted of demographics questions to better understand the answers. We included standard demographics questions such as age, gender, and education status, but also asked participants if they owned a wearable device to survey the population's exposure to these devices, prompted them with an open-ended question on what would be the most likely risks associated with wearable devices, and finished with questions from a privacy index to gauge their privacy preferences. We used the Internet Users' Information Privacy Concerns (IUIPC) index \cite{malhotra2004internet}, rather than the Westin Index, which was found to be very coarse \cite{woodruff2014would}.
+The exit portion of the survey consisted of demographics questions to better understand the answers. We included standard demographics questions such as age, gender, and education, but also asked participants if they owned a wearable device to survey the population's exposure to these devices. We also prompted them with an open-ended question on what would be the most likely risks associated with wearable devices, and finished with questions from a privacy index to gauge their privacy preferences. We used the Internet Users' Information Privacy Concerns (IUIPC) index \cite{malhotra2004internet}.
 
 \subsection{Focus Group}
-We conducted a one-hour focus group to validate our design, gauge survey comprehension, and measure user fatigue. The focus group began with participants taking the survey. Afterward, the participants were asked to give feedback on the format and the content of the survey, noting any instructions or questions which were unclear and stating any suggestions for the content of the survey. The focus group concluded with a discussion of possible benefits and risks of wearable devices, to brainstorm any additional scenarios which may occur. Afterward, participants were debriefed and given \$30 in cash. Of the 13 participants 54\% female, ages ranged from 18 to 64 (mu = 36.1, sigma = 15.3).  Education backgrounds ranged from high school to doctorate degrees, and professions included student, artist, marketer, and court psychologist.
+We conducted a one-hour focus group to validate our design, gauge survey comprehension, and measure user fatigue. The focus group began with participants taking the survey. Afterward, the participants were asked to give feedback on the format and the content of the survey, noting any instructions or questions which were unclear and stating any suggestions for the content of the survey. The focus group concluded with a discussion of possible benefits and risks of wearable devices, to brainstorm any additional scenarios which may occur. Afterward, participants were debriefed and given \$30 in cash. All of our participants were recruited locally through Craigslist. Of the 13 participants 54\% female, ages ranged from 18 to 64 (mu = 36.1, sigma = 15.3).  Education backgrounds ranged from high school to doctorate degrees, and professions included student, artist, marketer, and court psychologist.
 
 \subsection{Recruitment}
-We recruited 2,250 participants August 7th-13th 2014 via Amazon's Mechanical Turk. We restricted participants to those over 18 years old. No other restrictions on participation were applied. We asked questions regarding participants' perceptions of various situations which might occur when wearing a wearable device, and about the risks and benefits of new technologies.
+We recruited 2,250 participants August 7th-13th 2014 via Amazon's Mechanical Turk. We restricted participants to those over 18 years old and living in the United States. No other restrictions on participation were applied. 
 
 %%%%%%%%%%%%%%%%%%%
 
 \section{Results}
 After removing 465 incomplete responses, our sample consisted of 1,785 participants. Of these X, A\% were male, with a median age of B. Two researchers independently coded 1,785 open-ended responses, discussed any disagreements, and resolved them so that the final codings reflect unanimous agreement. 
 
-Generally, any photos, videos, audio recordings, or financial information is considered to be highly sensitive, whereas publicly deductible traits, such as the language being spoken, gender, and age, is considered the least sensitive.  Additionally, data shared in any way, whether the recipient be friends, work contacts, or the public, is much more upsetting than the data is only shared with an app's server; there is no statistically significant difference between how upset a person would be if data was shared between the various recipients. Interestingly, people had another set of prioritized concerns when data was perceived to be shared with an app rather than a human recipient (for instance, people were okay with people knowing if they were busy or not, but not their device). Although whether the device in the scenario being a wearable or smart phone did elicit unique reactions of the situation from participants, no statistically significant conclusion can be made about whether one device was seen as more threatening than another device. 
+Overall, we observed that any photos, videos, audio recordings, or financial information is considered to be highly sensitive, whereas publicly deducible traits, such as the language being spoken, gender, and age, were considered the least sensitive.  Additionally, participants considered data shared to be equally upsetting, regardless if the recipients were friends, work contacts, or the public. Although in some cases, asking about wearables or smart phones did elicit unique reactions to the situation from participants, the device generally does not contribute to the severity of the threat. When assessing new technologies as a whole, participants assessed many of the new technologies similarly as low risk and low benefit. Through our open-ended question, we find that the number one self-reported concern when owning and interacting with wearable devices is the loss of privacy. 
 
-Participants assessed many of the new technologies similarly as low risk and low benefit, which we suspect is due to the fact that most are not consciously aware of the way these technologies are being used. Through our open-ended question, we find that the number one self-reported concern when owning and interacting with wearable devices is the loss of privacy. 
+ROADMAP
+
 
 \subsection{Data Type}
 To determine the most concerning and least concerning data types, we consider the very upset rate (VUR) of various scenarios. To calculate these rates, we take the rate of responses where participants had indicated that they would be ``very upset'' (the maximum rating) with respect to the total number of responses for the question. Since people considered different things more or less sensitive with respect to the data recipient, we present the most and least concerning shared data along with the most and least concerning ``not shared'' data:
 
-%For all recipients \\[-.8cm]
+For all recipients \\[-.8cm]
 
-%\begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
-%  %\setcounter{enumi}{0}
-%  \item a video of you unclothed
-%  \item bank account information
-%  \item social security number
-%  \item video of you entering in your PIN
-%  \item a photo of you unclothed
-%  \item a photo of you that is incriminating or embarrassing
-%  \item username and password for websites
-%  \item credit card information
-%  \item a video of you that is incriminating or embarassing
-%  \item a photo you at home taken randomly by an inward-facing camera \\[-.8cm]
-%\end{enumerate}
-%
-%\begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
-%  \setcounter{enumi}{63}
-%  \item eye movement patterns (for eye tracking)
-%  \item when and how much you exercise
-%  \item when you are happy or having fun
-%  \item which television shows you watch
-%  \item when you are busy or interruptible
-%  \item music from your device
-%  \item your heart rate
-%  \item your age 
-%  \item the language you speak
-%  \item your gender \\[-.8cm]
-%\end{enumerate}
+\begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
+  %\setcounter{enumi}{0}
+  \item a video of you unclothed (95.97\%)
+  \item bank account information (95.91\%)
+  \item social security number (94.84\%)
+  \item video of you entering in your PIN (92.67\%)
+  \item a photo of you unclothed (92.59\%)
+  \item a photo of you that is incriminating or embarrassing (91.39\%)
+  \item username and password for websites (89.55\%)
+  \item credit card information (88.98\%)
+  \item a video of you that is incriminating or embarrassing (88.41\%)
+  \item a photo you at home taken randomly by an inward-facing camera (87.50\%) \\[-.8cm]
+\end{enumerate}
+
+\begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
+  \setcounter{enumi}{63}
+  \item eye movement patterns (for eye tracking) (40.51\%) 
+  \item when and how much you exercise (38.66\%)
+  \item when you are happy or having fun (34.51\%)
+  \item which television shows you watch (30.20\%)
+  \item when you are busy or interruptible (29.50\%)
+  \item music from your device (28.06\%)
+  \item your heart rate (27.50\%)
+  \item your age (24.29\%)
+  \item the language you speak (15.86\%)
+  \item your gender (14.91\%) \\[-.8cm]
+\end{enumerate}
+
+TALK ABOUT WHAT WAS SENSITIVE AND WHAT WAS NOT, and generally why. SAY THIS: full on stats test on all 74 data types seems unreasonable. Look at the regression model below. 
+
+\subsection{Data Recipient}
+People are upset when their data is shared without their permission, regardless of who the recipient is. Generally, there isn't a statistically significant difference between how upset people would be if data were to be shared with friends, work, and public, although when considering each scenario, there are certain scenarios which are considered to be more sensitive with one recipient than another.
+
+Out of all the recipients, friends are considered to be the least upsetting audience, but not too significantly (do stats-y thing here). There might have been a perception of sharing which resulted in sharing with the public being less upsetting than sharing with work contacts--people assumed that sharing it with work was a push and sharing it to the public would require people to pull the available information which was shared.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\textwidth]{recipient.png}
+	\caption{(This is a placeholder! TODO: generate a better plot for data recipient)}
+\end{figure}
+
+			Chi\^2	2-tail p	Sig?		n		effect size \\
+Friends-Work	20.365	<0.0001	Yes		5039		0.004\\
+Friends-Public	5.349	0.0207	No		5146		0.001\\
+Friends-App	380.000	<0.0001	Yes		5098		0.075\\
+Work-Public	5.054	0.0246	No		5133		0.001\\
+Work-App		564.318	<0.0001	Yes		5085		0.111\\
+Public-App		479.980	<0.0001	Yes		5192		0.092\\
+						
+						
+Friends-Work	0.867	0.3517	No		604		0.001\\
+Friends-Public	1.460	0.2229	No		639		0.002\\
+Friends-App	32.066	<0.0001	Yes		609		0.053\\
+Work-Public	0.670	0.7956	No		631		0.001\\
+Work-App		42.492	<0.0001	Yes		601		0.071\\
+Public-App		48.520	<0.0001	Yes		636		0.076\\
+
+SAY THIS: we performed an exploratory analysis to examine the effect of data recipient using a chi square test; in order to do this, the assumption about independence of observations was violated.However, we do not believe that this impacted the outcome of the statistical test based on the randomization of treatments across all conditions, as well as the very large sample size. To examine whether the violation of this assumption impacted our results, we further created a mixed effects model, in order to isolate the subjects variable (i.e., to examine the extent to which random effects stemming from individual differences may be responsible for the effects that we observed). When we preserve the independence (by randomly sampling, the results still hold. 
 
 For shared data (friends, work, public) \\[-.8cm]
 
@@ -291,27 +334,7 @@ Commonly, bank info, SSN, PIN, embarrassing photo, naked photo, naked video were
 
 On the other hand, exercise details, age, tv shows, gender, heart rate, and language were commonly considered to be lease concerning. When people perceived that the data would be shared with the app only, the other indifferent data included phone use, how much one liked the people around, when and what you ate, and eye patterns. When people perceived that the data would be shared with a human audience, the least concerning data included one's name, if one was having fun, music on the device, and if one was busy or interruptible. When sharing with an application, information otherwise considered personal such as phone use, opinions of people, food eaten, or eye patterns were okay to share, since these seem like useful information to improve one's device experience. However, people are not likely to share the same with people, but are more comfortable with sharing data about topics which would come up in causal conversation.
 
-SAY THIS: full on stats test on all 74 data types seems unreasonable. Look at the regression model below. 
-
-\subsection{Data Recipient}
-People are upset when their data is shared without their permission, regardless of who the recipient is. Generally, there isn't a statistically significant difference between how upset people would be if data were to be shared with friends, work, and public, although when considering each scenario, there are certain scenarios which are considered to be more sensitive with one recipient than another.
-
-Out of all the recipients, friends are considered to be the least upsetting audience, but not too significantly (do stats-y thing here). There might have been a perception of sharing which resulted in sharing with the public being less upsetting than sharing with work contacts--people assumed that sharing it with work was a push and sharing it to the public would require people to pull the available information which was shared.
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.5\textwidth]{recipient.png}
-	\caption{(This is a placeholder! TODO: generate a better plot for data recipient)}
-\end{figure}
-
-SAY THIS: we performed an exploratory analysis to examine the effect of data recipient using a chi square test; in order to do this, the assumption about independence of observations was violated.However, we do not believe that this impacted the outcome of the statistical test based on the randomization of treatments across all conditions, as well as the very large sample size. To examine whether the violation of this assumption impacted our results, we further created a mixed effects model, in order to isolate the subjects variable (i.e., to examine the extent to which random effects stemming from individual differences may be responsible for the effects that we observed) !!!report effect sizes
-
 \subsection{Device Type}
-%For the between-subjects comparison (i.e., participants who received one question, but not the other), you can do either a chi-square test or Fisher's exact test. Both use a 2 x 2 contingency matrix (i.e., rows are outcomes---upset or not---and columns are conditions---wearable or smartphone). The way to choose between the two tests is based on sample size, generally you use chi-square when there are more than 10-20 samples per cell in the table, but using either is just as valid. (A chi-square test can also accommodate more than 2 outcomes, whereas Fisher's exact test only works for 2 x 2; 2 outcomes and 2 conditions). http://en.wikipedia.org/wiki/Fisher%27s_exact_test
-%
-%For the within-subjects comparisons (i.e., participants received both questions), you would do McNemar's test; which is the within-subjects version of the chi-square test: http://en.wikipedia.org/wiki/McNemar%27s_test
-%
-%This site is good for quickly doing these tests on summary data: http://graphpad.com/quickcalcs/
 
 (REDO) So, there is a difference between the device types, but I need to do more work to see if this is statistically significant or not. In either case, this matters the least, and device type and data recipient are more influencing factors. This is just the result of biases in people we can't quite quantify.  
 
@@ -326,7 +349,25 @@ Q1: (14.81\% | 6.13\%)\\
 Q2: (44.11\% | 19.85\%)\\
 Q3: (87.09\% | 58.44\%)\\
 Q4: (52.77\% | 55.79\%)\\
-Q5: (86.49\% | 91.82\%) 
+Q5: (86.49\% | 91.82\%)\\ 
+
+			Chi\^2	2-tail p	Sig?		n		effect size\\
+Between-All	2.814	0.1395	No		3589		0.001\\
+Between-Q1	2.500	0.1139	No		714		0.004\\
+Between-Q2	17.333	<0.0001	Yes		708		0.024\\
+Between-Q3	0.020	0.8886	No		699		0.000\\
+Between-Q4	1.426	0.2324	No		731		0.002\\
+Between-Q5	1.611		0.2043	No		710		0.002\\
+						
+			Chi\^2	2-tail p	Sig?	Odds ratio	Confidence	Odds range\\
+Within-All		0.444	0.505	No	0.5		95\%			0.081 to 2.341\\
+Within-Q1		0		1		No	n/a	         n/a	                  n/a\\
+Within-Q2		0		1		No	0.5		95\%	                  0.008 to9.605\\
+Within-Q3		0		1		No	n/a	         n/a	                  n/a\\
+Within-Q4		0		1		No	0.5		95\%			0.008 to9.605\\
+Within-Q5		0		1		No	n/a	         n/a	                  n/a\\
+
+For the between-subjects comparison (i.e., participants who received one question, but not the other), you can do either a chi-square test or Fisher's exact test. Both use a 2 x 2 contingency matrix (i.e., rows are outcomes---upset or not---and columns are conditions---wearable or smartphone). The way to choose between the two tests is based on sample size, generally you use chi-square when there are more than 10-20 samples per cell in the table, but using either is just as valid. For the within-subjects comparisons (i.e., participants received both questions), you would do McNemar's test; which is the within-subjects version of the chi-square test. 
 
 Exact question details here, and statistical stuff. Conclude with whatever conclusion I happen to come to after performing the statistical analysis. 
 

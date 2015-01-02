@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: wearables_survey.aux
+The style file: abbrv.bst
+Database file #1: wearables_survey.bib
+Warning--to sort, need author or key in Forbes
+Warning--to sort, need author or key in NPD
+Warning--to sort, need author or key in Nilsen
+Warning--to sort, need author or key in WearableStatNews
+Warning--to sort, need author or key in cmo
+Warning--to sort, need author or key in Fitbit
+Warning--to sort, need author or key in GlassDetection
+Warning--to sort, need author or key in Implants
+You've used 15 entries,
+            2118 wiz_defined-function locations,
+            576 strings with 6749 characters,
+and the built_in function-call counts, 4290 in all, are:
+= -- 432
+> -- 148
+< -- 3
++ -- 63
+- -- 48
+* -- 242
+:= -- 618
+add.period$ -- 49
+call.type$ -- 15
+change.case$ -- 69
+chr.to.int$ -- 0
+cite$ -- 23
+duplicate$ -- 175
+empty$ -- 418
+format.name$ -- 48
+if$ -- 977
+int.to.chr$ -- 0
+int.to.str$ -- 15
+missing$ -- 7
+newline$ -- 78
+num.names$ -- 14
+pop$ -- 138
+preamble$ -- 1
+purify$ -- 54
+quote$ -- 0
+skip$ -- 119
+stack$ -- 0
+substring$ -- 221
+swap$ -- 47
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 60
+warning$ -- 8
+while$ -- 27
+width$ -- 17
+write$ -- 153
+(There were 8 warnings)
