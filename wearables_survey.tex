@@ -30,6 +30,11 @@
 
 \usepackage{url}
 
+%%% still need to break urls
+
+%\usepackage{breakurl}
+%\usepackage[breaklinks]{hyperref}
+
 \begin{document}
 
 
@@ -451,33 +456,28 @@ Q5 & 1.611 & 0.2043 & 0.002\\
 \label{betweendevice}
 \end{center}
 \end{table}
+
+Talk about results of between-subjects analysis here. 
 						
-\begin{table}%[h]
-\begin{center}
-\begin{tabular}{| c | c | c | c |}
-%Question & Chi^2 &	2-tail P & Sig? & Odds ratio	 & Confidence& Odds range\\
-%All		0.444	0.505	No	0.5		95\%			0.081 to 2.341\\
-%Q1		0		1		No	n/a	         n/a	                  n/a\\
-%Q2		0		1		No	0.5		95\%	                  0.008 to9.605\\
-%Q3		0		1		No	n/a	         n/a	                  n/a\\
-%Q4		0		1		No	0.5		95\%			0.008 to9.605\\
-%Q5		0		1		No	n/a	         n/a	                  n/a\\
-Question & $\chi^2$ &	2-tail P & Effect Size \\
-All & 0.444  & 0.505 & 0.006\\
-Q1 & 0 & 1 & 0 \\
-Q2 & 0 & 1 & 0\\
-Q3 & 0 & 1 & 0\\
-Q4 & 0 & 1 & 0\\
-Q5 & 0 & 1 & 0\\
-\end{tabular}
-\caption{Results of the effects of <device> type contributing to VUR. Values are McNeamar's test results for within-subjects comparisons for participants who received both questions.}
-\label{withindevice}
-\end{center}
-\end{table}
+%\begin{table}%[h]
+%\begin{center}
+%\begin{tabular}{| c | c | c | c |}
+%Question & $\chi^2$ &	2-tail P & Effect Size \\
+%All & 0.444  & 0.505 & 0.006\\
+%Q1 & 0 & 1 & 0 \\
+%Q2 & 0 & 1 & 0\\
+%Q3 & 0 & 1 & 0\\
+%Q4 & 0 & 1 & 0\\
+%Q5 & 0 & 1 & 0\\
+%\end{tabular}
+%\caption{Results of the effects of <device> type contributing to VUR. Values are McNeamar's test results for within-subjects comparisons for participants who received both questions.}
+%\label{withindevice}
+%\end{center}
+%\end{table}
 
-For the between-subjects comparison (i.e., participants who received one question, but not the other), you can do either a chi-square test or Fisher's exact test. Both use a 2 x 2 contingency matrix (i.e., rows are outcomes---upset or not---and columns are conditions---wearable or smartphone). The way to choose between the two tests is based on sample size, generally you use chi-square when there are more than 10-20 samples per cell in the table, but using either is just as valid. For the within-subjects comparisons (i.e., participants received both questions), you would do McNemar's test; which is the within-subjects version of the chi-square test. 
+there are too few instances where a participant got both, and therefore not enough data to really do analysis: Results of the effects of <device> type contributing to VUR. Values are McNeamar's test results for within-subjects comparisons for participants who received both questions.
 
-Exact question details here, and statistical stuff. Conclude with whatever conclusion I happen to come to after performing the statistical analysis. 
+%For the between-subjects comparison (i.e., participants who received one question, but not the other), you can do either a chi-square test or Fisher's exact test. Both use a 2 x 2 contingency matrix (i.e., rows are outcomes---upset or not---and columns are conditions---wearable or smartphone). The way to choose between the two tests is based on sample size, generally you use chi-square when there are more than 10-20 samples per cell in the table, but using either is just as valid. For the within-subjects comparisons (i.e., participants received both questions), you would do McNemar's test; which is the within-subjects version of the chi-square test. 
 
 \subsection{Regression Model} 
 Introduce the model and what was considered in the model. Serge can probably do this better. Talk about which factors mattered, and how much, and also interesting statistics we found, if any. Also, correlations with demographics here as well! 
