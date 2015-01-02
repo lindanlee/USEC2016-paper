@@ -272,83 +272,131 @@ Out of all the recipients, friends are considered to be the least upsetting audi
 	\caption{(This is a placeholder! TODO: generate a better plot for data recipient)}
 \end{figure}
 
-			Chi\^2	2-tail p	Sig?		n		effect size \\
-Friends-Work	20.365	<0.0001	Yes		5039		0.004\\
-Friends-Public	5.349	0.0207	No		5146		0.001\\
-Friends-App	380.000	<0.0001	Yes		5098		0.075\\
-Work-Public	5.054	0.0246	No		5133		0.001\\
-Work-App		564.318	<0.0001	Yes		5085		0.111\\
-Public-App		479.980	<0.0001	Yes		5192		0.092\\
+%\begin{table}%[h]
+%\begin{center}
+%\begin{tabular}{llllll}
+%Recipients	& Chi^2 &	2-tail P & 	Sig?	& n & Effect Size \\
+%Work-App	& 564.318 & <0.0001 & Yes	& 5085 & 0.111\\
+%Public-App	& 479.980 & <0.0001 & Yes	& 5192 & 0.092\\
+%Friends-App & 380.000 & <0.0001 & Yes & 5098 & 0.075\\
+%Friends-Work & 20.365 & <0.0001 & Yes & 5039 & 0.004\\
+%Friends-Public & 5.349 & 0.0207 & No	& 5146 & 0.001\\
+%Work-Public&  5.054 & 0.0246 & No & 5133	& 0.001\\
+%\end{tabular}
+%\caption{Results of a Chi-Squared test of the effects of various recipients contributing to VUR.}
+%\label{recipient}
+%\end{center}
+%\end{table}
+
+\begin{table}%[h]
+\begin{center}
+\begin{tabular}{llll}
+Recipients	& Chi^2 &	2-tail P &  Effect Size \\
+Work-App	& 564.318 & <0.0001 & 0.111\\
+Public-App	& 479.980 & <0.0001 &  0.092\\
+Friends-App & 380.000 & <0.0001 & 0.075\\
+Friends-Work & 20.365 & <0.0001 &  0.004\\
+Friends-Public & 5.349 & 0.0207 &  0.001\\
+Work-Public&  5.054 & 0.0246 &  0.001\\
+\end{tabular}
+\caption{Results of a Chi-Squared test of the effects of various recipients contributing to VUR.}
+\label{recipient}
+\end{center}
+\end{table}				
 						
-						
-Friends-Work	0.867	0.3517	No		604		0.001\\
-Friends-Public	1.460	0.2229	No		639		0.002\\
-Friends-App	32.066	<0.0001	Yes		609		0.053\\
-Work-Public	0.670	0.7956	No		631		0.001\\
-Work-App		42.492	<0.0001	Yes		601		0.071\\
-Public-App		48.520	<0.0001	Yes		636		0.076\\
+%Friends-Work	0.867	0.3517	No		604		0.001\\
+%Friends-Public	1.460	0.2229	No		639		0.002\\
+%Friends-App	32.066	<0.0001	Yes		609		0.053\\
+%Work-Public	0.670	0.7956	No		631		0.001\\
+%Work-App	42.492	<0.0001	Yes		601		0.071\\
+%Public-App	48.520	<0.0001	Yes		636		0.076\\
 
 We performed an exploratory analysis to examine the effect of data recipient using a chi square test; in order to do this, the assumption about independence of observations was violated. However, we do not believe that this impacted the outcome of the statistical test based on the randomization of treatments across all conditions, as well as the very large sample size. To examine whether the violation of this assumption impacted our results, we further created a mixed effects model, in order to isolate the subjects variable (i.e., to examine the extent to which random effects stemming from individual differences may be responsible for the effects that we observed). When we perform the same tests on many subsets of questions, with one answer randomly sampled from each participant (preserving assumption about the independence of observations), the results are still equivalent. 
 
-For shared data (friends, work, public) \\[-.8cm]
+\begin{table}%[h]
+\begin{center}
+\begin{tabular}{ll}
+<data> & VUR  \\
+social security number & 98.04\% \\
+a video of you unclothed & 97.44\% \\
+bank account information & 97.10\% \\
+recordings of your work conversations & 96.97\% \\
+an incriminating/embarrassing photo of you & 96.36\% \\
+a photo of you unclothed & 96.30\% \\
+credit card information & 95.92\% \\
+username and password for websites & 95.41\% \\
+a video of you entering in your PIN & 93.91\% \\
+recordings of your phone conversations & 93.88\% \\
+\end{tabular}
+\caption{A table of the top 10 upsetting <data> types, with respect to <recipient> types friends, work, and public.}
+\label{sharedtop10}
+\end{center}
+\end{table}
 
-\begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
-  %\setcounter{enumi}{0}
-  \item social security number (98.04\%)
-  \item a video of you unclothed (97.44\%)
-  \item bank account information (97.10\%)
-  \item recordings of your work conversations (96.97\%)
-  \item a photo of you that is incriminating/embarrassing (96.36\%)
-  \item a photo of you unclothed (96.30\%)
-  \item credit card information (95.92\%)
-  \item username and password for websites (95.41\%)
-  \item a video of you entering in your PIN (93.91\%)
-  \item recordings of your phone conversations (93.88\%) \\[-.8cm]
-\end{enumerate}
+\begin{table}%[h]
+\begin{center}
+\begin{tabular}{ll}
+%starting from #63
+<data> &  VUR  \\
+bank account information & 90.91\% \\
+a video of you unclothed & 90.62\% \\
+social security number  & 88.68\% \\
+video of you entering your PIN & 88.57\% \\
+an incriminating/embarrassing photo of you & 78.05\% \\
+a photo of you unclothed & 77.78\% \\
+a video of you entering a passcode to a door & 75.00\% \\
+when and how much you have sex & 73.08\% \\
+an incriminating/embarrassing video of you & 71.88\% \\
+a random (inward-facing) photo of you at home & 66.67\% \\
+\end{tabular}
+\caption{A table of the top 10 upsetting <data> types, respect to <recipient> app's server only (didn't share it with anyone else).}
+\label{notsharedtop10}
+\end{center}
+\end{table}
 
-\begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
-  \setcounter{enumi}{63}
-  \item your name (47.25\%)
-  \item when and how much you exercise (46.07\%)
-  \item when you were happy or having fun (38.10\%)
-  \item what television shows you watch (35.96\%)
-  \item when you are busy or interruptible (34.34\%)
-  \item your heart rate (32.28\%)
-  \item music from your device (31.87\%)
-  \item your age (29.67\%)
-  \item the language you speak (20.95\%)
-  \item your gender (16.81\%) \\[-.8cm]
-\end{enumerate}
+\begin{table}%[h]
+\begin{center}
+\begin{tabular}{ll}
+%starting from #63
+<data> &  VUR  \\
+your name & 47.25\% \\
+when and how much you exercise & 46.07\% \\
+when you were happy or having fun & 38.10\% \\
+what television shows you watch & 35.96\% \\
+when you are busy or interruptible & 34.34\% \\
+your heart rate & 32.28\% \\
+music from your device & 31.87\% \\
+your age & 29.67\% \\
+the language you speak & 20.95\% \\
+your gender & 16.81\% \\
+\end{tabular}
+\caption{A table of the bottom 10 upsetting <data> types, with respect to <recipient> types friends, work, and public.}
+\label{sharedbottom10}
+\end{center}
+\end{table}
 
-For not shared data (appserver only)  \\[-.8cm]
 
-\begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
-  %\setcounter{enumi}{0}
-  \item bank account information (90.91\%)
-  \item a video of you unclothed (90.62\%)
-  \item social security number (88.68\%)
-  \item video of you entering your PIN (88.57\%)
-  \item a photo of you that is incriminating/embarrassing (78.05\%)
-  \item a photo of you unclothed (77.78\%)
-  \item a video of you entering a passcode to a door (75.00\%)
-  \item when and how much you have sex (73.08\%)
-  \item a video of you that is incriminating/embarrassing (71.88\%)
-  \item a photo of you at home taken randomly by an inward-facing camera (66.67\%)  \\[-.8cm]
-\end{enumerate}
+\begin{table}%[h]
+\begin{center}
+\begin{tabular}{ll}
+%starting from #63
+<data> &  VUR  \\
+when and how much you exercise & 16.67\% \\
+how much you use your phone & 15.79\% \\
+your age & 14.29\% \\
+how much you like the people you interact with & 13.79\% \\
+when, what, and how much you ate & 12.50\% \\
+which television shows you watch & 11.43\% \\
+your gender & 9.52\% \\
+your heart rate & 9.09\% \\
+eye movement patterns (for eye tracking) & 6.98\% \\
+the language you speak & 2.50\% \\
+\end{tabular}
+\caption{A table of the bottom 10 upsetting <data> types, respect to <recipient> app's server only (didn't share it with anyone else).}
+\label{notsharedbottom10}
+\end{center}
+\end{table}
 
-\begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
-  \setcounter{enumi}{63}
-  \item when and how much you exercise (16.67\%)
-  \item how much you use your phone (15.79\%)
-  \item your age (14.29\%)
-  \item how much you like the people you interact with (13.79\%)
-  \item when, what, and how much you ate (12.50\%)
-  \item which television shows you watch (11.43\%)
-  \item your gender (9.52\%)
-  \item your heart rate (9.09\%)
-  \item eye movement patterns (for eye tracking) (6.98\%)
-  \item the language you speak (2.50\%)\\[-.8cm]
-\end{enumerate}
 
 Commonly, bank info, SSN, PIN, embarrassing photo, naked photo, naked video were considered to be highly sensitive. When people perceived that the data would be shared with the app only, the other top five concerns included the passcode to a door, how frequently one has sex, embarrassing videos, and photos at home. When people perceived that the data would be shared with a human audience, their other top concerns were work conversations, credit card information, username and password combinations for websites, and phone conversations. When data is perceived to be shared by an app, people are more concerned with issues of being spied on or tracked, whereas when data is perceived to be shared with an individual, people are concerned more with theft or reputation. 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  2 JAN 2015 07:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  2 JAN 2015 07:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -335,119 +335,88 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 271--272
  [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 275--282
-
- []
-
+! Missing $ inserted.
+<inserted text> 
+                $
+l.294 Recipients	& Chi^
+                       2 &	2-tail P &  Effect Size \\
+? 
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.294 Recipients	& Chi^2 &
+                          	2-tail P &  Effect Size \\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.294 Recipients	& Chi^2 &
+                          	2-tail P &  Effect Size \\
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.294 Recipients	& Chi^2 &
+                          	2-tail P &  Effect Size \\
+? 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 284--290
-
+Overfull \hbox (3.33752pt too wide) in paragraph at lines 340--354
+ [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
-
+Overfull \hbox (3.10344pt too wide) in paragraph at lines 383--397
+ [] 
  []
 
-
-Overfull \hbox (16.7207pt too wide) in paragraph at lines 301--302
-[]\T1/aer/m/n/9 a photo of you that is in-crim-i-nat-ing/embarrassing (96.36%) 
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 323--324
-
- []
-
-
-Overfull \hbox (16.7207pt too wide) in paragraph at lines 331--332
-[]\T1/aer/m/n/9 a photo of you that is in-crim-i-nat-ing/embarrassing (78.05%) 
-
- []
-
-
-Overfull \hbox (14.93875pt too wide) in paragraph at lines 335--336
-[]\T1/aer/m/n/9 a video of you that is in-crim-i-nat-ing/embarrassing (71.88%) 
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 336--337
-
- []
-
-
-Overfull \hbox (5.03024pt too wide) in paragraph at lines 344--345
-[]\T1/aer/m/n/9 how much you like the peo-ple you in-ter-act with (13.79%) 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
-
- []
-
-[5 <./recipient.png>] <device-type.png, id=31, 534.99875pt x 318.18875pt>
+[5 <./recipient.png>] <device-type.png, id=32, 534.99875pt x 318.18875pt>
 File: device-type.png Graphic file (type png)
 
 <use device-type.png>
-Package pdftex.def Info: device-type.png used on input line 363.
+Package pdftex.def Info: device-type.png used on input line 413.
 (pdftex.def)             Requested size: 252.0pt x 149.87888pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 363--364
+Overfull \hbox (12.0pt too wide) in paragraph at lines 413--414
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--373
+Underfull \hbox (badness 10000) in paragraph at lines 417--423
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 374--381
+Underfull \hbox (badness 10000) in paragraph at lines 424--431
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--389
+Underfull \hbox (badness 10000) in paragraph at lines 432--439
 
  []
 
-<techplot.png, id=32, 626.34pt x 452.892pt>
+[6 <./device-type.png>] <techplot.png, id=36, 626.34pt x 452.892pt>
 File: techplot.png Graphic file (type png)
- <use techplot.png>
-Package pdftex.def Info: techplot.png used on input line 410.
+
+<use techplot.png>
+Package pdftex.def Info: techplot.png used on input line 460.
 (pdftex.def)             Requested size: 252.0pt x 182.2178pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 410--411
+Overfull \hbox (12.0pt too wide) in paragraph at lines 460--461
  [][] 
  []
 
-[6 <./device-type.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 420--421
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--471
 
  []
 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.430 Concern &  Responses &  Frequency &
+l.480 Concern &  Responses &  Frequency &
                                             \\
 ? 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [7 <./techplot.png>] (./wearables_survey.bbl
 ! Missing $ inserted.
 <inserted text> 
@@ -493,7 +462,7 @@ Overfull \hbox (23.38914pt too wide) in paragraph at lines 22--26
 \T1/aer/m/n/9 http://www.forbes.com/sites/kashmirhill/2011/07/05/fitbit- 
  []
 
-
+[8]
 Overfull \hbox (34.41417pt too wide) in paragraph at lines 34--38
 \T1/aer/m/n/9 http://www.forbes.com/sites/erikamorphy/2013/06/02/google- 
  []
@@ -503,63 +472,66 @@ Overfull \hbox (3.48119pt too wide) in paragraph at lines 46--51
 \T1/aer/m/n/9 https://www.npd.com/wps/portal/npd/us/news/press- 
  []
 
-[8])
-Underfull \hbox (badness 10000) in paragraph at lines 514--515
+)
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 516--517
+Underfull \hbox (badness 10000) in paragraph at lines 566--567
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--519
+Underfull \hbox (badness 10000) in paragraph at lines 568--569
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--525
+Underfull \hbox (badness 10000) in paragraph at lines 574--575
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--527
+Underfull \hbox (badness 10000) in paragraph at lines 576--577
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 528--529
+Underfull \hbox (badness 10000) in paragraph at lines 578--579
 
  []
 
-[9] [10
+[9]
+Underfull \vbox (badness 2698) has occurred while \output is active []
 
-] (./wearables_survey.aux) ) 
+ [10]
+(./wearables_survey.aux) ) 
 Here is how much of TeX's memory you used:
- 2812 strings out of 493315
- 35887 string characters out of 6137904
- 103016 words of memory out of 5000000
- 6194 multiletter control sequences out of 15000+600000
+ 2817 strings out of 493315
+ 35962 string characters out of 6137904
+ 104056 words of memory out of 5000000
+ 6199 multiletter control sequences out of 15000+600000
  48451 words of font info for 65 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  41i,10n,28p,1351b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips
-/base/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmbx9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib
-10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.
-pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pf
-b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/l
-ocal/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/te
-xlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013
-/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on wearables_survey.pdf (10 pages, 456612 bytes).
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/b
+ase/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9
+.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10
+.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pf
+b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/
+texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive
+/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texm
+f-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on wearables_survey.pdf (10 pages, 466810 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 92 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
