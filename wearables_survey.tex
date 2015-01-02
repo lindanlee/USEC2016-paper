@@ -299,7 +299,7 @@ Friends-Work & 20.365 & <0.0001 &  0.004\\
 Friends-Public & 5.349 & 0.0207 &  0.001\\
 Work-Public&  5.054 & 0.0246 &  0.001\\
 \end{tabular}
-\caption{Results of a Chi-Squared test of the effects of various recipients contributing to VUR.}
+\caption{Chi-Squared test results of the effects of various recipients contributing to VUR.}
 \label{recipient}
 \end{center}
 \end{table}				
@@ -412,28 +412,66 @@ On the other hand, exercise details, age, tv shows, gender, heart rate, and lang
 	\caption{(This is a placeholder! TODO: generate a better version of this)}
 \end{figure}
 
+\begin{table}%[h]
+\begin{center}
+\begin{tabular}{ll}
   (cubetastic upset rate | smartphone upset rate)\\
 Q1: (14.81\% | 6.13\%)\\
 Q2: (44.11\% | 19.85\%)\\
 Q3: (87.09\% | 58.44\%)\\
 Q4: (52.77\% | 55.79\%)\\
 Q5: (86.49\% | 91.82\%)\\ 
+\end{tabular}
+\caption{A table of the bottom 10 upsetting <data> types, respect to <recipient> app's server only (didn't share it with anyone else).}
+\label{deviceVUR}
+\end{center}
+\end{table}
 
-			Chi\^2	2-tail p	Sig?		n		effect size\\
-Between-All	2.814	0.1395	No		3589		0.001\\
-Between-Q1	2.500	0.1139	No		714		0.004\\
-Between-Q2	17.333	<0.0001	Yes		708		0.024\\
-Between-Q3	0.020	0.8886	No		699		0.000\\
-Between-Q4	1.426	0.2324	No		731		0.002\\
-Between-Q5	1.611		0.2043	No		710		0.002\\
+\begin{table}%[h]
+\begin{center}
+\begin{tabular}{llll}
+%Question & Chi^2 &	2-tail P &	Sig?	 & n	& effect size\\
+%All	2.814	0.1395	No		3589		0.001\\
+%Q1	2.500	0.1139	No		714		0.004\\
+%Q2	17.333	<0.0001	Yes		708		0.024\\
+%Q3	0.020	0.8886	No		699		0.000\\
+%Q4	1.426	0.2324	No		731		0.002\\
+%Q5	1.611		0.2043	No		710		0.002\\
+Question & Chi^2 &	2-tail P & Effect Size\\
+All & 2.814 & 0.1395 & 0.001\\
+Q1 & 2.500 & 0.1139 & 0.004\\
+Q2 & 17.333 & <0.0001 & 0.024\\
+Q3 & 0.020 & 0.8886 & 0.000\\
+Q4 & 1.426 & 0.2324 & 0.002\\
+Q5 & 1.611	 & 0.2043 & 0.002\\
+\end{tabular}
+\caption{Results of the effects of <device> type contributing to VUR. Values are Chi-Square test results for between-subjects comparisons for participants who received one question, but not the other.}
+\label{betweendevice}
+\end{center}
+\end{table}
 						
-			Chi\^2	2-tail p	Sig?	Odds ratio	Confidence	Odds range\\
-Within-All		0.444	0.505	No	0.5		95\%			0.081 to 2.341\\
-Within-Q1		0		1		No	n/a	         n/a	                  n/a\\
-Within-Q2		0		1		No	0.5		95\%	                  0.008 to9.605\\
-Within-Q3		0		1		No	n/a	         n/a	                  n/a\\
-Within-Q4		0		1		No	0.5		95\%			0.008 to9.605\\
-Within-Q5		0		1		No	n/a	         n/a	                  n/a\\
+\begin{table}%[h]
+\begin{center}
+\begin{tabular}{llll}
+%Question & Chi^2 &	2-tail P & Sig? & Odds ratio	 & Confidence& Odds range\\
+%All		0.444	0.505	No	0.5		95\%			0.081 to 2.341\\
+%Q1		0		1		No	n/a	         n/a	                  n/a\\
+%Q2		0		1		No	0.5		95\%	                  0.008 to9.605\\
+%Q3		0		1		No	n/a	         n/a	                  n/a\\
+%Q4		0		1		No	0.5		95\%			0.008 to9.605\\
+%Q5		0		1		No	n/a	         n/a	                  n/a\\
+Question & Chi^2 &	2-tail P & Effect Size \\
+All & 0.444  & 0.505 & 0.006\\
+Q1 & 0 & 1 & 0 \\
+Q2 & 0 & 1 & 0\\
+Q3 & 0 & 1 & 0\\
+Q4 & 0 & 1 & 0\\
+Q5 & 0 & 1 & 0\\
+\end{tabular}
+\caption{Results of the effects of <device> type contributing to VUR. Values are McNeamar's test results for within-subjects comparisons for participants who received both questions.}
+\label{withindevice}
+\end{center}
+\end{table}
 
 For the between-subjects comparison (i.e., participants who received one question, but not the other), you can do either a chi-square test or Fisher's exact test. Both use a 2 x 2 contingency matrix (i.e., rows are outcomes---upset or not---and columns are conditions---wearable or smartphone). The way to choose between the two tests is based on sample size, generally you use chi-square when there are more than 10-20 samples per cell in the table, but using either is just as valid. For the within-subjects comparisons (i.e., participants received both questions), you would do McNemar's test; which is the within-subjects version of the chi-square test. 
 
