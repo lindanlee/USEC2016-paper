@@ -220,10 +220,10 @@ After removing 465 incomplete responses, our sample consisted of 1,785 participa
 
 MENTION VUR AND WHY WE USED IT. 
 
-Overall, we observed that any photos, videos, audio recordings, or financial information is considered to be highly sensitive, whereas publicly deducible traits, such as the language being spoken, gender, and age, were considered the least sensitive.  Additionally, participants considered data shared to be equally upsetting, regardless if the recipients were friends, work contacts, or the public. Although in some cases, asking about wearables or smart phones did elicit unique reactions to the situation from participants, the device generally does not contribute to the severity of the threat. When assessing new technologies as a whole, participants assessed many of the new technologies similarly as low risk and low benefit. Through our open-ended question, we find that the number one self-reported concern when owning and interacting with wearable devices is the loss of privacy. 
+%confusing runthrough of the results.. is this too packed? 
+%Overall, we observed that any photos, videos, audio recordings, or financial information is considered to be highly sensitive, whereas publicly deducible traits, such as the language being spoken, gender, and age, were considered the least sensitive.  Additionally, participants considered data shared to be equally upsetting, regardless if the recipients were friends, work contacts, or the public. Although in some cases, asking about wearables or smart phones did elicit unique reactions to the situation from participants, the device generally does not contribute to the severity of the threat. When assessing new technologies as a whole, participants assessed many of the new technologies similarly as low risk and low benefit. Through our open-ended question, we find that the number one self-reported concern when owning and interacting with wearable devices is the loss of privacy. 
 
-ROADMAP
-
+Write about what is commented out above, but as a ROADMAP. 
 
 \subsection{Data Type}
 To determine the most concerning and least concerning data types, we consider the very upset rate (VUR) of various scenarios. To calculate these rates, we take the rate of responses where participants had indicated that they would be ``very upset'' (the maximum rating) with respect to the total number of responses for the question. Since people considered different things more or less sensitive with respect to the data recipient, we present the most and least concerning shared data along with the most and least concerning ``not shared'' data:
@@ -258,7 +258,7 @@ For all recipients \\[-.8cm]
   \item your gender (14.91\%) \\[-.8cm]
 \end{enumerate}
 
-TALK ABOUT WHAT WAS SENSITIVE AND WHAT WAS NOT, and generally why. SAY THIS: full on stats test on all 74 data types seems unreasonable. Look at the regression model below. 
+TALK ABOUT WHAT WAS SENSITIVE AND WHAT WAS NOT, and generally why. A statistical analysis with respect to all 74 <data> is not feasible to explore within this paper. However, we consider these data types in our regression model.  
 
 \subsection{Data Recipient}
 People are upset when their data is shared without their permission, regardless of who the recipient is. Generally, there isn't a statistically significant difference between how upset people would be if data were to be shared with friends, work, and public, although when considering each scenario, there are certain scenarios which are considered to be more sensitive with one recipient than another.
@@ -287,7 +287,7 @@ Work-Public	0.670	0.7956	No		631		0.001\\
 Work-App		42.492	<0.0001	Yes		601		0.071\\
 Public-App		48.520	<0.0001	Yes		636		0.076\\
 
-SAY THIS: we performed an exploratory analysis to examine the effect of data recipient using a chi square test; in order to do this, the assumption about independence of observations was violated.However, we do not believe that this impacted the outcome of the statistical test based on the randomization of treatments across all conditions, as well as the very large sample size. To examine whether the violation of this assumption impacted our results, we further created a mixed effects model, in order to isolate the subjects variable (i.e., to examine the extent to which random effects stemming from individual differences may be responsible for the effects that we observed). When we preserve the independence (by randomly sampling, the results still hold. 
+We performed an exploratory analysis to examine the effect of data recipient using a chi square test; in order to do this, the assumption about independence of observations was violated. However, we do not believe that this impacted the outcome of the statistical test based on the randomization of treatments across all conditions, as well as the very large sample size. To examine whether the violation of this assumption impacted our results, we further created a mixed effects model, in order to isolate the subjects variable (i.e., to examine the extent to which random effects stemming from individual differences may be responsible for the effects that we observed). When we perform the same tests on many subsets of questions, with one answer randomly sampled from each participant (preserving assumption about the independence of observations), the results are still equivalent. 
 
 For shared data (friends, work, public) \\[-.8cm]
 
@@ -390,11 +390,12 @@ For the between-subjects comparison (i.e., participants who received one questio
 
 Exact question details here, and statistical stuff. Conclude with whatever conclusion I happen to come to after performing the statistical analysis. 
 
-\subsection{Correlation with Demographics}
-%I didn't do the correlation yet
-We found that the very upset rate for participants was not correlated with (pick correct ones from IUIPC, age, gender, education, wearable ownership) (give correlation coefficients), positively correlated with  (IUIPC, age, gender, education, wearable ownership) (give correlation coefficients), and negatively correlated with  (IUIPC, age, gender, education, wearable ownership) (give correlation coefficients). 
+\subsection{Regression Model} 
+Introduce the model and what was considered in the model. Serge can probably do this better. Talk about which factors mattered, and how much, and also interesting statistics we found, if any. Also, correlations with demographics here as well! 
 
-%sentence for each factor and why it is/isn't correlated with the very upset rate; I just put in examples sentences here to fill it in; I will change them later. 
+%I didn't do the correlation yet
+(EXAMPLE) We found that the very upset rate for participants was not correlated with (pick correct ones from IUIPC, age, gender, education, wearable ownership) (give correlation coefficients), positively correlated with  (IUIPC, age, gender, education, wearable ownership) (give correlation coefficients), and negatively correlated with  (IUIPC, age, gender, education, wearable ownership) (give correlation coefficients). 
+
 Because wearable devices have been adopted by a younger, rich, technology-savvy demographic  \cite{cmo}, it is natural to see that younger or more educated participants have had a more favorable view of wearable devices. This may be due to cultural exposure through marketing or friends, or an attitude of openness to new technologies. Participants who had a higher IUIPC score, which infers a higher sensitivity to privacy, were more likely to be upset at the various scenarios which may occur when wearing a wearable device. Additionally, these people were more likely to be adverse to these technologies for the sake of preserving privacy, whether they had explicit concerns or a vague feeling of uneasiness. There was no correlation between a person's gender and their views of wearable devices, reaffirming that wearable devices are equally exposed to both genders. 
 
 
