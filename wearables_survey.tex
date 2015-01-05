@@ -56,7 +56,7 @@
 
 
 
-\title{A Survey Wearable Device Risk Perceptions}
+\title{A Survey of Wearable Device Risk Perceptions}
 %\titlenote{(Does NOT produce the permission block, copyright information nor page numbering). For use with ACM\_PROC\_ARTICLE-SP.CLS. Supported by ACM.}}
 
 %\subtitle{[Extended Abstract]
@@ -66,10 +66,11 @@
 
 \numberofauthors{1}
 \author{
- \alignauthor Linda N. Lee\textsuperscript{1}, Serge Egelman\textsuperscript{1,2}, David Wagner\textsuperscript{1}\\
+ \alignauthor Linda N. Lee\textsuperscript{1}, Serge Egelman\textsuperscript{1,3}, Joong Hwa Lee\textsuperscript{2}, David Wagner\textsuperscript{1}\\
    \vspace{0.5em}
    \affaddr{\textsuperscript{1}University of California, Berkeley, \{lnl,egelman,daw\}@cs.berkeley.edu}\\
-   \affaddr{\textsuperscript{2}International Computer Science Institute, egelman@icsi.berkeley.edu}\\
+   \affaddr{\textsuperscript{2}University of California, Berkeley, \{dlwndghk94\}@berkeley.edu}\\
+   \affaddr{\textsuperscript{3}International Computer Science Institute, egelman@icsi.berkeley.edu}\\
 }
 
 \maketitle
@@ -170,8 +171,7 @@ We randomized the order in which participants completed each section of the surv
 Because participants might be biased to specific devices or companies (e.g., visceral reactions to Google Glass based on popular media stories), we based our questions on a fictitious wearable device. Thus, the beginning of the survey introduced participants to the ``Cubetastic3000,'' which would be the basis for all questions on wearable computing risks. We highlighted the capabilities of this device and described several use cases. To ensure that participants had read and understood this device's capabilities, we presented them with two multiple-choice comprehension questions.
 
 \subsubsection{Wearables Scenarios}
-We presented participants with scenarios involving data capture using the Cubetastic3000 and asked them to rate how upset they would be if a particular data type (e.g., video, audio, gestures, etc.) were shared with a particular data recipient without asking them first. All responses were collected on a 5-point Likert scale (from ``indifferent'' to ``very upset''), which was modeled after Felt et al.'s study of smartphone users' risk perceptions~\cite{Felt}. Questions were of the format, \textit{``How would you feel if an app on your Cubetastic3000 learned <data> and shared it with <recipient>, without asking you first?''}. We created an initial pool of 288 questions by combining 72 data types (<data>) with 4 data recipients (<recipient>). The 4 possible data recipients were:
-
+We presented participants with scenarios involving data capture using the Cubetastic3000 and asked them to rate how upset they would be if a particular data type (e.g., video, audio, gestures, etc.) were shared with a particular data recipient without asking them first. All responses were collected on a 5-point Likert scale (from ``indifferent'' to ``very upset''), which was modeled after Felt et al.'s study of smartphone users' risk perceptions~\cite{Felt}. Questions were of the format, \textit{``How would you feel if an app on your Cubetastic3000 learned <data> and shared it with <recipient>, without asking you first?''}. We created an initial pool of 288 questions by combining 72 data types (<data>) with 4 data recipients (<recipient>). The 4 possible data recipients were:  \\[-.8cm]
 
 \begin{packed_item}
 \item Your work contacts
@@ -183,17 +183,19 @@ We presented participants with scenarios involving data capture using the Cubeta
 The main purpose of these questions was to determine the extent to which the data type and data recipient played a role in upsetting participants when data is inappropriately shared. Additionally, we added 16 questions about other misbehaviors that did not follow this format, lacking either <data> or a <recipient>, but we thought were relevant nonetheless. An example of one of these questions was, ``\textit{How would you feel if an app on your Cubetastic3000 turned your device off, without asking you first?}'' Thus, there were a total of 304 questions in this set, from which we randomly presented each participant with 6 questions.
 
 \subsubsection{Smartphone Scenarios}
+
 \label{sec:smartphones}
 
-We presented participants with a second set of scenarios in order to control for the type of device being used. These questions followed the format of the previous question set, but substituted ``smartphone'' for ``Cubetastic3000.'' Rather than using the previous pool of 304 <data> and <recipient> combinations, we created 5 questions based on the scenarios that Felt \etal found least and most concerning to their participants~\cite{Felt}. We randomly presented participants with 2 of the following 5 questions:
+We presented participants with a second set of scenarios in order to control for the type of device being used. These questions followed the format of the previous question set, but substituted ``smartphone'' for ``Cubetastic3000.'' Rather than using the previous pool of 304 <data> and <recipient> combinations, we created 5 questions based on the scenarios that Felt \etal found least and most concerning to their participants~\cite{Felt}. We randomly presented participants with 2 of the following 5 questions: \\[-.8cm]
 
 \begin{packed_enum}
 \item \textit{How would you feel if an app on your smartphone vibrated your phone without asking you first?}
 \item \textit{How would you feel if an app on your smartphone connected to a Bluetooth device (like a headset) without asking you first?}
 \item \textit{How would you feel if an app on your smartphone un-muted a phone call without asking you first?}
 \item \textit{How would you feel if an app on your smartphone took screenshots when you were using other apps, without asking you first?}
-\item \textit{How would you feel if an app on your smartphone sent premium (they cost money) calls or text messages, without asking you first?}
+\item \textit{How would you feel if an app on your smartphone sent premium (they cost money) calls or text messages, without asking you first?} 
 \end{packed_enum}
+
 
 
 \subsubsection{Risk and Benefit Assessment}
@@ -212,8 +214,6 @@ To parallel Fischhoff {\it et al.}'s risk perception study, we gave our particip
 \textit{<Wearable Technology>}: \_\_\_\_\_\_\_\\
 \textit{Electricity}: \_\_\_\_\_\_\_\\ [-.5cm]
 
-
-
 \subsubsection{Additional Questions}
 The exit portion of the survey consisted of standard demographics questions such as age, gender, and education. We also asked participants if they owned a wearable device so that we could control for prior exposure, and included an open-ended question on what would be the most likely risks associated with wearable devices. Finally, we included the 10-question Internet Users' Information Privacy Concerns (IUIPC) index~\cite{malhotra2004internet}, so that we could control for participants' general privacy attitudes.
 
@@ -224,19 +224,11 @@ We conducted a one-hour focus group to validate our design, gauge comprehension,
 
 We recruited 2,250 participants August 7th-13th 2014 via Amazon's Mechanical Turk. We restricted participants to those over 18 years old, living in the United States, and having a successful HIT completion rate of 95\% or above. Based on incorrect responses to either of the two comprehension questions, we filtered out 366 (16\% of 2,250) participants. We filtered out an additional 99 participants (4\% of 2,250) due to incomplete responses, and one participant who was under 18, leaving us with a total sample size of 1,784. Of these, 55.10\% were male, with a median age of 29 ($\sigma$ = 10.37).
 
-
-%SE: Are the above numbers correct? Also, can you add a range of ages?
-
-In performing our analysis in the next section, we chose to focus on the very upset rate (VUR) of various scenarios (i.e., the percentage of participants who reported a `5' on the Likert scales), rather than the average of all Likert scores. We did this for the same reasons as Felt {\it et al.}: the VUR does not presume that the ratings, ranging from ``indifferent'' to ``very upset,'' are linearly spaced. Additionally, we believe that everyone would be upset, at least a little, at the given scenarios (i.e., in all scenarios, the device takes action without permission). Thus, we believe that the main distinguishing factor of a participant reacting to a given scenario is if they were maximally upset or not, rather than how upset they were. In the risk/benefit section, we followed Fischhoff {\it et al.}'s methodology and did not normalize the numerical responses. Rather, we report medians and quartiles, which are not heavily impacted by outliers. Finally, for the open-ended question at the end (i.e., additional privacy concerns), two researchers independently coded 1,785 responses and had an initial agreement rate of 89.7\%. The researchers discussed any disagreements, and resolved them so that the final codings reflect unanimous agreement.
-
+In performing our analysis in the next section, we chose to focus on the very upset rate (VUR) of various scenarios (i.e., the percentage of participants who reported a `5' on the Likert scales), rather than the average of all Likert scores. We did this for the same reasons as Felt {\it et al.}: the VUR does not presume that the ratings, ranging from ``indifferent'' to ``very upset,'' are linearly spaced. Additionally, we believe that everyone would be upset, at least a little, at the given scenarios (i.e., in all scenarios, the device takes action without permission). Thus, we believe that the main distinguishing factor of a participant reacting to a given scenario is if they were maximally upset or not, rather than how upset they were. In the risk/benefit section, we followed Fischhoff {\it et al.}'s methodology and did not normalize the numerical responses. Rather, we report medians and quartiles, which are not heavily impacted by outliers. Finally, for the open-ended question at the end (i.e., additional privacy concerns), two researchers independently coded 1,784 responses and had an initial agreement rate of 89.7\%. The researchers discussed any disagreements, and resolved them so that the final codings reflect unanimous agreement.
 
 %%%%%%%%%%%%%%%%%%%
 
 \section{Results}
-%%%confusing runthrough of the results.. is this too packed. I wrote a roadmap paragraph instead based on this, which is below. Much better. 
-
-%Overall, we observed that any photos, videos, audio recordings, or financial information is considered to be highly sensitive, whereas publicly deducible traits, such as the language being spoken, gender, and age, were considered the least sensitive.  Additionally, participants considered data shared to be equally upsetting, regardless if the recipients were friends, work contacts, or the public. Although in some cases, asking about wearables or smart phones did elicit unique reactions to the situation from participants, the device generally does not contribute to the severity of the threat. When assessing new technologies as a whole, participants assessed many of the new technologies similarly as low risk and low benefit. Through our open-ended question, we find that the number one self-reported concern when owning and interacting with wearable devices is the loss of privacy. 
-
 In this section, we present our survey results. We first discuss participants' responses to the various data-sharing scenarios, and how data type, device type, and recipient contributed to how threatening a situation was perceived. Next, we discuss participants' risk/benefit assessment of various new technologies relative to well-established technologies. We conclude the section with participants' self-reported concerns about the biggest risks in owning wearable devices.
 
 \subsection{Concern Factors}
@@ -244,13 +236,11 @@ In this section, we present our survey results. We first discuss participants' r
 In this section, we discuss the factors impacting participants' concern levels for each scenario: the data recipient, the data type, and whether or not the scenario occurred on a wearable device or a smartphone. We analyze each factor individually, as well as present a statistical model of participants' concerns as a function of all of these factors, including demographic traits.
 
 \subsubsection{Data Recipient}
-Based on our data, we observed that the largest effect seemed to stem from who the recipient of the data was: across all scenarios, 42.3\% of participants stated that they would be ``very upset'' if their data was shared with only the app's servers, whereas the VURs for friends (69.4\%), work contacts (75.1\%), and the public (72.4\%) were much higher. A chi-square test indicated that these differences were statistically significant (Table \ref{recipient}). However, these effect sizes were relatively small: the largest effect was between work contacts and an app's server ($\phi=0.11$); while the VUR for sharing with work contacts was significantly higher than sharing with friends, the effect size was negligible ($\phi=0.004$).
-
-
-%Comment on independence of observations, differences between public/work, and end the subsection
+Based on our data, we observed that the largest effect seemed to stem from who the recipient of the data was: across all scenarios, 42.3\% of participants stated that they would be ``very upset'' if their data was shared with only the app's servers, whereas the VURs for friends (69.5\%), work contacts (75.2\%), and the public (72.4\%) were much higher. A chi-square test indicated that these differences were statistically significant (Table \ref{recipient}). However, these effect sizes were relatively small: the largest effect was between work contacts and an app's server ($\phi=0.11$); while the VUR for sharing with work contacts was significantly higher than sharing with friends, the effect size was negligible ($\phi=0.004$).
 
 We note that this chi-square test violates the assumption of independence of observations, since each participant responded to multiple scenarios. However, based on the randomization of treatments and very large sample size, we do not believe that this impacted our results. Nonetheless, we repeated the analysis using only one randomly-selected data point per participant and found that the test was robust to this violation: participants were significantly more concerned about having their data seen by actual humans ({\it vis-{\`a}-vis} app servers), though differences between specific human groups were not significant (i.e., between the public, friends, and work contacts).
 
+%Comment on differences between public/work, and end the subsection
 %SE: this needs to be rewritten below.
 
 We compared the 10 most concerning scenarios when sharing with an app's servers versus with a human audience (friends, work contacts, and the public). We observed that there was a substantial overlap between these groups, in that 6 of the most concerning scenarios were the same:
@@ -277,37 +267,18 @@ What is interesting about this finding is that while the concerning data types d
 %	\caption{(This is a placeholder! TODO: generate a better plot for data recipient)}
 %\end{figure}
 
-% LL: I thought this would be better, but then it looked stupid, so I commented it out.
-
-%\begin{table}[t]
-%\begin{center}
-%\begin{tabular}{|l|c|}
-%\hline
-%Recipients	& VUR \\
-%\hline
-%App	& 42.3\% \\
-%Friends & 69.4\% \\
-%Work & 75.1\% \\
-%Public & 72.4\% \\
-%\hline
-%\end{tabular}
-%\caption{VUR rates by recipient.}
-%\label{whomVUR}
-%\end{center}
-%\end{table}
-
 \begin{table}[t]
 \begin{center}
 \begin{tabular}{|l|r|r|r|r|}
 \hline
 Recipients	& $\chi^2$ & p-value 	& n & $\phi$ \\
 \hline
-Work-App	& 564.32 & <0.0001 & 5,085 & 0.111\\
-Public-App	& 479.98 & <0.0001 & 5,192 & 0.092\\
-Friends-App & 380.00 & <0.0001 & 5,098 & 0.075\\
-Friends-Work & 20.37 & <0.0001 & 5,039 & 0.004\\
-Friends-Public & 5.35 & <0.0207 & 5,146 & 0.001\\
-Work-Public&  5.05 & <0.0246 & 5,133	& 0.001\\
+Work-App	& 565.910 & <0.0001 & 5,083 & 0.111\\
+Public-App	& 481.776 & <0.0001 & 5,1988& 0.093\\
+Friends-App & 381.653 & <0.0001 & 5,096 & 0.075\\
+Friends-Work & 20.39 & <0.0001 & 5,037 & 0.004\\
+Friends-Public & 5.41 & <0.0200 & 5,142 & 0.001\\
+Work-Public&  5.00 & <0.0253 & 5,129	& 0.001\\
 \hline
 \end{tabular}
 \caption{Results of a chi-square test to examine VUR based on data recipient, across all data points.}
@@ -463,14 +434,14 @@ Rank & Data &  VUR  \\
  & \vdots & \\
 64 & eye movement patterns (for eye tracking) & 40.51\% \\
 65 & when and how much you exercise  & 38.66\% \\
-66 & when you are happy or having fun  & 34.51\% \\
+66 & when you are happy or having fun  & 34.75\% \\
 67 & which television shows you watch & 30.20\% \\
 68 & when you are busy or interruptible  & 29.50\% \\
 69 & music from your device  & 28.06\% \\
 70 & your heart rate & 27.50\% \\
 71 & your age & 24.29\% \\
 72 & the language you speak & 15.86\% \\
-73 & your gender & 14.91\% \\ 
+73 & your gender & 15.00\% \\ 
 \hline
 \end{tabular}
 \caption{The 10 most and least upsetting data types, across all recipients.}
@@ -481,18 +452,19 @@ Rank & Data &  VUR  \\
 %A statistical analysis regarding the significance and confidence of <data> types with respect to all 72 was not performed due to the space constraints of the paper. We do consider all <data> categories in our statistical model, which provides an analysis of what factors had contributed to the perceived severity of a particular situation. 
 
 \subsubsection{Device Type}
-Participants had unique VUR rates for situations only differing in the device. Our participants had a 70.23\% VUR when asked about wearables devices and 40.62\% VUR when asked about smartphones.The VUR rates for both devices for all 5 quesions are in table ~\ref{deviceVUR}. However, the effect the device has on the VUR is not considered to be statistically significant (see Table ~\ref{betweendevice}). Additionally, there is no statistically significant difference between how people reacted in a given situation; although, participants were statistically significantly upset in Q2.  The aforementioned results are only with respect to between subjects analysis, where answers are from participants who received either only the wearables or smartphone version of the 5 questions. There were too few instances where a participant got both versions of questions (34 in total for all 5 questions), to be able to perform a within-subjects analysis. 
+Participants had unique VUR rates for situations only differing in the device. Our participants had a 58.79\% VUR when asked about wearables devices and 46.64\% VUR when asked about smartphones.The VUR rates for both devices for all 5 questions are in table ~\ref{deviceVUR}. However, the effect the device has on the VUR is not considered to be statistically significant (see Table ~\ref{betweendevice}). Additionally, there is no statistically significant difference between how people reacted in a given situation; although, participants were statistically significantly upset in Q2.  The aforementioned results are only with respect to between subjects analysis, where answers are from participants who received either only the wearables or smartphone version of the 5 questions. There were too few instances where a participant got both versions of questions (34 in total for all 5 questions), to be able to perform a within-subjects analysis. 
 
 \begin{table}[t]
 \begin{center}
 \begin{tabular}{| c | r | r |}
+\hline
  Question &  Wearable VUR & Smartphone VUR \\
  \hline
- All & 70.23\% & 40.62\%\\
+ All & 58.79\% & 46.64\%\\
 Q1 & 14.81\%  &  6.13\%\\
 Q2 & 44.11\%  &  19.85\%\\
 Q3 & 87.09\%  &  58.44\%\\
-Q4 & 52.77\%  & 55.79\%\\
+Q4 & 52.77\%  & 55.74\%\\
 Q5 & 86.49\%  &  91.82\%\\ 
 \hline
 \end{tabular}
@@ -503,7 +475,7 @@ Q5 & 86.49\%  &  91.82\%\\
 
 \begin{table}%[h]
 \begin{center}
-\begin{tabular}{| c | c | c | c |}
+\begin{tabular}{|l|r|r|r|r|}
 %Question & Chi^2 &	2-tail P &	Sig?	 & n	& effect size\\
 %All	2.814	0.1395	No		3589		0.001\\
 %Q1	2.500	0.1139	No		714		0.004\\
@@ -513,14 +485,14 @@ Q5 & 86.49\%  &  91.82\%\\
 %Q5	1.611		0.2043	No		710		0.002\\
 
 %SE: Can you add sample sizes to this table?
-Question & $\chi^2$ & p-value & $\phi$ \\
+Question & $\chi^2$ & p-value & n & $\phi$ \\
 \hline
-All & 2.814 & 0.1395 & 0.001\\
-Q1 & 2.500 & 0.1139 & 0.004\\
-Q2 & 17.333 & <0.0001 & 0.024\\
-Q3 & 0.020 & 0.8886 & 0.000\\
-Q4 & 1.426 & 0.2324 & 0.002\\
-Q5 & 1.611 & 0.2043 & 0.002\\
+All & 2.202 & <0.1378 & 3,588 & 0.001\\
+Q1 & 2.500 & <0.1139 & 714 & 0.004\\
+Q2 & 17.333 & <0.0001 & 708 &  0.024\\
+Q3 & 0.020 & <0.8886 & 699 &  0.000\\
+Q4 & 1.413 & <0.2345 & 730& 0.002\\
+Q5 & 1.604 & <0.2054 & 709 & 0.002\\
 \hline
 \end{tabular}
 \caption{Chi-square test results comparing participants' VURs between the smartphone and Cubetastic3000 questions.}
@@ -574,9 +546,10 @@ Without any doubt, the open-ended responses state that the most common concern f
 
 \begin{table}[h]
 \begin{center}
-\begin{tabular}{lll}
-
+\begin{tabular}{|l|r|r|}
+\hline
 Concern &  Responses &  Frequency   \\
+\hline
 Privacy & 452 & 25.32\% \\
 Being Unaware & 275 & 15.40\ \\
 %Unaware Use & 167 & (9.36\%)\\
@@ -595,7 +568,7 @@ False Information & 33 & 1.85\%\\
 Don't know & 31 & 1.74\%\\
 Aesthetics 	& 19 & 1.06\%\\
 Don't care 	& 11 & 0.62\%\\
-
+\hline
 \end{tabular}
 \caption{A table listing the self-reported most common risks associated with owning a wearable device.}
 \label{open-responses}
@@ -667,6 +640,100 @@ The authors would like to thank The National Science Foundation's Graduate Resea
 \textit{Do not consider the costs or benefits associated with these items. It is true, for example, that electricity also creates a market for home appliances. But evaluating such benefits is not your present job. Your job is to assess the gross risks, not the net risks which remain after the costs and risks are subtracted out.} \\[-.6cm]
 
 \textit{Please rate the following technologies below with a number. We know that this might be a bit hard to do, but please try to be as accurate as possible, adjusting the numbers until they feel they are right for you. Start with the least beneficial technology at 10 and assign higher numbers for the more beneficial technologies. (For instance, a technology rated 34 is twice as beneficial as a technology rated 17.)}
+
+\section{List of all <data>}
+{\color{red} Placeholder for space measuring.} \\[-.8cm]
+
+\begin{enumerate}\itemsep0pt \parskip0pt \parsep0pt
+  \item foo
+  \item bar
+   \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+  \item foo
+  \item bar
+\end{enumerate}
 
 
 %\section{Risk and Benefit Rankings}
