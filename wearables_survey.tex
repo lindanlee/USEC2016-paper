@@ -122,8 +122,6 @@ Due to new technological advances, we are rapidly moving towards automated captu
 ~\cite{jiang2002approximate}: social privacy model for ubicomp.
 
 \subsection{Smartphones and Wearables Concerns}
-%I really don't know what this first sentence means...
-
 Designs to improve end-user security need to be grounded in user research to better understand end-user concerns. Felt \etal were among the first to examine the security concerns of smartphone users using a large-scale online survey~\cite{Felt}. Their survey asked 3,115 smartphone users about 99 risks associated with various smartphone privileges. Participants were asked how upset they would be if a certain action had occurred without their permission. Participants rated each situation on a Likert scale ranging from ``indifferent (1)'' to ``very upset (5).'' Our work builds upon this study, by aiming to evaluate the types of concerns that users have surrounding future wearable device capabilities, and then to compare those concerns to concerns surrounding more established technologies.
 
 Denning et. al conducted a study investigating privacy perspectives the bystanders of wearable devices ~\cite{Denning2014}. Bystanders expressed concerns due to the subtle, easy-to-use, and potentially ubiquitous nature of wearables. While this research examined the privacy concerns of bystanders in the presence of wearable devices, we are aware of no work that has looked at the privacy concerns of the owners of the devices.
@@ -155,9 +153,6 @@ Our survey consisted of multiple sections. In one section, we presented particip
 %%% commented out for anonymity; can comment back in later.
 %The full survey can be found at http://www.surveygizmo.com/s3/1657924 /Wearables-Threats-User-Survey. 
 
-%In total, the survey consisted of 367 unique questions, with each participant answering 27 questions. Out of the 27 seen by each participant, 17 of the questions were constant, whereas 10 of the questions were selected at random from larger sets of questions.
-
-
 \subsection{Survey Questions}
 In our survey, each participant answered 27 questions, across five different sections:   \\[-.8cm]
 
@@ -187,9 +182,7 @@ We presented participants with scenarios involving data capture using the Cubeta
 The main purpose of these questions was to determine the extent to which the data type and data recipient played a role in upsetting participants when data is inappropriately shared. Additionally, we added 16 questions about other misbehaviors that did not follow this format, lacking either <data> or a <recipient>, but we thought were relevant nonetheless. An example of one of these questions was, ``\textit{How would you feel if an app on your Cubetastic3000 turned your device off, without asking you first?}'' Thus, there were a total of 304 questions in this set, from which we randomly presented each participant with 6 questions.
 
 \subsubsection{Smartphone Scenarios}
-
 \label{sec:smartphones}
-
 We presented participants with a second set of scenarios in order to control for the type of device being used. These questions followed the format of the previous question set, but substituted ``smartphone'' for ``Cubetastic3000.'' Rather than using the previous pool of 304 <data> and <recipient> combinations, we created 5 questions based on the scenarios that Felt \etal found least and most concerning to their participants~\cite{Felt}. We randomly presented participants with 2 of the following 5 questions: \\[-.8cm]
 
 \begin{packed_enum}
@@ -200,10 +193,7 @@ We presented participants with a second set of scenarios in order to control for
 \item \textit{How would you feel if an app on your smartphone sent premium (they cost money) calls or text messages, without asking you first?} 
 \end{packed_enum}
 
-
-
 \subsubsection{Risk and Benefit Assessment}
-
 In addition to investigating reactions to particular scenarios, we also examined broad perceptions of various new technologies, and how those perceptions compared to other well-established technologies. To this end, we modeled this section of the survey after the seminal risk perception study by Fischhoff \etal\cite{Fischhoff}, in which they asked participants to relatively rank several technologies by both their risk and benefit to society. We asked participants to perform this exercise for 4 technologies previously examined by Fischhoff {\it et al.}: handguns, motorcycles, lawnmowers, and electricity. We chose these technologies because they represented varying levels of risks and benefits.
 
 Alongside the 4 well-established technologies, we asked participants to evaluate one of 20 possible technologies relevant to wearable computing: the Internet, email, laptops, smartphones, smart watches, fitness trackers, Google Glass, Cubetastic3000, discrete camera, discrete microphone, facial recognition, facial detection, voice recognition, voice-based emotion detection, location tracking, speech-to-text, language detection, heart rate detection, age detection, and gender detection. Many of these technologies were selected from those studied by Egelman \etal\cite{Egelman2015}.
@@ -225,7 +215,6 @@ The exit portion of the survey consisted of standard demographics questions such
 We conducted a one-hour focus group to validate our design, gauge comprehension, and measure fatigue. The focus group began with participants taking the survey. Afterward, we asked participants to give feedback on the format and the content, noting any instructions or questions that were unclear. The focus group concluded with a discussion of possible benefits and risks of wearable devices, in order to brainstorm any additional scenarios to include. Finally, we compensated participants with \$30 in cash. We recruited all of our focus group participants from Craigslist. Of the 13 participants, 54\% were female, and ages ranged from 18 to 64 (mu = 36.1, sigma = 15.3).  Education backgrounds ranged from high school to doctorate degrees, and professions included student, artist, marketer, and court psychologist.
 
 \subsection{Recruitment and Analysis Method}
-
 We recruited 2,250 participants August 7th-13th 2014 via Amazon's Mechanical Turk. We restricted participants to those over 18 years old, living in the United States, and having a successful HIT completion rate of 95\% or above. Based on incorrect responses to either of the two comprehension questions, we filtered out 366 (16\% of 2,250) participants. We filtered out an additional 99 participants (4\% of 2,250) due to incomplete responses, and one participant who was under 18, leaving us with a total sample size of 1,784. Of these, 55.10\% were male, with a median age of 29 ($\sigma$ = 10.37).
 
 In performing our analysis in the next section, we chose to focus on the very upset rate (VUR) of various scenarios (i.e., the percentage of participants who reported a `5' on the Likert scales), rather than the average of all Likert scores. We did this for the same reasons as Felt {\it et al.}: the VUR does not presume that the ratings, ranging from ``indifferent'' to ``very upset,'' are linearly spaced. Additionally, we believe that everyone would be upset, at least a little, at the given scenarios (i.e., in all scenarios, the device takes action without permission). Thus, we believe that the main distinguishing factor of a participant reacting to a given scenario is if they were maximally upset or not, rather than how upset they were. In the risk/benefit section, we followed Fischhoff {\it et al.}'s methodology and did not normalize the numerical responses. Rather, we report medians and quartiles, which are not heavily impacted by outliers. Finally, for the open-ended question at the end (i.e., additional privacy concerns), two researchers independently coded 1,784 responses and had an initial agreement rate of 89.7\%. The researchers discussed any disagreements, and resolved them so that the final codings reflect unanimous agreement.
@@ -236,7 +225,6 @@ In performing our analysis in the next section, we chose to focus on the very up
 In this section, we present our survey results. We first discuss participants' responses to the various data-sharing scenarios, and how data type, device type, and recipient contributed to how threatening a situation was perceived. Next, we discuss participants' risk/benefit assessment of various new technologies relative to well-established technologies. We conclude the section with participants' self-reported concerns about the biggest risks in owning wearable devices.
 
 \subsection{Concern Factors}
-
 In this section, we discuss the factors impacting participants' concern levels for each scenario: the data recipient, the data type, and whether or not the scenario occurred on a wearable device or a smartphone. We analyze each factor individually, as well as present a statistical model of participants' concerns as a function of all of these factors, including demographic traits.
 
 \subsubsection{Data Recipient}
@@ -259,17 +247,6 @@ We compared the 10 most concerning scenarios when sharing with an app's servers 
 \end{packed_enum}
 
 What is interesting about this finding is that while the concerning data types do not appreciably change based on the data recipient---even the non-overlapping scenarios all dealt with confidential data (e.g., passcode, credit card information, etc.)---only the level of concern changed. For instance, the 10th most concerning scenario for the non-human audience had a VUR of 66.67\%, whereas the 10th most concerning scenario for a human audience has a VUR of 93.88\%. This suggests that concern for different data types does not appear to vary relative to other data types based on recipient, but instead the recipient determines the overall magnitude of the concern.
-
-
-
-%SE: This doesn't add much, the numbers can be put in the text to save space.
-%LL: Agreed. 
-
-%\begin{figure}
-%	\centering
-%	\includegraphics[width=0.5\textwidth]{recipient.png}
-%	\caption{(This is a placeholder! TODO: generate a better plot for data recipient)}
-%\end{figure}
 
 \begin{table}[t]
 \begin{center}
@@ -413,7 +390,6 @@ Work-Public&  5.00 & <0.0253 & 5,129	& 0.001\\
 %
 %On the other hand, exercise details, age, tv shows, gender, heart rate, and language were commonly considered to be lease concerning. When people perceived that the data would be shared with the app only, the other indifferent data included phone use, how much one liked the people around, when and what you ate, and eye patterns. When people perceived that the data would be shared with a human audience, the least concerning data included one's name, if one was having fun, music on the device, and if one was busy or interruptible. When sharing with an application, information otherwise considered personal such as phone use, opinions of people, food eaten, or eye patterns were okay to share, since these seem like useful information to improve one's device experience. However, people are not likely to share the same with people, but are more comfortable with sharing data about topics which would come up in causal conversation.
 
-
 \subsubsection{Data Type}
 Regardless of the data recipient or the device, participants were most concerned about photos and videos, especially if they contained embarrassing content, nudity, or financial information. Information that could be used to impersonate someone (e.g., usernames/passwords for websites) or invade privacy (photos of someone at home) were also among the most concerning data types. The 10 most and least concerning data types can be seen in Table \ref{top10}.
 
@@ -423,6 +399,7 @@ The least concerning data types were all related in that they all consisted of i
 \begin{center}
 \small
 \begin{tabular}{| r | l | r |}
+\hline
 Rank & Data &  VUR  \\
 \hline
 1 & a video of you unclothed & 95.97\% \\
@@ -487,8 +464,7 @@ Q5 & 86.49\%  &  91.82\%\\
 %Q3	0.020	0.8886	No		699		0.000\\
 %Q4	1.426	0.2324	No		731		0.002\\
 %Q5	1.611		0.2043	No		710		0.002\\
-
-%SE: Can you add sample sizes to this table?
+\hline
 Question & $\chi^2$ & p-value & n & $\phi$ \\
 \hline
 All & 2.202 & <0.1378 & 3,588 & 0.001\\
