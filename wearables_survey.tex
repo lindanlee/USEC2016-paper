@@ -187,15 +187,19 @@ We presented participants with scenarios involving data capture using the Cubeta
 The main purpose of these questions was to determine the extent to which the data type and data recipient played a role in upsetting participants when data is inappropriately shared. Additionally, we added 16 questions about other misbehaviors that did not follow this format, lacking either <data> or a <recipient>, but we thought were relevant nonetheless. An example of one of these questions was, ``\textit{How would you feel if an app on your Cubetastic3000 turned your device off, without asking you first?}'' Thus, there were a total of 304 questions in this set, from which we randomly presented each participant with 6 questions.
 
 \subsubsection{Smartphone Scenarios}
+
+\label{sec:smartphones}
+
 We presented participants with a second set of scenarios in order to control for the type of device being used. These questions followed the format of the previous question set, but substituted ``smartphone'' for ``Cubetastic3000.'' Rather than using the previous pool of 304 <data> and <recipient> combinations, we created 5 questions based on the scenarios that Felt \etal found least and most concerning to their participants~\cite{Felt}. We randomly presented participants with 2 of the following 5 questions: \\[-.8cm]
 
-\begin{packed_item}
+\begin{packed_enum}
 \item \textit{How would you feel if an app on your smartphone vibrated your phone without asking you first?}
 \item \textit{How would you feel if an app on your smartphone connected to a Bluetooth device (like a headset) without asking you first?}
 \item \textit{How would you feel if an app on your smartphone un-muted a phone call without asking you first?}
 \item \textit{How would you feel if an app on your smartphone took screenshots when you were using other apps, without asking you first?}
 \item \textit{How would you feel if an app on your smartphone sent premium (they cost money) calls or text messages, without asking you first?} 
-\end{packed_item}
+\end{packed_enum}
+
 
 
 \subsubsection{Risk and Benefit Assessment}
@@ -238,14 +242,25 @@ In this section, we discuss the factors impacting participants' concern levels f
 \subsubsection{Data Recipient}
 Based on our data, we observed that the largest effect seemed to stem from who the recipient of the data was: across all scenarios, 42.3\% of participants stated that they would be ``very upset'' if their data was shared with only the app's servers, whereas the VURs for friends (69.5\%), work contacts (75.2\%), and the public (72.4\%) were much higher. A chi-square test indicated that these differences were statistically significant (Table \ref{recipient}). However, these effect sizes were relatively small: the largest effect was between work contacts and an app's server ($\phi=0.11$); while the VUR for sharing with work contacts was significantly higher than sharing with friends, the effect size was negligible ($\phi=0.004$).
 
-We note that this chi-square test violates the assumption of independence of observations, since each participant responded to multiple scenarios. However, based on the randomization of treatments and very large sample size, we do not believe that this impacted our results. Nonetheless, we repeated the analysis using only one randomly-selected data point per participant and observed that our previous results held: participants were significantly more concerned about having their data seen by actual humans (as opposed to app servers), though the specific human had no observable effect (i.e., between the public, friends, and work contacts).
+We note that this chi-square test violates the assumption of independence of observations, since each participant responded to multiple scenarios. However, based on the randomization of treatments and very large sample size, we do not believe that this impacted our results. Nonetheless, we repeated the analysis using only one randomly-selected data point per participant and found that the test was robust to this violation: participants were significantly more concerned about having their data seen by actual humans ({\it vis-{\`a}-vis} app servers), though differences between specific human groups were not significant (i.e., between the public, friends, and work contacts).
 
 %Comment on differences between public/work, and end the subsection
 %SE: this needs to be rewritten below.
 
-We compared the top and bottom ten concerns between a non-human audience (app's servers) and a human audience (friends, work contacts, and the public). While many of the most and least concerning scenarios were the same between these two groups, participants were more uncomfortable about privacy and theft (i.e. frequency of sex, photos at home, and passcodes to doors) when sharing data with an application. They were also more uncomfortable sharing phone or text conversations and credentials (i.e. username and password for websites, credit card information) to a human audience than to a server. Additionally, they concerned more concerned On the other hand, participants were comfortable sharing behavioral patterns and personal opinions (i.e. phone use, opinions of people, eye patterns, and food eaten) with an app's server rather than a human audience. For a human audience, participants were most comfortable sharing data which would come up in conversation (i.e music on their device, if one was having fun, and if one if busy or interruptible), but found these topics more disturbing to share with an app's server.
+We compared the 10 most concerning scenarios when sharing with an app's servers versus with a human audience (friends, work contacts, and the public). We observed that there was a substantial overlap between these groups, in that 6 of the most concerning scenarios were the same:
 
-There might have been a perception of sharing which resulted in sharing with the public being less upsetting than sharing with work contacts--people assumed that sharing it with work was a push and sharing it to the public would require people to pull the available information which was shared.
+\begin{packed_enum}
+\item Bank account information
+\item A video of you unclothed
+\item Social security number
+\item Video of you entering your PIN
+\item An incriminating/embarrassing photo of you
+\item A photo of you unclothed
+\end{packed_enum}
+
+What is interesting about this finding is that while the concerning data types do not appreciably change based on the data recipient---even the non-overlapping scenarios all dealt with confidential data (e.g., passcode, credit card information, etc.)---only the level of concern changed. For instance, the 10th most concerning scenario for the non-human audience had a VUR of 66.67\%, whereas the 10th most concerning scenario for a human audience has a VUR of 93.88\%. This suggests that concern for different data types does not appear to vary relative to other data types based on recipient, but instead the recipient determines the overall magnitude of the concern.
+
+
 
 %SE: This doesn't add much, the numbers can be put in the text to save space.
 %LL: Agreed. 
@@ -314,16 +329,16 @@ Work-Public&  5.00 & <0.0253 & 5,129	& 0.001\\
 %\begin{center}
 %\begin{tabular}{| l | c |}
 %<data> & VUR  \\
-%social security number & 98.04\% \\
-%a video of you unclothed & 97.44\% \\
-%bank account information & 97.10\% \\
-%recordings of your work conversations & 96.97\% \\
-%an incriminating/embarrassing photo of you & 96.36\% \\
-%a photo of you unclothed & 96.30\% \\
-%credit card information & 95.92\% \\
-%username and password for websites & 95.41\% \\
-%a video of you entering in your PIN & 93.91\% \\
-%recordings of your phone conversations & 93.88\% \\
+%social security number & 98.04\% \\ CC
+%a video of you unclothed & 97.44\% \\ CC
+%bank account information & 97.10\% \\ CC
+%recordings of your work conversations & 96.97\% \\ 
+%an incriminating/embarrassing photo of you & 96.36\% \\ CC
+%a photo of you unclothed & 96.30\% \\ CC
+%credit card information & 95.92\% \\ 
+%username and password for websites & 95.41\% \\ 
+%a video of you entering in your PIN & 93.91\% \\ CC
+%recordings of your phone conversations & 93.88\% \\ 
 %\end{tabular}
 %\caption{A table of the top 10 upsetting <data> types, with respect to <recipient> types friends, work, and public.}
 %\label{sharedtop10}
@@ -335,15 +350,15 @@ Work-Public&  5.00 & <0.0253 & 5,129	& 0.001\\
 %\begin{tabular}{| l | c |}
 %%starting from #63
 %<data> &  VUR  \\
-%bank account information & 90.91\% \\
-%a video of you unclothed & 90.62\% \\
-%social security number  & 88.68\% \\
-%video of you entering your PIN & 88.57\% \\
-%an incriminating/embarrassing photo of you & 78.05\% \\
-%a photo of you unclothed & 77.78\% \\
-%a video of you entering a passcode to a door & 75.00\% \\
-%when and how much you have sex & 73.08\% \\
-%an incriminating/embarrassing video of you & 71.88\% \\
+%bank account information & 90.91\% \\ CC
+%a video of you unclothed & 90.62\% \\ CC
+%social security number  & 88.68\% \\ CC
+%video of you entering your PIN & 88.57\% \\ CC
+%an incriminating/embarrassing photo of you & 78.05\% \\ CC
+%a photo of you unclothed & 77.78\% \\ CC
+%a video of you entering a passcode to a door & 75.00\% \\ 
+%when and how much you have sex & 73.08\% \\ 
+%an incriminating/embarrassing video of you & 71.88\% \\ 
 %a random (inward-facing) photo of you at home & 66.67\% \\
 %\end{tabular}
 %\caption{A table of the top 10 upsetting <data> types, respect to <recipient> app's server only (didn't share it with anyone else).}
@@ -400,61 +415,50 @@ Work-Public&  5.00 & <0.0253 & 5,129	& 0.001\\
 
 
 \subsubsection{Data Type}
-Irrespective with whom the data was shared or on what device, participants were most concerned about photos/videos, especially if they contain embarrassment, nudity, or financial information. Information which can be used to impersonate the user (i.e. username and password for websites) and invasions of privacy (photos of someone at home) were also considered to be sensitive data. Top and bottom absolute <data> rankings can be seen in Tables ~\ref{top10} and ~\ref{bottom10}. Generally, the most concerning and least concerning data types did not change by recipient. {\color{red} can be said for ~top/bottom5 looking at the recipient lists I commented out; but this isn't too official since we do no stat tests.}
+Regardless of the data recipient or the device, participants were most concerned about photos and videos, especially if they contained embarrassing content, nudity, or financial information. Information that could be used to impersonate someone (e.g., usernames/passwords for websites) or invade privacy (photos of someone at home) were also among the most concerning data types. The 10 most and least concerning data types can be seen in Table \ref{top10}.
+
+The least concerning data types were all related in that they all consisted of information that could be observed through observations of public behavior. For instance, demographic information (e.g., age, gender, language spoken). It is possible that people rated some of these as unconcerning because they believed that many entities already track this data (e.g., shows watched, music listened to, exercise patterns).
 
 \begin{table}[t]
 \begin{center}
-\begin{tabular}{| l | c |}
+\small
+\begin{tabular}{| r | l | r |}
+Rank & Data &  VUR  \\
 \hline
-<data> &  VUR  \\
-\hline
-a video of you unclothed & 95.97\% \\
-bank account information & 95.91\% \\
-social security number & 94.84\% \\
-video of you entering in your PIN & 92.59\% \\
-a photo of you unclothed & 92.59\% \\
-an incriminating/embarrassing photo of you & 91.39\% \\
-username and password for websites & 89.55\% \\
-credit card information & 88.98\% \\
-an incriminating/embarrassing video of you & 88.41\% \\
-a random (inward-facing) photo you at home & 87.50\% \\
+1 & a video of you unclothed & 95.97\% \\
+2 & bank account information & 95.91\% \\
+3 & social security number & 94.84\% \\
+4 & video of you entering in your PIN & 92.67\% \\
+5 & a photo of you unclothed & 92.59\% \\
+6 & an incriminating/embarrassing photo of you & 91.39\% \\
+7 & username and password for websites & 89.55\% \\
+8 & credit card information & 88.98\% \\
+9 & an incriminating/embarrassing video of you & 88.41\% \\
+10 & a random (inward-facing) photo you at home & 87.50\% \\
+ & \vdots & \\
+64 & eye movement patterns (for eye tracking) & 40.51\% \\
+65 & when and how much you exercise  & 38.66\% \\
+66 & when you are happy or having fun  & 34.75\% \\
+67 & which television shows you watch & 30.20\% \\
+68 & when you are busy or interruptible  & 29.50\% \\
+69 & music from your device  & 28.06\% \\
+70 & your heart rate & 27.50\% \\
+71 & your age & 24.29\% \\
+72 & the language you speak & 15.86\% \\
+73 & your gender & 15.00\% \\ 
 \hline
 \end{tabular}
-\caption{A table of the top 10 upsetting <data> types, irregardless of recipient or data type.}
+\caption{The 10 most and least upsetting data types, across all recipients.}
 \label{top10}
 \end{center}
 \end{table}
 
-\begin{table}[t]
-\begin{center}
-\begin{tabular}{| l | c |}
-%starting from #63
-\hline
-<data> &  VUR  \\
-\hline
-eye movement patterns (for eye tracking) & 40.51\% \\
-when and how much you exercise  & 38.66\% \\
-when you are happy or having fun  & 34.75\% \\
-which television shows you watch & 30.20\% \\
-when you are busy or interruptible  & 29.50\% \\
-music from your device  & 28.06\% \\
-your heart rate & 27.50\% \\
-your age & 24.29\% \\
-the language you speak & 15.86\% \\
-your gender & 15.00\% \\ 
-\hline
-\end{tabular}
-\caption{A table of the bottom 10 upsetting <data> types, irregardless of recipient or data type.}
-\label{bottom10}
-\end{center}
-\end{table}
-
-A statistical analysis regarding the significance and confidence of <data> types with respect to all 72 was not performed due to the space constraints of the paper. We do consider all <data> categories in our statistical model, which provides an analysis of what factors had contributed to the perceived severity of a particular situation. 
+%A statistical analysis regarding the significance and confidence of <data> types with respect to all 72 was not performed due to the space constraints of the paper. We do consider all <data> categories in our statistical model, which provides an analysis of what factors had contributed to the perceived severity of a particular situation. 
 
 \subsubsection{Device Type}
 Participants had unique VUR rates for situations only differing in the device. Our participants had a 58.79\% VUR when asked about wearables devices and 46.64\% VUR when asked about smartphones.The VUR rates for both devices for all 5 questions are in table ~\ref{deviceVUR}. However, the effect the device has on the VUR is not considered to be statistically significant (see Table ~\ref{betweendevice}). Additionally, there is no statistically significant difference between how people reacted in a given situation; although, participants were statistically significantly upset in Q2.  The aforementioned results are only with respect to between subjects analysis, where answers are from participants who received either only the wearables or smartphone version of the 5 questions. There were too few instances where a participant got both versions of questions (34 in total for all 5 questions), to be able to perform a within-subjects analysis. 
 
-\begin{table}%[h]
+\begin{table}[t]
 \begin{center}
 \begin{tabular}{| c | r | r |}
 \hline
@@ -468,7 +472,7 @@ Q4 & 52.77\%  & 55.74\%\\
 Q5 & 86.49\%  &  91.82\%\\ 
 \hline
 \end{tabular}
-\caption{A table of the bottom 10 upsetting <data> types, respect to <recipient> app's server only (didn't share it with anyone else).}
+\caption{VURs for the questions described in Section \ref{sec:smartphones}, contrasting smartphones with the Cubetastic3000.}
 \label{deviceVUR}
 \end{center}
 \end{table}
@@ -483,18 +487,19 @@ Q5 & 86.49\%  &  91.82\%\\
 %Q3	0.020	0.8886	No		699		0.000\\
 %Q4	1.426	0.2324	No		731		0.002\\
 %Q5	1.611		0.2043	No		710		0.002\\
+
+%SE: Can you add sample sizes to this table?
+Question & $\chi^2$ & p-value & n & $\phi$ \\
 \hline
-Question & $\chi^2$ & 2-tail P & n  & Effect Size\\
-\hline
-All & 2.202 & 0.1378 & 3588 & 0.001\\
-Q1 & 2.500 & 0.1139 & 714 & 0.004\\
+All & 2.202 & <0.1378 & 3,588 & 0.001\\
+Q1 & 2.500 & <0.1139 & 714 & 0.004\\
 Q2 & 17.333 & <0.0001 & 708 &  0.024\\
-Q3 & 0.020 & 0.8886 & 699 &  0.000\\
-Q4 & 1.413 & 0.2345 & 730& 0.002\\
-Q5 & 1.604 & 0.2054 & 709 & 0.002\\
+Q3 & 0.020 & <0.8886 & 699 &  0.000\\
+Q4 & 1.413 & <0.2345 & 730& 0.002\\
+Q5 & 1.604 & <0.2054 & 709 & 0.002\\
 \hline
 \end{tabular}
-\caption{Results of the effects of <device> type contributing to VUR. Values are Chi-Square test results for between-subjects comparisons for participants who received one question, but not the other.}
+\caption{Chi-square test results comparing participants' VURs between the smartphone and Cubetastic3000 questions.}
 \label{betweendevice}
 \end{center}
 \end{table}
