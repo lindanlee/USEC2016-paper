@@ -124,19 +124,13 @@ To this end, we surveyed 1,785 Internet users to determine their risk perception
 In this section, we discuss related work on emerging challenges related to ubiquitous computing, threats to smartphone users, and risk perceptions pertaining to technologies. 
 
 \subsection{Ubiquitous Sensing}
-{\color{red} This is plagiarized from our CHI paper! REWRITE!!! } Wearable devices, along with many other devices, are moving towards automated capture and ubiquitous  access~\cite{abowd2000charting}. More than ever, people will interact with sensors while carrying out daily activities, from a myriad of sources and for a variety of reasons: ``lifelogging'' devices to record their daily lives~\cite{hoyle2014privacy,dickie2004augmenting}, memory augmentation devices~\cite{chen2010augmenting,devaul2003memory,kalnikaite2010now}, smart homes that optimize living conditions~\cite{chan2008review,chan2009smart,edwards2001home}, devices that create augmented reality environments~\cite{azuma1997survey,azuma2001recent}, and even devices integrated into clothing \cite{anliker2001weararm}. The ubiquitous capture and storage of information naturally raises concerns about the preservation of privacy~\cite{palen2003unpacking}. Privacy in the field of ubiquitous computing relies on principles including notice, choice, and consent~\cite{langheinrich2001privacy}.
+At an unprecedented rate, we are moving towards automated capture and ubiquitous access~\cite{abowd2000charting}, whether it be through smartphones, smarthomes, networked devices, or, more recently, wearables. Wearbles have new capabilities which allow capture of unique data about the user and his/her surroundings. As information capture becomes pervasive and subtle, people are naturally concerned about privacy and security concerns ~\cite{palen2003unpacking}. Privacy in ubiquitous systems can be achieved my adhering to principles such as notice, choice, and consent ~\cite{langheinrich2001privacy}. 
 
 \subsection{Smartphones and Wearables Concerns}
-{\color{red} Add way more details about Felt's study, so that it's clear how we borrowed the methodology, without the reader having to read that paper.}
-There exists work which addresses anticipated privacy and security challenges related to mobile and wearable devices from a system standpoint, such as \cite{DiPietro}. However, works like these are not grounded in user research to make claims to the most relevant concerns for the average user. Felt et. al's study of smartphone user concerns \cite{Felt} was the first to investigate the security and privacy research landscape from a user study standpoint. The survey asked 3,115 smartphone users about 99 risks associated with various smartphone privileges. Our work is motivated by this mobile study, and aims to also investigate wearables security and privacy with a user focus to find the most relevant challenges. To our knowledge, our work is the first of its kind to investigate user concerns for wearable devices.
+There exists work which addresses anticipated privacy and security challenges related to mobile and wearable devices from a system standpoint, such as \cite{DiPietro}. However, works like these are not grounded in user research and do not make claims about what the the most relevant concerns for the average user are. Felt et. al's study of smartphone user concerns \cite{Felt} was the first to investigate the smartphone security and privacy landscape from a user study standpoint. The survey asked 3,115 smartphone users about 99 risks associated with various smartphone privileges. Participants were asked how upset they would be if a certain action had occurred without their permission. Participants rated each situation on a likert scale ranging from indifferent (1) to very upset (5). Our work is motivated by this mobile study, and aims to also investigate wearables security and privacy with a user focus to find the most relevant challenges. We use a similar scale to ask our users how upset they would be if a certain action was taken without their permission, but ask questions about new capabilities on wearable devices. To our knowledge, our work is the first of its kind to investigate such user concerns.
 
 \subsection{Technology Risk Perceptions}
-{\color{red} Again, you need to add lots more about this paper, so that it's clear from your description what they did, and how we build upon it.}
-While evaluating which are the most pressing concerns for users, it is also important to take into account how users' perception of particular technology. A seminal risk-benefit analysis psychometric study by Fischoff \cite{Fischhoff} studied how 76 users perceived the risks and benefits of 30 activities and technologies. In our survey, we also explore how risk and benefit perception plays a role in how users perceive various new devices and new technologies in wearables. 
-
-{\color{red} You really need to cite ~\cite{Denning2014} in this section.}
-
-{\color{red} To make it flow, add 1-3 sentences here about the gaps in the related work, which then motivates our study (e.g., while people have looked at X, we are aware of no work that has looked at Y. Thus, we performed a survey to examine Y).}
+While evaluating which are the most pressing concerns for users, it is also important to take into account how users' perception of particular technology. A seminal risk-benefit analysis psychometric study by Fischoff \cite{Fischhoff} studied how 76 users perceived the risks and benefits of 30 activities and technologies. In the study, participants were prompted to rate the risks and benefits of 30 activities and technologies for all people affected by the technology, for a long period of time. The participants rated these technologies with respect to each other on a numerical scale, being instructed to rate the least risky or least beneficial technology a 10 and scaling the ratings linearly (i.e. a technology with risk rating 20 would be considered twice as risky compared to a technology with a risk rating of 10). In our survey, we use a similar prompt to ask participants to rate the risks and benefits of 20 new technologies. Denning et. al conducted a study investigating privacy perspectives the bystanders of wearable devices ~\cite{Denning2014}. Bystanders expressed concerns due to the subtle, easy-to-use, and prevalent nature of wearables. While people have conducted studies on privacy concerns with respect to wearables, we are aware of no work which as looked at privacy perspectives of the owner of the device. In our survey, we show how risk and benefit perception plays a role in how users perceive various new devices and new technologies in wearables. 
 
 %%%%%%%%%%%%%%%%%%%
 
@@ -149,7 +143,7 @@ Our survey consisted of multiple sections. In one section, we presented particip
 %In total, the survey consisted of 367 unique questions, with each participant answering 27 questions. Out of the 27 seen by each participant, 17 of the questions were constant, whereas 10 of the questions were selected at random from larger sets of questions.
 
 
-\subsection{Question Format}
+\subsection{Survey Questions}
 In our survey, each participant answered 27 questions, across five different sections:   \\[-.8cm]
 
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
@@ -245,8 +239,11 @@ Based on our data, we observed that the largest effect seemed to stem from who t
 
 Out of all the recipients, friends are considered to be the least upsetting audience, but not too significantly (do stats-y thing here). There might have been a perception of sharing which resulted in sharing with the public being less upsetting than sharing with work contacts--people assumed that sharing it with work was a push and sharing it to the public would require people to pull the available information which was shared.
 
+Friends 69.43\%, Work 74.12\%, Public 72.36\%, AppOnly 42.3\%
 
 %SE: This doesn't add much, the numbers can be put in the text to save space.
+%LL: Agreed. 
+
 %\begin{figure}
 %	\centering
 %	\includegraphics[width=0.5\textwidth]{recipient.png}
@@ -306,9 +303,7 @@ Work-Public&  5.05 & <0.0246 & 5,133	& 0.001\\
 %\label{recipient}
 %\end{center}
 %\end{table}				
-						
-
-
+					
 We performed an exploratory analysis to examine the effect of data recipient using a chi square test; in order to do this, the assumption about independence of observations was violated. However, we do not believe that this impacted the outcome of the statistical test based on the randomization of treatments across all conditions, as well as the very large sample size. To examine whether the violation of this assumption impacted our results, we further created a mixed effects model, in order to isolate the subjects variable (i.e., to examine the extent to which random effects stemming from individual differences may be responsible for the effects that we observed). When we perform the same tests on many subsets of questions, with one answer randomly sampled from each participant (preserving assumption about the independence of observations), the results are still equivalent. 
 
 \begin{table}[t]
@@ -395,14 +390,13 @@ the language you speak & 2.50\% \\
 \end{center}
 \end{table}
 
-
 Commonly, bank info, SSN, PIN, embarrassing photo, naked photo, naked video were considered to be highly sensitive. When people perceived that the data would be shared with the app only, the other top five concerns included the passcode to a door, how frequently one has sex, embarrassing videos, and photos at home. When people perceived that the data would be shared with a human audience, their other top concerns were work conversations, credit card information, username and password combinations for websites, and phone conversations. When data is perceived to be shared by an app, people are more concerned with issues of being spied on or tracked, whereas when data is perceived to be shared with an individual, people are concerned more with theft or reputation. 
 
 On the other hand, exercise details, age, tv shows, gender, heart rate, and language were commonly considered to be lease concerning. When people perceived that the data would be shared with the app only, the other indifferent data included phone use, how much one liked the people around, when and what you ate, and eye patterns. When people perceived that the data would be shared with a human audience, the least concerning data included one's name, if one was having fun, music on the device, and if one was busy or interruptible. When sharing with an application, information otherwise considered personal such as phone use, opinions of people, food eaten, or eye patterns were okay to share, since these seem like useful information to improve one's device experience. However, people are not likely to share the same with people, but are more comfortable with sharing data about topics which would come up in causal conversation.
 
 
 \subsubsection{Data Type}
-INTRO HERE. 
+Irrespective with whom the data was shared or on what device, participants were most concerned about photos/videos, especially if they contain embarrassment, nudity, or financial information. Information which can be used to impersonate the user (i.e. username and password for websites) and invasions of privacy (photos of someone at home) were also considered to be sensitive data. Top and bottom absolute <data> rankings can be seen in Tables ~\ref{top10} and ~\ref{bottom10}. {\color{red} should I say anything about the full list of 74 data types?}
 
 \begin{table}[t]
 \begin{center}
@@ -448,22 +442,16 @@ your gender & 14.91\% \\
 \end{center}
 \end{table}
 
-TALK ABOUT WHAT WAS SENSITIVE AND WHAT WAS NOT, and generally why. A statistical analysis with respect to all 74 <data> is not feasible to explore within this paper. However, we consider these data types in our regression model.  
+A statistical analysis regarding the significance and confidence of <data> types with respect to all 74 was not performed due to the space constraints of the paper. We do consider all <data> in our regression model, which provides an analysis of what factors had contributed to the perceived severity of a particular situation. 
 
 \subsubsection{Device Type}
-
-(REDO) So, there is a difference between the device types, but I need to do more work to see if this is statistically significant or not. In either case, this matters the least, and device type and data recipient are more influencing factors. This is just the result of biases in people we can't quite quantify.  
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.5\textwidth]{device-type.png}
-	\caption{(This is a placeholder! TODO: generate a better version of this)}
-\end{figure}
+Participants had unique VUR rates for situations only differing in the device. Our participants had a 70.23\% VUR when asked about wearables devices and 40.62\% VUR when asked about smartphones.The VUR rates for both devices for all 5 quesions are in table ~\ref{deviceVUR}. However, the effect the device has on the VUR is not considered to be statistically significant (see Table ~\ref{betweendevice}). Additionally, there is no statistically significant difference between how people reacted in a given situation; although, participants were statistically significantly upset in Q2.  The aforementioned results are only with respect to between subjects analysis, where answers are from participants who received either only the wearables or smartphone version of the 5 questions. There were too few instances where a participant got both versions of questions (34 in total for all 5 questions), to be able to perform a within-subjects analysis. 
 
 \begin{table}%[h]
 \begin{center}
 \begin{tabular}{| c | c | c |}
  Question &  Wearable VUR & Smartphone VUR \\
+ All & 70.23\% & 40.62\%\\
 Q1 & 14.81\%  &  6.13\%\\
 Q2 & 44.11\%  &  19.85\%\\
 Q3 & 87.09\%  &  58.44\%\\
@@ -497,8 +485,6 @@ Q5 & 1.611 & 0.2043 & 0.002\\
 \label{betweendevice}
 \end{center}
 \end{table}
-
-Talk about results of between-subjects analysis here. 
 						
 %\begin{table}%[h]
 %\begin{center}
@@ -516,23 +502,15 @@ Talk about results of between-subjects analysis here.
 %\end{center}
 %\end{table}
 
-there are too few instances where a participant got both, and therefore not enough data to really do analysis: Results of the effects of <device> type contributing to VUR. Values are McNeamar's test results for within-subjects comparisons for participants who received both questions.
-
 %For the between-subjects comparison (i.e., participants who received one question, but not the other), you can do either a chi-square test or Fisher's exact test. Both use a 2 x 2 contingency matrix (i.e., rows are outcomes---upset or not---and columns are conditions---wearable or smartphone). The way to choose between the two tests is based on sample size, generally you use chi-square when there are more than 10-20 samples per cell in the table, but using either is just as valid. For the within-subjects comparisons (i.e., participants received both questions), you would do McNemar's test; which is the within-subjects version of the chi-square test. 
 
 \subsubsection{Regression Model} 
 Introduce the model and what was considered in the model. Serge can probably do this better. Talk about which factors mattered, and how much, and also interesting statistics we found, if any. Also, correlations with demographics here as well! 
 
-%I didn't do the correlation yet
-(EXAMPLE) We found that the very upset rate for participants was not correlated with (pick correct ones from IUIPC, age, gender, education, wearable ownership) (give correlation coefficients), positively correlated with  (IUIPC, age, gender, education, wearable ownership) (give correlation coefficients), and negatively correlated with  (IUIPC, age, gender, education, wearable ownership) (give correlation coefficients). 
-
-Because wearable devices have been adopted by a younger, rich, technology-savvy demographic  \cite{cmo}, it is natural to see that younger or more educated participants have had a more favorable view of wearable devices. This may be due to cultural exposure through marketing or friends, or an attitude of openness to new technologies. Participants who had a higher IUIPC score, which infers a higher sensitivity to privacy, were more likely to be upset at the various scenarios which may occur when wearing a wearable device. Additionally, these people were more likely to be adverse to these technologies for the sake of preserving privacy, whether they had explicit concerns or a vague feeling of uneasiness. There was no correlation between a person's gender and their views of wearable devices, reaffirming that wearable devices are equally exposed to both genders. 
-
-
 \subsection{Risk and Benefit Rankings} 
 When assessing new technologies, participants generally had rated the technologies similarly, considering them low risk and low benefit (see figure \ref{fig:techplot}). We suspect that these similar assessments are because most are not consciously aware of the possibilities of these technologies or how they are being used today. A list of the ranking of most risky and most beneficial technologies can be see in appendix \ref{sec:techrank}; the most risky and most beneficial technologies reveals the list of most familiar technologies for the average user (internet, laptops, email, smartphones, etc.). 
 
-%should I just put the list in here, in the main part of the paper?
+{\color{red} can you redo the graph for figure ~\ref{fig:techplot}? I trust your judgement on how it should look and what to emphasize.}
 
 \begin{figure}
 	\centering
