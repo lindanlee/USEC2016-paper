@@ -75,8 +75,6 @@
 
 \maketitle
 
-
-
 \begin{abstract}
 We performed an online survey to examine risk perceptions surrounding wearable computing devices. We controlled for different data types that might be captured, who might have access to that data, and whether it was captured on a wearable device or a smartphone (i.e., to control for familiarity with the technology). We surveyed 1,784 participants about 72 data types, 4 data recipients, and 2 devices to quantify risk perceptions across a wide range of scenarios, along with an evaluation of which factors contribute to the severity of these risks. Following previous work, we also asked participants to perform a risk/benefit analysis comparing 20 new technologies with other well-established technologies. The results of this study can be used to guide future research in wearable device security, especially research that helps to protect sensitive data and guides the design of effective privacy notifications and indicators.
 \end{abstract}
@@ -91,15 +89,6 @@ We performed an online survey to examine risk perceptions surrounding wearable c
 %%%%%%%%%%%%%%%%%%%
 %%%         PAPER BODY         %%%
 %%%%%%%%%%%%%%%%%%%
-
-
-%%%%% FEEDBACK TO INCORPORATE, from Serge
-
-%-"security and privacy concerns regarding wearable devices are becoming heightened as companies make headlines for incidents resulting in users’ sexual activities exposed to the public..." I would rewrite this. You don't really mean to say that tracking sexual activity is the *only* privacy and security concern. It's one of many. I would say at the beginning that there are myriad privacy/security concerns, and then go into specific examples (e.g., sex, facial recognition, etc.).
-%-I think you might want to motivate this better: why do we need to better understand the threat landscape? (Answer: to focus on the most concerning things and then warn users when they're about to occur or prevent them from happening altogether.)
-%-Start a new paragraph before the contribution bullets to say what we actually did. For example, "we surveyed 2,250 Internet users to determine..."
-%-For the bullets, these can be made much more concise. I would also frame them in terms of what we found, not what we did. For example, "we found that X% of participants found that Y threats were most concerning..."
-%-I would limit these bullets to the top 3-4 most interesting findings that we found.
 
 \section{Introduction}
 Wearable technology has many potential benefits, ranging from a more natural, human-centered interface for computing, to healthier living through fitness tracking. Wearable devices, or ``wearables,'' are the new frontier of ubiquitous computing and big data, constantly capturing data and interpreting information to deliver insights to the user. Wearbles are gaining a lot of attention. Forbes has named 2014 the ``Year of Wearable Technology''~\cite{Forbes}, and market research companies estimate that 52\% are aware of wearables and among those, 33\% said they were likely to buy one~\cite{NPD}. 
@@ -127,15 +116,30 @@ In this section, we discuss related work on emerging challenges related to ubiqu
 \subsection{Ubiquitous Sensing}
 Due to new technological advances, we are rapidly moving towards automated capture and ubiquitous data access~\cite{abowd2000charting}, whether it be through smartphones, smarthomes, networked devices, or, more recently, wearables. Wearables have new capabilities that allow capture of unique data about the user and his/her surroundings. As information capture becomes pervasive and subtle, people are naturally concerned about privacy and security~\cite{palen2003unpacking}. Privacy in ubiquitous systems can be achieved by adhering to principles such as notice, choice, and consent~\cite{langheinrich2001privacy}. 
 
+~\cite{Egelman2015} {\color{red} Serge: talk about this; you wrote it and it's not out yet.}
+~\cite{bellotti1993design}: framework for designing for privacy in ubicomp.
+~\cite{hong2004privacy}: privacy risk model for ubicomp. 
+~\cite{jiang2002approximate}: social privacy model for ubicomp.
+
 \subsection{Smartphones and Wearables Concerns}
 %I really don't know what this first sentence means...
 
-Much of the previous work addresses the anticipated privacy and security challenges related to mobile and wearable devices from a systems standpoint (e.g.,~\cite{DiPietro}). However, system designs to improve end-user security need to be grounded in user research to better understand end-user concerns. Felt \etal were among the first to examine the security concerns of smartphone users using a large-scale online survey~\cite{Felt}. Their survey asked 3,115 smartphone users about 99 risks associated with various smartphone privileges. Participants were asked how upset they would be if a certain action had occurred without their permission. Participants rated each situation on a Likert scale ranging from ``indifferent (1)'' to ``very upset (5).'' Our work builds upon this study, by aiming to evaluate the types of concerns that users have surrounding future wearable device capabilities, and then to compare those concerns to concerns surrounding more established technologies.
+Designs to improve end-user security need to be grounded in user research to better understand end-user concerns. Felt \etal were among the first to examine the security concerns of smartphone users using a large-scale online survey~\cite{Felt}. Their survey asked 3,115 smartphone users about 99 risks associated with various smartphone privileges. Participants were asked how upset they would be if a certain action had occurred without their permission. Participants rated each situation on a Likert scale ranging from ``indifferent (1)'' to ``very upset (5).'' Our work builds upon this study, by aiming to evaluate the types of concerns that users have surrounding future wearable device capabilities, and then to compare those concerns to concerns surrounding more established technologies.
 
 Denning et. al conducted a study investigating privacy perspectives the bystanders of wearable devices ~\cite{Denning2014}. Bystanders expressed concerns due to the subtle, easy-to-use, and potentially ubiquitous nature of wearables. While this research examined the privacy concerns of bystanders in the presence of wearable devices, we are aware of no work that has looked at the privacy concerns of the owners of the devices.
 
-\subsection{Technology Risk Perceptions}
+~\cite{chin2012measuring}: understanding user attitudes toward security and privacy for smartphones. 
+~\cite{felt2012android}: if attention to, understand, and act on permission information during installation.
+~\cite{laurier2001people}: Why people say where they are during mobile phone calls
+~\cite{palen2000going}: behavior and practice of new mobile phone users
+
+\subsection{User Perceptions and Behaviors}
+
 Fischhoff \etal performed a seminal technology risk perception experiment in which they studied how people perceived the risks and benefits of 30 common activities and technologies~\cite{Fischhoff}. In their study, participants were prompted to separately rate the risks and benefits of 30 activities and technologies. They were primed to think about all people affected by the technology, and to think about long-term vs. short-term risks and benefits.. The participants rated these technologies with respect to each other on a numerical scale, being instructed to rate the least risky or least beneficial technology a 10 and scaling the ratings linearly (i.e. a technology with risk rating 20 would be considered twice as risky compared to a technology with a risk rating of 10). Using this mythology, they were able to categorize different technologies based on whether they were high-risk/high-benefit, low-risk/low-benefit, and so forth.
+
+~\cite{acquisti2005privacy} Privacy and decision making: ppl lack enough info to make privacy-sensitive decisions; even if, likely to trade off long-term privacy for short-term benefits.
+~\cite{jensen2005privacy}: Self-reports versus observed behavior
+~\cite{spiekermann2001privacy}: Privacy Preferences Versus Actual Behavior
 
 
 %I'm not sure that having a background on crowdsourcing is relevant, especially given the space limitations. Instead, you need WAY more related work on ubiquitous privacy concerns, as well as smartphone privacy concerns. There's also probably more general work on risk perceptions that should probably be cited.
@@ -639,6 +643,7 @@ The authors would like to thank The National Science Foundation's Graduate Resea
 \section{List of all <data>}
 {\color{red} Placeholder for space measuring.} \\[-.8cm]
 
+\begin{small}
 \begin{enumerate}\itemsep0pt \parskip0pt \parsep0pt
   \item foo
   \item bar
@@ -729,6 +734,7 @@ The authors would like to thank The National Science Foundation's Graduate Resea
   \item foo
   \item bar
 \end{enumerate}
+\end{small}
 
 
 %\section{Risk and Benefit Rankings}
