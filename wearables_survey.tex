@@ -394,7 +394,7 @@ On the other hand, exercise details, age, tv shows, gender, heart rate, and lang
 
 
 \subsubsection{Data Type}
-Top and bottom absolute <data> rankings can be seen in Tables ~\ref{top10} and ~\ref{bottom10}. Irrespective with whom the data was shared or on what device, participants were most concerned about photos/videos, especially if they contain embarrassment, nudity, or financial information. Information which can be used to impersonate the user (i.e. username and password for websites) and invasions of privacy (photos of someone at home) were also considered to be sensitive data. 
+Irrespective with whom the data was shared or on what device, participants were most concerned about photos/videos, especially if they contain embarrassment, nudity, or financial information. Information which can be used to impersonate the user (i.e. username and password for websites) and invasions of privacy (photos of someone at home) were also considered to be sensitive data. Top and bottom absolute <data> rankings can be seen in Tables ~\ref{top10} and ~\ref{bottom10}. {\color{red} should I say anything about the full list of 74 data types?}
 
 \begin{table}[t]
 \begin{center}
@@ -443,19 +443,13 @@ your gender & 14.91\% \\
 A statistical analysis regarding the significance and confidence of <data> types with respect to all 74 was not performed due to the space constraints of the paper. We do consider all <data> in our regression model, which provides an analysis of what factors had contributed to the perceived severity of a particular situation. 
 
 \subsubsection{Device Type}
-
-(REDO) So, there is a difference between the device types, but I need to do more work to see if this is statistically significant or not. In either case, this matters the least, and device type and data recipient are more influencing factors. This is just the result of biases in people we can't quite quantify.  
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.5\textwidth]{device-type.png}
-	\caption{(This is a placeholder! TODO: generate a better version of this)}
-\end{figure}
+Participants had unique VUR rates for situations only differing in the device. Our participants had a 70.23\% VUR when asked about wearables devices and 40.62\% VUR when asked about smartphones.The VUR rates for both devices for all 5 quesions are in table ~\ref{deviceVUR}. However, the effect the device has on the VUR is not considered to be statistically significant (see Table ~\ref{betweendevice}). Additionally, there is no statistically significant difference between how people reacted in a given situation; although, participants were statistically significantly upset in Q2.  The aforementioned results are only with respect to between subjects analysis, where answers are from participants who received either only the wearables or smartphone version of the 5 questions. There were too few instances where a participant got both versions of questions (34 in total for all 5 questions), to be able to perform a within-subjects analysis. 
 
 \begin{table}%[h]
 \begin{center}
 \begin{tabular}{| c | c | c |}
  Question &  Wearable VUR & Smartphone VUR \\
+ All & 70.23\% & 40.62\%\\
 Q1 & 14.81\%  &  6.13\%\\
 Q2 & 44.11\%  &  19.85\%\\
 Q3 & 87.09\%  &  58.44\%\\
@@ -489,8 +483,6 @@ Q5 & 1.611 & 0.2043 & 0.002\\
 \label{betweendevice}
 \end{center}
 \end{table}
-
-Talk about results of between-subjects analysis here. 
 						
 %\begin{table}%[h]
 %\begin{center}
@@ -508,23 +500,15 @@ Talk about results of between-subjects analysis here.
 %\end{center}
 %\end{table}
 
-there are too few instances where a participant got both, and therefore not enough data to really do analysis: Results of the effects of <device> type contributing to VUR. Values are McNeamar's test results for within-subjects comparisons for participants who received both questions.
-
 %For the between-subjects comparison (i.e., participants who received one question, but not the other), you can do either a chi-square test or Fisher's exact test. Both use a 2 x 2 contingency matrix (i.e., rows are outcomes---upset or not---and columns are conditions---wearable or smartphone). The way to choose between the two tests is based on sample size, generally you use chi-square when there are more than 10-20 samples per cell in the table, but using either is just as valid. For the within-subjects comparisons (i.e., participants received both questions), you would do McNemar's test; which is the within-subjects version of the chi-square test. 
 
 \subsubsection{Regression Model} 
 Introduce the model and what was considered in the model. Serge can probably do this better. Talk about which factors mattered, and how much, and also interesting statistics we found, if any. Also, correlations with demographics here as well! 
 
-%I didn't do the correlation yet
-(EXAMPLE) We found that the very upset rate for participants was not correlated with (pick correct ones from IUIPC, age, gender, education, wearable ownership) (give correlation coefficients), positively correlated with  (IUIPC, age, gender, education, wearable ownership) (give correlation coefficients), and negatively correlated with  (IUIPC, age, gender, education, wearable ownership) (give correlation coefficients). 
-
-Because wearable devices have been adopted by a younger, rich, technology-savvy demographic  \cite{cmo}, it is natural to see that younger or more educated participants have had a more favorable view of wearable devices. This may be due to cultural exposure through marketing or friends, or an attitude of openness to new technologies. Participants who had a higher IUIPC score, which infers a higher sensitivity to privacy, were more likely to be upset at the various scenarios which may occur when wearing a wearable device. Additionally, these people were more likely to be adverse to these technologies for the sake of preserving privacy, whether they had explicit concerns or a vague feeling of uneasiness. There was no correlation between a person's gender and their views of wearable devices, reaffirming that wearable devices are equally exposed to both genders. 
-
-
 \subsection{Risk and Benefit Rankings} 
 When assessing new technologies, participants generally had rated the technologies similarly, considering them low risk and low benefit (see figure \ref{fig:techplot}). We suspect that these similar assessments are because most are not consciously aware of the possibilities of these technologies or how they are being used today. A list of the ranking of most risky and most beneficial technologies can be see in appendix \ref{sec:techrank}; the most risky and most beneficial technologies reveals the list of most familiar technologies for the average user (internet, laptops, email, smartphones, etc.). 
 
-%should I just put the list in here, in the main part of the paper?
+{\color{red} can you redo the graph for figure ~\ref{fig:techplot}? I trust your judgement on how it should look and what to emphasize.}
 
 \begin{figure}
 	\centering
