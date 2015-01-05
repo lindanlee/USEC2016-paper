@@ -56,7 +56,7 @@
 
 
 
-\title{A Survey Wearable Device Risk Perceptions}
+\title{A Survey of Wearable Device Risk Perceptions}
 %\titlenote{(Does NOT produce the permission block, copyright information nor page numbering). For use with ACM\_PROC\_ARTICLE-SP.CLS. Supported by ACM.}}
 
 %\subtitle{[Extended Abstract]
@@ -227,10 +227,6 @@ In performing our analysis in the next section, we chose to focus on the very up
 %%%%%%%%%%%%%%%%%%%
 
 \section{Results}
-%%%confusing runthrough of the results.. is this too packed. I wrote a roadmap paragraph instead based on this, which is below. Much better. 
-
-%Overall, we observed that any photos, videos, audio recordings, or financial information is considered to be highly sensitive, whereas publicly deducible traits, such as the language being spoken, gender, and age, were considered the least sensitive.  Additionally, participants considered data shared to be equally upsetting, regardless if the recipients were friends, work contacts, or the public. Although in some cases, asking about wearables or smart phones did elicit unique reactions to the situation from participants, the device generally does not contribute to the severity of the threat. When assessing new technologies as a whole, participants assessed many of the new technologies similarly as low risk and low benefit. Through our open-ended question, we find that the number one self-reported concern when owning and interacting with wearable devices is the loss of privacy. 
-
 In this section, we present our survey results. We first discuss participants' responses to the various data-sharing scenarios, and how data type, device type, and recipient contributed to how threatening a situation was perceived. Next, we discuss participants' risk/benefit assessment of various new technologies relative to well-established technologies. We conclude the section with participants' self-reported concerns about the biggest risks in owning wearable devices.
 
 \subsection{Concern Factors}
@@ -238,13 +234,11 @@ In this section, we present our survey results. We first discuss participants' r
 In this section, we discuss the factors impacting participants' concern levels for each scenario: the data recipient, the data type, and whether or not the scenario occurred on a wearable device or a smartphone. We analyze each factor individually, as well as present a statistical model of participants' concerns as a function of all of these factors, including demographic traits.
 
 \subsubsection{Data Recipient}
-Based on our data, we observed that the largest effect seemed to stem from who the recipient of the data was: across all scenarios, 42.3\% of participants stated that they would be ``very upset'' if their data was shared with only the app's servers, whereas the VURs for friends (69.4\%), work contacts (75.1\%), and the public (72.4\%) were much higher. A chi-square test indicated that these differences were statistically significant (Table \ref{recipient}). However, these effect sizes were relatively small: the largest effect was between work contacts and an app's server ($\phi=0.11$); while the VUR for sharing with work contacts was significantly higher than sharing with friends, the effect size was negligible ($\phi=0.004$).
-
-
-%Comment on independence of observations, differences between public/work, and end the subsection
+Based on our data, we observed that the largest effect seemed to stem from who the recipient of the data was: across all scenarios, 42.3\% of participants stated that they would be ``very upset'' if their data was shared with only the app's servers, whereas the VURs for friends (69.5\%), work contacts (75.2\%), and the public (72.4\%) were much higher. A chi-square test indicated that these differences were statistically significant (Table \ref{recipient}). However, these effect sizes were relatively small: the largest effect was between work contacts and an app's server ($\phi=0.11$); while the VUR for sharing with work contacts was significantly higher than sharing with friends, the effect size was negligible ($\phi=0.004$).
 
 We note that this chi-square test violates the assumption of independence of observations, since each participant responded to multiple scenarios. However, based on the randomization of treatments and very large sample size, we do not believe that this impacted our results. Nonetheless, we repeated the analysis using only one randomly-selected data point per participant and observed that our previous results held: participants were significantly more concerned about having their data seen by actual humans (as opposed to app servers), though the specific human had no observable effect (i.e., between the public, friends, and work contacts).
 
+%Comment on differences between public/work, and end the subsection
 %SE: this needs to be rewritten below.
 
 We compared the top and bottom ten concerns between a non-human audience (app's servers) and a human audience (friends, work contacts, and the public). While many of the most and least concerning scenarios were the same between these two groups, participants were more uncomfortable about privacy and theft (i.e. frequency of sex, photos at home, and passcodes to doors) when sharing data with an application. They were also more uncomfortable sharing phone or text conversations and credentials (i.e. username and password for websites, credit card information) to a human audience than to a server. Additionally, they concerned more concerned On the other hand, participants were comfortable sharing behavioral patterns and personal opinions (i.e. phone use, opinions of people, eye patterns, and food eaten) with an app's server rather than a human audience. For a human audience, participants were most comfortable sharing data which would come up in conversation (i.e music on their device, if one was having fun, and if one if busy or interruptible), but found these topics more disturbing to share with an app's server.
@@ -260,37 +254,18 @@ There might have been a perception of sharing which resulted in sharing with the
 %	\caption{(This is a placeholder! TODO: generate a better plot for data recipient)}
 %\end{figure}
 
-% LL: I thought this would be better, but then it looked stupid, so I commented it out.
-
-%\begin{table}[t]
-%\begin{center}
-%\begin{tabular}{|l|c|}
-%\hline
-%Recipients	& VUR \\
-%\hline
-%App	& 42.3\% \\
-%Friends & 69.4\% \\
-%Work & 75.1\% \\
-%Public & 72.4\% \\
-%\hline
-%\end{tabular}
-%\caption{VUR rates by recipient.}
-%\label{whomVUR}
-%\end{center}
-%\end{table}
-
 \begin{table}[t]
 \begin{center}
 \begin{tabular}{|l|r|r|r|r|}
 \hline
 Recipients	& $\chi^2$ & p-value 	& n & $\phi$ \\
 \hline
-Work-App	& 564.32 & <0.0001 & 5,085 & 0.111\\
-Public-App	& 479.98 & <0.0001 & 5,192 & 0.092\\
-Friends-App & 380.00 & <0.0001 & 5,098 & 0.075\\
-Friends-Work & 20.37 & <0.0001 & 5,039 & 0.004\\
-Friends-Public & 5.35 & <0.0207 & 5,146 & 0.001\\
-Work-Public&  5.05 & <0.0246 & 5,133	& 0.001\\
+Work-App	& 565.910 & <0.0001 & 5,083 & 0.111\\
+Public-App	& 481.776 & <0.0001 & 5,1988& 0.093\\
+Friends-App & 381.653 & <0.0001 & 5,096 & 0.075\\
+Friends-Work & 20.39 & <0.0001 & 5,037 & 0.004\\
+Friends-Public & 5.41 & <0.0200 & 5,142 & 0.001\\
+Work-Public&  5.00 & <0.0253 & 5,129	& 0.001\\
 \hline
 \end{tabular}
 \caption{Results of a chi-square test to examine VUR based on data recipient, across all data points.}
@@ -428,19 +403,20 @@ Irrespective with whom the data was shared or on what device, participants were 
 \begin{table}[t]
 \begin{center}
 \begin{tabular}{| l | c |}
-
+\hline
 <data> &  VUR  \\
+\hline
 a video of you unclothed & 95.97\% \\
 bank account information & 95.91\% \\
 social security number & 94.84\% \\
-video of you entering in your PIN & 92.67\% \\
+video of you entering in your PIN & 92.59\% \\
 a photo of you unclothed & 92.59\% \\
 an incriminating/embarrassing photo of you & 91.39\% \\
 username and password for websites & 89.55\% \\
 credit card information & 88.98\% \\
 an incriminating/embarrassing video of you & 88.41\% \\
 a random (inward-facing) photo you at home & 87.50\% \\
-
+\hline
 \end{tabular}
 \caption{A table of the top 10 upsetting <data> types, irregardless of recipient or data type.}
 \label{top10}
@@ -451,18 +427,20 @@ a random (inward-facing) photo you at home & 87.50\% \\
 \begin{center}
 \begin{tabular}{| l | c |}
 %starting from #63
+\hline
 <data> &  VUR  \\
+\hline
 eye movement patterns (for eye tracking) & 40.51\% \\
 when and how much you exercise  & 38.66\% \\
-when you are happy or having fun  & 34.51\% \\
+when you are happy or having fun  & 34.75\% \\
 which television shows you watch & 30.20\% \\
 when you are busy or interruptible  & 29.50\% \\
 music from your device  & 28.06\% \\
 your heart rate & 27.50\% \\
 your age & 24.29\% \\
 the language you speak & 15.86\% \\
-your gender & 14.91\% \\ 
-
+your gender & 15.00\% \\ 
+\hline
 \end{tabular}
 \caption{A table of the bottom 10 upsetting <data> types, irregardless of recipient or data type.}
 \label{bottom10}
@@ -472,18 +450,21 @@ your gender & 14.91\% \\
 A statistical analysis regarding the significance and confidence of <data> types with respect to all 72 was not performed due to the space constraints of the paper. We do consider all <data> categories in our statistical model, which provides an analysis of what factors had contributed to the perceived severity of a particular situation. 
 
 \subsubsection{Device Type}
-Participants had unique VUR rates for situations only differing in the device. Our participants had a 70.23\% VUR when asked about wearables devices and 40.62\% VUR when asked about smartphones.The VUR rates for both devices for all 5 quesions are in table ~\ref{deviceVUR}. However, the effect the device has on the VUR is not considered to be statistically significant (see Table ~\ref{betweendevice}). Additionally, there is no statistically significant difference between how people reacted in a given situation; although, participants were statistically significantly upset in Q2.  The aforementioned results are only with respect to between subjects analysis, where answers are from participants who received either only the wearables or smartphone version of the 5 questions. There were too few instances where a participant got both versions of questions (34 in total for all 5 questions), to be able to perform a within-subjects analysis. 
+Participants had unique VUR rates for situations only differing in the device. Our participants had a 58.79\% VUR when asked about wearables devices and 46.64\% VUR when asked about smartphones.The VUR rates for both devices for all 5 questions are in table ~\ref{deviceVUR}. However, the effect the device has on the VUR is not considered to be statistically significant (see Table ~\ref{betweendevice}). Additionally, there is no statistically significant difference between how people reacted in a given situation; although, participants were statistically significantly upset in Q2.  The aforementioned results are only with respect to between subjects analysis, where answers are from participants who received either only the wearables or smartphone version of the 5 questions. There were too few instances where a participant got both versions of questions (34 in total for all 5 questions), to be able to perform a within-subjects analysis. 
 
 \begin{table}%[h]
 \begin{center}
-\begin{tabular}{| c | c | c |}
+\begin{tabular}{| c | r | r |}
+\hline
  Question &  Wearable VUR & Smartphone VUR \\
- All & 70.23\% & 40.62\%\\
+ \hline
+ All & 58.79\% & 46.64\%\\
 Q1 & 14.81\%  &  6.13\%\\
 Q2 & 44.11\%  &  19.85\%\\
 Q3 & 87.09\%  &  58.44\%\\
-Q4 & 52.77\%  & 55.79\%\\
+Q4 & 52.77\%  & 55.74\%\\
 Q5 & 86.49\%  &  91.82\%\\ 
+\hline
 \end{tabular}
 \caption{A table of the bottom 10 upsetting <data> types, respect to <recipient> app's server only (didn't share it with anyone else).}
 \label{deviceVUR}
@@ -492,7 +473,7 @@ Q5 & 86.49\%  &  91.82\%\\
 
 \begin{table}%[h]
 \begin{center}
-\begin{tabular}{| c | c | c | c |}
+\begin{tabular}{|l|r|r|r|r|}
 %Question & Chi^2 &	2-tail P &	Sig?	 & n	& effect size\\
 %All	2.814	0.1395	No		3589		0.001\\
 %Q1	2.500	0.1139	No		714		0.004\\
@@ -500,13 +481,16 @@ Q5 & 86.49\%  &  91.82\%\\
 %Q3	0.020	0.8886	No		699		0.000\\
 %Q4	1.426	0.2324	No		731		0.002\\
 %Q5	1.611		0.2043	No		710		0.002\\
-Question & $\chi^2$ &	2-tail P & Effect Size\\
-All & 2.814 & 0.1395 & 0.001\\
-Q1 & 2.500 & 0.1139 & 0.004\\
-Q2 & 17.333 & <0.0001 & 0.024\\
-Q3 & 0.020 & 0.8886 & 0.000\\
-Q4 & 1.426 & 0.2324 & 0.002\\
-Q5 & 1.611 & 0.2043 & 0.002\\
+\hline
+Question & $\chi^2$ & 2-tail P & n  & Effect Size\\
+\hline
+All & 2.202 & 0.1378 & 3588 & 0.001\\
+Q1 & 2.500 & 0.1139 & 714 & 0.004\\
+Q2 & 17.333 & <0.0001 & 708 &  0.024\\
+Q3 & 0.020 & 0.8886 & 699 &  0.000\\
+Q4 & 1.413 & 0.2345 & 730& 0.002\\
+Q5 & 1.604 & 0.2054 & 709 & 0.002\\
+\hline
 \end{tabular}
 \caption{Results of the effects of <device> type contributing to VUR. Values are Chi-Square test results for between-subjects comparisons for participants who received one question, but not the other.}
 \label{betweendevice}
@@ -557,13 +541,12 @@ This question was asked along with the demographics questions, near the end of t
 
 Without any doubt, the open-ended responses state that the most common concern for owning and interacting with wearable devices for the average user is the \textit{possible loss of privacy}. This top concern surpassed all other concerns by about an order of magnitude or more:
 
-%% I EDITED THESE NUMBERS for 17 year old
-
 \begin{table}[h]
 \begin{center}
-\begin{tabular}{lll}
-
+\begin{tabular}{|l|r|r|}
+\hline
 Concern &  Responses &  Frequency   \\
+\hline
 Privacy & 452 & 25.32\% \\
 Being Unaware & 275 & 15.40\ \\
 %Unaware Use & 167 & (9.36\%)\\
@@ -582,7 +565,7 @@ False Information & 33 & 1.85\%\\
 Don't know & 31 & 1.74\%\\
 Aesthetics 	& 19 & 1.06\%\\
 Don't care 	& 11 & 0.62\%\\
-
+\hline
 \end{tabular}
 \caption{A table listing the self-reported most common risks associated with owning a wearable device.}
 \label{open-responses}
