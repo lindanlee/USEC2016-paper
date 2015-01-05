@@ -235,9 +235,9 @@ Based on our data, we observed that the largest effect seemed to stem from who t
 %SE: Edited up to here.
 %Comment on independence of observations, differences between public/work, and end the subsection
 
-Out of all the recipients, friends are considered to be the least upsetting audience, but not too significantly (do stats-y thing here). There might have been a perception of sharing which resulted in sharing with the public being less upsetting than sharing with work contacts--people assumed that sharing it with work was a push and sharing it to the public would require people to pull the available information which was shared.
+{\color{red} can you comment on the independence, since you have the csv? it would be a pain for me to do find out how many people got the same situational questions which only differ by recipient. :(} There might have been a perception of sharing which resulted in sharing with the public being less upsetting than sharing with work contacts--people assumed that sharing it with work was a push and sharing it to the public would require people to pull the available information which was shared.
 
-Friends 69.43\%, Work 74.12\%, Public 72.36\%, AppOnly 42.3\%
+Participants had different sensitivities depending on if they perceived that their data would be shared with an application or a person. We found the top and bottom ten concerns with respect to a non-human audience (app's servers) versus a human audience (friends, work contacts, and public). Participants were more uncomfortable about privacy and theft (i.e. frequency of sex, photos at home, and passcodes to doors). when sharing data with an application. They were also more uncomfortable sharing phone or text conversations and credentials (i.e. username and password for websites, credit card information) to a human audience than to a server. Additionally, they concerned more concerned On the other hand, participants were comfortable sharing behavioral patterns and personal opinions (i.e. phone use, opinions of people, eye patterns, and food eaten) with an app's server rather than a human audience. For a human audience, participants were most comfortable sharing data which would come up in conversation (i.e music on their device, if one was having fun, and if one if busy or interruptible), but found these topics more disturbing to share with an app's server.   {\color{red} should we creatively include stats for these in the appendix, in a space-conscious way?}. 
 
 %SE: This doesn't add much, the numbers can be put in the text to save space.
 %LL: Agreed. 
@@ -247,6 +247,25 @@ Friends 69.43\%, Work 74.12\%, Public 72.36\%, AppOnly 42.3\%
 %	\includegraphics[width=0.5\textwidth]{recipient.png}
 %	\caption{(This is a placeholder! TODO: generate a better plot for data recipient)}
 %\end{figure}
+
+% LL: I thought this would be better, but then it looked stupid, so I commented it out.
+
+%\begin{table}[t]
+%\begin{center}
+%\begin{tabular}{|l|c|}
+%\hline
+%Recipients	& VUR \\
+%\hline
+%App	& 42.3\% \\
+%Friends & 69.4\% \\
+%Work & 75.1\% \\
+%Public & 72.4\% \\
+%\hline
+%\end{tabular}
+%\caption{VUR rates by recipient.}
+%\label{whomVUR}
+%\end{center}
+%\end{table}
 
 \begin{table}[t]
 \begin{center}
@@ -301,96 +320,94 @@ Work-Public&  5.05 & <0.0246 & 5,133	& 0.001\\
 %\label{recipient}
 %\end{center}
 %\end{table}				
-					
-We performed an exploratory analysis to examine the effect of data recipient using a chi square test; in order to do this, the assumption about independence of observations was violated. However, we do not believe that this impacted the outcome of the statistical test based on the randomization of treatments across all conditions, as well as the very large sample size. To examine whether the violation of this assumption impacted our results, we further created a mixed effects model, in order to isolate the subjects variable (i.e., to examine the extent to which random effects stemming from individual differences may be responsible for the effects that we observed). When we perform the same tests on many subsets of questions, with one answer randomly sampled from each participant (preserving assumption about the independence of observations), the results are still equivalent. 
 
-\begin{table}[t]
-\begin{center}
-\begin{tabular}{| l | c |}
-<data> & VUR  \\
-social security number & 98.04\% \\
-a video of you unclothed & 97.44\% \\
-bank account information & 97.10\% \\
-recordings of your work conversations & 96.97\% \\
-an incriminating/embarrassing photo of you & 96.36\% \\
-a photo of you unclothed & 96.30\% \\
-credit card information & 95.92\% \\
-username and password for websites & 95.41\% \\
-a video of you entering in your PIN & 93.91\% \\
-recordings of your phone conversations & 93.88\% \\
-\end{tabular}
-\caption{A table of the top 10 upsetting <data> types, with respect to <recipient> types friends, work, and public.}
-\label{sharedtop10}
-\end{center}
-\end{table}
-
-\begin{table}[t]
-\begin{center}
-\begin{tabular}{| l | c |}
-%starting from #63
-<data> &  VUR  \\
-bank account information & 90.91\% \\
-a video of you unclothed & 90.62\% \\
-social security number  & 88.68\% \\
-video of you entering your PIN & 88.57\% \\
-an incriminating/embarrassing photo of you & 78.05\% \\
-a photo of you unclothed & 77.78\% \\
-a video of you entering a passcode to a door & 75.00\% \\
-when and how much you have sex & 73.08\% \\
-an incriminating/embarrassing video of you & 71.88\% \\
-a random (inward-facing) photo of you at home & 66.67\% \\
-\end{tabular}
-\caption{A table of the top 10 upsetting <data> types, respect to <recipient> app's server only (didn't share it with anyone else).}
-\label{notsharedtop10}
-\end{center}
-\end{table}
-
-\begin{table}[t]
-\begin{center}
-\begin{tabular}{| l | c |}
-%starting from #63
-<data> &  VUR  \\
-your name & 47.25\% \\
-when and how much you exercise & 46.07\% \\
-when you were happy or having fun & 38.10\% \\
-what television shows you watch & 35.96\% \\
-when you are busy or interruptible & 34.34\% \\
-your heart rate & 32.28\% \\
-music from your device & 31.87\% \\
-your age & 29.67\% \\
-the language you speak & 20.95\% \\
-your gender & 16.81\% \\
-\end{tabular}
-\caption{A table of the bottom 10 upsetting <data> types, with respect to <recipient> types friends, work, and public.}
-\label{sharedbottom10}
-\end{center}
-\end{table}
-
-
-\begin{table}[t]
-\begin{center}
-\begin{tabular}{| l | c |}
-%starting from #63
-<data> &  VUR  \\
-when and how much you exercise & 16.67\% \\
-how much you use your phone & 15.79\% \\
-your age & 14.29\% \\
-how much you like the people you interact with & 13.79\% \\
-when, what, and how much you ate & 12.50\% \\
-which television shows you watch & 11.43\% \\
-your gender & 9.52\% \\
-your heart rate & 9.09\% \\
-eye movement patterns (for eye tracking) & 6.98\% \\
-the language you speak & 2.50\% \\
-\end{tabular}
-\caption{A table of the bottom 10 upsetting <data> types, respect to <recipient> app's server only (didn't share it with anyone else).}
-\label{notsharedbottom10}
-\end{center}
-\end{table}
-
-Commonly, bank info, SSN, PIN, embarrassing photo, naked photo, naked video were considered to be highly sensitive. When people perceived that the data would be shared with the app only, the other top five concerns included the passcode to a door, how frequently one has sex, embarrassing videos, and photos at home. When people perceived that the data would be shared with a human audience, their other top concerns were work conversations, credit card information, username and password combinations for websites, and phone conversations. When data is perceived to be shared by an app, people are more concerned with issues of being spied on or tracked, whereas when data is perceived to be shared with an individual, people are concerned more with theft or reputation. 
-
-On the other hand, exercise details, age, tv shows, gender, heart rate, and language were commonly considered to be lease concerning. When people perceived that the data would be shared with the app only, the other indifferent data included phone use, how much one liked the people around, when and what you ate, and eye patterns. When people perceived that the data would be shared with a human audience, the least concerning data included one's name, if one was having fun, music on the device, and if one was busy or interruptible. When sharing with an application, information otherwise considered personal such as phone use, opinions of people, food eaten, or eye patterns were okay to share, since these seem like useful information to improve one's device experience. However, people are not likely to share the same with people, but are more comfortable with sharing data about topics which would come up in causal conversation.
+%\begin{table}[t]
+%\begin{center}
+%\begin{tabular}{| l | c |}
+%<data> & VUR  \\
+%social security number & 98.04\% \\
+%a video of you unclothed & 97.44\% \\
+%bank account information & 97.10\% \\
+%recordings of your work conversations & 96.97\% \\
+%an incriminating/embarrassing photo of you & 96.36\% \\
+%a photo of you unclothed & 96.30\% \\
+%credit card information & 95.92\% \\
+%username and password for websites & 95.41\% \\
+%a video of you entering in your PIN & 93.91\% \\
+%recordings of your phone conversations & 93.88\% \\
+%\end{tabular}
+%\caption{A table of the top 10 upsetting <data> types, with respect to <recipient> types friends, work, and public.}
+%\label{sharedtop10}
+%\end{center}
+%\end{table}
+%
+%\begin{table}[t]
+%\begin{center}
+%\begin{tabular}{| l | c |}
+%%starting from #63
+%<data> &  VUR  \\
+%bank account information & 90.91\% \\
+%a video of you unclothed & 90.62\% \\
+%social security number  & 88.68\% \\
+%video of you entering your PIN & 88.57\% \\
+%an incriminating/embarrassing photo of you & 78.05\% \\
+%a photo of you unclothed & 77.78\% \\
+%a video of you entering a passcode to a door & 75.00\% \\
+%when and how much you have sex & 73.08\% \\
+%an incriminating/embarrassing video of you & 71.88\% \\
+%a random (inward-facing) photo of you at home & 66.67\% \\
+%\end{tabular}
+%\caption{A table of the top 10 upsetting <data> types, respect to <recipient> app's server only (didn't share it with anyone else).}
+%\label{notsharedtop10}
+%\end{center}
+%\end{table}
+%
+%\begin{table}[t]
+%\begin{center}
+%\begin{tabular}{| l | c |}
+%%starting from #63
+%<data> &  VUR  \\
+%your name & 47.25\% \\
+%when and how much you exercise & 46.07\% \\
+%when you were happy or having fun & 38.10\% \\
+%what television shows you watch & 35.96\% \\
+%when you are busy or interruptible & 34.34\% \\
+%your heart rate & 32.28\% \\
+%music from your device & 31.87\% \\
+%your age & 29.67\% \\
+%the language you speak & 20.95\% \\
+%your gender & 16.81\% \\
+%\end{tabular}
+%\caption{A table of the bottom 10 upsetting <data> types, with respect to <recipient> types friends, work, and public.}
+%\label{sharedbottom10}
+%\end{center}
+%\end{table}
+%
+%
+%\begin{table}[t]
+%\begin{center}
+%\begin{tabular}{| l | c |}
+%%starting from #63
+%<data> &  VUR  \\
+%when and how much you exercise & 16.67\% \\
+%how much you use your phone & 15.79\% \\
+%your age & 14.29\% \\
+%how much you like the people you interact with & 13.79\% \\
+%when, what, and how much you ate & 12.50\% \\
+%which television shows you watch & 11.43\% \\
+%your gender & 9.52\% \\
+%your heart rate & 9.09\% \\
+%eye movement patterns (for eye tracking) & 6.98\% \\
+%the language you speak & 2.50\% \\
+%\end{tabular}
+%\caption{A table of the bottom 10 upsetting <data> types, respect to <recipient> app's server only (didn't share it with anyone else).}
+%\label{notsharedbottom10}
+%\end{center}
+%\end{table}
+%
+%Commonly, bank info, SSN, PIN, embarrassing photo, naked photo, naked video were considered to be highly sensitive. When people perceived that the data would be shared with the app only, the other top five concerns included the passcode to a door, how frequently one has sex, embarrassing videos, and photos at home. When people perceived that the data would be shared with a human audience, their other top concerns were work conversations, credit card information, username and password combinations for websites, and phone conversations. When data is perceived to be shared by an app, people are more concerned with issues of being spied on or tracked, whereas when data is perceived to be shared with an individual, people are concerned more with theft or reputation. 
+%
+%On the other hand, exercise details, age, tv shows, gender, heart rate, and language were commonly considered to be lease concerning. When people perceived that the data would be shared with the app only, the other indifferent data included phone use, how much one liked the people around, when and what you ate, and eye patterns. When people perceived that the data would be shared with a human audience, the least concerning data included one's name, if one was having fun, music on the device, and if one was busy or interruptible. When sharing with an application, information otherwise considered personal such as phone use, opinions of people, food eaten, or eye patterns were okay to share, since these seem like useful information to improve one's device experience. However, people are not likely to share the same with people, but are more comfortable with sharing data about topics which would come up in causal conversation.
 
 
 \subsubsection{Data Type}
