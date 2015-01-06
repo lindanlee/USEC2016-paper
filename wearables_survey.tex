@@ -56,7 +56,7 @@
 
 
 
-\title{A Survey of Wearable Device Risk Perceptions}
+\title{Risk Perceptions for Wearable Devices}
 %\titlenote{(Does NOT produce the permission block, copyright information nor page numbering). For use with ACM\_PROC\_ARTICLE-SP.CLS. Supported by ACM.}}
 
 %\subtitle{[Extended Abstract]
@@ -68,15 +68,14 @@
 \author{
  \alignauthor Linda N. Lee\textsuperscript{1}, Serge Egelman\textsuperscript{1,3}, Joong Hwa Lee\textsuperscript{2}, David Wagner\textsuperscript{1}\\
    \vspace{0.5em}
-   \affaddr{\textsuperscript{1}University of California, Berkeley, \{lnl,egelman,daw\}@cs.berkeley.edu}\\
-   \affaddr{\textsuperscript{2}University of California, Berkeley, \{dlwndghk94\}@berkeley.edu}\\
+   \affaddr{\textsuperscript{1}University of California, Berkeley, \{lnl,egelman,daw\}@cs.berkeley.edu}, \textsuperscript{2}dlwndghk94@berkeley.edu\\
    \affaddr{\textsuperscript{3}International Computer Science Institute, egelman@icsi.berkeley.edu}\\
 }
 
 \maketitle
 
 \begin{abstract}
-We performed an online survey to examine risk perceptions surrounding wearable computing devices. We controlled for different data types that might be captured, who might have access to that data, and whether it was captured on a wearable device or a smartphone (i.e., to control for familiarity with the technology). We surveyed 1,784 participants about 72 data types, 4 data recipients, and 2 devices to quantify risk perceptions across a wide range of scenarios, along with an evaluation of which factors contribute to the severity of these risks. Following previous work, we also asked participants to perform a risk/benefit analysis comparing 20 new technologies with other well-established technologies. The results of this study can be used to guide future research in wearable device security, especially research that helps to protect sensitive data and guides the design of effective privacy notifications and indicators.
+We performed an online survey to examine risk perceptions surrounding wearable computing devices. We examine different data types that might be captured,  and the effect of who the data is shared with. We surveyed 1,784 participants about 72 data types and 4 data recipients to quantify risk perceptions across a wide range of scenarios, and evaluate of which factors contribute to the severity of these risks. Following previous work, we also asked participants to perform a risk/benefit analysis comparing 20 new technologies with other well-established technologies. The results of this study can be used to guide future research in wearable device security, especially research that helps to protect sensitive data and guides the design of effective privacy notifications and indicators.
 \end{abstract}
 
 % A category with the (minimum) three required fields
@@ -91,20 +90,20 @@ We performed an online survey to examine risk perceptions surrounding wearable c
 %%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
-Wearable technology has many potential benefits, ranging from a more natural, human-centered interface for computing, to healthier living through fitness tracking. Wearable devices, or ``wearables,'' are the new frontier of ubiquitous computing and big data, constantly capturing data and interpreting information to deliver insights to the user. Wearbles are gaining a lot of attention. Forbes has named 2014 the ``Year of Wearable Technology''~\cite{Forbes}, and market research companies estimate that 52\% are aware of wearables and among those, 33\% said they were likely to buy one~\cite{NPD}. 
+With their ability to constantly capture data and help users, wearable devices, or ``wearables,'' are the new frontier of ubiquitous computing. Wearable technology has many potential benefits, ranging from a more natural, human-centered interface for computing, to healthier living through fitness tracking. Forbes has named 2014 the ``Year of Wearable Technology''~\cite{Forbes}, and one of the top 25 market research companies estimates that 52\% of technology consumers are aware of wearables and among those, 33\% said they were likely to buy one~\cite{NPD}. 
 
-A survey of 3,956 respondents with high interest in wearables found that the most popular devices are fitness bands (61\%), followed by smart watches (45\%) and mobile health devices (17\%)~\cite{Nilsen}. It is estimated that 20\% of the general population own at least one wearable and 10\% use at least one wearable in their daily lives~\cite{WearableStatNews}. The demographics of wearables consumers are young and affluent--48\% of owners are between 18 and 34 years old, and 29\% make over \$100,000 per year. However, it is expected that this \$700 million industry will reach other demographics soon as the prices of wearable devices drop~\cite{cmo}. 
+The market for wearable devices is currently in its infancy, so it is hard to predict what device and applications will be most popular, but we use the current interest as a baseline. A survey of 3,956 respondents with high interest in wearables found that, currently, the most popular devices are fitness bands (61\%), followed by smart watches (45\%) and mobile health devices (17\%)~\cite{Nilsen}. It is estimated that 20\% of the general population own at least one wearable and 10\% use at least one wearable in their daily lives~\cite{WearableStatNews}. The demographics of wearables consumers are young: 48\% of owners are between 18 and 34 years old. However, it is expected that this \$700 million industry will reach other demographics~\cite{cmo}. 
 
-Despite high early adoption rates, wearable device security and privacy concerns are rampant. Many of these concerns relate to users' activities being exposed to the public without their awareness or consent. For instance, Fitbit's fitness profiles were public by default and also allowed users to track sex as an exercise~\cite{Fitbit}, resulting in the inadvertent disclosure of sensitive user information. In other instances, public discomfort prevented companies from enabling certain capabilities; Google's Glass had facial recognition disabled upon release to mitigate potential privacy concerns~\cite{GlassDetection}.
+Wearable devices bring with them some new potential security and privacy concerns. Many of these concerns relate to users' activities being exposed to the public without their awareness or consent. For instance, Fitbit's fitness profiles were public by default and also allowed users to track sex as an exercise~\cite{Fitbit}, resulting in the inadvertent disclosure of sensitive user information. In other instances, public discomfort prevented companies from enabling certain capabilities; Google Glass apos are prohibited from using facial recognition to mitigate potential privacy concerns~\cite{GlassDetection}.
 
-To avoid scandalous breaches of privacy and public opposition to new capabilities, it is critical that we understand user concerns surrounding wearable devices---before wearables become increasingly ubiquitous and powerful~\cite{Implants}. A better understanding of users' risk perceptions will enable researchers and companies alike to focus on the most concerning factors for the user---allowing research for effective warnings of relevant events and an informed focus of protecting the most sensitive data.
+To avoid scandalous breaches of privacy and public opposition to new capabilities, it is critical that we understand user concerns surrounding wearable devices before wearables become increasingly ubiquitous and powerful~\cite{Implants}. A better understanding of users' risk perceptions will enable researchers and companies to focus on users' greatest concerns. The goal of this paper is to gain a better sense of what those concerns might be. 
 
-To this end, we surveyed 1,784 Internet users to determine their risk perceptions surrounding the operation of wearable devices. In this work, we contribute the following: \\[-0.8cm]
+To this end, we surveyed 1,784 Internet users to determine their risk perceptions regarding wearable devices. In this work, we contribute the following: \\[-0.8cm]
 
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-\item We compare users' perceptions of a wide range of privacy and security risks surrounding wearable devices. In general, users care much more about the recipient of the data, than the type of data.
+\item We compare users' perceptions of a wide range of privacy and security risks with wearable devices. Users care much more about the recipient of the data, than the type of data.
 \item We observed that users make little distinction between sharing data with friends, co-workers, or the general public, but are relatively comfortable with an application's servers receiving their data.
-\item While our participants viewed the data-collection capabilities of wearable devices as benign relative to more accepted technologies, we hypothesize that this is due to their lack of exposure to these newer technologies.
+\item Our participants viewed the data-collection capabilities of wearable devices as benign compared to more accepted technologies. However, we suspect that this may be due to their lack of exposure to these newer technologies.
 %\item We report people's self-reported top concerns for wearable devices. Privacy, by far, is the top concern. Other notable risks include information security, long-term health risks from use, high financial cost, and change in social norms. 
 \end{itemize}
 
