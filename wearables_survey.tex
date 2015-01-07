@@ -226,12 +226,11 @@ In this section, we present our survey results. We first discuss participants' r
 In this section, we discuss the factors impacting participants' concern levels for each scenario: the data recipient, the data type, and whether or not the scenario occurred on a wearable device or a smartphone. We analyze each factor individually, as well as present a statistical model of participants' concerns as a function of all of these factors, including demographic traits.
 
 \subsubsection{Data Type}
-blah emph: this matters most  blaaah. The 10 most and least concerning data types can be seen in Table \ref{top10}.
+Based on our data, we observed that the largest effect stemmed from the type of data being shared in a given scenario. We present various statistical models in section \ref{sec:regression} to support this conclusion. Due to space limitations, we are unable to show results of the statistical analyses respect to the significance of the VUR rankings of the 88 data types. The 10 most and 10 least concerning data types can be seen in Table \ref{top10}. 
 
-%%add in stats on top 10, 20, bottom 10, 20.
-Regardless of the data recipient or the device, participants were most concerned about photos and videos, especially if they contained embarrassing content, nudity, or financial information. Information that could be used to impersonate someone (e.g., usernames/passwords for websites) or invade privacy (photos of someone at home) were also among the most concerning data types. 
+Regardless of the data recipient or the device, participants were most concerned about photos and videos, especially if they contained embarrassing content, nudity, or financial information. As seen in Table \ref{top10}, photos and videos accounted for 5 of the top 10 concerns. Information that could be used to impersonate someone (e.g., usernames/passwords for websites) or invade privacy (photos of someone at home) were also among the most concerning data types. 
 
-The least concerning data types were all related in that they all consisted of information that could be observed through observations of public behavior. For instance, demographic information (e.g., age, gender, language spoken). It is possible that people rated some of these as unconcerning because they believed that many entities already track this data (e.g., shows watched, music listened to, exercise patterns).
+Also regardless of the data recipient, the least concerning data types mostly consisted of information that could be observed through observations of public behavior. For instance, demographic information (e.g., age, gender, language spoken). It is possible that people rated some of these as unconcerning because they believed that many entities already track this data (e.g., shows watched, music listened to, exercise patterns).
 
 \begin{table}[t]
 \begin{center}
@@ -523,7 +522,8 @@ We observed that participants' responses to our scenarios were correlated with s
 
 While we initially observed an effect on VURs based on whether or not participants claimed to already own wearable devices (57.0\% vs. 60.8\%, respectively; Mann-Whitney $U=202,896$, $p<0.032$), this difference did not remain significant upon correcting for multiple testing (Bonferroni corrected $\alpha=0.01$), nor did the effect of gender. Finally, we observed no correlation between education level and VUR.
 
-\subsubsection{Regression Model} 
+\subsubsection{Regression Models} 
+\label{sec:regression}
 In order to examine the relative effect of each factor on participants' VURs, we constructed several statistical models to predict whether a participant would be ``very upset'' with a given scenario based on the data type, device, data recipient, and their demographic factors (i.e., age, education, gender, and privacy attitudes). We performed binary logistic regressions using generalized estimating equations, which account for our repeated measures experimental design (i.e., each participant contributed multiple data points).
 
 \begin{table}
@@ -569,10 +569,6 @@ Table \ref{regression} shows the various models that we examined and the Quasi-A
 
 
 \subsection{Risk and Benefit Rankings} 
-
-
-
-
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=0.47\textwidth]{riskbenefit.pdf}
