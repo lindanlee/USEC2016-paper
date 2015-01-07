@@ -54,8 +54,6 @@
 
 \begin{document}
 
-
-
 \title{Risk Perceptions for Wearable Devices}
 %\titlenote{(Does NOT produce the permission block, copyright information nor page numbering). For use with ACM\_PROC\_ARTICLE-SP.CLS. Supported by ACM.}}
 
@@ -92,7 +90,7 @@ We performed an online survey to examine risk perceptions surrounding wearable c
 
 %\terms{Human Factors}{Measurement}{Security}
 
-\keywords{Privacy, Security, User Studies, Risk Perception, Ubiquitous Computing, Wearables} % NOT required for Proceedings
+\keywords{Privacy, Security, User Studies, Risk Perception, Ubiquitous Computing, Wearable Devices} % NOT required for Proceedings
 
 %%%%%%%%%%%%%%%%%%%
 %%%         PAPER BODY         %%%
@@ -119,22 +117,33 @@ To this end, we surveyed 1,784 Internet users to determine their risk perception
 %%%%%%%%%%%%%%%%%%%
 
 \section{Methodology}
-%David TODO: add sentence about the methodology motivation in the overview paragraph. 
-Our survey consisted of multiple sections. In one section, we presented participants with scenarios surrounding a wearable device and asked them to rate their level of concern if each scenario were to happen. Next, we asked participants about similar scenarios, substituting smartphones for the wearable device in order to see whether participants' familiarity with the devices impacted their risk perceptions (i.e., we expected all participants to be much more familiar with smartphones). Following those questions, we asked participants to compare the risks and benefits of wearable technologies with better understood technologies. Finally, we collected demographic information, which included a privacy concern scale, and whether participants owned any wearable devices. 
+
+Our survey contained two main sections.
+In one section, we presented participants with scenarios---something undesirable a wearable device might do---and asked them to rate their level of concern if each scenario were to happen.
+This was intended to elicit their perception of the severity of the impact of the risk.
+In the other section, we asked participants to compare the risks and benefits of wearable technologies with better understood technologies, following the same methodology as a seminal study in risk perception from Fischhoff \etal \cite{Fischhoff}.
+Our survey design is based on two prior risk perception studies, as we describe next.
+
+%Finally, we collected demographic information, which included a privacy concern scale, and whether participants owned any wearable devices. 
 
 %LL: this commented out for anonymity; can comment back in later.
 %%% The full survey can be found at http://www.surveygizmo.com/s3/1657924 /Wearables-Threats-User-Survey. 
 
 %::LL: David, I spliced the related work; the text related to work directly related to our research to introduce/motivate the methodology remains here. The rest were put at the end of the paper, as you requested. 
  
-\subsection{ROUGH: Methodology Motivation} %LL: this text was previously inside related work
-{\color{red} Note: this section is a placeholder. Maybe we should put as a subsection inside the methodology section. TODO: reword so that these works seem not like related work, but as motivation for our methodology; i.e. ``here are two methodologies from relevant work we chose to use for reasons.'' We can also say that we extend their works.}
 
-\subsubsection{Smartphone User Concerns} %LL: this text was previously inside related work
-Among such studies, Felt \etal were among the first to examine the security concerns of smartphone users using a large-scale online survey~\cite{Felt}. Their survey asked 3,115 smartphone users about 99 risks associated with various smartphone privileges. Participants were asked how upset they would be if a certain action had occurred without their permission. Participants rated each situation on a Likert scale ranging from ``indifferent (1)'' to ``very upset (5).'' Our work builds upon this study, by aiming to evaluate the types of concerns that users have surrounding future wearable device capabilities, and then to compare those concerns to concerns surrounding more established technologies.
+\subsection{Methodology Motivation}
 
-\subsubsection{Technology Risk Perception} %LL: this text was previously inside related work
-Fischhoff \etal performed a seminal technology risk perception experiment in which they studied how people perceived the risks and benefits of 30 common activities and technologies~\cite{Fischhoff}. In their study, participants were prompted to separately rate the risks and benefits of 30 activities and technologies. They were primed to think about all people affected by the technology, and to think about long-term vs. short-term risks and benefits. The participants rated these technologies with respect to each other on a numerical scale, being instructed to rate the least risky or least beneficial technology a 10 and scaling the ratings linearly (i.e. a technology with risk rating 20 would be considered twice as risky compared to a technology with a risk rating of 10). Using this methodology, they were able to categorize different technologies based on whether they were high-risk/high-benefit, low-risk/low-benefit, and so forth. 
+\subsubsection{Smartphone User Concerns}
+Felt \etal previously studied the security concerns of smartphone users by conducting a large-scale online survey~\cite{Felt}. Their survey asked 3,115 smartphone users about 99 risks associated with various smartphone privileges. Participants were asked how upset they would be if a certain action had occurred without their permission. Participants rated each situation on a Likert scale ranging from ``indifferent (1)'' to ``very upset (5).''
+Our methodology follows that study closely, but with a different set of scenarios that are appropriate to wearable devices.
+
+\subsubsection{Technology Risk Perception}
+Fischhoff \etal performed a seminal study of perceived risks with 30 widely used technologies~\cite{Fischhoff}. In their study, participants were asked to separately rate the risks and benefits of these technologies. They were told to think about all people affected by the technology, and to think about long-term vs. short-term risks and benefits. Then, the participants rated these technologies with respect to each other on a numerical scale, being instructed to rate the least risky or least beneficial technology a 10 and scaling the ratings linearly (e.g., a technology with risk rating 20 would be considered twice as risky compared to a technology with a risk rating of 10).
+We apply their methodology to evaluate perceived risks and benefits of several technologies related to wearable computing.
+
+
+%Using this methodlogy, they were able to categorize different technologies based on whether they were high-risk/high-benefit, low-risk/low-benefit, and so forth. 
 
 \subsection{Survey Questions}
 In our survey, each participant answered 27 questions, across five different sections:   \\[-.8cm]
@@ -179,7 +188,10 @@ We presented participants with a second set of scenarios in order to control for
 \subsubsection{Risk and Benefit Assessment}
 In addition to investigating reactions to particular scenarios, we also examined broad perceptions of various new technologies, and how those perceptions compared to other well-established technologies. To this end, we modeled this section of the survey after the seminal risk perception study by Fischhoff \etal\cite{Fischhoff}, in which they asked participants to relatively rank several technologies by both their risk and benefit to society. We asked participants to perform this exercise for 4 technologies previously examined by Fischhoff {\it et al.}: handguns, motorcycles, lawnmowers, and electricity. We chose these technologies because they represented varying levels of risks and benefits.
 
-Alongside the 4 well-established technologies, we asked participants to evaluate one of 20 possible technologies relevant to wearable computing: the Internet, email, laptops, smartphones, smart watches, fitness trackers, Google Glass, Cubetastic3000, discrete camera, discrete microphone, facial recognition, facial detection, voice recognition, voice-based emotion detection, location tracking, speech-to-text, language detection, heart rate detection, age detection, and gender detection. Many of these technologies were selected from those studied by Egelman \etal\cite{Egelman2015}.
+Alongside the 4 well-established technologies, we asked participants to evaluate one of 20 possible technologies relevant to wearable computing: the Internet, email, laptops, smartphones, smart watches, fitness trackers, Google Glass, Cubetastic3000, discrete camera, discrete microphone, facial recognition, facial detection, voice recognition, voice-based emotion detection, location tracking, speech-to-text, language detection, heart rate detection, age detection, and gender detection. Note that we ask about familiar new technologies such as the internet, general classes and specific artifacts of wearable devices, and a range of new capabilities. 
+
+%LL: we didn't pick it because they were studied by this study, so this is a bit distracting, especially since the related work is at the end instead of before this.. 
+%Many of these technologies were selected from those studied by Egelman \etal\cite{Egelman2015}.
 
 To parallel Fischhoff {\it et al.}'s risk perception study, we gave our participants a similar prompt to numerically express the perceived gross risk/gross benefit over a long period of time for all parties involved. We randomized whether they performed the ranking for risks or benefits first. The prompt is listed in Appendix \ref{sec:prompt}. The question format was as follows:
 
@@ -551,7 +563,8 @@ Table \ref{regression} shows the various models that we examined and the Quasi-A
 
 
 \subsection{Risk and Benefit Rankings} 
-When assessing new technologies, participants generally rated all new technologies and new wearables similarly, considering them low risk and low benefit (see figure \ref{fig:techplot}). We suspect that these similar assessments are because most are not consciously aware of the possibilities of these technologies or how they are being used today. The most risky and most beneficial technologies reveal the list of most familiar technologies for the average user (internet, laptops, email, smartphones, etc.). 
+
+When assessing new technologies, participants generally rated all new technologies and new wearables similarly, considering them low risk and low benefit (see figure \ref{fig:techplot}). We suspect that these similar assessments are because most are not consciously aware of the possibilities of these technologies or how they are being used today.
 
 
 \begin{figure}
@@ -561,7 +574,8 @@ When assessing new technologies, participants generally rated all new technologi
 	\label{fig:techplot}
 \end{figure}
 
-Notably, technologies perceived to be beneficial include location tracking and heart rate detection. Again, we believe this is the result of exposure people have to these technologies--GPS or other location-based applications on smart phones and fitness trackers are the most popular type of wearable device. Technologies considered to be risky, such as a discrete camera and facial detection, seemed to be based on media exposure or general aversion to privacy invasion. However, people are becoming increasingly aware of such risks and are comparing these risks of privacy invasion to real physical risks--for instance, the capacity for facial detection on a wearable device is perceived to be almost as risky as interacting with a physical lawnmower. It is fair to say that, these assessments of the most risky or beneficial technologies may not be the most accurate, but do reflect the exposure of various technologies to the general public and also prove that people do perceive risks in a real way related to these technologies. 
+
+Participants rated the the most familiar technologies as the most beneficial; 5 most beneficial technologies were internet, laptops, email, smartphones, and location tracking. Again, we believe this is the result of exposure people have to these technologies--most people are exposed to these devices and use location-based applications. The most risky technologies were ones perceived to be privacy-invasive; 5 most risky technologies were facial recognition, internet, discreet video camera, location tracking, and facial detection. People are becoming increasingly aware of such privacy risks and are comparing these privacy invasion to real physical risks--for instance, the capacity for facial detection on a wearable device is perceived to be almost as risky as interacting with a physical lawnmower. It is fair to say that, these assessments of the most risky or beneficial technologies may not be the most accurate, but do reflect the exposure of various technologies to the general public and also prove that people do perceive risks in a real way related to these technologies. 
 
 \subsection{Perceived Concerns for Wearable Devices}
 So far, participants had responded to questions regarding specific scenarios or assessed technologies presented to them. For completeness of the survey, we also wanted to capture the participants' general reactions to wearable devices as a whole. To do this, we asked the participants an open-ended question regarding the most likely risks associated with owning and interacting with wearable devices.
@@ -611,11 +625,12 @@ Other significant secondary concerns included being unaware of what the device i
 We take this section to discuss complementary future research directions in fields of privacy, ubiquitous computing, and user studies, along with specific limitations of this survey. 
 
 \subsection{Future Research Directions}
+Wearables are still in their infancy. Perceptions of situations and new capabilities will change rapidly with new capabilities and increased exposure, respectively. However, videos, and textual information is considered to be significantly sensitive by our participants, along with past participants of smartphone user perception studies. Various systems which can detect and take actions for sensitive objects in photos and videos will be critical as wearables and other devices become more ubiquitous.
 
-Our survey shows that photos, videos, and textual information is generally considered to be very sensitive. Various systems which can detect and take actions for sensitive objects in photos and videos will be critical as wearables and other devices become more ubiquitous. We also show that users are significantly more willing to offer certain data if it will only be shared with the application; and additionally, that users consider privacy as their number-one concern. Research in effective sandboxing and other software protections, effective notifications, and usable indicators are encouraged at this time. Lastly, exploratory research investigating user-reported concerns, are relevant--especially the social impact of wearable devices, measurement of inaccuracy of sensor readings presented by wearables, and rate of accidental information sharing. 
+While privacy and security concerns were expected, consider these unexpected user concerns as starting points for future research: the high financial costs of wearables, health concerns of constant device use, safety issues related to device operation, the social impact of wearable devices, and improving aesthetics of wearables.  
 
 \subsection{Limitations}
-One of the main limitations of this work is that our participants might not have interest, or an accurate idea, of wearables and their capabilities. 83\% of our participants reported that they do not own a wearable device, but at this time, about ~15\% of the general population own and use wearable devices \cite{Nilsen,WearableStatNews}, so our study is reflective of the status quo. We believed that getting a representative survey base was a useful endeavor, although we could have easily recruited only wearable device owners or people specifically interested in wearables. However, that will also have its own bias and limitations as well, since they would not reflect the general population. We expect user perceptions to change as rapidly as wearable technologies and the rate of adoption change. 
+One of the main limitations of this work is that our participants might not have interest, or an accurate idea, of wearables and their capabilities. 83\% of our participants reported that they do not own a wearable device, but at this time, about ~15\% of the general population own and use wearable devices \cite{Nilsen,WearableStatNews}, which makes our study reflective of the status quo. We believed that getting a representative survey base was a useful endeavor, although we could have easily recruited only wearable device owners or people specifically interested in wearables. However, that will also have its own bias and limitations as well, since they would not reflect the general population. We expect user perceptions to change as rapidly as wearable technologies and the rate of adoption change. 
 
 % LL: David, thanks for polishing up the related work!
 %LL: Related work put at the end upon David's Suggestion. Paper flow is much better. 
