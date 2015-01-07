@@ -119,12 +119,12 @@ To this end, we surveyed 1,784 Internet users to determine their risk perception
 \section{Methodology}
 
 Our survey contained two main sections.
-In one section, we presented participants with scenarios---something undesirable a wearable device might do---and asked them to rate their level of concern if each scenario were to happen.
+In one section, we presented participants with several scenarios---something undesirable that might happen with their wearable device---and asked them to rate their level of concern if each scenario were to happen.
 This was intended to elicit their perception of the severity of the impact of the risk.
-In the other section, we asked participants to compare the risks and benefits of wearable technologies with better understood technologies, following the same methodology as a seminal study in risk perception from Fischhoff \etal \cite{Fischhoff}.
+In the other section, we asked participants to compare the risks and benefits of wearable technologies to better understood technologies, following the same methodology as a seminal study in risk perception from Fischhoff \etal \cite{Fischhoff}.
 Our survey design is based on two prior risk perception studies, as we describe next.
 
-%Finally, we collected demographic information, which included a privacy concern scale, and whether participants owned any wearable devices. 
+%Finally, we collected demographic information, which included a privacy concern scale and whether participants owned any wearable devices. 
 
 %LL: this commented out for anonymity; can comment back in later.
 %%% The full survey can be found at http://www.surveygizmo.com/s3/1657924 /Wearables-Threats-User-Survey. 
@@ -134,9 +134,9 @@ Our survey design is based on two prior risk perception studies, as we describe 
 
 \subsection{Methodology Motivation}
 
-\subsubsection{Smartphone User Concerns}
-Felt \etal previously studied the security concerns of smartphone users by conducting a large-scale online survey~\cite{Felt}. Their survey asked 3,115 smartphone users about 99 risks associated with various smartphone privileges. Participants were asked how upset they would be if a certain action had occurred without their permission. Participants rated each situation on a Likert scale ranging from ``indifferent (1)'' to ``very upset (5).''
-Our methodology follows that study closely, but with a different set of scenarios that are appropriate to wearable devices.
+\subsubsection{Smartphone Risk Scenarios}
+Felt \etal previously studied the security concerns of smartphone users by conducting a large-scale online survey~\cite{Felt}. Their survey asked 3,115 smartphone users about 99 risk scenarios. Participants were asked how upset they would be if a certain action had occurred without their permission. Participants rated each situation on a Likert scale ranging from ``indifferent (1)'' to ``very upset (5).''
+Our methodology follows that study closely, but with a different set of scenarios chosen to shed light on security and privacy risks of wearable devices.
 
 \subsubsection{Technology Risk Perception}
 Fischhoff \etal performed a seminal study of perceived risks with 30 widely used technologies~\cite{Fischhoff}. In their study, participants were asked to separately rate the risks and benefits of these technologies. They were told to think about all people affected by the technology, and to think about long-term vs. short-term risks and benefits. Then, the participants rated these technologies with respect to each other on a numerical scale, being instructed to rate the least risky or least beneficial technology a 10 and scaling the ratings linearly (e.g., a technology with risk rating 20 would be considered twice as risky compared to a technology with a risk rating of 10).
@@ -175,7 +175,7 @@ The main purpose of these questions was to determine the extent to which the dat
 
 \subsubsection{Smartphone Scenarios}
 \label{sec:smartphones}
-We presented participants with a second set of scenarios in order to control for the type of device being used. These questions followed the format of the previous question set, but substituted ``smartphone'' for ``Cubetastic3000.'' Rather than using the previous pool of 304 <data> and <recipient> combinations, we created 5 questions based on the scenarios that Felt \etal found least and most concerning to their participants~\cite{Felt}. We randomly presented participants with 2 of the following 5 questions: \\[-.8cm]
+We presented participants with a second set of scenarios in order to control for the type of device being used. These questions followed the format of the previous question set, but substituted ``smartphone'' for ``Cubetastic3000.'' Rather than using the previous pool of 304 <data> and <recipient> combinations, we selected 5 of the scenarios that Felt \etal found least and most concerning to their participants~\cite{Felt}. We randomly presented each participant with 2 of the following 5 questions: \\[-.8cm]
 
 \begin{packed_enum}
 \item \textit{How would you feel if an app on your smartphone vibrated your phone without asking you first?}
@@ -186,7 +186,7 @@ We presented participants with a second set of scenarios in order to control for
 \end{packed_enum}
 
 \subsubsection{Risk and Benefit Assessment}
-In addition to investigating reactions to particular scenarios, we also examined broad perceptions of various new technologies, and how those perceptions compared to other well-established technologies. To this end, we modeled this section of the survey after the seminal risk perception study by Fischhoff \etal\cite{Fischhoff}, in which they asked participants to relatively rank several technologies by both their risk and benefit to society. We asked participants to perform this exercise for 4 technologies previously examined by Fischhoff {\it et al.}: handguns, motorcycles, lawnmowers, and electricity. We chose these technologies because they represented varying levels of risks and benefits.
+In addition to investigating reactions to particular scenarios, we also examined broad perceptions of various new technologies and how those perceptions compared to other well-established technologies. To this end, we modeled this section of the survey after the seminal risk perception study by Fischhoff \etal\cite{Fischhoff}, in which they asked participants to rank several technologies by their relative risk and benefit to society. We asked participants to perform this exercise for 4 technologies previously examined by Fischhoff {\it et al.}: handguns, motorcycles, lawnmowers, and electricity. We chose these technologies because they represented varying levels of risks and benefits.
 
 Alongside the 4 well-established technologies, we asked participants to evaluate one of 20 possible technologies relevant to wearable computing: the Internet, email, laptops, smartphones, smart watches, fitness trackers, Google Glass, Cubetastic3000, discrete camera, discrete microphone, facial recognition, facial detection, voice recognition, voice-based emotion detection, location tracking, speech-to-text, language detection, heart rate detection, age detection, and gender detection. Note that we ask about familiar new technologies such as the internet, general classes and specific artifacts of wearable devices, and a range of new capabilities. 
 
@@ -212,7 +212,10 @@ We conducted a one-hour focus group to validate our design, gauge comprehension,
 \subsection{Recruitment and Analysis Method}
 We recruited 2,250 participants August 7th-13th 2014 via Amazon's Mechanical Turk. We restricted participants to those over 18 years old, living in the United States, and having a successful HIT completion rate of 95\% or above. Based on incorrect responses to either of the two comprehension questions, we filtered out 366 (16\% of 2,250) participants. We filtered out an additional 99 participants (4\% of 2,250) due to incomplete responses, and one participant who was under 18, leaving us with a total sample size of 1,784. Of these, 55.10\% were male, with a median age of 29 ($\sigma$ = 10.37).
 
-In performing our analysis in the next section, we chose to focus on the very upset rate (VUR) of various scenarios (i.e., the percentage of participants who reported a `5' on the Likert scales), rather than the average of all Likert scores. We did this for the same reasons as Felt {\it et al.}: the VUR does not presume that the ratings, ranging from ``indifferent'' to ``very upset,'' are linearly spaced. Additionally, we believe that everyone would be upset, at least a little, at the given scenarios (i.e., in all scenarios, the device takes action without permission). Thus, we believe that the main distinguishing factor of a participant reacting to a given scenario is if they were maximally upset or not, rather than how upset they were. In the risk/benefit section, we followed Fischhoff {\it et al.}'s methodology and did not normalize the numerical responses. Rather, we report medians and quartiles, which are not heavily impacted by outliers. Finally, for the open-ended question at the end (i.e., additional privacy concerns), two researchers independently coded 1,784 responses and had an initial agreement rate of 89.7\%. The researchers discussed any disagreements, and resolved them so that the final codings reflect unanimous agreement.
+In performing our analysis in the next section, we chose to focus on the very upset rate (VUR) of each scenario.  The VUR is defined as the percentage of participants who reported a `5' on the Likert scales.
+We use the VUR rather than the average of all Likert scores for the same reasons as Felt {\it et al.}: the VUR does not presume that the ratings, ranging from ``indifferent'' to ``very upset,'' are linearly spaced. Additionally, we believe that everyone would be upset, at least a little, at the given scenarios (i.e., in all scenarios, the device takes action without permission). Thus, we believe that the main distinguishing factor of a participant reacting to a given scenario is whether they were maximally upset or not, rather than how upset they were.
+
+In the risk/benefit section, we followed Fischhoff {\it et al.}'s methodology and did not normalize the numerical responses. Rather, we report medians and quartiles, which are not heavily impacted by outliers. Finally, for the open-ended question at the end (i.e., additional privacy concerns), two researchers independently coded 1,784 responses, with an initial agreement rate of 89.7\%. The researchers discussed any disagreements and resolved them so that the final codings reflect unanimous agreement.
 
 %%%%%%%%%%%%%%%%%%%
 
@@ -564,18 +567,21 @@ Table \ref{regression} shows the various models that we examined and the Quasi-A
 
 \subsection{Risk and Benefit Rankings} 
 
-When assessing new technologies, participants generally rated all new technologies and new wearables similarly, considering them low risk and low benefit (Figure \ref{fig:techplot}). We suspect that these similar assessments are because most are not consciously aware of the possibilities of these technologies or how they are being used today.
 
 
-\begin{figure}
+
+\begin{figure}[t]
 	\centering
 	\includegraphics[width=0.47\textwidth]{riskbenefit.pdf}
-	\caption{Participants' risk-benefit ratings of technologies examined by Fischhoff \etal\cite{Fischhoff}, which we used for calibration, alongside familiar technologies (e.g., laptops, the Internet, etc.), wearable technologies, as well as two specific wearables (Google Glass and the Cubetastic3000).}
+	\caption{Participants' median risk-benefit ratings of technologies examined by Fischhoff \etal\cite{Fischhoff}, which we used for calibration, alongside familiar technologies (e.g., laptops, the Internet, etc.), wearable technologies, as well as two specific wearable devices (Google Glass and the Cubetastic3000).}
 	\label{fig:techplot}
 \end{figure}
 
+We asked participants to rate new capabilities related to wearable technologies (e.g., facial recognition) in terms of their risks and benefits. We also asked them to do this for technologies with which they were likely to be more familiar (e.g., smartphones and laptops) in addition to two examples of specific wearable devices, Google Glass and the fictitious Cubetastic3000. They did this alongside well-establish technologies studied by Fischhoff\etal\cite{Fischhoff}, which we used to calibrate our results. When assessing new technologies, participants generally rated all familiar technologies and those related to wearables as being low-risk. Figure \ref{fig:techplot} depicts participants' median ratings. We found that the calibration technologies were all rated as the most risky. At the same time, with the exception of electricity, the calibration technologies were seen as lower benefit than the others.
 
-Participants rated the the most familiar technologies as the most beneficial; 5 most beneficial technologies were internet, laptops, email, smartphones, and location tracking. Again, we believe this is the result of exposure people have to these technologies--most people are exposed to these devices and use location-based applications. The most risky technologies were ones perceived to be privacy-invasive; 5 most risky technologies were facial recognition, internet, discreet video camera, location tracking, and facial detection. People are becoming increasingly aware of such privacy risks and are comparing these privacy invasion to real physical risks--for instance, the capacity for facial detection on a wearable device is perceived to be almost as risky as interacting with a physical lawnmower. It is fair to say that, these assessments of the most risky or beneficial technologies may not be the most accurate, but do reflect the exposure of various technologies to the general public and also prove that people do perceive risks in a real way related to these technologies. 
+As a group, participants rated the familiar technologies as the most beneficial. We believe this is the result of exposure people have to these technologies---most people use these technologies daily. Of the wearable technologies, the most risky were ones perceived to be privacy-invasive; the most risky technologies were facial recognition, the Internet, and discrete cameras, whereas the remainder of the technologies were seen as having minimal---albeit equivalent---risk levels (i.e., a median of ``10''). People are becoming increasingly aware of such privacy risks and are comparing these privacy invasion to real physical risks--for instance, the capacity for facial detection on a wearable device is perceived to be almost as risky as interacting with a lawnmower.
+
+At the same time, these perceptions of the most risky or beneficial technologies may not be reflective of actual risks or benefits, but they do reflect the general public's present exposure to these technologies and also show that people do perceive specific risks and benefits. We suspect that the similarity in assessments between the various wearable technologies are because most people are not consciously aware of the possibilities of these technologies or how they could be used. We suspect that performing this experiment longitudinally may yield more interesting results, as these technologies become more and more pervasive (and therefore more familiar to participants).
 
 \subsection{Perceived Concerns for Wearable Devices}
 So far, participants had responded to questions regarding specific scenarios or assessed technologies presented to them. For completeness of the survey, we also wanted to capture the participants' general reactions to wearable devices as a whole. To do this, we asked the participants an open-ended question regarding the most likely risks associated with owning and interacting with wearable devices.
