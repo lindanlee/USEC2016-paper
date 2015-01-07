@@ -222,6 +222,48 @@ In this section, we present our survey results. We first discuss participants' r
 \subsection{Concern Factors}
 In this section, we discuss the factors impacting participants' concern levels for each scenario: the data recipient, the data type, and whether or not the scenario occurred on a wearable device or a smartphone. We analyze each factor individually, as well as present a statistical model of participants' concerns as a function of all of these factors, including demographic traits.
 
+\subsubsection{Data Type}
+Regardless of the data recipient or the device, participants were most concerned about photos and videos, especially if they contained embarrassing content, nudity, or financial information. Information that could be used to impersonate someone (e.g., usernames/passwords for websites) or invade privacy (photos of someone at home) were also among the most concerning data types. The 10 most and least concerning data types can be seen in Table \ref{top10}.
+
+The least concerning data types were all related in that they all consisted of information that could be observed through observations of public behavior. For instance, demographic information (e.g., age, gender, language spoken). It is possible that people rated some of these as unconcerning because they believed that many entities already track this data (e.g., shows watched, music listened to, exercise patterns).
+
+\begin{table}[t]
+\begin{center}
+\small
+\begin{tabular}{| r | l | r |}
+\hline
+Rank & Data &  VUR  \\
+\hline
+1 & a video of you unclothed & 95.97\% \\
+2 & bank account information & 95.91\% \\
+3 & social security number & 94.84\% \\
+4 & video of you entering in your PIN & 92.67\% \\
+5 & a photo of you unclothed & 92.59\% \\
+6 & an incriminating/embarrassing photo of you & 91.39\% \\
+7 & username and password for websites & 89.55\% \\
+8 & credit card information & 88.98\% \\
+9 & an incriminating/embarrassing video of you & 88.41\% \\
+10 & a random (inward-facing) photo you at home & 87.50\% \\
+ & \vdots & \\
+64 & eye movement patterns (for eye tracking) & 40.51\% \\
+65 & when and how much you exercise  & 38.66\% \\
+66 & when you are happy or having fun  & 34.75\% \\
+67 & which television shows you watch & 30.20\% \\
+68 & when you are busy or interruptible  & 29.50\% \\
+69 & music from your device  & 28.06\% \\
+70 & your heart rate & 27.50\% \\
+71 & your age & 24.29\% \\
+72 & the language you speak & 15.86\% \\
+73 & your gender & 15.00\% \\ 
+\hline
+\end{tabular}
+\caption{The 10 most and least upsetting data types, across all recipients.}
+\label{top10}
+\end{center}
+\end{table}
+
+%A statistical analysis regarding the significance and confidence of <data> types with respect to all 72 was not performed due to the space constraints of the paper. We do consider all <data> categories in our statistical model, which provides an analysis of what factors had contributed to the perceived severity of a particular situation. 
+
 \subsubsection{Data Recipient}
 Based on our data, we observed that the largest effect seemed to stem from who the recipient of the data was: across all scenarios, 42.3\% of participants stated that they would be ``very upset'' if their data was shared with only the app's servers, whereas the VURs for friends (69.5\%), work contacts (75.2\%), and the public (72.4\%) were much higher. A chi-square test indicated that these differences were statistically significant (Table \ref{recipient}). However, these effect sizes were relatively small: the largest effect was between work contacts and an app's server ($\phi=0.11$); while the VUR for sharing with work contacts was significantly higher than sharing with friends, the effect size was negligible ($\phi=0.004$).
 
@@ -402,48 +444,6 @@ Work-Public&  5.00 & <0.0253 & 5,129	& 0.001\\
 %Commonly, bank info, SSN, PIN, embarrassing photo, naked photo, naked video were considered to be highly sensitive. When people perceived that the data would be shared with the app only, the other top five concerns included the passcode to a door, how frequently one has sex, embarrassing videos, and photos at home. When people perceived that the data would be shared with a human audience, their other top concerns were work conversations, credit card information, username and password combinations for websites, and phone conversations. When data is perceived to be shared by an app, people are more concerned with issues of being spied on or tracked, whereas when data is perceived to be shared with an individual, people are concerned more with theft or reputation. 
 %
 %On the other hand, exercise details, age, tv shows, gender, heart rate, and language were commonly considered to be lease concerning. When people perceived that the data would be shared with the app only, the other indifferent data included phone use, how much one liked the people around, when and what you ate, and eye patterns. When people perceived that the data would be shared with a human audience, the least concerning data included one's name, if one was having fun, music on the device, and if one was busy or interruptible. When sharing with an application, information otherwise considered personal such as phone use, opinions of people, food eaten, or eye patterns were okay to share, since these seem like useful information to improve one's device experience. However, people are not likely to share the same with people, but are more comfortable with sharing data about topics which would come up in causal conversation.
-
-\subsubsection{Data Type}
-Regardless of the data recipient or the device, participants were most concerned about photos and videos, especially if they contained embarrassing content, nudity, or financial information. Information that could be used to impersonate someone (e.g., usernames/passwords for websites) or invade privacy (photos of someone at home) were also among the most concerning data types. The 10 most and least concerning data types can be seen in Table \ref{top10}.
-
-The least concerning data types were all related in that they all consisted of information that could be observed through observations of public behavior. For instance, demographic information (e.g., age, gender, language spoken). It is possible that people rated some of these as unconcerning because they believed that many entities already track this data (e.g., shows watched, music listened to, exercise patterns).
-
-\begin{table}[t]
-\begin{center}
-\small
-\begin{tabular}{| r | l | r |}
-\hline
-Rank & Data &  VUR  \\
-\hline
-1 & a video of you unclothed & 95.97\% \\
-2 & bank account information & 95.91\% \\
-3 & social security number & 94.84\% \\
-4 & video of you entering in your PIN & 92.67\% \\
-5 & a photo of you unclothed & 92.59\% \\
-6 & an incriminating/embarrassing photo of you & 91.39\% \\
-7 & username and password for websites & 89.55\% \\
-8 & credit card information & 88.98\% \\
-9 & an incriminating/embarrassing video of you & 88.41\% \\
-10 & a random (inward-facing) photo you at home & 87.50\% \\
- & \vdots & \\
-64 & eye movement patterns (for eye tracking) & 40.51\% \\
-65 & when and how much you exercise  & 38.66\% \\
-66 & when you are happy or having fun  & 34.75\% \\
-67 & which television shows you watch & 30.20\% \\
-68 & when you are busy or interruptible  & 29.50\% \\
-69 & music from your device  & 28.06\% \\
-70 & your heart rate & 27.50\% \\
-71 & your age & 24.29\% \\
-72 & the language you speak & 15.86\% \\
-73 & your gender & 15.00\% \\ 
-\hline
-\end{tabular}
-\caption{The 10 most and least upsetting data types, across all recipients.}
-\label{top10}
-\end{center}
-\end{table}
-
-%A statistical analysis regarding the significance and confidence of <data> types with respect to all 72 was not performed due to the space constraints of the paper. We do consider all <data> categories in our statistical model, which provides an analysis of what factors had contributed to the perceived severity of a particular situation. 
 
 \subsubsection{Device Type}
 Participants had unique VUR rates for situations only differing in the device. Our participants had a 58.79\% VUR when asked about wearables devices and 46.64\% VUR when asked about smartphones.The VUR rates for both devices for all 5 questions are in table ~\ref{deviceVUR}. However, the effect the device has on the VUR is not considered to be statistically significant (see Table ~\ref{betweendevice}). Additionally, there is no statistically significant difference between how people reacted in a given situation; although, participants were statistically significantly upset in Q2.  The aforementioned results are only with respect to between subjects analysis, where answers are from participants who received either only the wearables or smartphone version of the 5 questions. There were too few instances where a participant got both versions of questions (34 in total for all 5 questions), to be able to perform a within-subjects analysis. 
