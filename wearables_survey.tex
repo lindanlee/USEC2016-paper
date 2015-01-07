@@ -515,36 +515,48 @@ We observed that participants' responses to our scenarios were correlated with s
 While we initially observed an effect on VURs based on whether or not participants claimed to already own wearable devices (57.0\% vs. 60.8\%, respectively; Mann-Whitney $U=202,896$, $p<0.032$), this difference did not remain significant upon correcting for multiple testing (Bonferroni corrected $\alpha=0.01$), nor did the effect of gender. Finally, we observed no correlation between education level and VUR.
 
 \subsubsection{Regression Model} 
-In order to examine the relative effect of each factor on participants' VURs, we constructed several statistical models to predict whether a participant would be ``very upset'' with a given scenario based on the data type, device, data recipient, and their demographic factors (i.e., age, education, gender, and privacy attitudes). We performed binary logistic regressions using generalized estimating equations, which account for our repeated measures experimental design (i.e., each participant contributed multiple data points). Table \ref{regression} shows the various models that we examined and the Quasi-Akaike Information Criterion (QIC), which is a goodness-of-fit metric for model selection (lower relative values indicate better fit).
+In order to examine the relative effect of each factor on participants' VURs, we constructed several statistical models to predict whether a participant would be ``very upset'' with a given scenario based on the data type, device, data recipient, and their demographic factors (i.e., age, education, gender, and privacy attitudes). We performed binary logistic regressions using generalized estimating equations, which account for our repeated measures experimental design (i.e., each participant contributed multiple data points).
 
 \begin{table}
 \centering
-\begin{tabular}{|l| r|}
+\begin{tabular}{|l| r| r| r|}
 \hline
-Variables Included & QIC\\
+Parameters & $\chi^2$ & $df$ & QIC\\
 \hline
 \hline
-(Intercept) & 18,539.3\\
+(Intercept) & 255.0 & 1 & 18,477.5\\
 \hline
-Device Type & 18,122.9\\
+(Intercept) & 78.4 & 1 & 18,122.9\\
+Device Type & 400.3 & 1 & \\
 \hline
-Data Recipient & 17,383.6\\
+(Intercept) & 289.1 & 1 & 17,667.5\\
+IUIPC (covariate) & 368.5 & 1 & \\
 \hline
-IUIPC (covariate) & 17,725.6\\
+(Intercept) & 297.8 & 1 &17,383.6\\
+Data Recipient & 913.4 & 4 & \\
 \hline
-Data Type & 14,794.5\\
+(Intercept) & 374.6 & 1 & 14,794.5\\
+Data Type & 1,866.5 & 77 & \\
 \hline
-Device Type & \\
-Data Recipient & \\
-Data Type & 13,942.9\\
+(Intercept) & 303. & 1 & 13,942.9\\
+Device Type & 11.1 & 1 &  \\
+Data Recipient & 624.6 & 3 & \\
+Data Type & 1,961.2 & 76 &  \\
 \hline
-Data Recipient & \\
-Data Type & 13,951.2\\
+(Intercept) & 28.4 & 1 & 12,752.8 \\
+Device Type & 8.8 & 1 &  \\
+Data Recipient & 577.8 & 3 & \\
+Data Type & 1,752.1 & 76 & \\
+IUIPC (covariate) & 378.7 & 1 & \\
 \hline
 \end{tabular}
-\caption{Goodness-of-fit metrics for various binary logistic models of our data using general estimating equations to account for repeated measures.}
+\caption{Goodness-of-fit metrics for various binary logistic models of our data using general estimating equations to account for repeated measures. The columns represent the Wald test statistic for each parameter and the overall Quasi-Akaike Information Criterion (QIC) for each model.}
 \label{regression}
 \end{table}
+
+We created several models using our three dependent variables as factors: device type (smartphone vs. wearable), data recipient, and data type. We also used our collected demographic factors as covariates: age, gender, education, wearable device ownership (yes/no), and mean IUIPC score. For each model, we performed Wald's test to examine the model effects attributable to each of these eight parameters and observed that the only covariate that had an observable effect on our models was participants' IUIPC scores. Thus, we opted to remove the other covariates from our analysis.
+
+Table \ref{regression} shows the various models that we examined and the Quasi-Akaike Information Criterion (QIC), which is a goodness-of-fit metric for model selection (lower relative values indicate better fit). As can be seen, while the remaining four predictors all contributed to the predictive power of our model, the data type was the strongest predictor. Conversely, despite being significant, the device type was the weakest predictor (i.e., whether participants were answering questions about a smartphone or a wearable device).
 
 
 \subsection{Risk and Benefit Rankings} 
@@ -661,101 +673,7 @@ We surveyed 2,250 internet users to determine what contributes to a violation of
 
 \textit{Please rate the following technologies below with a number. We know that this might be a bit hard to do, but please try to be as accurate as possible, adjusting the numbers until they feel they are right for you. Start with the least beneficial technology at 10 and assign higher numbers for the more beneficial technologies. (For instance, a technology rated 34 is twice as beneficial as a technology rated 17.)}
 
-\section{List of all <data>}
-{\color{red} Placeholder for space measuring.} \\[-.8cm]
 
-\begin{small}
-\begin{enumerate}\itemsep0pt \parskip0pt \parsep0pt
-  \item foo
-  \item bar
-   \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-  \item foo
-  \item bar
-\end{enumerate}
-\end{small}
 
 
 %\section{Risk and Benefit Rankings}
