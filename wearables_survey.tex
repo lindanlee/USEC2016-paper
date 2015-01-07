@@ -515,8 +515,36 @@ We observed that participants' responses to our scenarios were correlated with s
 While we initially observed an effect on VURs based on whether or not participants claimed to already own wearable devices (57.0\% vs. 60.8\%, respectively; Mann-Whitney $U=202,896$, $p<0.032$), this difference did not remain significant upon correcting for multiple testing (Bonferroni corrected $\alpha=0.01$), nor did the effect of gender. Finally, we observed no correlation between education level and VUR.
 
 \subsubsection{Regression Model} 
-In order to examine the relative effect of each factor on participants' VURs, we constructed a statistical model to predict whether a participant would be ``very upset'' with a given scenario based on the data type, device, data recipient, and their demographic factors (i.e., age, education, gender, and privacy attitudes). We performed a binary logistic regression using generalized estimating equations, which accounts for our repeated measures experimental design (i.e., each participant contributed multiple data points).
+In order to examine the relative effect of each factor on participants' VURs, we constructed several statistical models to predict whether a participant would be ``very upset'' with a given scenario based on the data type, device, data recipient, and their demographic factors (i.e., age, education, gender, and privacy attitudes). We performed binary logistic regressions using generalized estimating equations, which account for our repeated measures experimental design (i.e., each participant contributed multiple data points). Table \ref{regression} shows the various models that we examined and the Quasi-Akaike Information Criterion (QIC), which is a goodness-of-fit metric for model selection (lower relative values indicate better fit).
 
+\begin{table}
+\centering
+\begin{tabular}{|l| r|}
+\hline
+Variables Included & QIC\\
+\hline
+\hline
+(Intercept) & 18,539.3\\
+\hline
+Device Type & 18,122.9\\
+\hline
+Data Recipient & 17,383.6\\
+\hline
+IUIPC (covariate) & 17,725.6\\
+\hline
+Data Type & 14,794.5\\
+\hline
+Device Type & \\
+Data Recipient & \\
+Data Type & 13,942.9\\
+\hline
+Data Recipient & \\
+Data Type & 13,951.2\\
+\hline
+\end{tabular}
+\caption{Goodness-of-fit metrics for various binary logistic models of our data using general estimating equations to account for repeated measures.}
+\label{regression}
+\end{table}
 
 
 \subsection{Risk and Benefit Rankings} 
