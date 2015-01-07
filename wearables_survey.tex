@@ -118,41 +118,23 @@ To this end, we surveyed 1,784 Internet users to determine their risk perception
 
 %%%%%%%%%%%%%%%%%%%
 
-\section{Related Work}
-In this section, we discuss related work on emerging challenges related to ubiquitous computing, threats to smartphone users, and risk perceptions pertaining to technologies. 
-
-\subsection{Ubiquitous Sensing}
-Due to new technological advances, we are rapidly moving towards ubiquitous sensing and data capture~\cite{abowd2000charting}, whether it be through smartphones, smarthomes, or miscellaneous networked devices. Many have worked to discover how privacy will be preserved in world of nearing omni-present sensors. Examples of such efforts include frameworks to design for privacy environments~\cite{bellotti1993design} and evaluating ubiquitous computing applications~\cite{scholtz2004toward}. There are also various models for understanding privacy with respect to ubiquitous computing, including a risk-based model~\cite{hong2004privacy} and a social-based model~\cite{jiang2002approximate}. 
-
-Wearables are the new frontier of ubiquitous computing, with new capabilities can capture unique data about the user and his/her surroundings. As information capture becomes pervasive and subtle, people are naturally concerned about privacy and security~\cite{palen2003unpacking}. This is because the internet is ubiquitous but, have characteristics of a private space~\cite{camp2000internet}. Privacy in ubiquitous systems can be achieved by  identifying subtle trust assumptions of systems for design~\cite{camp2003designing} and adhering to privacy principles~\cite{langheinrich2001privacy}. An example of research which aims to uphold such principles include work by Egelman \etal , which evaluates various indicator designs to better communicate data capture on ubiquitous computing platforms. 
-
-\subsection{Smartphones and Wearables Concerns}
-Only efforts to improve end-user security which are grounded in user research directly address end-user concerns.The current state of smartphone security and privacy can be attributed to studies conducted to understand user attitudes toward security and privacy for smartphones~\cite{chin2012measuring}, observe behaviors of new smartphone users~\cite{palen2000going}, investigate user understanding of permissions~\cite{felt2012android}. 
-
-Among such studies, Felt \etal were among the first to examine the security concerns of smartphone users using a large-scale online survey~\cite{Felt}. Their survey asked 3,115 smartphone users about 99 risks associated with various smartphone privileges. Participants were asked how upset they would be if a certain action had occurred without their permission. Participants rated each situation on a Likert scale ranging from ``indifferent (1)'' to ``very upset (5).'' Our work builds upon this study, by aiming to evaluate the types of concerns that users have surrounding future wearable device capabilities, and then to compare those concerns to concerns surrounding more established technologies.
-
-Denning et. al conducted a study investigating privacy perspectives the bystanders of wearable devices ~\cite{Denning2014}. Bystanders expressed concerns due to the subtle, easy-to-use, and potentially ubiquitous nature of wearables. While this research examined the privacy concerns of bystanders in the presence of wearable devices, we are aware of no work that has looked at the privacy concerns of the owners of the devices.
-
-%~\cite{laurier2001people}: Why people say where they are during mobile phone calls
-
-\subsection{User Perceptions and Behaviors}
-
-Fischhoff \etal performed a seminal technology risk perception experiment in which they studied how people perceived the risks and benefits of 30 common activities and technologies~\cite{Fischhoff}. In their study, participants were prompted to separately rate the risks and benefits of 30 activities and technologies. They were primed to think about all people affected by the technology, and to think about long-term vs. short-term risks and benefits. The participants rated these technologies with respect to each other on a numerical scale, being instructed to rate the least risky or least beneficial technology a 10 and scaling the ratings linearly (i.e. a technology with risk rating 20 would be considered twice as risky compared to a technology with a risk rating of 10). Using this mythology, they were able to categorize different technologies based on whether they were high-risk/high-benefit, low-risk/low-benefit, and so forth. 
-
-While user perceptions are insightful, it has been shown that people generally lack enough information to make privacy-sensitive decisions; even if they do, they are likely to trade off long-term privacy for short-term benefits ~\cite{acquisti2005privacy}. Actual behavior deviates from self-reported behaviors ~\cite{jensen2005privacy} and privacy preferences ~\cite{spiekermann2001privacy}. 
-
-%I'm not sure that having a background on crowdsourcing is relevant, especially given the space limitations. Instead, you need WAY more related work on ubiquitous privacy concerns, as well as smartphone privacy concerns. There's also probably more general work on risk perceptions that should probably be cited.
-
-%\subsection{Crowdsourced User Studies}
-%Crowdourcing user studies in Mechanical Turk has its challenges \cite{kittur2008crowdsourcing}. While the Amazon Mechanical Turk population is diverse across several significant demographic dimensions such as age, gender, and income, it is not a precise representation of the U.S. population \cite{ross2010crowdworkers}\cite{kelley2010conducting}. Additionally, Amazon Mechanical Turk workers generally put a higher value on anonymity and hiding information, were more likely to do so, had more privacy concerns than the larger U.S. public \cite{kang2014privacy}. 
-
-%%%%%%%%%%%%%%%%%%%
-
 \section{Methodology}
+%David TODO: add sentence about the methodology motivation in the overview paragraph. 
 Our survey consisted of multiple sections. In one section, we presented participants with scenarios surrounding a wearable device and asked them to rate their level of concern if each scenario were to happen. Next, we asked participants about similar scenarios, substituting smartphones for the wearable device in order to see whether participants' familiarity with the devices impacted their risk perceptions (i.e., we expected all participants to be much more familiar with smartphones). Following those questions, we asked participants to compare the risks and benefits of wearable technologies with better understood technologies. Finally, we collected demographic information, which included a privacy concern scale, and whether participants owned any wearable devices. 
 
-%%% commented out for anonymity; can comment back in later.
-%The full survey can be found at http://www.surveygizmo.com/s3/1657924 /Wearables-Threats-User-Survey. 
+%LL: this commented out for anonymity; can comment back in later.
+%%% The full survey can be found at http://www.surveygizmo.com/s3/1657924 /Wearables-Threats-User-Survey. 
+
+%::LL: David, I spliced the related work; the text related to work directly related to our research to introduce/motivate the methodology remains here. The rest were put at the end of the paper, as you requested. 
+ 
+\subsection{ROUGH: Methodology Motivation} %LL: this text was previously inside related work
+{\color{red} Note: this section is a placeholder. Maybe we should put as a subsection inside the methodology section. TODO: reword so that these works seem not like related work, but as motivation for our methodology; i.e. ``here are two methodologies from relevant work swe chose to use for reasons.'' We can also say that we extend their works.}
+
+\subsubsection{Smartphone User Concerns} %LL: this text was previously inside related work
+Among such studies, Felt \etal were among the first to examine the security concerns of smartphone users using a large-scale online survey~\cite{Felt}. Their survey asked 3,115 smartphone users about 99 risks associated with various smartphone privileges. Participants were asked how upset they would be if a certain action had occurred without their permission. Participants rated each situation on a Likert scale ranging from ``indifferent (1)'' to ``very upset (5).'' Our work builds upon this study, by aiming to evaluate the types of concerns that users have surrounding future wearable device capabilities, and then to compare those concerns to concerns surrounding more established technologies.
+
+\subsubsection{Technology Risk Perception} %LL: this text was previously inside related work
+Fischhoff \etal performed a seminal technology risk perception experiment in which they studied how people perceived the risks and benefits of 30 common activities and technologies~\cite{Fischhoff}. In their study, participants were prompted to separately rate the risks and benefits of 30 activities and technologies. They were primed to think about all people affected by the technology, and to think about long-term vs. short-term risks and benefits. The participants rated these technologies with respect to each other on a numerical scale, being instructed to rate the least risky or least beneficial technology a 10 and scaling the ratings linearly (i.e. a technology with risk rating 20 would be considered twice as risky compared to a technology with a risk rating of 10). Using this mythology, they were able to categorize different technologies based on whether they were high-risk/high-benefit, low-risk/low-benefit, and so forth. 
 
 \subsection{Survey Questions}
 In our survey, each participant answered 27 questions, across five different sections:   \\[-.8cm]
@@ -635,6 +617,24 @@ Our survey shows that photos, videos, and textual information is generally consi
 \subsection{Limitations}
 One of the main limitations of this work is that our participants might not have interest, or an accurate idea, of wearables and their capabilities. 83\% of our participants reported that they do not own a wearable device, but at this time, about ~15\% of the general population own and use wearable devices \cite{Nilsen,WearableStatNews}, so our study is reflective of the status quo. We believed that getting a representative survey base was a useful endeavor, although we could have easily recruited only wearable device owners or people specifically interested in wearables. However, that will also have its own bias and limitations as well, since they would not reflect the general population. We expect user perceptions to change as rapidly as wearable technologies and the rate of adoption change. 
 
+% LL: David, thanks for polishing up the related work!
+%LL: Related work put at the end upon David's Suggestion. Paper flow is much better. 
+\section{Related Work}
+In this section, we discuss related work on emerging challenges related to ubiquitous computing, threats to smartphone users, and risk perceptions pertaining to technologies. 
+
+\subsection{Ubiquitous Sensing}
+Due to new technological advances, we are rapidly moving towards ubiquitous sensing and data capture~\cite{abowd2000charting}, whether it be through smartphones, smarthomes, or miscellaneous networked devices. Many have worked to discover how privacy will be preserved in world of nearing omni-present sensors. Examples of such efforts include frameworks to design for privacy environments~\cite{bellotti1993design} and evaluating ubiquitous computing applications~\cite{scholtz2004toward}. There are also various models for understanding privacy with respect to ubiquitous computing, including a risk-based model~\cite{hong2004privacy} and a social-based model~\cite{jiang2002approximate}. 
+
+Wearables are the new frontier of ubiquitous computing, with new capabilities can capture unique data about the user and his/her surroundings. As information capture becomes pervasive and subtle, people are naturally concerned about privacy and security~\cite{palen2003unpacking}. This is because the internet is ubiquitous but, have characteristics of a private space~\cite{camp2000internet}. Privacy in ubiquitous systems can be achieved by  identifying subtle trust assumptions of systems for design~\cite{camp2003designing} and adhering to privacy principles~\cite{langheinrich2001privacy}. An example of research which aims to uphold such principles include work by Egelman \etal , which evaluates various indicator designs to better communicate data capture on ubiquitous computing platforms. 
+
+\subsection{Smartphones and Wearables Concerns}
+Only efforts to improve end-user security which are grounded in user research directly address end-user concerns.The current state of smartphone security and privacy can be attributed to studies conducted to understand user attitudes toward security and privacy for smartphones~\cite{chin2012measuring}, observe behaviors of new smartphone users~\cite{palen2000going}, investigate user understanding of permissions~\cite{felt2012android}. 
+
+Denning et. al conducted a study investigating privacy perspectives the bystanders of wearable devices ~\cite{Denning2014}. Bystanders expressed concerns due to the subtle, easy-to-use, and potentially ubiquitous nature of wearables. While this research examined the privacy concerns of bystanders in the presence of wearable devices, we are aware of no work that has looked at the privacy concerns of the owners of the devices.
+
+\subsection{User Perceptions and Behaviors}
+While user perceptions are insightful, it has been shown that people generally lack enough information to make privacy-sensitive decisions; even if they do, they are likely to trade off long-term privacy for short-term benefits ~\cite{acquisti2005privacy}. Actual behavior deviates from self-reported behaviors ~\cite{jensen2005privacy} and privacy preferences ~\cite{spiekermann2001privacy}. 
+
 %The survey was constructed in a way to randomize the order of the particular sets of questions participants saw, except for the open-ended question, which was always near the end of the survey, asked along with the demographics. For this reason, people were heavily primed for the open-ended question. However, this question was always shown before the IUIPC questions, so our results on privacy being the top concern isn't because of the bias from the privacy index. The intent of the open-ended question  was more to get a sense of what people were concerned of, and we believe the results do reflect their actual concerns, but with a bit more clarity, since the participants were already thinking about such risks related to wearables. 
 
 %%%%%%%%%%%%%%%%%%%
@@ -643,7 +643,7 @@ One of the main limitations of this work is that our participants might not have
 
 We surveyed 2,250 internet users to determine what contributes to a violation of privacy or security, which technologies are risky, and what users think are the biggest risk for operating wearable devices. Participants rated how upset they would be if 304 situations occurred, assessed the risk and benefit for 20 new technologies, and gave open-ended responses to express their concerns. We provide insight into how much and why data, recipient, and device contribute to users' perception of a situation, calibrate answers with existing smartphone literature, and provide a regression model. An assessment of a range of new technologies shows that users perceive new technologies to be low-risk and low-benefit, but we suspect this is due to limited exposure that an average person has with wearables techology. We also state what users perceived as the most significant concerns with respect to wearable devices. We conclude by discussing future research directions in the wearables and user study space. 
 
-%COMMENTED OUT FOR ANONYMITY!!
+%NOTE: RESEARCH ETHICS/ ACKS COMMENTED OUT FOR ANONYMITY
 
 %\section{Research Ethics} 
 %We received advance approval from University of California, Berkeley's Institutional Review Board to perform this user study. Survey data was collected in an anonymous manner. Although the focus group was not conducted in an anonymous manner, participants were not asked to offer any confidential or sensitive information. 
