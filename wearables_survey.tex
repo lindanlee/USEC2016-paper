@@ -221,15 +221,15 @@ We conducted a one-hour focus group to validate our design, gauge comprehension,
 \subsection{Recruitment and Analysis Method}
 We recruited 2,250 participants August 7th-13th 2014 via Amazon's Mechanical Turk. We restricted participants to those over 18, living in the United States, and having a successful HIT completion rate of 95\% or above. Based on incorrect responses to either of the two comprehension questions, we filtered out 366 (16\% of 2,250) participants. We filtered out an additional 99 participants (4\% of 2,250) due to incomplete responses, and one participant who was under 18, leaving us with a total sample size of 1,784. Of these, 55.10\% were male, with a median age of 29 ($\sigma$ = 10.37).
 
-In performing our analysis in the next section, we chose to focus on the very upset rate (VUR) of each scenario.  The VUR is defined as the percentage of participants who reported a `5' on the Likert scales.
-We use the VUR rather than the average of all Likert scores for the same reasons as Felt {\it et al.}: the VUR does not presume that the ratings, ranging from ``indifferent'' to ``very upset,'' are linearly spaced. Additionally, we believe that everyone would be upset, at least a little, at the given scenarios (i.e., in all scenarios, the device takes action without permission). Thus, we believe that the main distinguishing factor of a participant reacting to a given scenario is whether they were maximally upset or not, rather than how upset they were.
+In performing our analysis in the next section, we chose to focus on the very upset rate (VUR) of each scenario.  The VUR is defined as the percentage of participants who reported a `5' on the Likert scales. 
+We use the VURs rather than the average of all Likert scores for the same reasons as Felt {\it et al.}: the VUR does not presume that the ratings, ranging from ``indifferent'' to ``very upset,'' are linearly spaced. Additionally, most were be upset, at least a little, in all scenarios when a device takes action without permission (rating distribution: ``1''= 455, ``2'' = 523, ``3'' = 902, ``4''' = 1,746, ``5'' = 6,654). Thus, the main distinguishing factor of a participant reacting to a given scenario is whether they were maximally upset or not, rather than how upset they were.
 
 In this section, we followed Fischhoff {\it et al.}'s methodology and did not normalize the numerical responses. Rather, we report medians and quartiles, which are not impacted by outliers. For the open-ended question at the end (i.e., additional privacy concerns), two researchers independently coded 1,784 responses, with an initial agreement rate of 89.7\%. The researchers discussed and resolved any disagreements so that the final codings reflect unanimous agreement.
 
 %%%%%%%%%%%%%%%%%%%
 
 \section{Results}
-In this section, we present our survey results. We first discuss participants' responses to the various data-sharing scenarios, and how data type, device type, and recipient contributed to how threatening a situation was perceived. Next, we discuss participants' risk/benefit assessment of various new technologies relative to well-established technologies. We conclude the section with participants' self-reported concerns about the biggest risks in owning wearable devices.
+In this section, we present our survey results. We first discuss participants' responses to the various data-sharing scenarios, and how data type, data recipient, and device contributed to how threatening a situation was perceived. Next, we discuss participants' risk/benefit assessment of various new technologies relative to well-established technologies. We conclude the section with participants' self-reported concerns about the biggest risks in owning wearable devices.
 
 \subsection{Concern Factors}
 In this section, we discuss factors impacting participants' concern levels for each scenario: the data recipient, the data type, and whether or not the scenario occurred on a wearable or a smartphone. We analyze each factor individually, as well as present a statistical model of participants' concerns as a function of all of factors, including demographic traits.
@@ -459,8 +459,8 @@ Work-Public&  5.00 & <0.0253 & 5,129	& 0.001\\
 %
 %On the other hand, exercise details, age, tv shows, gender, heart rate, and language were commonly considered to be lease concerning. When people perceived that the data would be shared with the app only, the other indifferent data included phone use, how much one liked the people around, when and what you ate, and eye patterns. When people perceived that the data would be shared with a human audience, the least concerning data included one's name, if one was having fun, music on the device, and if one was busy or interruptible. When sharing with an application, information otherwise considered personal such as phone use, opinions of people, food eaten, or eye patterns were okay to share, since these seem like useful information to improve one's device experience. However, people are not likely to share the same with people, but are more comfortable with sharing data about topics which would come up in causal conversation.
 
-\subsubsection{Device Type}
-Participants had unique VUR rates for scenarios only differing in device. Our participants had a 58.79\% VUR when asked about wearables and 46.64\% VUR when asked about smartphones.The VUR rates for both devices for all 5 questions are in table ~\ref{deviceVUR}. However, the effect the device has on the VUR is not considered to be statistically significant (see Table ~\ref{betweendevice}). Additionally, there is no statistically significant difference between how people reacted in a given situation; although, participants were statistically significantly upset in Q2.  The aforementioned results are only with respect to between subjects analysis, where answers are from participants who received either only the wearables or smartphone version of the 5 questions. Too few instances of participants answering both versions of questions occured (34 in total for all 5 questions) to perform a sound within-subjects analysis. 
+\subsubsection{Device}
+Participants had unique VURs for scenarios only differing in device. Our participants had a 58.79\% VUR when asked about wearables and 46.64\% VUR when asked about smartphones.The VURs for both devices for all 5 questions are in table ~\ref{deviceVUR}. However, the effect the device has on the VUR is not considered to be statistically significant (see Table ~\ref{betweendevice}). Additionally, there is no statistically significant difference between how people reacted in a given situation; although, participants were statistically significantly upset in Q2. The aforementioned results are only with respect to between subjects analysis, where answers are from participants who received either only the wearables or smartphone version of the 5 questions. Too few instances of participants answering both versions of questions occured (34 in total for all 5 questions) to perform a sound within-subjects analysis. 
 
 \begin{table}[t]
 \begin{center}
@@ -483,7 +483,7 @@ Q5 & 86.49\%  &  91.82\%\\
 
 \begin{table}%[h]
 \begin{center}
-\begin{tabular}{|l|r|r|r|r|}
+\begin{tabular}{|c|r|r|r|r|}
 %Question & Chi^2 &	2-tail P &	Sig?	 & n	& effect size\\
 %All	2.814	0.1395	No		3589		0.001\\
 %Q1	2.500	0.1139	No		714		0.004\\
@@ -545,7 +545,7 @@ Parameters & $\chi^2$ & $df$ & QIC\\
 (Intercept) & 255.0 & 1 & 18,477.5\\
 \hline
 (Intercept) & 78.4 & 1 & 18,122.9\\
-Device Type & 400.3 & 1 & \\
+Device & 400.3 & 1 & \\
 \hline
 (Intercept) & 289.1 & 1 & 17,667.5\\
 IUIPC (covariate) & 368.5 & 1 & \\
@@ -557,12 +557,12 @@ Data Recipient & 913.4 & 4 & \\
 Data Type & 1,866.5 & 77 & \\
 \hline
 (Intercept) & 303. & 1 & 13,942.9\\
-Device Type & 11.1 & 1 &  \\
+Device & 11.1 & 1 &  \\
 Data Recipient & 624.6 & 3 & \\
 Data Type & 1,961.2 & 76 &  \\
 \hline
 (Intercept) & 28.4 & 1 & 12,752.8 \\
-Device Type & 8.8 & 1 &  \\
+Device  & 8.8 & 1 &  \\
 Data Recipient & 577.8 & 3 & \\
 Data Type & 1,752.1 & 76 & \\
 IUIPC (covariate) & 378.7 & 1 & \\
@@ -572,9 +572,9 @@ IUIPC (covariate) & 378.7 & 1 & \\
 \label{regression}
 \end{table}
 
-We created several models using our three dependent variables as factors: device type (smartphone vs. wearable), data recipient, and data type. We also used our collected demographic factors as covariates: age, gender, education, wearable device ownership (yes/no), and mean IUIPC score. For each model, we performed Wald's test to examine the model effects attributable to each of these eight parameters and observed that the only covariate that had an observable effect on our models was participants' IUIPC scores. Thus, we opted to remove the other covariates from our analysis.
+We created several models using our three dependent variables as factors: device (smartphone vs. wearable), data recipient, and data type. We also used our collected demographic factors as covariates: age, gender, education, wearable device ownership (yes/no), and mean IUIPC score. For each model, we performed Wald's test to examine the model effects attributable to each of these eight parameters and observed that the only covariate that had an observable effect on our models was participants' IUIPC scores. Thus, we opted to remove the other covariates from our analysis.
 
-Table \ref{regression} shows the various models that we examined and the Quasi-Akaike Information Criterion (QIC), which is a goodness-of-fit metric for model selection (lower relative values indicate better fit). As can be seen, while the remaining four predictors all contributed to the predictive power of our model, the data type was the strongest predictor. Conversely, despite being significant, the device type was the weakest predictor (i.e., whether participants were answering questions about a smartphone or a wearable device).
+Table \ref{regression} shows the various models that we examined and the Quasi-Akaike Information Criterion (QIC), which is a goodness-of-fit metric for model selection (lower relative values indicate better fit). As can be seen, while the remaining four predictors all contributed to the predictive power of our model, the data type was the strongest predictor. Conversely, despite being significant, the device was the weakest predictor (i.e., whether participants were answering questions about a smartphone or a wearable device).
 
 
 \subsection{Risk and Benefit Rankings} 
@@ -666,7 +666,7 @@ One limitation of user perceptions is that people don't always have enough infor
 
 \section{Conclusion}
 
-We surveyed 2,250 internet users to determine what contributes to a violation of privacy or security, which technologies are risky, and what users think are the biggest risk for operating wearable devices. Participants rated how upset they would be if 304 situations occurred, assessed the risk and benefit for 20 new technologies, and gave open-ended responses to express their concerns. We provide insight into how much and why data, recipient, and device contribute to users' perception of a situation, calibrate answers with existing smartphone literature, and provide a regression model. An assessment of a range of new technologies shows that users perceive new technologies to be low-risk and low-benefit, but we suspect this is due to limited exposure that an average person has with wearables techology. We also state what users perceived as the most significant concerns with respect to wearable devices. We conclude by discussing future research directions in the wearables and user study space. 
+We surveyed 2,250 internet users to determine what contributes to a violation of privacy or security, which technologies are risky, and what users think are the biggest risk for operating wearable devices. Participants how upset they would be if 304 situations occurred, assessed the risk and benefit for 20 new technologies, and gave open-ended responses to express their concerns. We provide insight into how much and why data, recipient, and device contribute to users' perception of a situation, calibrate answers with existing smartphone literature, and provide a regression model. An assessment of a range of new technologies shows that users perceive new technologies to be low-risk and low-benefit, but we suspect this is due to limited exposure that an average person has with wearables techology. We also state what users perceived as the most significant concerns with respect to wearable devices. We conclude by discussing future research directions in the wearables and user study space. 
 
 %NOTE: RESEARCH ETHICS/ ACKS COMMENTED OUT FOR ANONYMITY
 
