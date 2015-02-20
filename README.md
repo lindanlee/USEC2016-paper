@@ -1,7 +1,7 @@
 Wearables Survey Paper Git Repo
 ======================
 
-## Surveying Users' Perceptions of Security Threats for Wearable Devices
+# Surveying Users' Perceptions of Security Threats for Wearable Devices
 
 This is a paper for [WEIS 2015](http://weis2015.econinfosec.org/).
 
@@ -16,14 +16,14 @@ Authors: Linda Lee, Joong Hwa Lee, Serge Egelman, David Wagner
 
 ## TODOS: 
 
-# Syntax Fixes: 
+### Syntax Fixes: 
 * Typo: Many concerns exposure of users' activities without their awareness or consent.
 * Typo: Participants how up-set they would be if 304 situations occurred, ...
 * There are three consecutive paragraph that start with "In this section...". 
 * 452 is not an order of magnitude more than 275. See http://en.wikipedia.org/wiki/Order_of_magnitude
 * REMOVE: “ Due to space limitations, we are unable to show results of the statistical analyses respect to the significance of the VUR rankings of the 88 data types.”
 
-# Definitely do this:
+### Definitely do this:
 * BETTER RELATED WORK; redo search for papers
 * brainstorming to illuminate why questions were asked 
 * table of |Question|n|dist|VUR|
@@ -37,7 +37,7 @@ Authors: Linda Lee, Joong Hwa Lee, Serge Egelman, David Wagner
 * Appendix: add in survey
 * Appendix: add in how open responses were labeled
 
-# Think about: 
+### Think about: 
 * "users make little distinction between sharing data with friends, co-workers, or the general public”: at first sight, this result is in conflict with privacy studies specifically in the social arena (e.g., Facebook). The authors may want to comment on this fact if they have any explanation. >> cite paper and figure out why this is so. (reviewer comment)
 * present more about the regression model? like the model itself. (equations with constants and whatnot) 
 * use the full scale instead of 5/not for regression model (reviewer suggestion)
