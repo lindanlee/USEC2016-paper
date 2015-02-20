@@ -1,0 +1,36 @@
+\documentclass{acm_proc_article-sp}
+\usepackage{color}
+\usepackage[hyphens]{url}
+
+\def\etal{{\it et al.~}}
+\newenvironment{packed_enum}{
+\begin{enumerate}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{enumerate}}
+\newenvironment{packed_item}{
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{itemize}}
+
+
+\begin{document}
+
+\input{title.tex}
+\input{abstract.tex}
+\input{intro.tex}
+\input{methodology.tex}
+\input{results.tex}
+\input{discussion.tex} 
+\input{related_work.tex} 
+\input{conclusion.tex} 
+\bibliographystyle{abbrv}
+\bibliography{bibliography.bib} 
+\input{appendixes.tex}
+
+\end{document}
+
+
