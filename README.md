@@ -16,12 +16,9 @@ Authors: Linda Lee, Joong Hwa Lee, Serge Egelman, David Wagner
 
 ## TODOS: 
 
-### Syntax Fixes: 
-* Typo: Many concerns exposure of users' activities without their awareness or consent.
-* Typo: Participants how up-set they would be if 304 situations occurred, ...
-* There are three consecutive paragraph that start with "In this section...". 
-* 452 is not an order of magnitude more than 275. See http://en.wikipedia.org/wiki/Order_of_magnitude
-* REMOVE: “ Due to space limitations, we are unable to show results of the statistical analyses respect to the significance of the VUR rankings of the 88 data types.”
+### Syntax fixes and minor tweaks:
+
+This is done! (02/19/15) -Linda
 
 ### Definitely do this:
 * BETTER RELATED WORK; redo search for papers
