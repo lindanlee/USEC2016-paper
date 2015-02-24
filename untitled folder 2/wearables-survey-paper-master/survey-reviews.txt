@@ -1,0 +1,103 @@
+----------------------- REVIEW 1 ---------------------
+PAPER: 11
+TITLE: Risk Perceptions for Wearable Devices
+AUTHORS: Linda N. Lee, Serge Egelman, Joong Hwa Lee and David Wagner
+
+OVERALL EVALUATION: -1 (weak reject)
+REVIEWER'S CONFIDENCE: 4 (high)
+
+----------- REVIEW -----------
+This paper analyzes a survey focused on the risks and benefits of wearables. The survey was answered by over 1700 MTurkers.
+
+Pros:
+- The paper is well-written
+- Wearables are growing in popularity and so it would be useful to under user perception now
+
+Cons:
+The results of the survey are unsurprising given it's structure and the population who responded. In particular:
+- As the authors point out, most of the respondents said they did not own a wearable and so it may have been hard for them to see any benefits
+- The scenarios are negative in tone and hugely biased toward risk. No scenarios attempt to build in any utility/benefit for the sharing contexts.
+
+There is little discussion about the categories in figure 6 and so it seems a bit premature to claim privacy dominates so strongly. e.g. is 'social stigma' a subset of 'social cost'?
+
+
+----------------------- REVIEW 2 ---------------------
+PAPER: 11
+TITLE: Risk Perceptions for Wearable Devices
+AUTHORS: Linda N. Lee, Serge Egelman, Joong Hwa Lee and David Wagner
+
+OVERALL EVALUATION: -1 (weak reject)
+REVIEWER'S CONFIDENCE: 4 (high)
+
+----------- REVIEW -----------
+This is an interesting yet immature study. The results are a bit underwhelming given the efforts that have been put into it. The paper is badly organized; it looks like the different sections were written independently by different authors. The authors would profit from help by their statistical consulting unit. My verdict would be “reject, perform major revisions, and resubmit”, but since this is not an option I vote for “weak reject”.
+
+Recommended revisions
+
+1. The paper would gain considerably if fewer results were discussed in more depth
+
+2. While the survey collected 15 demographic questions, the authors give no statistics of the distribution of, e.g. age, gender, country of residence, income and education level of their respondents, and how it compares to the general demographics and to the demographics of smartphone users. This is deplorable since the some studies find that privacy response levels are influenced by those mentioned factors (including the present study).
+
+On p.3 authors should also make clear that their study differs from Felt et al. [11] not only in the presented scenarios, but also in the subject sampling: smartphone users in the case of Felt et al. as opposed to Internet users in this study.
+
+3. The authors should include a section on “Limitations of our Research”. Here the “privacy paradox” that was unveiled in a number of studies should be mentioned: subjects will often state privacy concerns when asked out-of-context (as they authors do in their study), but behave in a less privacy-conscious manner that is inconsistent with their stated privacy attitudes when put in a concrete situation. This does not invalidate the authors’ results, but pointing readers to the privacy paradox will help them put this study in better perspective.
+
+4. The authors should reconsider their statistics:
+
+"We use the VURs rather than the average of all Likert scores for the same reasons as Felt et al.: the VUR does not presume that the ratings, ranging from “indifferent" to "very upset," are linearly spaced.” You thereby throw out lots of data. Do you have any indications of non-equal spacing of the Likert scale in your specific study?
+
+"We note that this chi-square test violates the assumption of independent observations, since participants responded to multiple scenarios. But based on the randomization of treatments and large sample size, we do not believe that this signicantly impacted our results. Nonetheless, we repeated the analysis using only one randomly-selected data point per participant to nd that the test was robust to this violation.”
+Instead of this post-hoc fix, why do you not use Cochran’s Q test, or even better a repeater-measures Anova to account for the data of all subjects and not only those with extreme concern?
+
+"Due to space limitations, we are unable to show results of the statistical analyses respect to the signicance of the VUR rankings of the 88 data types.” Due to the sheer amount of data, even small differences will likely be statistically significant (see Table 2 for proof). Hence there is probably no point reporting statistical significance in the first place, and thus no need for this apology.
+
+
+Minor comment:
+
+"users make little distinction between sharing data with friends, co-workers, or the general public”: at first sight, this result is in conflict with privacy studies specifically in the social arena (e.g., Facebook). The authors may want to comment on this fact if they have any explanation.
+
+
+----------------------- REVIEW 3 ---------------------
+PAPER: 11
+TITLE: Risk Perceptions for Wearable Devices
+AUTHORS: Linda N. Lee, Serge Egelman, Joong Hwa Lee and David Wagner
+
+OVERALL EVALUATION: 0 (borderline paper)
+REVIEWER'S CONFIDENCE: 5 (expert)
+
+----------- REVIEW -----------
+This paper discusses users' perceptions of wearable technologies.
+
+The most important positive aspect of this paper is that the authors conducted a comprehensive (yet somewhat disparate) set of studies that cover a lot of ground.
+
+The most important negative aspect is that the paper is purely descriptive; the authors refrain from any interpretation of their results. The discussion section, in fact, does not discuss the results (but rather looks at what future work could be conducted). The authors should have put much more effort into the interpretation of their findings, as they are not always straightforward, and afford multiple explanations. Discussing these explanations could make the paper a true contribution, but without them it reads like a report rather than a paper.
+
+-- I would like to make a few additional (less important) points:
+
+1. Regarding the analysis of the Concern Data (3.1): I would argue that 3.1.1 to 3.1.4 are actually not necessary, since the authors actually conduct a regression model in 3.1.5, which is a more accurate method that encompasses the other analyses described in 3.1.1 to 3.1.4. If they remove these unnecessary analyses, they would gain a page for a giant regression table and/or some descriptive graphs, which would be very insightful.
+
+Aside from that, it would be a good idea to also test the interaction between recipient and data type. The authors currently do this somewhat approximately at the end of section 3.1.2, where they compare the 10 most concerning data types across recipients. This kind of inspection is insightful, and I'm guessing that the interaction effect would indeed be non-significant, but without actual statistical justification the authors should refrain from making claims like: "Regardless of the data recipient..." (3.1.1).
+
+More importantly, though, the regression should probably use the full 5-point scale rather than VURs. While I agree that using VURs is not the worst approach due to the skewness of the 5-point scale the, there are multi-logistic methods that also take care of this problem without wasting signal. An example of this is clmm, which is part of the ordinal package in R.
+
+Finally, the reason why the recipient had only a small effect may be due to the range of this manipulation; including recipients like "advertisers" and "acquaintances" may lead to more contrasting results. One might argue that the former is already implied by "the app's server" and the later by "the public", but while this is technically correct, this is typically not the case in the minds of the users.
+
+2. Considering the Risk and Benefits Ranking (3.2): Participants viewed data-collection capabilities of wearable devices as benign compared to more familiar technologies. The authors argue that this may be due to a lack of exposure to these newer technologies. However, some of these technologies are not new (e.g. Internet, e-mails, laptop), but those are also seen as benign compared to the others (handguns, motorcycles, lawn mowers, electricity).
+
+My alternative explanation is that people may have evaluated the risks only thinking of physical risk, not privacy risk. This might have happened because among the 5 presented options, the wearable-related one is the odd one out; all other options involve some physical risk scenario. These other options, by being the most prominent (4 versus 1), frame the risk perception in the user's mind as meaning "physical risk", and users may consequently ignore or downplay privacy risks. It would have been better to ask 4+4  questions (or 2+2 to keep the survey short) rather than the current 4+1.
+
+The differences in risk that *are* found between the different wearable-related are not tested for statistical significance, but given their minimal spread compared to the calibration options, the differences are negligible.
+
+Finally, the authors claim that "with the exception of electricity, the calibration technologies were seen as lower benefit than the others". This is true for some, but not all of the others. Specifically, Google glass and Cubetastic3000 were about equally beneficial, and gender and age recognition were less beneficial.
+
+-- and some minor points:
+
+3. The authors make heavy use of randomizing the order of measurement. Whenever this method is employed, one should make sure that the order indeed did not affect the results.
+
+4.  452 is not an order of magnitude more than 275. See http://en.wikipedia.org/wiki/Order_of_magnitude
+
+5. There are a few typos due to missing words (I think). Examples:
+- Many concerns exposure of users' activities without their awareness or consent.
+- Participants how up-set they would be if 304 situations occurred, ...
+
+6. There are three consecutive paragraph that start with "In this section...". These sentences are unnecessary. The title of the section should sufficiently explain what it is about.
