@@ -16,14 +16,17 @@ This is a paper for [WEIS 2015](http://weis2015.econinfosec.org/).
 * heavy editing pass again to format the paper well
 * BETTER RELATED WORK; redo search for papers
 
-### TODO:
+### Serge: 
+* address why not Cochnan’s Q test or Anova (ask Serge) .. add a footnote to justify why not these tests. 
+* clearer demographics and compare w/ general population 
+* present more about the regression model? like the model itself. (equations with constants and whatnot) 
+* Develop more: nonlinearity—look into interactions within data and recipient (like at end of section 3.1.2, less ad-hoc and for all the questions).  without that, don’t say things like: "Regardless of the data recipient..." (3.1.1).
+
+### Linda (with J):
 * brainstorming to illuminate why questions were asked 
 * discussion on “middle” questions and question distributions
 * beef up discussion of tech ratings with new risk/ben tables
-* present more about the regression model? like the model itself. (equations with constants and whatnot) 
-* clearer demographics and compare w/ general population 
 * under limitations, privacy paradox (privacy concerns asked out of context vs how people react to in real life are not representative)
-* address why not Cochnan’s Q test or Anova (ask Serge) .. add a footnote to justify why not these tests. 
 * discussion: where people are underestimating risk, why people rated risks the way that they did, talk about common themes.
 * comment in future work/limitations?:including recipients like "advertisers" and "acquaintances" may lead to more contrasting results.
 * clarify:  we're not saying that there is no distinction, just that there is more distinction between people and the app server."users make little distinction between sharing data with friends, co-workers, or the general public”: at first sight, this result is in conflict with privacy studies specifically in the social arena (e.g., Facebook). The authors may want to comment on this fact if they have any explanation." (reviewer comment)
@@ -34,8 +37,6 @@ This is a paper for [WEIS 2015](http://weis2015.econinfosec.org/).
 * "more discussion," "more tables" .. there was no room.
 * reviewer said: “3. The authors make heavy use of randomizing the order of measurement. Whenever this method is employed, one should make sure that the order indeed did not affect the results.”
 
-### After everything else is done:
-*Develop more: nonlinearity—look into interactions within data and recipient (like at end of section 3.1.2, less ad-hoc and for all the questions).  without that, don’t say things like: "Regardless of the data recipient..." (3.1.1).
 
 
 
