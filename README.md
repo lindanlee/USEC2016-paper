@@ -13,9 +13,9 @@ This is a paper for [WEIS 2015](http://weis2015.econinfosec.org/).
 ## TODOS: 
 
 ### Before moving on:
+* better intro and framing (AND SEND TO SERGE AND DAVE): "there has been extensive work on the need for showing users how certaind data is being captured so that they can have more control.. now we have wearables, and collect more data types. We have an issue of showing everyone everything all the time, since attention is a finite resources. We need to identify situations that people want to warn them about, and transparently access things that they are benign."
 * heavy editing pass again to format the paper well
-* BETTER RELATED WORK; redo search for papers
-* better intro and framing: "there has been extensive work on the need for showing users how certaind data is being captured so that they can have more control.. now we have wearables, and collect more data types. We have an issue of showing everyone everything all the time, since attention is a finite resources. We need to identify situations that people want to warn them about, and transparently access things that they are benign."
+* BETTER RELATED WORK; redo search for papers (human attention; econ-y things)
 
 ### Serge: 
 * address why not Cochnan’s Q test or Anova (ask Serge) .. add a footnote to justify why not these tests. 
@@ -27,6 +27,10 @@ This is a paper for [WEIS 2015](http://weis2015.econinfosec.org/).
 * brainstorming to illuminate why questions were asked 
 * discussion on “middle” questions and question distributions
 * beef up discussion of tech ratings with new risk/ben tables
+* analysis and discussion on high-variance (table with data and recipient sorted by standard deviation for our own looking, then just talk about them in the paper without including them inside)
+
+
+### Minor things to address: 
 * under limitations, privacy paradox (privacy concerns asked out of context vs how people react to in real life are not representative)
 * discussion: where people are underestimating risk, why people rated risks the way that they did, talk about common themes.
 * comment in future work/limitations?:including recipients like "advertisers" and "acquaintances" may lead to more contrasting results.
