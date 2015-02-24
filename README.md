@@ -5,8 +5,6 @@ Wearables Survey Paper Git Repo
 Authors: Linda Lee, Joong Hwa Lee, Serge Egelman, David Wagner
 
 This is a paper for [WEIS 2015](http://weis2015.econinfosec.org/).
-
-## Important Dates:
 * Submission (full papers)	27 February 2015
 * Acceptance notification	10 April 2015
 * Final papers (revisions)	15 May 2015
