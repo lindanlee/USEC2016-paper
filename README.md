@@ -15,6 +15,7 @@ This is a paper for [WEIS 2015](http://weis2015.econinfosec.org/).
 ### Before moving on:
 * heavy editing pass again to format the paper well
 * BETTER RELATED WORK; redo search for papers
+* better intro and framing: "there has been extensive work on the need for showing users how certaind data is being captured so that they can have more control.. now we have wearables, and collect more data types. We have an issue of showing everyone everything all the time, since attention is a finite resources. We need to identify situations that people want to warn them about, and transparently access things that they are benign."
 
 ### Serge: 
 * address why not Cochnan’s Q test or Anova (ask Serge) .. add a footnote to justify why not these tests. 
