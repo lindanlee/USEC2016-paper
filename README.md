@@ -12,8 +12,10 @@ This is a paper for [WEIS 2015](http://weis2015.econinfosec.org/).
 
 ## TODOS: 
 
-### Before moving on:
-* better intro and framing (AND SEND TO SERGE AND DAVE): "there has been extensive work on the need for showing users how certaind data is being captured so that they can have more control.. now we have wearables, and collect more data types. We have an issue of showing everyone everything all the time, since attention is a finite resources. We need to identify situations that people want to warn them about, and transparently access things that they are benign."
+### Before anythine else:
+* better intro and framing (AND SEND TO SERGE AND DAVE)! 
+
+### Then, do this before moving on: 
 * heavy editing pass again to format the paper well
 * BETTER RELATED WORK; redo search for papers (human attention; econ-y things)
 
