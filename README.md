@@ -23,13 +23,11 @@ Before anything else:
 * BETTER RELATED WORK; redo search for papers (human attention; econ-y things)
 
 The rest:
-* brainstorming to illuminate why questions were asked 
 * discussion on “middle” questions and question distributions
 * beef up discussion of tech ratings with new risk/ben tables
 * analysis and discussion on high-variance (table with data and recipient sorted by standard deviation for our own looking, then just talk about them in the paper without including them inside)
 
 ### J TODOs: 
-* Histogram redo/normalization. 
 * VUR question rakings table comparing all, public, work, friends, and app, in that order
 * Combine the risk and benefits tech ranking table 
 * Make sure that are in same sorted order for VUR distributions table and VUR rankings table.
