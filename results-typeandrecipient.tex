@@ -1,0 +1,175 @@
+\subsubsection{Data Type and Data Recipient}
+%LL: This is new; It talks about the interplay between the two factors. This entire section needs work. 
+
+We compared the 10 most concerning scenarios when sharing with an app servers versus with a humans. We observed that there was a substantial overlap between these groups, in that 6 of the most concerning scenarios were the same: \\[-.8cm]
+
+\begin{packed_enum}
+\item Bank account information
+\item A video of you unclothed
+\item Social security number
+\item Video of you entering your PIN
+\item An incriminating/embarrassing photo of you
+\item A photo of you unclothed \\[-.8cm]
+\end{packed_enum}
+
+While the concerning data types do not appreciably change based on the data recipient---even the non-overlapping scenarios all dealt with confidential data (e.g., passcode, credit card information, etc.)---only the level of concern changed. For instance, the 10th most concerning scenario for the non-human audience had a VUR of 66.67\%, whereas the 10th most concerning scenario for a human audience has a VUR of 93.88\%. This suggests that concern for different data types does not appear to vary relative to other data types based on recipient, but instead the recipient determines the overall magnitude of the concern.\\
+
+%\begin{table}[t]
+%\begin{center}
+%\begin{tabular}{|l|r|}
+%\hline
+%Recipients & VUR \\
+%\hline
+%App &  42.3\% \\
+%Friends & 69.5\% \\
+%Work & 75.2\% \\
+%Public & 72.4\% \\ 
+%\hline
+%\end{tabular}
+%\caption{generated for my presentation.}
+%\label{nouse}
+%\end{center}
+%\end{table}
+
+
+\begin{table}[t]
+\begin{center}
+\begin{tabular}{|l|r|r|r|r|}
+\hline
+Recipients	& $\chi^2$ & p-value 	& n & $\phi$ \\
+\hline
+Work-App	& 565.910 & <0.0001 & 5,083 & 0.111\\
+Public-App	& 481.776 & <0.0001 & 5,1988& 0.093\\
+Friends-App & 381.653 & <0.0001 & 5,096 & 0.075\\
+Friends-Work & 20.39 & <0.0001 & 5,037 & 0.004\\
+Friends-Public & 5.41 & <0.0200 & 5,142 & 0.001\\
+Work-Public&  5.00 & <0.0253 & 5,129	& 0.001\\
+\hline
+\end{tabular}
+\caption{Results of a chi-square test to examine VUR based on data recipient, across all data points.}
+\label{recipient}
+\end{center}
+\end{table}
+
+%\begin{table}[t]
+%\begin{center}
+%\begin{tabular}{|l|r|r|r|r|}
+%\hline
+%Recipients	& $\chi^2$ & p-value 	& n & $\phi$ \\
+%\hline
+%Work-App	& 42.49	& <0.0001	&	601	&	0.071\\
+%Public-App &	48.52	& <0.0001	&		636	&	0.076\\
+%Friends-App	& 32.07	& <0.0001	&		609	&	0.053\\
+%Friends-Work & 	0.87 &	<0.3517	&	604	&	0.001\\
+%Friends-Public	& 1.46 &	<0.2229	&	639	&	0.002\\
+%Work-Public &	0.67 &	<0.7956	&		631	&	0.001\\
+%\hline
+%\end{tabular}
+%\caption{Results of a chi-square test to examine VUR based on data recipient, across all data points.}
+%\label{recipient}
+%\end{center}
+%\end{table}
+
+%\begin{table}[t]
+%\begin{center}
+%\begin{tabular}{| c | c | c | c |}
+%Recipients	& $\chi^2$ &	2-tail P &  Effect Size \\
+%Work-App	& 564.318 & <0.0001 & 0.111\\
+%Public-App	& 479.980 & <0.0001 &  0.092\\
+%Friends-App & 380.000 & <0.0001 & 0.075\\
+%Friends-Work & 20.365 & <0.0001 &  0.004\\
+%Friends-Public & 5.349 & 0.0207 &  0.001\\
+%Work-Public&  5.054 & 0.0246 &  0.001\\
+%\end{tabular}
+%\caption{Chi-Squared test results of the effects of various recipients contributing to VUR.}
+%\label{recipient}
+%\end{center}
+%\end{table}				
+
+%\begin{table}[t]
+%\begin{center}
+%\begin{tabular}{| l | c |}
+%<data> & VUR  \\
+%social security number & 98.04\% \\ CC
+%a video of you unclothed & 97.44\% \\ CC
+%bank account information & 97.10\% \\ CC
+%recordings of your work conversations & 96.97\% \\ 
+%an incriminating/embarrassing photo of you & 96.36\% \\ CC
+%a photo of you unclothed & 96.30\% \\ CC
+%credit card information & 95.92\% \\ 
+%username and password for websites & 95.41\% \\ 
+%a video of you entering in your PIN & 93.91\% \\ CC
+%recordings of your phone conversations & 93.88\% \\ 
+%\end{tabular}
+%\caption{A table of the top 10 upsetting <data> types, with respect to <recipient> types friends, work, and public.}
+%\label{sharedtop10}
+%\end{center}
+%\end{table}
+%
+%\begin{table}[t]
+%\begin{center}
+%\begin{tabular}{| l | c |}
+%%starting from #63
+%<data> &  VUR  \\
+%bank account information & 90.91\% \\ CC
+%a video of you unclothed & 90.62\% \\ CC
+%social security number  & 88.68\% \\ CC
+%video of you entering your PIN & 88.57\% \\ CC
+%an incriminating/embarrassing photo of you & 78.05\% \\ CC
+%a photo of you unclothed & 77.78\% \\ CC
+%a video of you entering a passcode to a door & 75.00\% \\ 
+%when and how much you have sex & 73.08\% \\ 
+%an incriminating/embarrassing video of you & 71.88\% \\ 
+%a random (inward-facing) photo of you at home & 66.67\% \\
+%\end{tabular}
+%\caption{A table of the top 10 upsetting <data> types, respect to <recipient> app's server only (didn't share it with anyone else).}
+%\label{notsharedtop10}
+%\end{center}
+%\end{table}
+%
+%\begin{table}[t]
+%\begin{center}
+%\begin{tabular}{| l | c |}
+%%starting from #63
+%<data> &  VUR  \\
+%your name & 47.25\% \\
+%when and how much you exercise & 46.07\% \\
+%when you were happy or having fun & 38.10\% \\
+%what television shows you watch & 35.96\% \\
+%when you are busy or interruptible & 34.34\% \\
+%your heart rate & 32.28\% \\
+%music from your device & 31.87\% \\
+%your age & 29.67\% \\
+%the language you speak & 20.95\% \\
+%your gender & 16.81\% \\
+%\end{tabular}
+%\caption{A table of the bottom 10 upsetting <data> types, with respect to <recipient> types friends, work, and public.}
+%\label{sharedbottom10}
+%\end{center}
+%\end{table}
+%
+%
+%\begin{table}[t]
+%\begin{center}
+%\begin{tabular}{| l | c |}
+%%starting from #63
+%<data> &  VUR  \\
+%when and how much you exercise & 16.67\% \\
+%how much you use your phone & 15.79\% \\
+%your age & 14.29\% \\
+%how much you like the people you interact with & 13.79\% \\
+%when, what, and how much you ate & 12.50\% \\
+%which television shows you watch & 11.43\% \\
+%your gender & 9.52\% \\
+%your heart rate & 9.09\% \\
+%eye movement patterns (for eye tracking) & 6.98\% \\
+%the language you speak & 2.50\% \\
+%\end{tabular}
+%\caption{A table of the bottom 10 upsetting <data> types, respect to <recipient> app's server only (didn't share it with anyone else).}
+%\label{notsharedbottom10}
+%\end{center}
+%\end{table}
+%
+%Commonly, bank info, SSN, PIN, embarrassing photo, naked photo, naked video were considered to be highly sensitive. When people perceived that the data would be shared with the app only, the other top five concerns included the passcode to a door, how frequently one has sex, embarrassing videos, and photos at home. When people perceived that the data would be shared with a human audience, their other top concerns were work conversations, credit card information, username and password combinations for websites, and phone conversations. When data is perceived to be shared by an app, people are more concerned with issues of being spied on or tracked, whereas when data is perceived to be shared with an individual, people are concerned more with theft or reputation. 
+%
+%On the other hand, exercise details, age, tv shows, gender, heart rate, and language were commonly considered to be lease concerning. When people perceived that the data would be shared with the app only, the other indifferent data included phone use, how much one liked the people around, when and what you ate, and eye patterns. When people perceived that the data would be shared with a human audience, the least concerning data included one's name, if one was having fun, music on the device, and if one was busy or interruptible. When sharing with an application, information otherwise considered personal such as phone use, opinions of people, food eaten, or eye patterns were okay to share, since these seem like useful information to improve one's device experience. However, people are not likely to share the same with people, but are more comfortable with sharing data about topics which would come up in causal conversation.
