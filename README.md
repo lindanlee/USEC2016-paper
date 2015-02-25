@@ -29,12 +29,6 @@ This is a paper for [WEIS 2015](http://weis2015.econinfosec.org/).
 * beef up discussion of tech ratings with new risk/ben tables
 * analysis and discussion on high-variance (table with data and recipient sorted by standard deviation for our own looking, then just talk about them in the paper without including them inside)
 
-
-### Minor things to address: 
-* discussion: where people are underestimating risk, why people rated risks the way that they did, talk about common themes.
-* clarify:  we're not saying that there is no distinction, just that there is more distinction between people and the app server."users make little distinction between sharing data with friends, co-workers, or the general public”: at first sight, this result is in conflict with privacy studies specifically in the social arena (e.g., Facebook). The authors may want to comment on this fact if they have any explanation." (reviewer comment)
-* address this: "Inline, section 3.2: My alternative explanation is that people may have evaluated the risks only thinking of physical risk, not privacy risk. This might have happened because among the 5 presented options, the wearable-related one is the odd one out; all other options involve some physical risk scenario. These other options, by being the most prominent (4 versus 1), frame the risk perception in the user's mind as meaning "physical risk", and users may consequently ignore or downplay privacy risks. It would have been better to ask 4+4  questions (or 2+2 to keep the survey short) rather than the current 4+1. && "with the exception of electricity, the calibration technologies were seen as lower benefit than the others". This is true for some, but not all of the others. Specifically, Google glass and Cubetastic3000 were about equally beneficial, and gender and age recognition were less beneficial. &&The differences in risk that *are* found between the different wearable-related are not tested for statistical significance, but given their minimal spread compared to the calibration options, the differences are negligible." (reviewer comment)
-
 ### Questionable Comments: 
 * use the full scale instead of 5/not for regression model (reviewer suggestion)
 * "more discussion," "more tables" .. there was no room.
