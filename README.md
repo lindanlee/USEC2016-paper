@@ -33,7 +33,7 @@ This is a paper for [WEIS 2015](http://weis2015.econinfosec.org/).
 * beef up discussion of tech ratings with new risk/ben tables
 * analysis and discussion on high-variance (table with data and recipient sorted by standard deviation for our own looking, then just talk about them in the paper without including them inside)
 
-### Questionable Comments: 
+## Ignore these Reviewer Comments: 
 * use the full scale instead of 5/not for regression model (reviewer suggestion)
 * "more discussion," "more tables" .. there was no room.
 * reviewer said: “3. The authors make heavy use of randomizing the order of measurement. Whenever this method is employed, one should make sure that the order indeed did not affect the results.”
