@@ -9,15 +9,13 @@ This is a paper for [WEIS 2015](http://weis2015.econinfosec.org/).
 
 =============================
 
-## TODOS! 
-
-### Serge: 
+### Serge TODOs: 
 * address why not Cochnan’s Q test or Anova (ask Serge) .. add a footnote to justify why not these tests. 
 * clearer demographics and compare w/ general population 
 * present more about the regression model? like the model itself. (equations with constants and whatnot) 
 * Develop more: nonlinearity—look into interactions within data and recipient (like at end of section 3.1.2, less ad-hoc and for all the questions).  without that, don’t say things like: "Regardless of the data recipient..." (3.1.1).
 
-### Linda (with J):
+### Linda TODOs:
 
 ##### Before anythine else:
 * better intro and framing (AND SEND TO SERGE AND DAVE)! 
