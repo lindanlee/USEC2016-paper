@@ -19,8 +19,6 @@ This is a paper for [WEIS 2015](http://weis2015.econinfosec.org/).
 
 ##### Before anything else:
 * better intro and framing (AND SEND TO SERGE AND DAVE)! 
-
-##### Then, do this before moving on: 
 * heavy editing pass again to format the paper well
 * BETTER RELATED WORK; redo search for papers (human attention; econ-y things)
 
