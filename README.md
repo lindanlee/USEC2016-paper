@@ -1,6 +1,3 @@
-Wearables Survey Paper Git Repo
-======================
-
 # Surveying Users' Perceptions of Security Threats for Wearable Devices
 Authors: Linda Lee, Joong Hwa Lee, Serge Egelman, David Wagner
 
@@ -10,7 +7,9 @@ This is a paper for [WEIS 2015](http://weis2015.econinfosec.org/).
 * Final papers (revisions)	15 May 2015
 * Conference dates	22-23 June 2015
 
-## TODOS: 
+=============================
+
+## TODOS! 
 
 ### Serge: 
 * address why not Cochnan’s Q test or Anova (ask Serge) .. add a footnote to justify why not these tests. 
@@ -33,7 +32,9 @@ This is a paper for [WEIS 2015](http://weis2015.econinfosec.org/).
 * beef up discussion of tech ratings with new risk/ben tables
 * analysis and discussion on high-variance (table with data and recipient sorted by standard deviation for our own looking, then just talk about them in the paper without including them inside)
 
-## Ignore these Reviewer Comments: 
+=============================
+
+##### Ignore these reviewer comments: 
 * use the full scale instead of 5/not for regression model (reviewer suggestion)
 * "more discussion," "more tables" .. there was no room.
 * reviewer said: “3. The authors make heavy use of randomizing the order of measurement. Whenever this method is employed, one should make sure that the order indeed did not affect the results.”
