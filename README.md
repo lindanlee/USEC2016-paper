@@ -17,12 +17,12 @@ This is a paper for [WEIS 2015](http://weis2015.econinfosec.org/).
 
 ### Linda TODOs:
 
-##### Before anything else:
+Before anything else:
 * better intro and framing (AND SEND TO SERGE AND DAVE)! 
 * heavy editing pass again to format the paper well
 * BETTER RELATED WORK; redo search for papers (human attention; econ-y things)
 
-##### The rest:
+The rest:
 * brainstorming to illuminate why questions were asked 
 * discussion on “middle” questions and question distributions
 * beef up discussion of tech ratings with new risk/ben tables
