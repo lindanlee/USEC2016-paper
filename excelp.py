@@ -121,14 +121,14 @@ def parser(x):
 					ben_var[j] = "/"
 			ben_var = ''.join(ben_var)
 			quart2 = stat[ben_var]
-			final_string = str(i).replace("risk","") + " & "+str(quart[0]) + " & " + str(quart[1]) + " & " + str(quart[2]) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{tables" +arg+ "} & "+str(quart2[0]) + " & " + str(quart2[1]) + " & " + str(quart2[2]) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{" + ben_var + "} \\\\ \n"
+			final_string = str(i).replace("risk","") + " & "+str(quart[0]) + " & " + str(quart[1]) + " & " + str(quart[2]) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{tables/" +arg+ "} & "+str(quart2[0]) + " & " + str(quart2[1]) + " & " + str(quart2[2]) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{tables/" + ben_var + "} \\\\ \n"
 
 			if quart[0] in final_dic:
 				final_dic[quart[0]].append(final_string)
 			else:
 				final_dic[quart[0]] = [final_string]
 		#h.write(str(i).replace("risk","") + " & "+str(quart[0]) + " & " + str(quart[1]) + " & " + str(quart[2]) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{../" +arg+ "} & "+str(quart2[0]) + " & " + str(quart2[1]) + " & " + str(quart2[2]) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{../" + ben_var + "} \\\\ \n")
-			thing = str(i).replace("risk","").title() + " & "+str(quart[0]) + " & " + str(quart[1]) + " & " + str(quart[2]) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{tables" + arg + "} \\\\ \n"
+			thing = str(i).replace("risk","").title() + " & "+str(quart[0]) + " & " + str(quart[1]) + " & " + str(quart[2]) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{tables/" + arg + "} \\\\ \n"
 
 			if quart[0] in risk_fdic:
 				risk_fdic[quart[0]].append(thing)
@@ -136,13 +136,13 @@ def parser(x):
 				risk_fdic[quart[0]] = [thing]
 			#g.write(str(i).replace("risk","").title() + " & "+str(quart[0]) + " & " + str(quart[1]) + " & " + str(quart[2]) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{../" + arg + "} \\\\ \n")
 		elif "Risk" in arg:
-			final_string = str(i).replace(" Risk","").title() + " & "+str(quart[0]) + " & " + str(quart[1]) + " & " + str(quart[2]) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{tables" + arg + "} \\\\ \n"
+			final_string = str(i).replace(" Risk","").title() + " & "+str(quart[0]) + " & " + str(quart[1]) + " & " + str(quart[2]) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{tables/" + arg + "} \\\\ \n"
 
 			if quart[0] in final_dic:
 				final_dic[quart[0]].append(final_string)
 			else:
 				final_dic[quart[0]] = [final_string]
-			thing = str(i).replace(" Risk","").title() + " & "+str(quart[0]) + " & " + str(quart[1]) + " & " + str(quart[2]) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{tables" + arg + "} \\\\ \n"
+			thing = str(i).replace(" Risk","").title() + " & "+str(quart[0]) + " & " + str(quart[1]) + " & " + str(quart[2]) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{tables/" + arg + "} \\\\ \n"
 			if quart[0] in risk_fdic:
 				risk_fdic[quart[0]].append(thing)
 			else:
@@ -150,12 +150,12 @@ def parser(x):
 
 			#g.write(str(i).replace(" Risk","").title() + " & "+str(quart[0]) + " & " + str(quart[1]) + " & " + str(quart[2]) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{../" + arg + "} \\\\ \n")
 		elif "Benefit" in arg:
-			final_string = str(i).replace(" Benefit","").title() + " & "+str(quart[0]) + " & " + str(quart[1]) + " & " + str(quart[2]) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{" + arg + "} \\\\ \n"
+			final_string = str(i).replace(" Benefit","").title() + " & "+str(quart[0]) + " & " + str(quart[1]) + " & " + str(quart[2]) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{tables/" + arg + "} \\\\ \n"
 			if quart[0] in final_dic:
 				final_dic[quart[0]].append(final_string)
 			else:
 				final_dic[quart[0]] = [final_string]
-			thing = str(i).replace(" Benefit","").title() + " & "+str(quart[0]) + " & " + str(quart[1]) + " & " + str(quart[2]) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{" + arg + "} \\\\ \n"
+			thing = str(i).replace(" Benefit","").title() + " & "+str(quart[0]) + " & " + str(quart[1]) + " & " + str(quart[2]) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{tables/" + arg + "} \\\\ \n"
 			
 			if quart[0] in benefit_fdic:
 				benefit_fdic[quart[0]].append(thing)
@@ -163,7 +163,7 @@ def parser(x):
 				benefit_fdic[quart[0]] = [thing]
 			#f.write(str(i).replace(" Benefit","").title() + " & "+str(quart[0]) + " & " + str(quart[1]) + " & " + str(quart[2]) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{../" + arg + "} \\\\ \n")
 		else:
-			thing = str(i).replace(" ben","").title() + " & "+str(quart[0]) + " & " + str(quart[1]) + " & " + str(quart[2]) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{" + arg + "} \\\\ \n"
+			thing = str(i).replace(" ben","").title() + " & "+str(quart[0]) + " & " + str(quart[1]) + " & " + str(quart[2]) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{tables/" + arg + "} \\\\ \n"
 			if quart[0] in benefit_fdic:
 				benefit_fdic[quart[0]].append(thing)
 			else:
