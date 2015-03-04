@@ -1,50 +1,54 @@
+%!TEX root = ../paper.tex
+
 \subsubsection{Data Type}
-Based on our data, we observed that the largest effect stemmed from the data type being shared in a scenario. We present various statistical models in section \ref{sec:regression} to support this conclusion. The 10 most and 10 least concerning data types can be seen in Table \ref{top10}. 
+Based on our data, we observed that the largest effect stemmed from the data type being shared in a scenario. We present various statistical models in section \ref{sec:regression} to support this conclusion. The 10 most and 10 least concerning data types can be seen in Table \ref{top10-table}. 
 
-Regardless of the data recipient or the device, participants were most concerned about photos and videos, especially if they contained embarrassing content, nudity, or financial information. As seen in Table \ref{top10-table}, photos and videos accounted for 5 of the top 10 concerns, {\color {red} and are unanimously considered to be concerning}. Information that could be used to impersonate someone (e.g., usernames/passwords for websites) or invade privacy (photos of someone at home) were also among the most concerning data types. 
+Regardless of the data recipient or the device, participants were most concerned about photos and videos, especially if they contained embarrassing content, nudity, or financial information. As seen in Table \ref{top10-table}, photos and videos accounted for 5 of the top 10 concerns, and are almost unanimously considered to be concerning. Information that could be used to impersonate someone (e.g., usernames/passwords for websites) or invade privacy (photos of someone at home) were also among the most concerning data types. 
 
-Also regardless of the other factors, the least concerning data types mostly consisted of information that could be observed through observations of public behavior, such as demographic information (e.g., age, gender, language spoken). {\color {red} As seen in Table \ref{top10-table}, participants had distributed opinions on how risky this information was to be shared. A possibility is that people rated these as unconcerning because of unfamiliarity in what applications would use this data for, or because there does not seem to be any immediate financial, social, or physical consequences from having this information shared.}
+Also regardless of the other factors, the least concerning data types mostly consisted of information that could be observed through observations of public behavior, such as demographic information (e.g., age, gender, language spoken). As seen in Table \ref{top10-table}, participants had spread distributions in perceptions regarding such information.  A possibility is that people rated these as unconcerning because of unfamiliarity in what applications would use this data for, or because there does not seem to be any immediate financial, social, or physical consequences from having this information shared.
 
 {\color {red} talk about the variance of the data types here, referring to the table in the appendix. Which were the highest in variance? Which were the unanimous? Which one had a spread? Were there any that were specifically polarized? J has yet to give me the table for this so I can talk about it. But the most unanimous ones seemed to be the highest-concerning ones, whereas the least concerning ones were more distributed. There are not any which are unanimously considered medium risk or to be not risky.}
 
-\begin{table}[t]
+\begin{table*}[t]
 \begin{center}
 \small
-\begin{tabular}{| r | l | r | l |c |}
+\begin{tabular}{| r | l | r | r |c |}
 \hline
-Rank & Data & VUR & sd & Distribution \\
+Rank & Data & VUR & $\sigma$ & Distribution \\
 \hline
-1 & a video of you unclothed & 95.97\% & number & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/tookavideoofyouunclothedcombined} \\
-2 & bank account information & 95.91\% & number & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedyourbankaccountinformationcombined}  \\
-3 & social security number & 94.84\% & number & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedyoursocialsecuritynumbercombined}\\
-4 & video of you entering in your PIN & 92.67\% & number & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/tookavideoofyouenteringinyourPINatanATMcombined}\\
-5 & a photo of you unclothed & 92.59\% & number & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/tookaphotoofyouunclothedcombined}\\
-6 & an incriminating/embarrassing photo of you & 91.39\% & number & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/tookanincriminatingphotoofyoudoingsomethingembarrassingcombined}\\
-7 & username and password for websites & 89.55\% & number & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedyourusernameandpasswordforwebsitescombined}\\
-8 & credit card information & 88.98\% & number & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedyourcreditcardinformationcombined}\\
-9 & an incriminating/embarrassing video of you & 88.41\% & number & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/tookanincriminatingvideoofyoudoingsomethingembarrassingcombined}\\
-10 & a random (inward-facing) photo you at home & 87.50\% & number & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/tookphotosofyou(withaninward-facingcamera)athomecombined}\\
- & \vdots & \\
-64 & eye movement patterns (for eye tracking) & 40.51\%& number & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/scannedyoureyetolearnyoureyepatterns(foreyetracking)combined} \\
-65 & when and how much you exercise  & 38.66\% & number & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedwhenhowandhowmuchyouexercisecombined}\\
-66 & when you are happy or having fun  & 34.75\% & number & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedwhenyouwerehappyorhavingfuncombined}\\
-67 & which television shows you watch & 30.20\% & number & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedwhattelevisionshowsyouwatchcombined}\\
-68 & when you are busy or interruptible  & 29.50\% & number & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedwhenyouarebusyorinterruptiblecombined}\\
-69 & music from your device  & 28.06\% & number & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/copiedanduploadedmusicfromyourdevicecombined}\\
-70 & your heart rate & 27.50\% & number & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedyourheartratecombined} \\
-71 & your age & 24.29\% & number & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedyouragecombined}\\
-72 & the language you speak & 15.86\% & number & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedthelanguageyouwerespeakingcombined}\\
-73 & your gender & 15.00\% & number & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedyourgendercombined}\\ 
+1 & video of you unclothed & 95.97\% & 0.31 & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/tookavideoofyouunclothedcombined} \\
+2 & bank account information & 95.91\% & 0.35 & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedyourbankaccountinformationcombined}  \\
+3 & social security number & 94.84\% & 0.26 & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedyoursocialsecuritynumbercombined}\\
+4 & video entering in a PIN at an ATM & 92.67\% & 0.47 & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/tookavideoofyouenteringinyourPINatanATMcombined}\\
+5 & photo of you unclothed & 92.59\% & 0.46 & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/tookaphotoofyouunclothedcombined}\\
+6 & photo of you that is very embarrassing & 91.39\% & 0.55 & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/tookanincriminatingphotoofyoudoingsomethingembarrassingcombined}\\
+7 & username and password for websites & 89.55\% & 0.62 & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedyourusernameandpasswordforwebsitescombined}\\
+8 & credit card information & 88.98\% & 0.56 & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedyourcreditcardinformationcombined}\\
+9 & video of you that is very embarrassing & 88.41\% & 0.53 & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/tookanincriminatingvideoofyoudoingsomethingembarrassingcombined}\\
+10 & photo of you at home & 87.50\% & 0.60 & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/tookphotosofyou(withaninward-facingcamera)athomecombined}\\
+ & \vdots & & & \\
+64 & eye patterns (for eye tracking) & 40.51\%& 1.27 & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/scannedyoureyetolearnyoureyepatterns(foreyetracking)combined} \\
+65 & exercise patterns  & 38.66\% & 1.26 & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedwhenhowandhowmuchyouexercisecombined}\\
+66 & when you are happy or having fun  & 34.75\% & 1.27 & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedwhenyouwerehappyorhavingfuncombined}\\
+67 & television shows watched & 30.20\% & 1.40 & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedwhattelevisionshowsyouwatchcombined}\\
+68 & when you are busy or interruptible  & 29.50\% & 1.26 & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedwhenyouarebusyorinterruptiblecombined}\\
+69 & music on device  & 28.06\% & 1.43 & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/copiedanduploadedmusicfromyourdevicecombined}\\
+70 & your heart rate & 27.50\% & 1.40 & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedyourheartratecombined} \\
+71 & age & 24.29\% & 1.43 & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedyouragecombined}\\
+72 & language spoken & 15.86\% & 1.49 & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedthelanguageyouwerespeakingcombined}\\
+73 & gender & 15.00\% & 1.45 & \includegraphics[width = 2cm, height = 0.5cm]{tex-inputs/data10/learnedyourgendercombined}\\ 
 \hline
 \end{tabular}
-\caption{The 10 most and least upsetting data types, across all recipients.}
+\caption{The 10 most and least upsetting data types, across all recipients. For the complete list of all data types across all recipients, see Appendix [?].}
 \label{top10-table}
 \end{center}
-\end{table}
+\end{table*}
 
-The data types the we examined span several existing and future use cases. However, we do not necessarily believe they are comprehensive or cover all possible future use cases for how wearable devices might capture personal data. As such, we decided to code each data type in terms of both the capture medium (e.g., video, audio, text, etc.) and the type of risk to which it might expose the user. The purpose of this was to examine {\it why} participants viewed certain data types as more or less risky than others so that we can then generalize our results to other data types that were not covered by this particular survey instrument. To this end, two researchers agreed on a codebook and then independently coded each of the 72 data types\footnote{We excluded the data types that did not feature a data recipient.} in terms of the medium used for collection and in terms of the type of risk posed to the user. The mediums fell into six possible categories:
+The data types examined span several existing and future use cases. We do not believe they are comprehensive in coverage of how wearable devices might capture data nor for all possible future use cases of the data. Therefore, we coded each data type in two ways: firstly in terms in the data and how it was captured (e.g., video, audio, text, etc.), and  secondly in terms of the type of risks presented to the user. This examines why participants viewed certain data collected as more/less risky than others, letting us  generalize our results. Two researchers agreed on a codebook and independently coded each of the 72 data types\footnote{We excluded the data types that did not feature a data recipient.} 
 
-\begin{enumerate}
+The data captured fell into the following six possible categories:
+
+\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
 \item Photo
 \item Video
 \item Audio
@@ -53,9 +57,9 @@ The data types the we examined span several existing and future use cases. Howev
 \item Demographic Information
 \end{enumerate}
 
-The associated risks with each data type fell into the following five categories:
+The associated risks data type fell into the following five categories:
 
-\begin{enumerate}
+\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
 \item {\bf Financial:} The risk involves the loss of money or property.
 \item {\bf Image:} The risk involves loss of control over one's self-image (e.g., publicizing something embarrassing).
 \item {\bf Medical:} The risk involves disclosure of medical information.
@@ -63,7 +67,7 @@ The associated risks with each data type fell into the following five categories
 \item {\bf Relationships:} The risk involves damage to the user's inter-personal relationships.
 \end{enumerate}
 
-Upon independently coding each data type along these two axes, the researchers met to resolve any disagreements, such that the resulting codings reflected unanimity. Prior to this resolution, they agree on 83\% of the codings. Cohen's $\kappa$ was 0.75 for the risks and 0.81 for the mediums, both indicating ``excellent'' agreement~\cite{Fleiss2003}.
+After independently coding all data types with respect to these categories, the researchers met to resolve any disagreements, such that the resulting codings reflected unanimity. Prior to this resolution, there was  83\% agreement. Cohen's $\kappa$ is 0.81 for the data capture and 0.75 for the associated risks, both indicating ``excellent'' agreement~\cite{Fleiss2003}.
 
 %A statistical analysis regarding the significance and confidence of <data> types with respect to all 72 was not performed due to the space constraints of the paper. We do consider all <data> categories in our statistical model, which provides an analysis of what factors had contributed to the perceived severity of a particular situation. 
 
