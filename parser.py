@@ -38,7 +38,7 @@ def parse(text):
 \\small
 \\begin{tabular}{| r | p{1.5cm} | p{1cm} | p{1cm} | p{2cm} |}
 \\hline
-Rank & Recipient & VUR & Variance & Distribution\\\\
+Rank & Recipient & VUR & Standard Deviation & Distribution\\\\
 \\hline\n""")
 	# friends.write("\\begin{table}[t]\n\\begin{center}\n\\small\n\\begin{tabular}{| p{0.5cm} | p{7cm} | p{1cm} | c |}\n\\hline\n Rank & Q &  VUR & Distribution  \\\\ \n\\hline\n")
 	# work.write("\\begin{table}[t]\n\\begin{center}\n\\small\n\\begin{tabular}{| p{0.5cm} | p{7cm} | p{1cm} | c |}\n\\hline\n Rank & Q &  VUR & Distribution  \\\\ \n\\hline\n")
@@ -49,25 +49,7 @@ Rank & Recipient & VUR & Variance & Distribution\\\\
 	# work.write(x)
 	# pub.write(x)
 	# app.write(x)
-	collapsed.write("""\\documentclass[a4paper,12pt]{article}
-\\usepackage[cm]{fullpage}
-\\usepackage{longtable}
-\\usepackage{graphicx}
-\\begin{document}
-\\begin{longtable}{| p{0.5cm} | p{7cm} | p{1cm} |p{1cm} | c |}
-
-\\hline \\multicolumn{1}{|c|}{\\textbf{Rank}} & \\multicolumn{1}{c|}{\\textbf{Question}} & \\multicolumn{1}{c|}{\\textbf{VUR}} &  \\multicolumn{1}{c|}{\\textbf{Standard Deviation}} &\\multicolumn{1}{c|}{\\textbf{Distribution}} \\\\ \\hline 
-\\endfirsthead
-
-\\multicolumn{3}{c}%
-{{\\bfseries \\tablename\ \\thetable{} -- continued from previous page}} \\\\
-\\hline \\multicolumn{1}{|c|}{\\textbf{Rank}} & \\multicolumn{1}{c|}{\\textbf{Question}} & \\multicolumn{1}{c|}{\\textbf{VUR}} & \\multicolumn{1}{c|}{\\textbf{Standard Deviation}} & \\multicolumn{1}{c|}{\\textbf{Distribution}} \\\\ \\hline 
-\\endhead
-
-\\hline \\multicolumn{4}{|r|}{{Continued on next page}} \\\\ \\hline
-\\endfoot
-\\hline 
-\\endlastfoot\n""")
+	collapsed.write(x)
 	collapsed_std.write("""\\documentclass[a4paper,12pt]{article}
 \\usepackage[cm]{fullpage}
 \\usepackage{longtable}
@@ -153,7 +135,7 @@ Rank & Recipient & VUR & Variance & Distribution\\\\
 			ax.set_autoscale_on(False)
 			plt.axis('off')
 
-			savefig("tables/" + str(prev) + "combined", dpi=None, facecolor='w', edgecolor='w',
+			savefig(str(prev) + "combined", dpi=None, facecolor='w', edgecolor='w',
 			orientation='portrait', papertype=None, format=None,
 			transparent=False, bbox_inches='tight', pad_inches=0,
 			frameon=None)
@@ -167,11 +149,11 @@ Rank & Recipient & VUR & Variance & Distribution\\\\
 				new_collapsed[VUR].append(str(prev))
 			else:
 				new_collapsed[VUR] = [str(prev)]
-				collapsed_dict[VUR] =[" & "  + str(prev).title()+ " & " + str(VUR) +"&" + str(std)+" & " + "\\includegraphics[width = 2cm, height = 0.5cm]{tables/" + str(prev) + "combined} \\\\ \n"]
+				collapsed_dict[VUR] =[" & "  + str(prev).title()+ " & " + str(VUR) + " & " + "\\includegraphics[width = 2cm, height = 0.5cm]{../tables" + str(prev) + "combined} \\\\ \n"]
 			if std in std_dict:
-				std_dict[std].append(" & "  + str(prev).title()+ " & " + str(VUR) + " & " + str(std) + "& \\includegraphics[width = 2cm, height = 0.5cm]{tables/" + str(prev) + "combined} \\\\ \n")
+				std_dict[std].append(" & "  + str(prev).title()+ " & " + str(VUR) + " & " + str(std) + "& \\includegraphics[width = 2cm, height = 0.5cm]{../tables" + str(prev) + "combined} \\\\ \n")
 			else:
-				std_dict[std] = [" & "  + str(prev).title()+ " & " + str(VUR) + " & "+ str(std) + "&\\includegraphics[width = 2cm, height = 0.5cm]{tables/" + str(prev) + "combined} \\\\ \n"]
+				std_dict[std] = [" & "  + str(prev).title()+ " & " + str(VUR) + " & "+ str(std) + "&\\includegraphics[width = 2cm, height = 0.5cm]{../tables" + str(prev) + "combined} \\\\ \n"]
 
 			VUR_collapsed.append(VUR)
 
@@ -192,11 +174,11 @@ Rank & Recipient & VUR & Variance & Distribution\\\\
 
 		if str(x[1]) == "FRIENDS":
 			if count in friends_dict:
-				friends_dict[count].append(" & "  + str(prev).title()+ " & " + str(count) + "\% & " + "\\includegraphics[width = 2cm, height = 0.5cm]{tables/" + title + "} \\\\  \n")
+				friends_dict[count].append(" & "  + str(prev).title()+ " & " + str(count) + "\% & " + "\\includegraphics[width = 2cm, height = 0.5cm]{../tables" + title + "} \\\\  \n")
 
 			else:
 				
-				friends_dict[count] = [" & "  + str(prev).title()+ " & " + str(count) + "\% & " + "\\includegraphics[width = 2cm, height = 0.5cm]{tables/" + title + "} \\\\  \n"]
+				friends_dict[count] = [" & "  + str(prev).title()+ " & " + str(count) + "\% & " + "\\includegraphics[width = 2cm, height = 0.5cm]{../tables" + title + "} \\\\  \n"]
 			for i in numbers:
 				recipient_friends.append(i)
 				recipient_total.append(i)
@@ -205,10 +187,10 @@ Rank & Recipient & VUR & Variance & Distribution\\\\
 
 		elif str(x[1]) == "WORKCONTACTS":
 			if count in work_dict:
-				work_dict[count].append(" & "  + str(prev).title()+ " & " + str(count) + "\% & " + "\\includegraphics[width = 2cm, height = 0.5cm]{tables/" + title + "} \\\\  \n")
+				work_dict[count].append(" & "  + str(prev).title()+ " & " + str(count) + "\% & " + "\\includegraphics[width = 2cm, height = 0.5cm]{../tables" + title + "} \\\\  \n")
 			else:
 
-				work_dict[count] = [" & "  + str(prev).title()+ " & " + str(count) + "\% & " + "\\includegraphics[width = 2cm, height = 0.5cm]{tables/" + title + "} \\\\  \n"]
+				work_dict[count] = [" & "  + str(prev).title()+ " & " + str(count) + "\% & " + "\\includegraphics[width = 2cm, height = 0.5cm]{../tables" + title + "} \\\\  \n"]
 			for i in numbers:
 				recipient_work.append(i)
 				recipient_total.append(i)
@@ -218,9 +200,9 @@ Rank & Recipient & VUR & Variance & Distribution\\\\
 
 		elif str(x[1]) == "PUBLIC":
 			if count in pub_dict:
-				pub_dict[count].append(" & "  + str(prev).title()+ " & " + str(count) + "\% & " + "\\includegraphics[width = 2cm, height = 0.5cm]{tables/" + title + "} \\\\  \n")
+				pub_dict[count].append(" & "  + str(prev).title()+ " & " + str(count) + "\% & " + "\\includegraphics[width = 2cm, height = 0.5cm]{../tables" + title + "} \\\\  \n")
 			else:
-				pub_dict[count] = [" & "  + str(prev).title()+ " & " + str(count) + "\% & " + "\\includegraphics[width = 2cm, height = 0.5cm]{tables/" + title + "} \\\\  \n"]
+				pub_dict[count] = [" & "  + str(prev).title()+ " & " + str(count) + "\% & " + "\\includegraphics[width = 2cm, height = 0.5cm]{../tables" + title + "} \\\\  \n"]
 			for i in numbers:
 				recipient_pub.append(i)
 				recipient_total.append(i)
@@ -230,9 +212,9 @@ Rank & Recipient & VUR & Variance & Distribution\\\\
 
 		elif str(x[1]) == "APPSERVER":
 			if count in app_dict:
-				app_dict[count].append(" & "  + str(prev).title()+ " & " + str(count) + "\% & " + "\\includegraphics[width = 2cm, height = 0.5cm]{tables/" + title + "} \\\\ \n")
+				app_dict[count].append(" & "  + str(prev).title()+ " & " + str(count) + "\% & " + "\\includegraphics[width = 2cm, height = 0.5cm]{../tables" + title + "} \\\\ \n")
 			else:
-				app_dict[count] = [" & "  + str(prev).title()+ " & " + str(count) + "\% & " + "\\includegraphics[width = 2cm, height = 0.5cm]{tables/" + title + "} \\\\ \n"]
+				app_dict[count] = [" & "  + str(prev).title()+ " & " + str(count) + "\% & " + "\\includegraphics[width = 2cm, height = 0.5cm]{../tables" + title + "} \\\\ \n"]
 			for i in numbers:
 				recipient_app.append(i)
 				recipient_total.append(i)
@@ -294,9 +276,7 @@ Rank & Recipient & VUR & Variance & Distribution\\\\
 
 	favg = round(np.mean(recipient_friends),4)
 	fvariance = 0
-	for i in recipient_friends:
-		fvariance += (favg -i)**2
-	fvariance = round(fvariance/len(recipient_friends),4)
+	fvariance = round(np.std(recipient_friends),4)
 	plt.hist(edgecolor = "none",x = recipient_friends,color = 'green',bins = range(0,7),alpha = 0.5, align = 'mid', rwidth = 1,normed = True)
 	plt.axis('off')
 	savefig("tables/" + "recipient_friends", dpi=None, facecolor='w', edgecolor='w',
@@ -305,15 +285,12 @@ Rank & Recipient & VUR & Variance & Distribution\\\\
 			frameon=None)
 	plt.clf()
 	VUR = str(round(float(recipient_friends.count(5))/len(recipient_friends),4)*100)
-	recipient_dic[VUR] = "& FRIENDS & " + VUR +" & " + str(fvariance**(0.5))+ " & \\includegraphics[width = 2cm, height = 2cm]{tables/recipient_friends}\\\\ \n"
+	recipient_dic[VUR] = "& FRIENDS & " + VUR +" & " + str(fvariance**(0.5))+ " & \\includegraphics[width = 2cm, height = 2cm]{../tables/recipient_friends}\\\\ \n"
 
 	wavg = round(np.mean(recipient_work),4)
 
 	wvariance = 0
-	for i in recipient_work:
-		wvariance += (wavg -i)**2
-
-	wvariance = round(wvariance/len(recipient_work),4)
+	wvariance = round(np.std(recipient_work),4)
 	plt.hist(edgecolor = "none",x = recipient_work,color = 'green',bins = range(0,7),alpha = 0.5, align = 'mid', rwidth = 1,normed = True)
 	plt.axis('off')
 	savefig("tables/" + "recipient_work", dpi=None, facecolor='w', edgecolor='w',
@@ -322,15 +299,12 @@ Rank & Recipient & VUR & Variance & Distribution\\\\
 			frameon=None)
 	plt.clf()
 	VUR = str(round(float(recipient_work.count(5))/len(recipient_work),4)*100)
-	recipient_dic[VUR] = "& WORKCONTACTS & " + VUR +" & " +str(wvariance** (0.5)) + "& \\includegraphics[width = 2cm, height = 2cm]{tables/recipient_work}\\\\ \n"
+	recipient_dic[VUR] = "& WORKCONTACTS & " + VUR +" & " +str(wvariance** (0.5)) + "& \\includegraphics[width = 2cm, height = 2cm]{../tables/recipient_work}\\\\ \n"
 
 
 	aavg = round(np.mean(recipient_app),4)
-	avariance = 0
-	for i in recipient_app:
-		avariance += (aavg -i)**2
+	avariance = round(np.std(recipient_app),4)
 
-	avariance = round(avariance/len(recipient_app),4)
 	plt.hist(edgecolor = "none",x = recipient_app,color = 'green',bins = range(0,7),alpha = 0.5, align = 'mid', rwidth = 1,normed = True)
 	plt.axis('off')
 	savefig("tables/" + "recipient_app", dpi=None, facecolor='w', edgecolor='w',
@@ -339,15 +313,11 @@ Rank & Recipient & VUR & Variance & Distribution\\\\
 			frameon=None)
 	plt.clf()
 	VUR = str(round(float(recipient_app.count(5))/len(recipient_app),4)*100)
-	recipient_dic[VUR] = "& APPSERVER & " + VUR +" & "+ str(avariance ** (0.5)) + "& \\includegraphics[width = 2cm, height = 2cm]{tables/recipient_app}\\\\ \n"
+	recipient_dic[VUR] = "& APPSERVER & " + VUR +" & "+ str(avariance ** (0.5)) + "& \\includegraphics[width = 2cm, height = 2cm]{../tables/recipient_app}\\\\ \n"
 
 
 	pavg = round(np.mean(recipient_pub),4)
-	pvariance = 0
-	for i in recipient_pub:
-		pvariance += (pavg -i)**2
-
-	pvariance = round(pvariance/len(recipient_pub),4)
+	pvariance = round(np.std(recipient_pub),4)
 	plt.hist(edgecolor = "none",x = recipient_pub,color = 'green',bins = range(0,7),alpha = 0.5, align = 'mid', rwidth = 1,normed = True)
 	plt.axis('off')
 	savefig("tables/" + "recipient_pub", dpi=None, facecolor='w', edgecolor='w',
@@ -356,16 +326,11 @@ Rank & Recipient & VUR & Variance & Distribution\\\\
 			frameon=None)
 	plt.clf()
 	VUR = str(round(float(recipient_pub.count(5))/len(recipient_pub),4)*100) 
-	recipient_dic[VUR] = "& PUBLIC & " + VUR +" & " +str(pvariance ** 0.5) + "& \\includegraphics[width = 2cm, height = 2cm]{tables/recipient_pub}\\\\ \n"
+	recipient_dic[VUR] = "& PUBLIC & " + VUR +" & " +str(pvariance ** 0.5) + "& \\includegraphics[width = 2cm, height = 2cm]{../tables/recipient_pub}\\\\ \n"
 
 
 	tavg = round(np.mean(recipient_total),4)
-	tvariance = 0
-	for i in recipient_total:
-		tvariance += (tavg -i)**2
-	recipient_dic[favg] = ""
-
-	tvariance = round(tvariance/len(recipient_total),4)
+	tvariance = round(np.std(recipient_total),4)
 	plt.hist(edgecolor = "none",x = recipient_total,color = 'green',bins = range(0,7),alpha = 0.5, align = 'mid', rwidth = 1,normed = True)
 	plt.axis('off')
 	savefig("tables/" + "recipient_total", dpi=None, facecolor='w', edgecolor='w',
@@ -374,7 +339,7 @@ Rank & Recipient & VUR & Variance & Distribution\\\\
 			frameon=None)
 	plt.clf()
 	VUR = str(round(float(recipient_total.count(5))/len(recipient_total),4)*100)
-	recipient_dic[VUR] = "& ALL & " + VUR +" & " +str(tvariance**0.5) + "& \\includegraphics[width = 2cm, height = 2cm]{tables/recipient_total}\\\\ \n"
+	recipient_dic[VUR] = "& ALL & " + VUR +" & " +str(tvariance**0.5) + "& \\includegraphics[width = 2cm, height = 2cm]{../tables/recipient_total}\\\\ \n"
 	rank = 1
 	for i in sorted(list(recipient_dic.keys()),reverse = True):
 
