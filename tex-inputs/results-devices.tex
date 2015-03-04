@@ -1,63 +1,36 @@
 %!TEX root = ../paper.tex
 
-\subsubsection{Device}
-{\color {red} intro to this section} 
-
-The five questions were:
-\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
-\item Q1: How would you feel if an app on your <device> vibrated your phone without asking you first?
-\item Q2: How would you feel if an app on your <device> connected to a Bluetooth device (like a headset) without asking you first?
-\item Q3: How would you feel if an app on your <device> un-muted a phone call without asking you first?
-\item Q4: How would you feel if an app on your <device> took screenshots when you were using other apps, without asking you first?
-\item Q5: How would you feel if an app on your <device> sent premium (they cost money) calls or text messages, without asking you first?
-\end{enumerate}
-
-Participants had unique VURs for scenarios only differing in device. Our participants had a 58.79\% VUR when asked about wearables and 46.64\% VUR when asked about smartphones. The VURs for both devices for all 5 questions are in table ~\ref{deviceVUR}. {\color {red} talk about the standard deviation of the devices in general--was there more spread for the answers wrt smartphones, cubetastic, or were they kind of all the same?} However, the effect the device has on the VUR is not considered to be statistically significant (see Table ~\ref{betweendevice}). Additionally, there is no statistically significant difference between how people reacted in a given situation; although, participants were statistically significantly upset in Q2. The aforementioned results are only with respect to between subjects analysis, where answers are from participants who received either only the wearables or smartphone version of the 5 questions. Too few instances of participants answering both versions of questions occurred (34 in total for all 5 questions) to perform a sound within-subjects analysis.  
 
 \begin{table}[t]
 \begin{center}
 \begin{tabular}{| c | r | r |}
 \hline
- Question &  Wearable VUR, $\sigma$ & Smartphone VUR, $\sigma$ \\
+ Misbehavior &  Cubetastic3000 & Smartphone \\
  \hline
- All & 58.79\%, \# & 46.64\%, \# \\
-Q1 & 14.81\%,  \# &  6.13\%, \# \\
-Q2 & 44.11\%, \# &  19.85\%, \# \\
-Q3 & 87.09\%, \# &  58.44\%, \# \\
-Q4 & 52.77\%, \# & 55.74\%, \# \\
-Q5 & 86.49\%, \# &  91.82\%, \# \\ 
+ \hline
+ All & 58.79\% & 46.67\%\\
+ \hline
+Vibration & 14.81\%  &  6.14\%\\
+Bluetooth & 44.12\%  &  19.86\%\\
+Unmuted Call & 87.10\%  &  58.44\%\\
+Screenshot & 52.78\%  & 55.74\%\\
+Premium Calls/Texts & 86.49\%  &  91.94\%\\ 
 \hline
 \end{tabular}
-\caption{VURs for the questions described in Section \ref{sec:smartphones}, contrasting smartphones with the Cubetastic3000.}
+\caption{VURs for the five questions about device misbehaviors described in Section \ref{sec:smartphones}, contrasting smartphones with the Cubetastic3000.}
 \label{deviceVUR}
 \end{center}
 \end{table}
 
-\begin{table}%[h]
-\begin{center}
-\begin{tabular}{|c|r|r|r|r|}
-%Question & Chi^2 &	2-tail P &	Sig?	 & n	& effect size\\
-%All	2.814	0.1395	No		3589		0.001\\
-%Q1	2.500	0.1139	No		714		0.004\\
-%Q2	17.333	<0.0001	Yes		708		0.024\\
-%Q3	0.020	0.8886	No		699		0.000\\
-%Q4	1.426	0.2324	No		731		0.002\\
-%Q5	1.611		0.2043	No		710		0.002\\
-\hline
-Question & $\chi^2$ & p-value & n & $\phi$ \\
-\hline
-All & 2.202 & <0.1378 & 3,588 & 0.001\\
-Q1 & 2.500 & <0.1139 & 714 & 0.004\\
-Q2 & 17.333 & <0.0001 & 708 &  0.024\\
-Q3 & 0.020 & <0.8886 & 699 &  0.000\\
-Q4 & 1.413 & <0.2345 & 730& 0.002\\
-Q5 & 1.604 & <0.2054 & 709 & 0.002\\
-\hline
-\end{tabular}
-\caption{Chi-square test results comparing participants' VURs between the smartphone and Cubetastic3000 questions.}
-\label{betweendevice}
-\end{center}
-\end{table}
+\subsubsection{Device}
+Recall that each participant answered 2 questions drawn from a set of 5 regarding their reactions to smartphone misbehaviors. To compare these misbehaviors with misbehaviors on the Cubetastic3000, we included these same 5 questions amongst the pool of 293 Cubetastic3000 scenarios, only modifying the device type. In this manner, while all 1,782 participants received 2 smartphone questions, there were 159 participants who received at least one of these questions in relation to the Cubetastic 3000. Across all participants, the VUR was 46.7\% (of 1,782) when describing smartphones, whereas the VUR increased to 58.8\% (of 159) when describing these same misbehaviors on the Cubetastic3000. The VURs for both devices for all 5 questions are in Table ~\ref{deviceVUR}.
+
+To ensure independence of observations, we performed a Mann-Whitney U test by comparing participants' average VURs for the Cuebtastic3000 scenarios (i.e., 159 participants) to the remaining participants' average VURs for the smartphone scenarios (i.e., 1,623 participants). We found this difference to be statistically significant ($108,664.0$, $p<0.0005$), however, the effect size was incredibly small ($r=0.08$). Because of this small effect size, we did not further reduce our statistical power by separately comparing each of the 5 misbehaviors. As a result, we can conclude that in general users are likely to be more wary of misbehaviors occurring on wearable devices than smartphones, the difference is likely negligible. Similarly, the entire effect may be due to participants' increased familiarity with smartphones, and therefore may disappear as they increasingly encounter more wearable devices.
+
+%{\color {red} talk about the variance of the devices in general--was there more spread for the answers wrt smartphones, cubetastic, or were they kind of all the same?}
+
+
+
 						
 %\begin{table}%[h]
 %\begin{center}
