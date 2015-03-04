@@ -2,43 +2,47 @@
 \label{sec:regression}
 In order to examine the relative effect of each factor on participants' VURs, we constructed several statistical models to predict whether a participant would be ``very upset'' with a given scenario based on the data type, device, data recipient, and their demographic factors (i.e., age, education, gender, and privacy attitudes). We performed binary logistic regressions using generalized estimating equations, which account for our repeated measures experimental design (i.e., each participant contributed multiple data points).
 
-\begin{table}
+\begin{table}[t]
 \centering
 \begin{tabular}{|l| r| r| r|}
 \hline
 Parameters & $\chi^2$ & $df$ & QIC\\
 \hline
 \hline
-(Intercept) & 255.0 & 1 & 18,477.5\\
+(Intercept) & 254.5 & 1 & 18,699.82\\
 \hline
-(Intercept) & 78.4 & 1 & 18,122.9\\
-Device & 400.3 & 1 & \\
+(Intercept) & 79.2 & 1 & 18,347.6\\
+Device & 391.0 & 1 & \\
 \hline
-(Intercept) & 289.1 & 1 & 17,667.5\\
+(Intercept) & 232.1 & 1 & 17.897.0\\
 IUIPC (covariate) & 368.5 & 1 & \\
 \hline
-(Intercept) & 297.8 & 1 &17,383.6\\
-Data Recipient & 913.4 & 4 & \\
+(Intercept) & 298.2 & 1 &17,606.5\\
+Data Recipient & 900.0 & 4 & \\
 \hline
-(Intercept) & 374.6 & 1 & 14,794.5\\
-Data Type & 1,866.5 & 77 & \\
+(Intercept) & 370.9 & 1 & 14,970.7\\
+Data Type & 1,898.4& 76 & \\
 \hline
-(Intercept) & 303. & 1 & 13,942.9\\
-Device & 11.1 & 1 &  \\
-Data Recipient & 624.6 & 3 & \\
-Data Type & 1,961.2 & 76 &  \\
+(Intercept) & 79.2 & 1 & 18,349.9\\
+Device & 391.0 & 1 & \\
 \hline
-(Intercept) & 28.4 & 1 & 12,752.8 \\
-Device  & 8.8 & 1 &  \\
-Data Recipient & 577.8 & 3 & \\
-Data Type & 1,752.1 & 76 & \\
-IUIPC (covariate) & 378.7 & 1 & \\
+(Intercept) & 29.2 & 1 & 14,114.8\\
+Device & 8.1 & 1 &  \\
+Data Recipient & 579.3 & 3 & \\
+Data Type & 1,765.4 & 76 &  \\
+\hline
+(Intercept) & 298.0 & 1 & 12,931.6 \\
+Device  & 10.4 & 1 &  \\
+Data Recipient & 626.2 & 3 & \\
+Data Type & 1,997.5 & 76 & \\
+IUIPC (covariate) & 374.8 & 1 & \\
 \hline
 \end{tabular}
-\caption{Goodness-of-fit metrics for various binary logistic models of our data using general estimating equations to account for repeated measures. The columns represent the Wald test statistic for each parameter and the overall Quasi-Akaike Information Criterion (QIC) for each model.}
+\caption{Goodness-of-fit metrics for various binary logistic models of our data using general estimating equations to account for repeated measures. The columns represent the Wald test statistic for each parameter and the overall Quasi-Akaike Information Criterion (QIC) for each model. Each parameter listed was statistically significant at $p<0.0005$.}
 \label{regression}
 \end{table}
 
-We created several models using our three dependent variables as factors: device (smartphone vs. wearable), data recipient, and data type. We also used our collected demographic factors as covariates: age, gender, education, wearable device ownership (yes/no), and mean IUIPC score. For each model, we performed Wald's test to examine the model effects attributable to each of these eight parameters and observed that the only covariate that had an observable effect on our models was participants' IUIPC scores. Thus, we opted to remove the other covariates from our analysis.
+We created several models using our three dependent variables as factors: device (smartphone vs. wearable), data recipient, and data type. We also used our collected demographic factors as covariates: age, gender, education, wearable device ownership (yes/no), and mean IUIPC score. For each model, we performed Wald's test to examine the model effects attributable to each of these eight parameters and observed that the only covariate that had an observable effect on our models was participants' IUIPC scores. Thus, we opted to remove the other covariates from our analysis. Similarly, we observed no statistically significant interaction effects between any of these four variables, which is why we did not include them in our models.
 
-Table \ref{regression} shows the various models that we examined and the Quasi-Akaike Information Criterion (QIC), which is a goodness-of-fit metric for model selection (lower relative values indicate better fit). As can be seen, while the remaining four predictors all contributed to the predictive power of our model, the data type was the strongest predictor. Conversely, despite being significant, the device was the weakest predictor (i.e., whether participants were answering questions about a smartphone or a wearable device).
+Table \ref{regression} shows the various models that we examined and the Quasi-Akaike Information Criterion (QIC), which is a goodness-of-fit metric for model selection (lower relative values indicate better fit). As can be seen, while the remaining four predictors all contributed to the predictive power of our model, the data type was the strongest predictor. Conversely, despite being significant, the device was the weakest predictor (i.e., whether participants were answering questions about a smartphone or a wearable device). This suggests that participants' biases towards specific wearable devices or wearable devices in general had a minimal effect on their results, and that they were primarily focused on the data type captured and how it will be shared.
+
