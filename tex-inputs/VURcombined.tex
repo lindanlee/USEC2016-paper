@@ -1,22 +1,11 @@
-\documentclass[a4paper,12pt]{article}
-\usepackage[cm]{fullpage}
-\usepackage{longtable}
-\usepackage{graphicx}
-\begin{document}
-\begin{longtable}{| p{7cm} | l | l | l | l | l |}
-
-\hline \multicolumn{1}{|c|}{\textbf{Question}} & \multicolumn{1}{c|}{\textbf{All}} & \multicolumn{1}{c|}{\textbf{Friends}} &  \multicolumn{1}{c|}{\textbf{Public}} & \multicolumn{1}{c|}{\textbf{Work}} & \multicolumn{1}{c|}{\textbf{App}} \\ \hline 
-\endfirsthead
-
-\multicolumn{6}{c}%
-{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
-\hline \multicolumn{1}{|c|}{\textbf{Question}} & \multicolumn{1}{c|}{\textbf{All}} & \multicolumn{1}{c|}{\textbf{Friends}} &  \multicolumn{1}{c|}{\textbf{Public}} & \multicolumn{1}{c|}{\textbf{Work}} & \multicolumn{1}{c|}{\textbf{App}} \\ \hline 
-\endhead
-
-\hline \multicolumn{6}{|r|}{{Continued on next page}} \\ \hline
-\endfoot
-\hline 
-\endlastfoot
+%!TEX root = ../paper.tex
+\begin{table*}[t]
+\begin{center}
+\small
+\begin{tabular}{| l | r | r | r | r | r |}
+\hline
+Question & All & Friends & Public & Work& App \\
+\hline
 video of you unclothed & 95\% (1) & 97\% (4) & 94\% (10) & 100\% (1) & 90\% (2) \\ 
 bank account information & 95\% (2) & 94\% (10) & 95\% (7) & 100\% (1) & 90\% (1) \\ 
 social security number & 94\% (3) & 100\% (1) & 100\% (1) & 93\% (9) & 88\% (3) \\ 
@@ -88,6 +77,9 @@ heart rate & 27\% (70) & 21\% (68) & 36\% (65) & 44\% (64) & 9\% (70) \\
 age & 24\% (71) & 17\% (69) & 33\% (67) & 36\% (67) & 14\% (65) \\ 
 language spoken & 15\% (72) & 17\% (70) & 18\% (72) & 28\% (70) & 27\% (2) \\ 
 gender & 15\% (73) & 15\% (71) & 19\% (71) & 15\% (72) & 9\% (69) \\ 
-\end{longtable}
-
-\end{document}
+\hline
+\end{tabular}
+\caption{The VUR of all questions for all recipients.}
+\label{all-vur}
+\end{center}
+\end{table*}
