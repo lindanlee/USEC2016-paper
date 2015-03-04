@@ -18,8 +18,8 @@ This is a paper for [WEIS 2015](http://weis2015.econinfosec.org/).
 ### Linda TODOs:
 
 Before anything else:
-* better intro and framing (AND SEND TO SERGE AND DAVE)! 
-* heavy editing pass again to format the paper well
+* ~~better intro and framing (AND SEND TO SERGE AND DAVE)! 
+* ~~heavy editing pass again to format the paper well
 * BETTER RELATED WORK; redo search for papers (human attention; econ-y things)
 
 The rest:
@@ -27,12 +27,6 @@ The rest:
 * beef up discussion of tech ratings with new risk/ben tables
 * analysis and discussion on high-variance (table with data and recipient sorted by standard deviation for our own looking, then just talk about them in the paper without including them inside)
 
-### J TODOs: 
-* VUR question rakings table comparing all, public, work, friends, and app, in that order
-* Combine the risk and benefits tech ranking table 
-* Make sure that are in same sorted order for VUR distributions table and VUR rankings table.
-* a table of VUR recipient rankings. 
-* a table like we have in the appendix of the collapsed data type and VUR distributions, but of of the top 10 and bottom 10 risky technologies  (will go inline inside the paper with discussion). Look at Table 1 in the paper.pdf; this is what we want, but just with the new table that we have. 
 
 =============================
 
