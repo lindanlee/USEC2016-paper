@@ -1,7 +1,7 @@
 \documentclass{acm_proc_article-sp}
 \usepackage{color}
 \usepackage[hyphens]{url}
-\usepackage[cm]{fullpage}
+%\usepackage[cm]{fullpage}
 \usepackage{longtable}
 \usepackage{graphicx}
 
@@ -19,13 +19,11 @@
   \setlength{\parsep}{0pt}
 }{\end{itemize}}
 
-
 \begin{document}
-
 \input{tex-inputs/title.tex}
 \input{tex-inputs/abstract.tex}
 \input{tex-inputs/intro.tex}
-\input{tex-inputs/background.tex}
+\input{tex-inputs/related_work.tex} 
 \input{tex-inputs/methodology.tex}
 
 \input{tex-inputs/results-intro.tex}
@@ -39,13 +37,15 @@
 \input{tex-inputs/results-openended.tex}
 
 \input{tex-inputs/discussion.tex} 
-\input{tex-inputs/related_work.tex} 
 \input{tex-inputs/conclusion.tex} 
 
 %\input{tables/collapsed.tex}
 %\input{ranks.tex}
-\input{tex-inputs/appendix/riskbenefit-table.tex}
-\input{tex-inputs/appendix/VURcombined.tex}
+\input{tex-inputs/risk.tex}
+\input{tex-inputs/benefit.tex}
+\input{tex-inputs/riskbenefit.tex}
+%\input{tex-inputs/appendix/riskbenefit-table.tex}
+%\input{tex-inputs/appendix/VURcombined.tex}
 
 \bibliographystyle{abbrv}
 \bibliography{bibliography.bib} 
