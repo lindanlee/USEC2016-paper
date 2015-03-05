@@ -15,6 +15,7 @@ all: $(ALL)
 	bibtex $(<:.tex=)
 
 paper.pdf:: paper.bbl
+paper.pdf:: $(wildcard tex-inputs/*.tex)
 
 clean:
 	-rm -f *.{aux,dvi,log,bbl,blg}
