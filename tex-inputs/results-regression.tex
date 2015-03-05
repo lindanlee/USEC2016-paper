@@ -35,7 +35,7 @@ IUIPC $\times$ Gender & 8.33 & 1 &\\
 \label{regression}
 \end{table}
 
-We created several models using two independent variables as predictors: data recipient and data type. Because the device type independent variable (i.e., whether they were using the Cubetastic3000 or a smartphone) was only varied for the 5 smartphone misbehaviors listed in Section \ref{sec:smartphones}, we removed these 5 data types from our models, which resulted in a total of 72 data types shared between 4 possible recipients. We also used our collected demographic factors as covariates: age, gender, education, wearable device ownership (yes/no), and mean IUIPC score. For each model, we performed Wald's test to examine the model effects attributable to each of these parameters and observed that the only covariates that had an observable effect on our models were gender and participants' IUIPC scores, which also exhibited an interaction effect with each other. Thus, we opted to remove the other covariates from our analysis. Table \ref{regression} shows the various models that we examined and the Quasi-Akaike Information Criterion (QIC), which is a goodness-of-fit metric for model selection (lower relative values indicate better fit). As can be seen, the data type was the strongest predictor of VUR.
+We created several models using two independent variables as predictors: data recipient and data type. Because the device type independent variable (i.e., whether they were using the Cubetastic3000 or a smartphone) was only varied for the 5 smartphone misbehaviors listed in Section \ref{sec:smartphones}, we removed these 5 data types from our models, which resulted in a total of 72 data types shared between 4 possible recipients. We also used our collected demographic factors as covariates: age, gender, education, wearable device ownership (yes/no), and mean IUIPC score. For each model, we performed Wald's test to examine the model effects attributable to each of these parameters and observed that the only covariates that had an observable effect on our models were gender and participants' IUIPC scores, which also exhibited an interaction effect with each other. Thus, we opted to remove the other covariates from our analysis. Table \ref{regression} shows the various models that we examined and the Quasi-Akaike Information Criterion (QIC), which is a goodness-of-fit metric for model selection (lower relative values indicate better fit). As can be seen, the data type was the strongest predictor of VUR. The coefficients for the model with the best fit can be seen in Appendix \ref{sec:regression}.
 
 While these models clearly illustrate  the relative weight that users might place on various types of information when determining whether a given privacy violation is truly upsetting, one shortcoming of this approach is its generalizability: the data type predictor is categorical and obviously limited to the data types that we specifically chose for this study. That is, it is not entirely clear how these models might apply to data types not among the 72 that we directly examined. Therefore, in an attempt to make our data set more generalizable to other use cases, we coded each data type in two ways: in terms of broad descriptions of the data type (e.g., video, audio, etc.) and in terms of the type of risk it might present to the user. Two researchers agreed on a codebook and independently coded each of the 72 data types.\footnote{We excluded the data types that did not feature a data recipient, the five misbehaviors used to examine device types.}
 
@@ -72,21 +72,21 @@ Parameters & $\chi^2$ & $df$ & QIC\\
 Risk & 405.18 & 4 & \\
 \hline
 (Intercept) & 380.39 & 1 & 12,681.86\\
-Capture & 439.45 & 5 & \\
+Data Category & 439.45 & 5 & \\
 \hline
 (Intercept) & 256.15 & 1 & 12,061.87\\
 Risk & 157.84 & 4 & \\
-Medium & 183.90 & 5 & \\
-Risk $\times$ Medium & 259.81 & 8 & \\
+Data Category & 183.90 & 5 & \\
+Risk $\times$ Data Category & 259.81 & 8 & \\
 \hline
 (Intercept) & 62.65 & 1 & 10,406.35\\
 Risk & 205.21 & 4 & \\
-Medium & 250.35 & 5 & \\
+Data Category & 250.35 & 5 & \\
 Recipient & 546.89 & 3 & \\
 IUIPC (covariate) & 103.94 & 1 & \\
 Gender (covariate) & 9.80 & 1 & \\
 IUIPC $\times$ Gender & 8.21 & 1 & \\
-Risk $\times$ Medium & 303.44 & 8 & \\
+Risk $\times$ Data Category & 303.44 & 8 & \\
 Recipient $\times$ Risk & 39.14 & 12 & \\
 \hline
 \end{tabular}
