@@ -1,4 +1,5 @@
 %!TEX root = ../paper.tex
+
 \subsubsection{Regression Models} 
 \label{sec:regression}
 In order to examine the relative effect of each factor on participants' VURs, we constructed several statistical models to predict whether a participant would be ``very upset'' with a given scenario based on the data type, data recipient, and their demographic factors (i.e., age, education, gender, and privacy attitudes). We performed binary logistic regressions using generalized estimating equations, which account for our repeated measures experimental design (i.e., each participant contributed multiple data points).
@@ -10,42 +11,53 @@ In order to examine the relative effect of each factor on participants' VURs, we
 Parameters & $\chi^2$ & $df$ & QIC\\
 \hline
 \hline
-(Intercept) & 254.5 & 1 & 18,699.82\\
+(Intercept) & 423.96 & 1 & 13,209.1\\
 \hline
-(Intercept) & 79.2 & 1 & 18,347.6\\
-Device & 391.0 & 1 & \\
-\hline
-(Intercept) & 232.1 & 1 & 17.897.0\\
+(Intercept) & 207.07 & 1 & 12,551.49\\
 IUIPC (covariate) & 368.5 & 1 & \\
+Gender (covariate) & 6.30 & 1 & \\
 \hline
-(Intercept) & 298.2 & 1 &17,606.5\\
-Data Recipient & 900.0 & 4 & \\
+(Intercept) & 411.66 & 1 &12,458.86\\
+Data Recipient & 599.72 & 3 & \\
 \hline
-(Intercept) & 370.9 & 1 & 14,970.7\\
-Data Type & 1,898.4& 76 & \\
+(Intercept) & 418.02 & 1 & 11,382.75\\
+Data Type & 1,141.40 & 71 & \\
 \hline
-(Intercept) & 79.2 & 1 & 18,349.9\\
-Device & 391.0 & 1 & \\
+(Intercept) & 66.18 & 1 & 9,609.65 \\
+Data Recipient & 617.25 & 3 & \\
+Data Type & 1,288.51 & 71 & \\
+IUIPC (covariate) & 105.73 & 1 & \\
+Gender (covariate) & 9.74 & 1 & \\
+IUIPC $\times$ Gender & 8.33 & 1 &\\
 \hline
-(Intercept) & 29.2 & 1 & 14,114.8\\
-Device & 8.1 & 1 &  \\
-Data Recipient & 579.3 & 3 & \\
-Data Type & 1,765.4 & 76 &  \\
 \hline
-(Intercept) & 298.0 & 1 & 12,931.6 \\
-Device  & 10.4 & 1 &  \\
-Data Recipient & 626.2 & 3 & \\
-Data Type & 1,997.5 & 76 & \\
-IUIPC (covariate) & 374.8 & 1 & \\
+(Intercept) & 442.66 & 1 & 12,727.42\\
+Risk & 405.18 & 4 & \\
+\hline
+(Intercept) & 380.39 & 1 & 12,681.86\\
+Medium & 439.45 & 5 & \\
+\hline
+(Intercept) & 256.15 & 1 & 12,061.87\\
+Risk & 157.84 & 4 & \\
+Medium & 183.90 & 5 & \\
+Risk $\times$ Medium & 259.81 & 8 & \\
+\hline
+(Intercept) & 62.65 & 1 & 10,406.35\\
+Risk & 205.21 & 4 & \\
+Medium & 250.35 & 5 & \\
+Recipient & 546.89 & 3 & \\
+IUIPC (covariate) & 103.94 & 1 & \\
+Gender (covariate) & 9.80 & 1 & \\
+IUIPC $\times$ Gender & 8.21 & 1 & \\
+Risk $\times$ Medium & 303.44 & 8 & \\
+Recipient $\times$ Risk & 39.14 & 12 & \\
 \hline
 \end{tabular}
-\caption{Goodness-of-fit metrics for various binary logistic models of our data using general estimating equations to account for repeated measures. The columns represent the Wald test statistic for each parameter and the overall Quasi-Akaike Information Criterion (QIC) for each model. Each parameter listed was statistically significant at $p<0.0005$.}
+\caption{Goodness-of-fit metrics for various binary logistic models of our data using general estimating equations to account for repeated measures. The columns represent the Wald test statistic for each parameter and the overall Quasi-Akaike Information Criterion (QIC) for each model. Each parameter listed was statistically significant at $p<0.005$.}
 \label{regression}
 \end{table}
 
-We created several models using two independent variables as predictors: data recipient and data type. Because the device type independent variable (i.e., whether they were using the Cubetastic3000 or a smartphone) was only varied for the 5 smartphone misbehaviors listed in Section \ref{sec:smartphones}, we removed these 5 data types from our models, which resulted in a total of 72 data types shared between 4 possible recipients. We also used our collected demographic factors as covariates: age, gender, education, wearable device ownership (yes/no), and mean IUIPC score. For each model, we performed Wald's test to examine the model effects attributable to each of these parameters and observed that the only covariate that had an observable effect on our models was participants' IUIPC scores. Thus, we opted to remove the other covariates from our analysis. Similarly, we observed no statistically significant interaction effects between any of our predictors, which is why we did not include them in our models.
+We created several models using two independent variables as predictors: data recipient and data type. Because the device type independent variable (i.e., whether they were using the Cubetastic3000 or a smartphone) was only varied for the 5 smartphone misbehaviors listed in Section \ref{sec:smartphones}, we removed these 5 data types from our models, which resulted in a total of 72 data types shared between 4 possible recipients. We also used our collected demographic factors as covariates: age, gender, education, wearable device ownership (yes/no), and mean IUIPC score. For each model, we performed Wald's test to examine the model effects attributable to each of these parameters and observed that the only covariates that had an observable effect on our models were gender and participants' IUIPC scores, which also exhibited an interaction effect with each other. Thus, we opted to remove the other covariates from our analysis.
 
-Table \ref{regression} shows the various models that we examined and the Quasi-Akaike Information Criterion (QIC), which is a goodness-of-fit metric for model selection (lower relative values indicate better fit). As can be seen, while the remaining four predictors all contributed to the predictive power of our model, the data type was the strongest predictor. Conversely, despite being significant, the device was the weakest predictor (i.e., whether participants were answering questions about a smartphone or a wearable device). This suggests that participants' biases towards specific wearable devices or wearable devices in general had a minimal effect on their results, and that they were primarily focused on the data type captured and how it will be shared. Because the data types were categorical, we did not include the full model here, instead showing the parameter weights for each data type in Appendix \ref{regression}.
-
-
+Table \ref{regression} shows the various models that we examined and the Quasi-Akaike Information Criterion (QIC), which is a goodness-of-fit metric for model selection (lower relative values indicate better fit). As can be seen, the data type was the strongest predictor of VUR. One shortcoming of this approach is its generalizability: the data type predictor is categorically and obviously limited to the data types that we specifically chose for this study. While we believe these were relatively comprehensive, we have no doubt that future devices will be able to make use of data that goes well beyond the 72 data types captured in our module. As a result of this, we created a second set of models in which we replaced the data type with the risk types and mediums that we described in Section \ref{sec:datatypes}. Because these risk categories and mediums are less likely to change over time, models that take these into account are likely to be more useful and less likely to be overfit. What these models show us is that both risk and medium are relatively strong predictors by themselves, and have an even stronger interaction effect. When the data recipient and covariates are added to the model, the resulting goodness-of-fit is not much worse than that of the model using the actual data type.
 
