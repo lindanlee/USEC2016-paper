@@ -30,12 +30,49 @@ IUIPC (covariate) & 105.73 & 1 & \\
 Gender (covariate) & 9.74 & 1 & \\
 IUIPC $\times$ Gender & 8.33 & 1 &\\
 \hline
+\end{tabular}
+\caption{Goodness-of-fit metrics for various binary logistic models of our data using general estimating equations to account for repeated measures. The columns represent the Wald test statistic for each parameter and the overall Quasi-Akaike Information Criterion (QIC) for each model. Each parameter listed was statistically significant at $p<0.005$.}
+\label{regression}
+\end{table}
+
+We created several models using two independent variables as predictors: data recipient and data type. Because the device type independent variable (i.e., whether they were using the Cubetastic3000 or a smartphone) was only varied for the 5 smartphone misbehaviors listed in Section \ref{sec:smartphones}, we removed these 5 data types from our models, which resulted in a total of 72 data types shared between 4 possible recipients. We also used our collected demographic factors as covariates: age, gender, education, wearable device ownership (yes/no), and mean IUIPC score. For each model, we performed Wald's test to examine the model effects attributable to each of these parameters and observed that the only covariates that had an observable effect on our models were gender and participants' IUIPC scores, which also exhibited an interaction effect with each other. Thus, we opted to remove the other covariates from our analysis. Table \ref{regression} shows the various models that we examined and the Quasi-Akaike Information Criterion (QIC), which is a goodness-of-fit metric for model selection (lower relative values indicate better fit). As can be seen, the data type was the strongest predictor of VUR.
+
+While these models clearly illustrate  the relative weight that users might place on various types of information when determining whether a given privacy violation is truly upsetting, one shortcoming of this approach is its generalizability: the data type predictor is categorical and obviously limited to the data types that we specifically chose for this study. That is, it is not entirely clear how these models might apply to data types not among the 72 that we directly examined. Therefore, in an attempt to make our data set more generalizable to other use cases, we coded each data type in two ways: in terms of broad descriptions of the data type (e.g., video, audio, etc.) and in terms of the type of risk it might present to the user. Two researchers agreed on a codebook and independently coded each of the 72 data types.\footnote{We excluded the data types that did not feature a data recipient, the five misbehaviors used to examine device types.}
+
+The data types fell into the following six possible categories:
+\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+\item Photo
+\item Video
+\item Audio
+\item Behavioral Information
+\item Biometric Information
+\item Demographic Information
+\end{enumerate}
+
+While the first three categories are self-explanatory, the latter three categories are all based on different user characteristics. We defined {\it behavioral information} as observations about the user's activities; {\it biometric information} is defined as measurements of the user's body; and {\it demographic information} is defined as non-biometric information about the user's traits. The associated risks for each data type fell into the following five categories:
+\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+\item {\bf Financial:} the loss of money or property.
+\item {\bf Image:} the loss of control over one's self-image (e.g., publicizing something embarrassing).
+\item {\bf Medical:} the disclosure of medical information.
+\item {\bf Physical:} physical harm to the user.
+\item {\bf Relationships:} damage to the user's inter-personal relationships.
+\end{enumerate}
+
+After independently coding all data types with respect to these categories, the researchers met to resolve any disagreements, such that the resulting codings reflected unanimity. Prior to this resolution, there was  83\% agreement. Cohen's $\kappa$ was 0.81 for the data categories and 0.75 for the associated risks, both indicating ``excellent'' agreement~\cite{Fleiss2003}.
+
+
+\begin{table}[t]
+\centering
+\begin{tabular}{|l| r| r| r|}
+\hline
+Parameters & $\chi^2$ & $df$ & QIC\\
+\hline
 \hline
 (Intercept) & 442.66 & 1 & 12,727.42\\
 Risk & 405.18 & 4 & \\
 \hline
 (Intercept) & 380.39 & 1 & 12,681.86\\
-Medium & 439.45 & 5 & \\
+Capture & 439.45 & 5 & \\
 \hline
 (Intercept) & 256.15 & 1 & 12,061.87\\
 Risk & 157.84 & 4 & \\
@@ -53,11 +90,10 @@ Risk $\times$ Medium & 303.44 & 8 & \\
 Recipient $\times$ Risk & 39.14 & 12 & \\
 \hline
 \end{tabular}
-\caption{Goodness-of-fit metrics for various binary logistic models of our data using general estimating equations to account for repeated measures. The columns represent the Wald test statistic for each parameter and the overall Quasi-Akaike Information Criterion (QIC) for each model. Each parameter listed was statistically significant at $p<0.005$.}
-\label{regression}
+\caption{Goodness-of-fit metrics for additional binary logistic models of our data using general estimating equations to account for repeated measures. The columns represent the Wald test statistic for each parameter and the overall Quasi-Akaike Information Criterion (QIC) for each model. Each parameter listed was statistically significant at $p<0.005$.}
+\label{regression2}
 \end{table}
 
-We created several models using two independent variables as predictors: data recipient and data type. Because the device type independent variable (i.e., whether they were using the Cubetastic3000 or a smartphone) was only varied for the 5 smartphone misbehaviors listed in Section \ref{sec:smartphones}, we removed these 5 data types from our models, which resulted in a total of 72 data types shared between 4 possible recipients. We also used our collected demographic factors as covariates: age, gender, education, wearable device ownership (yes/no), and mean IUIPC score. For each model, we performed Wald's test to examine the model effects attributable to each of these parameters and observed that the only covariates that had an observable effect on our models were gender and participants' IUIPC scores, which also exhibited an interaction effect with each other. Thus, we opted to remove the other covariates from our analysis.
 
-Table \ref{regression} shows the various models that we examined and the Quasi-Akaike Information Criterion (QIC), which is a goodness-of-fit metric for model selection (lower relative values indicate better fit). As can be seen, the data type was the strongest predictor of VUR. One shortcoming of this approach is its generalizability: the data type predictor is categorically and obviously limited to the data types that we specifically chose for this study. While we believe these were relatively comprehensive, we have no doubt that future devices will be able to make use of data that goes well beyond the 72 data types captured in our module. As a result of this, we created a second set of models in which we replaced the data type with the risk types and mediums that we described in Section \ref{sec:datatypes}. Because these risk categories and mediums are less likely to change over time, models that take these into account are likely to be more useful and less likely to be overfit. What these models show us is that both risk and medium are relatively strong predictors by themselves, and have an even stronger interaction effect. When the data recipient and covariates are added to the model, the resulting goodness-of-fit is not much worse than that of the model using the actual data type.
+Using these two new variables as additional independent variables (and removing the previous data type variable), we created a second set of models. Because these risk categories and mediums are less likely to change over time, models that take these into account are likely to be more useful and less likely to be overfit. What these models show us is that both risk and medium are relatively strong predictors by themselves, and have an even stronger interaction effect. When the data recipient and covariates are added to the model, the resulting goodness-of-fit is not much worse than that of the model using the actual data type.
 
