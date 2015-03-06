@@ -1,24 +1,23 @@
 %!TEX root = ../paper.tex
 
 \section{Methodology}
-To obtain a comprehensive list of possible risks that wearable devices might present in the future, we examined the sensors, capabilities, permissions, and applications of the most popular wearable devices on the market at the time of this study. At the time of this study, August 2014, the most popular wearable devices included the Fitbit fitness tracker which performs continuously monitors heartbeat, steps taken, and sleep patterns \cite{6_fitbit_2014, 7_time_2014}, the Pebble smartwatch which can take pictures, send texts, show notifications from online, and push notifications to services \cite{pebble_smartwatch_2014, 9_verge_2014, 10_readwrite_2014}, and Google Glass \cite{11_wikipedia_2015, 12_turi_2014}. We used these wearable devices, along with other comparable wearable devices on the market, as inspiration to develop a list of security and privacy risks that users might be concerned about.
+To obtain a comprehensive list of possible risks that wearable devices might present in the future, we examined the sensors, capabilities, permissions, and applications of the most popular wearable devices on the market at the time of this study. At the time of this study, August 2014, the most popular wearable devices included the Fitbit fitness tracker, which continuously monitors heartbeat, steps taken, and sleep patterns~\cite{6_fitbit_2014, 7_time_2014}; the Pebble smartwatch, which can take pictures, send texts, show notifications from online, and push notifications to services~\cite{pebble_smartwatch_2014, 9_verge_2014, 10_readwrite_2014}; and Google Glass~\cite{11_wikipedia_2015, 12_turi_2014}. We used these wearable devices, along with other comparable wearable devices on the market, as inspiration to develop a list of security and privacy risks that users might be concerned about.
 
-We then designed a survey to gauge how severe our participants consider these risks to be.
-Our survey contained two main sections.
-In one section, we presented participants with several scenarios---something undesirable that might happen with their wearable device---and asked them to rate their level of concern if each scenario were to happen.
-This was intended to elicit their perception of the severity and impact of the risk.
-The format of this section was based on Felt {\it et al.}'s study of user perceptions of security and privacy risks with mobile devices.
+We designed a survey to gauge how severe our participants consider these risks to be.
+Our survey contained two main sections. In one section, we presented participants with several scenarios---something undesirable that might happen with their wearable device---and asked them to rate their level of concern if each scenario were to happen. This was intended to elicit their perception of the severity and impact of the risk.
+The format of this section was based on Felt {\it et al.}'s study of user perceptions of security and privacy risks with mobile devices~\cite{Felt}.
 In the other section, we asked participants to compare the risks and benefits of wearable technologies to those of better-understood technologies, following the same methodology from Fischhoff {\it et al.}'s seminal study in risk perception~\cite{Fischhoff}.
 %Finally, we collected demographic information, which included a privacy concern scale and whether participants owned any wearable devices. 
 
 \subsection{Motivation}
+In this section, we describe the two prior works on which we based our survey format: Felt {\it et al.}'s survey of smartphone-based risks~\cite{Felt} and Fischhoff {\it et al.}'s survey of more general technology-based risk perceptions~\cite{Fischhoff}.
+
 \subsubsection{Smartphone Risk Scenarios}
 Felt \etal previously studied the security concerns of smartphone users by conducting a large-scale online survey~\cite{Felt}. Their survey asked 3,115 smartphone users about 99 risk scenarios. Participants were asked how upset they would be if a certain action occurred without their permission. Participants rated each situation on a Likert scale ranging from ``indifferent (1)'' to ``very upset (5).''
 Our methodology closely follows that study, but with scenarios chosen to shed light on the security and privacy risks of wearable devices.
 
-\subsubsection{Technology Risk Perception}
-Fischhoff \etal performed a seminal study of the perceived risks of 30 widely used technologies~\cite{Fischhoff}. In their study, participants were asked to separately rate the risks and benefits for these technologies. They were told to think about all people affected by the technology, and to think about long-term vs. short-term risks and benefits. Then, the participants rated these technologies with respect to each other on a numerical scale, being instructed to rate the least risky or least beneficial technology a 10 and scaling the ratings linearly (e.g., a technology with risk rating 20 is considered twice as risky compared to a technology with a risk rating of 10).
-We apply their methodology to evaluate the perceived risks and benefits of several technologies related to wearable computing.
+\subsubsection{Technology Risk Perceptions}
+Fischhoff \etal performed a seminal study of the perceived risks surrounding 30 widely used technologies~\cite{Fischhoff}. In their study, participants were asked to separately rate the risks and benefits for these technologies. They told participants to think about all people affected by the technology, and to think about long-term versus short-term risks and benefits. Then, the participants rated these technologies with respect to each other on a numerical scale, being instructed to rate the least risky or least beneficial technology a 10 and scaling the ratings linearly (e.g., a technology with a risk rating of 20 is considered twice as risky as compared to a technology with a risk rating of 10). We apply their methodology to evaluate the perceived risks and benefits of several technologies related to wearable computing and how these technologies compared to more familiar technologies.
 %Using this methodlogy, they were able to categorize different technologies based on whether they were high-risk/high-benefit, low-risk/low-benefit, and so forth. 
 
 \subsection{Survey Questions}
@@ -35,14 +34,40 @@ In our survey, each participant answered 27 questions, across five different sec
 We randomized the order participants saw sections of the survey (with the exception of the comprehension and demographic questions, which were always first and last, respectively), as well as the order of questions in each section.
 
 \subsubsection{Comprehension Questions}
-Because participants might be biased to specific companies (e.g., visceral reactions to Google Glass based on popular media stories), we based our questions on a fictitious wearable. Thus, the beginning of the survey introduced participants to the ``Cubetastic3000,'' which was the basis for all questions on wearables risks. We highlighted the capabilities of this device and described use cases. To ensure that participants had read and understood this device's capabilities, we ask them two multiple-choice comprehension questions.
+Because participants might be biased to specific companies (e.g., visceral reactions to Google Glass based on popular media stories), we based our questions on a fictitious wearable. Thus, the beginning of the survey introduced participants to the ``Cubetastic3000,'' which was the basis for all questions on wearables risks. We highlighted the capabilities of this device and described use cases:
+
+\begin{quotation}
+{\it Imagine that you are the proud owner of the Cubetastic3000, a new, high-tech computing device designed to be worn on your head. Imagine also that you wear this device all the time, because it is very lightweight, durable, and convenient.
+
+The Cubetastic3000 has the capability to capture video, photos, audio, and biometrics (biological data about you, such as heart rate). Just like other devices today, you can install third-party applications from an app store, and these applications can use the information that the Cubetastic3000 captures.
+
+With a wide range of applications and capabilities, your device can do all sorts of things, such as:\\
+
+\noindent---measuring heart rate, breathing, and other things to keep track of your fitness level and overall health\\
+
+\noindent---look at what you see to provide information about what's around you\\
+
+\noindent---allow you to take notes just by telling the device what you need to remember\\
+
+\noindent---take videos of you or what you see to share with others\\
+
+\noindent---automatically take photos or video so that you can replay events that previously happened\\
+
+\noindent---play music that you like for you when it detects that no one is around\\
+
+\noindent---infer information about you so you don't need to log in or search for the same thing over and over\\
+
+\noindent ...and much more!}
+\end{quotation}
+
+To ensure that participants had read and understood this device's capabilities, since it would form the basis for many of our survey questions, we ask them two multiple-choice comprehension questions about the device's capabilities and where it might be worn. We filtered out those who could not answer these questions.
 
 \subsubsection{Wearable Scenarios}
-We presented scenarios involving data captured by the Cubetastic3000 and asked participants to rate how upset they would be if a particular type of data (e.g., video, audio, gestures, etc.) were shared with a particular data recipient without asking them first (see Figure \ref{fig:prompt}). Responses were collected on a 5-point Likert scale (from ``indifferent'' to ``very upset''), following Felt \etal\cite{Felt}. Questions were of the form: 
+We presented scenarios involving data captured by the Cubetastic3000 and asked participants to rate how upset they would be if a particular type of data (e.g., video, audio, gestures, etc.) were shared without permission with a particular data recipient (see Figure \ref{fig:prompt}). Responses were reported on a 5-point Likert scale (from ``indifferent'' to ``very upset''), following Felt \etal\cite{Felt}. Questions were of the form: 
 
-\textit{``How would you feel if an app on your Cubetastic3000 learned <data> and shared it with <recipient>, without asking you first?''}. 
+\textit{``How would you feel if an app on your Cubetastic3000 learned <data> and shared it with <recipient>, without asking you first?''}
 
-We created an initial pool of 288 questions by combining 72 data types (<data>) with 4 data recipients (<recipient>). The 4 possible data recipients were: \\[-.8cm]
+We created an initial pool of 288 questions by combining 72 data types (<data>) with 4 data recipients (<recipient>): \\[-.8cm]
 
 \begin{figure}[t]
 	\centering
@@ -58,12 +83,11 @@ We created an initial pool of 288 questions by combining 72 data types (<data>) 
 \item The app's server (but didn't share it with anyone else)\\[-.8cm]
 \end{packed_item}
 
-The purpose of these questions was to determine how upset participants would be when data is inappropriately shared, and to understand how their reaction depends upon the type and recipient of the data that is shared.
-There were a total of 288 questions in this set.
+The purpose of these questions was to determine how upset participants would be when data is inappropriately shared, and to understand how their reaction depends upon the type and recipient of the data that is shared. Thus, our question pool consisted of 293 questions: the 288 described here, plus 5 that we describe in the next section. In this section of the survey, participants received six questions, randomly drawn from this pool.
 
 \subsubsection{Smartphone Scenarios}
 \label{sec:smartphones}
-We presented participants with a second set of scenarios to control for the type of device being used. Rather than using the previous pool of 288 <data> and <recipient> combinations, we selected 5 of the scenarios that Felt \etal found least and most concerning to their participants~\cite{Felt}. We randomly presented each participant with 2 of these 5 questions: 
+We presented participants with a second set of scenarios to control for the type of device being used. Rather than using the previous pool of 288 <data> and <recipient> combinations, we selected 5 scenarios that Felt \etal found least and most concerning to their participants~\cite{Felt}. We randomly presented each participant with 2 of these 5 questions: 
 \begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
 \item How would you feel if an app on your <device> vibrated your phone without asking you first?
 \item How would you feel if an app on your <device> connected to a Bluetooth device (like a headset) without asking you first?
@@ -72,7 +96,7 @@ We presented participants with a second set of scenarios to control for the type
 \item How would you feel if an app on your <device> sent premium (they cost money) calls or text messages, without asking you first?
 \end{enumerate}
 
-So that we could perform controlled comparisons based on device type, we also included a version of each of these questions in the wearable scenarios section that substituted ``Cubetastic3000'' for ``smartphone.'' Thus, there were a total of 293 Cubetastic3000 scenarios, from which each participant was randomly assigned 6.
+In the previously described section of our survey, <device> was set to ``Cubetastic3000'' and not every participant received one of these questions (i.e., these five questions were among the pool of 293 questions from which participants were randomly assigned 6). In this section of the survey, every participant received exactly two of these questions, where <device> was set to ``smartphone.'' This allowed us to perform controlled comparisons based on whether the same misbehavior was occurring on a smartphone (i.e., a better understood device) or the Cubetastic3000 (i.e., a fictitious wearable device).
 
 \subsubsection{Risk and Benefit Assessment}
 In addition to investigating reactions to particular scenarios, we examined broad perceptions of new technologies and how those compared to perceptions of other understood technologies. We modeled this section after a seminal risk perception study by Fischhoff \etal\cite{Fischhoff}, in which participants ranked technologies by their relative risk and benefit to society. We asked participants to perform this exercise for 4 technologies previously examined by Fischhoff {\it et al.}: handguns, motorcycles, lawnmowers, and electricity.  These technologies were chosen to span varying levels of risks and benefits.
@@ -99,9 +123,9 @@ The exit portion of the survey contained demographic questions asking for age, g
 We conducted a one-hour focus group to validate our design, gauge comprehension, and measure fatigue. The focus group began with participants taking the survey. Afterward, we asked participants to give feedback on the format and the content, noting any instructions or questions that were unclear. The focus group concluded with a discussion of possible benefits and risks of wearable devices, in order to brainstorm any additional scenarios to include. Finally, we compensated participants with \$30 in cash. We recruited all of our focus group participants from Craigslist. Of the 13 participants, 54\% were female, and ages ranged from 18 to 64 ($\mu = 36.1$, $\sigma = 15.3$).  Education backgrounds ranged from high school to doctorate degrees, and professions included student, artist, marketer, and court psychologist.
 
 \subsection{Recruitment and Analysis Method}
-We recruited 2,250 participants over August 7--13, 2014 via Amazon's Mechanical Turk. We restricted participants to those over 18, living in the United States, and having a successful HIT completion rate of 95\% or above. Based on incorrect responses to either of the two comprehension questions, we filtered out 366 (16\% of 2,250) participants. We filtered out an additional 99 participants (4\% of 2,250) due to incomplete responses, and three participants who were under 18, leaving us with a total sample size of 1,782. Of these, 57.9\% were male (1,031), 41.0\% were female (731), and 20 participants declined to state their genders. Ages ranged from 18 to 73, with a mean of 32.1 ($\sigma$ = 10.37). Almost half of our participants had completed a college degree or more (49.2\% of 1,782), which includes the 219 (12.3\% of 1,782) who reported graduate degrees. While our sample was younger and more educated than the U.S. population as a whole, we believe it is still consistent with the U.S. Internet-using population.
+We recruited 2,250 participants over August 7--13, 2014 via Amazon's Mechanical Turk. We restricted participants to those over 18, living in the United States, and having a successful HIT completion rate of 95\% or above. We compensated each participant with \$1.75 upon successfully completing the survey. Based on incorrect responses to either of the two comprehension questions, we filtered out 366 (16\% of 2,250) participants. We filtered out an additional 99 participants (4\% of 2,250) due to incomplete responses, and three participants who were under 18, leaving us with a total sample size of 1,782. Of these, 57.9\% were male (1,031), 41.0\% were female (731), and 20 participants declined to state their genders. Ages ranged from 18 to 73, with a mean of 32.1 ($\sigma$ = 10.37). Almost half of our participants had completed a college degree or more (49.2\% of 1,782), which includes the 219 (12.3\% of 1,782) who reported graduate degrees. While our sample was younger and more educated than the U.S. population as a whole, we believe it is still consistent with the U.S. Internet-using population.
 
 In performing our analysis in the next section, we chose to focus on the very upset rate (VUR) of each scenario.  The VUR is defined as the percentage of participants who reported a `5' on the Likert scales. 
-We use the VURs rather than the average of all Likert scores for the same reasons as Felt {\it et al.}: the VUR does not presume that the ratings, ranging from ``indifferent'' to ``very upset,'' are linearly spaced. Additionally, most were be upset, at least a little, in all scenarios when a device takes action without permission (rating distribution: ``1''= 759, ``2'' = 918, ``3'' = 1,452, ``4''' = 2,421, ``5'' = 8,344). Thus, the main distinguishing factor of a participant reacting to a given scenario is whether they were maximally upset or not, rather than how upset they were.
+We use the VURs rather than the average of all Likert scores for the same reasons as Felt {\it et al.}: the VUR does not presume that the ratings, ranging from ``indifferent'' to ``very upset,'' are linearly spaced. Additionally, most people are likely to be upset, at least a little, in all scenarios, because a device is taking action without permission (rating distribution: ``1''= 759, ``2'' = 918, ``3'' = 1,452, ``4''' = 2,421, ``5'' = 8,344). Thus, the main distinguishing factor of a participant reacting to a given scenario is whether they were maximally upset or not, rather than how upset they were. However, one limitation of this approach is that it only allows us to make {\it relative} comparisons between scenarios, rather than being able to definitively state how upset people might be if a single scenario were to occur.
 
 We followed Fischhoff {\it et al.}'s methodology and did not normalize the numerical responses. Rather, we report medians and quartiles, which are not impacted by outliers. For the open-ended question at the end (i.e., additional privacy concerns), two researchers independently coded 1,782 responses, with an initial agreement rate of 89.7\%. The researchers discussed and resolved any disagreements so that the final codings reflect unanimous agreement.
