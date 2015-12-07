@@ -66,7 +66,6 @@ The goal of this work is to shape the still-malleable future of wearable platfor
 \item We report how 72 types of data likely to be captured by wearable devices were perceived by our participants and rank them by relevance. 
 \item We repeat this across 4 types of recipients to also illustrate the contribution of the data recipient to the overall perceived risk. 
 \item We sketch a landscape of users' self-reported concerns regarding wearable devices, spanning concerns outside of security and privacy. 
-%\item We compare emergent risks with existing risks and find that participants perceive risks similarly to physical risks---for instance, facial detection was perceived as risky as using a lawnmower.
 \end{itemize}
 
 \section{Methodology}
@@ -163,39 +162,7 @@ We combined 72 data types (<data>) with 4 data recipients (<recipient>) to form 
 \item The app's server (but didn't share it with anyone else) %\\[-.8cm]
 \end{packed_item}
 
-The purpose for using this question format was to determine how upset participants would be if data were inappropriately shared, and the extent to which their reactions were based on the data type and recipient. Each participant answered 6 questions that were randomly drawn from this pool. %293: the 288 described here, plus 5 that we describe in the next section (Section \ref{sec:smartphones}).
-
-%\subsubsection{Smartphone Scenarios}
-%\label{sec:smartphones}
-%We presented participants with a second set of scenarios to control for the type of device being used. Rather than using the previous pool of 288 <data> and <recipient> combinations, we selected 5 scenarios that Felt \etal found least and most concerning to their participants~\cite{Felt}:
-%
-%\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
-%\item {\it How would you feel if an app on your <device> vibrated your phone without asking you first?}
-%\item {\it How would you feel if an app on your <device> connected to a Bluetooth device (like a headset) without asking you first?}
-%\item {\it How would you feel if an app on your <device> un-muted a phone call without asking you first?}
-%\item {\it How would you feel if an app on your <device> took screenshots when you were using other apps, without asking you first?}
-%\item {\it How would you feel if an app on your <device> sent premium (they cost money) calls or text messages, without asking you first?}
-%\end{enumerate}
-%
-%
-%In the previously described section of our survey, <device> was set to ``Cubetastic3000'' and not every participant received one of these questions (i.e., these 5 questions were among the pool of 293 questions from which participants were randomly assigned 6). In the separate smartphone section of the survey, every participant received exactly two of these questions, where <device> was set to ``smartphone.'' This allowed us to perform controlled comparisons based on whether the same misbehavior was occurring on a smartphone (i.e., a better understood device) or the Cubetastic3000 (i.e., a fictitious wearable device).
-
-%\subsubsection{Risk and Benefit Assessment}
-%In addition to investigating reactions to particular scenarios, we examined broad perceptions of new technologies and how those compared to perceptions of other understood technologies. We modeled this section after a seminal risk perception study by Fischhoff \etal\cite{Fischhoff}, in which participants ranked technologies by their relative risk and benefit to society. We ask participants to perform this exercise for 4 technologies previously examined by Fischhoff {\it et al.}: handguns, motorcycles, lawnmowers, and electricity.  These technologies were chosen to span varying levels of risks and benefits.
-%
-%Our goal was to ask about familiar technologies such as the Internet, general and specific wearable artifacts, and a range of new capabilities. To do this, we asked participants to evaluate one of 20 technologies relevant to wearables along 4 previously studied technologies. The 20 technologies were: Internet, email, laptops, smartphones, smart watches, fitness trackers, Google Glass, Cubetastic3000, discrete camera, discrete microphone, facial recognition, facial detection, voice recognition, voice-based emotion detection, location tracking, speech-to-text, language detection, heart rate detection, age detection, and gender detection.
-%
-%To parallel Fischhoff {\it et al.}'s risk perception study, we gave our participants a similar prompt to numerically express the perceived gross risk/gross benefit over a long period of time for all parties involved. We randomized whether they performed the ranking for risks or benefits first. The prompt is listed in Appendix \ref{sec:prompt}. The question format was as follows:
-%
-%\begin{quotation}
-%{\it \noindent Fill in your <risk/benefit> numbers for the following:\\
-%
-%\noindent Handguns: \_\_\_\_\_\_\_ \\
-%Motorcycles: \_\_\_\_\_\_\_\\
-%Lawnmowers: \_\_\_\_\_\_\_\\
-%<Wearable Technology>: \_\_\_\_\_\_\_\\
-%Electricity: \_\_\_\_\_\_\_\\ }
-%\end{quotation} 
+The purpose for using this question format was to determine how upset participants would be if data were inappropriately shared, and the extent to which their reactions were based on the data type and recipient. Each participant answered 6 questions that were randomly drawn from this pool. 
 
 \subsubsection{Additional Questions}
 The exit portion of the survey contained demographic questions asking for age, gender, and education. We then asked about wearables ownership so we could control for prior exposure. An open-ended question on what would be the most likely risks associated with wearable devices was included to catch user concerns more broadly. To avoid biasing the open-ended question, we asked before concluding with the 10-question Internet Users' Information Privacy Concerns (IUIPC) index~\cite{malhotra2004internet}, which was included so we could control for participants' general privacy attitudes.
@@ -209,13 +176,8 @@ We recruited 2,250 participants over August 7--13, 2014 via Amazon's Mechanical 
 In performing our analysis in the next section, we chose to focus on the very upset rate (VUR) of each scenario.  The VUR is defined as the percentage of participants who reported a `5' on the Likert scales. 
 We use the VURs rather than the average of all Likert scores for the same reasons as Felt {\it et al.}: the VUR does not presume that the ratings, ranging from ``indifferent'' to ``very upset,'' are linearly spaced. Additionally, most people are likely to be upset, at least a little, in all scenarios, because a device is taking action without permission (rating distribution: ``1''= 759, ``2'' = 918, ``3'' = 1,452, ``4''' = 2,421, ``5'' = 8,344). Thus, the distinguishing factor is whether a participant was maximally upset, rather than if they were upset. A limitation of this approach is that it only allows us to make {\it relative} comparisons between scenarios, rather than being able to definitively state how upset people might be if a single scenario were to occur.
 
-%We followed Fischhoff {\it et al.}'s methodology and did not normalize the numerical responses. Rather, we report medians and quartiles, which are not impacted by outliers. For the open-ended question at the end (i.e., additional privacy concerns), two researchers independently coded 1,782 responses, with an initial agreement rate of 89.7\%. The researchers discussed and resolved any disagreements so that the final codings reflect unanimous agreement.
-
 \section{Results}
 In this section, we present participants' responses to the various data-sharing scenarios, and discuss how and which various factors contributed to their risk perceptions. We also discuss participants' risk/benefit assessment of various new technologies relative to well-established technologies. We conclude the section with participants' self-reported concerns about the biggest risks in owning wearable devices.
-
-%\subsection{Concern Factors}
-%Many factors can potentially impact participants' concern levels:  the data being shared, with whom the data is shared, and device in question. We analyze each factor individually, as well as present a statistical model of participants' concerns as a function of the above factors and additional demographic traits.
 
 \subsubsection{Data Type}
 \label{sec:datatypes}
@@ -272,8 +234,6 @@ A statistically significant difference in VUR exists between data shared with an
 We note that this chi-square test violates the assumption of independent observations, since participants responded to multiple scenarios with multiple recipients. But based on the randomization of treatments and large sample size, we do not believe that this significantly impacted our results. Similarly, we are unaware of a more appropriate test, given our data format. Cochran's Q requires binary outcomes (i.e., participants would have had to answer only one question for each data recipient, preventing us from adequately controlling for data type) and a repeated measures ANOVA requires normality (our data was not normally distributed). Nonetheless, we repeated our analysis using only one randomly-selected data point per participant and found that our selected test was robust to this violation. Therefore, we conclude that participants were significantly more concerned about having their data seen by a human versus an application, though differences between specific human groups such as the public, friends, and work contacts were not as significant. Our results motivate mechanisms for data taint tracking and accidental data sharing prevention.
 
 However, we do not claim that there are no distinctions between the friends, public, and work contact recipients. People are more comfortable sharing certain data types with certain human recipients. For instance, participants were significantly uncomfortable sharing if they were lying, nervous, or stressed to work contacts compared to the rest of the data recipients. Table \ref{all-vur} Appendix \ref{sec:concerns-appendix} shows the  complete VUR and rankings of all data types by recipient.
-
-%People have been shown to behave differently, especially in the social arena \cite{dwyer2007trust, gross2005information, fogel2009internet}.
 
 \begin{table}[t]
 \begin{center}
@@ -335,50 +295,6 @@ Premium Calls/Texts & 86.49\%  &  91.94\%\\
 \label{deviceVUR}
 \end{center}
 \end{table}
-
-%\subsubsection{Device}
-%Each participant answered two questions drawn from a set of five smartphone misbehaviors. To compare these misbehaviors with misbehaviors on the Cubetastic3000, we included these same five questions amongst the pool of 293 Cubetastic3000 scenarios, modifying the device in question. In this manner, all 1,782 participants received two smartphone questions, while 159 participants received at least one of these five Cubetastic3000 misbehavior questions. Across all participants, the VUR was 46.7\% (of 1,782) for smartphones, whereas the VUR increased to 58.8\% (of 159) for same misbehaviors on the Cubetastic3000. The VURs for both devices for these questions are in Table \ref{deviceVUR}.
-%
-%To ensure independence of observations, we performed a Mann-Whitney U test to compare participants' average VURs for the Cuebtastic3000 scenarios (i.e., 159 participants) to the remaining participants' average VURs for the smartphone scenarios (i.e., 1,623 participants). This difference is statistically significant ($U=108,664.0$ with $p<0.0005$) but the effect size is very small ($r=0.08$). Because of this, we did not further reduce our statistical power by separately comparing the five misbehaviors. We conclude that users are likely more wary of misbehaviors on wearables than smartphones, but this difference is likely negligible. The entire effect may be due to participants' familiarity with smartphones, and therefore this effect may disappear as they increasingly encounter more wearables.
-
-%{\color {red} talk about the variance of the devices in general--was there more spread for the answers wrt smartphones, cubetastic, or were they kind of all the same?}
-
-						
-%\begin{table}%[h]
-%\begin{center}
-%\begin{tabular}{| c | c | c | c |}
-%Question & $\chi^2$ &	2-tail P & Effect Size \\
-%All & 0.444  & 0.505 & 0.006\\
-%Q1 & 0 & 1 & 0 \\
-%Q2 & 0 & 1 & 0\\
-%Q3 & 0 & 1 & 0\\
-%Q4 & 0 & 1 & 0\\
-%Q5 & 0 & 1 & 0\\
-%\end{tabular}
-%\caption{Results of the effects of <device> type contributing to VUR. Values are McNeamar's test results for within-subjects comparisons for participants who received both questions.}
-%\label{withindevice}
-%\end{center}
-%\end{table}
-
-%For the between-subjects comparison (i.e., participants who received one question, but not the other), you can do either a chi-square test or Fisher's exact test. Both use a 2 x 2 contingency matrix (i.e., rows are outcomes---upset or not---and columns are conditions---wearable or smartphone). The way to choose between the two tests is based on sample size, generally you use chi-square when there are more than 10-20 samples per cell in the table, but using either is just as valid. For the within-subjects comparisons (i.e., participants received both questions), you would do McNemar's test; which is the within-subjects version of the chi-square test. 
-
-%\subsection{Risk and Benefit Rankings} 
-%\begin{figure}[t]
-%	\centering
-%	\includegraphics[width=\columnwidth]{images/riskbenefit.pdf}
-%	\caption{Participants' median risk-benefit ratings of technologies examined by Fischhoff \etal\cite{Fischhoff}, which we used for calibration, alongside familiar technologies (e.g., laptops, the Internet, etc.), wearable technologies, as well as two specific wearable devices (Google Glass and the Cubetastic3000).}
-%	\label{fig:techplot}
-%\end{figure}
-%
-%We ask participants to rate new capabilities related to wearable technologies (e.g., facial recognition) in terms of their  benefits and risk. We also ask them about technologies with which they were likely to be more familiar (e.g., smartphones and laptops) and two specific wearable devices, Google Glass and the fictitious Cubetastic3000. To calibrate our results, we  ask about four well-established technologies studied by Fischhoff \etal\cite{Fischhoff}. We find that participants generally rated technologies related to wearables as being low-risk comparatively to other technologies (Figure \ref{fig:techplot}). Tables \ref{risk} and \ref{benefit} in Appendix ~\ref{sec:concerns-appendix} shows participants' median, quartiles, and distributions of risks and benefit ratings for all technologies. 
-%
-%Participants were prompted to rate technologies with respect to all considerations (see Appendix~\ref{sec:prompt}), including risk of physical harm to bystanders, financial cost, distress, misuse, or impact on public, personal, and private life. Participants may have still evaluated the risks with an emphasis toward physical risk and without an emphasis on privacy risk. Among the five presented options, the wearable-related one is the only one without some physical risk scenario, and physical risk is a clear, tangible risk. 
-%
-%We examined participants' perceptions, and therefore responses may not be reflective of actual risks or benefits. However, they also reflect the general public's exposure to these technologies and show that people perceive specific risks and benefits. We suspect that the similarity in assessments between the various wearable technologies are because most people are not consciously aware of the possibilities and that performing this experiment longitudinally may yield more interesting results, as these technologies become pervasive (and more familiar to participants).
-%
-%As a group, participants rated more familiar technologies as more beneficial. We believe this is the result of exposure to these technologies---most people use these technologies daily and therefore see what the benefits of these technologies are. It is true that people perceive unfamiliar technologies as less beneficial at the moment, but this will change as the use of these technologies evolve and adoption increases. Most calibration technologies, with the exception of electricity, were seen as lower benefit than the others. However, Google glass and Cubetastic3000 were about equally beneficial, and gender and age recognition were less beneficial. 
-%
-%We find that the more familiar a participant was with a technology, the more likely they were to rate it as risky.  Again, we believe that this is due to the exposure to these technologies. Of the wearable technologies, the riskiest technologies included facial recognition, the Internet, and discrete cameras, whereas the remainder of the technologies were seen as having minimal, equivalent risk levels (i.e., a median of ``10''). We did not test the differences in risk between the different wearable-related technologies for statistical significance, but given their minimal spread compared to the calibration options, the differences appears to be negligible. Interestingly, privacy risks were perceived as being comparable to physical risks; for instance, the capacity for facial detection on a wearable device was perceived as being almost as risky as interacting with a lawnmower. 
 
 \subsection{Open-Ended Concerns for Wearables}
 We captured participants' reactions to wearable devices as a whole by asking the following open-ended question:
@@ -534,7 +450,7 @@ Recipient $\times$ Risk & 39.14 & 12 & \\
 \end{table}
 
 
-Using these two new variables as additional independent variables (and removing the previous data type variable), we created a second set of models. Because these risk categories and mediums are less likely to change over time, models that take these into account are likely to be more useful and less likely to be overfit. What these models show us is that both risk and medium are relatively strong predictors by themselves, and have an even stronger interaction effect. When the data recipient and covariates are added to the model, the resulting goodness-of-fit is not much worse than that of the model using the actual data type. %The full model can be found in Appendix \ref{sec:regression-apx2}.
+Using these two new variables as additional independent variables (and removing the previous data type variable), we created a second set of models. Because these risk categories and mediums are less likely to change over time, models that take these into account are likely to be more useful and less likely to be overfit. What these models show us is that both risk and medium are relatively strong predictors by themselves, and have an even stronger interaction effect. When the data recipient and covariates are added to the model, the resulting goodness-of-fit is not much worse than that of the model using the actual data type. 
 
 \section{Discussion}
 %We discuss considerations when interpreting our results, the limitations of our work, and future work we hope to inspire. 
@@ -559,30 +475,7 @@ Further work can be done to expand various aspects of this study. Investigating 
 \bibliography{bibliography.bib} 
 
 \input{tex-inputs/appendixes.tex}
-%\input{tex-inputs/collapsed.tex}
-%\input{tex-inputs/riskben.tex}
 \input{tex-inputs/VURcombined.tex}
-
-
-%%% REGRESSION MODEL
-
-%\onecolumn
-%\section{Full Regression Model from Data Types}
-%\label{sec:regression-apx}
-%%\begin{figure*}[t]
-%\includegraphics[page=1,scale=0.8]{images/full-model.pdf}
-%\includepdf[pages=2-3,scale=0.8]{images/full-model.pdf}
-%
-%%\caption{Full regression model, which includes all 72 data types, recipients, and covariates.}
-%%\end{figure*}
-%
-%\section{Full Regression Model from Data Risks / Data Categories}
-%\label{sec:regression-apx2}
-%%\begin{figure*}[t]
-%\includegraphics[page=1,scale=0.8]{images/full-model2.pdf}
-%\includepdf[pages=2,scale=0.8]{images/full-model2.pdf}
-%
-%\twocolumn
 
 
 \end{document}
