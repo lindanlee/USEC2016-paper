@@ -1,0 +1,198 @@
+===========================================================================
+                          PETS 2016.1 Review #17A
+                     Updated 11 May 2015 01:47:28 UTC
+---------------------------------------------------------------------------
+             Paper #17: Risk Perceptions for Wearable Devices
+---------------------------------------------------------------------------
+
+                      Overall merit: 2. Reject, Major Revisions Needed
+                                        (likely fixable in 1-2 rounds)
+                 Reviewer expertise: 3. Knowledgeable
+                  Relevance to PETS: 3. Directly related to privacy
+                                        (definitely fits into PETS)
+
+                         ===== Paper summary =====
+
+This paper presents results from a large-scale online survey on people’s perceived benefits and risks around wearables as well as other familiar technologies.
+
+                      ===== Comments for author =====
+
+There are many things to like about this paper. Wearables are emerging technologies that have a wide range of applications, but the benefits and risks associated with this type of technologies are not well studied. A deep understanding of people’s perceptions of wearables is an important step towards creating positive and privacy-friendly user experience which could in turn encourage further adoption of wearables. 
+
+This study is largely well designed, modeling after two prior studies that examined related technologies. The study also has a relatively large sample with about 1800 valid responses. In addition, open-ended questions were included in the survey and a focus group was conducted. Data from these qualitative data were used to complement the quantitative survey data. The data analysis is largely reasonable.
+
+However, I have several questions and suggestions about the paper.  
+
+This is a nice dataset, but I was not sure what the main findings of the study or main take-aways of the paper are?
+
+It’s still not completely clear the experimental design of the study. Scenario is a within-subject factor. If it’s a within-subject design, I’d like the authors to say it explicitly. 
+
+Each respondent answered a small set of data questions randomly selected from a large pool of (293) questions. How many respondents on average answered each data question? While the total number of valid response is large (about 1800), I suspect each data question only has a relatively small number of responses. This is important to know in order to assess the validity of the results. 
+
+For the five smartphone scenarios, why not asked all five of them instead of only two? 
+
+I’d suggest moving section 5 to the beginning of the paper. Perhaps merging section 2.1 and section 5. I’d also suggest the authors taking a look at a few relevant papers on measuring people’s perception with data collection/sharing. 
+
+Judith S. Olson, Jonathan Grudin, and Eric Horvitz. 2005. A study of preferences for sharing and privacy. In CHI '05 Extended Abstracts on Human Factors in Computing Systems (CHI EA '05). ACM, New York, NY, USA, 1985-1988. DOI=10.1145/1056808.1057073 http://doi.acm.org/10.1145/1056808.1057073
+
+David H. Nguyen and Gillian R. Hayes. 2010. Information privacy in institutional and end-user tracking and recording technologies. Personal Ubiquitous Comput. 14, 1 (January 2010), 53-72. DOI=10.1007/s00779-009-0229-4 http://dx.doi.org/10.1007/s00779-009-0229-4 
+
+For the regression analysis, was the interaction between data and recipient considered? What about the ownership with wearables? I didn’t see them in the regression tables. 
+
+The authors manually put the 72 data types into groups. Why not let the data speak, e.g., using an exploratory factor analysis (as Olson et al. did)? Even if they manually created the grouping, a confirmatory factor analysis would be nice to confirm the grouping structure.  
+
+IT background has shown to play a role in people’s perceptions of technologies. It would have been nice to include that in the survey. 
+
+The open-ended questions have some really interesting answers, e.g., social impact. I’d like to see more details of the different themes of answers not just the frequencies. 
+What are the results of the focus group? Do they support the survey findings?
+
+How long on average did it take to finish the survey? 
+
+Was the research approved by the IRB?
+
+===========================================================================
+                          PETS 2016.1 Review #17B
+                     Updated 22 May 2015 01:17:51 UTC
+---------------------------------------------------------------------------
+             Paper #17: Risk Perceptions for Wearable Devices
+---------------------------------------------------------------------------
+
+                      Overall merit: 1. Reject (not likely fixable in 1-2
+                                        rounds)
+                 Reviewer expertise: 3. Knowledgeable
+                  Relevance to PETS: 3. Directly related to privacy
+                                        (definitely fits into PETS)
+
+                         ===== Paper summary =====
+
+This paper studies security and privacy concerns around wearables by launching and analyzing survey data from almost 1800 Mechanical Turkers and leading a focus group discussion with 13 users.
+
+                      ===== Comments for author =====
+
+The paper repeatedly mentions being the first 'large-scale study' of privacy/security concerns for wearable devices. This is confusing because they cite industry surveys (e.g. by PWC) that are large scale and there is a fair amount of research in this area that is not cited (particularly for health-related wearables). They don't all have a large n, but they impact the novelty of this work and should be discussed.
+
+For example:
+Opportunistic Sensing: Security challenges for the new paradigm, COMSNETS 2009
+http://cs.dartmouth.edu/~dfk/papers/kapadia-metrosec-challenges.pdf
+
+Exploring privacy concerns about embedded sensing
+http://www.hightowerweb.org/pubs/klasnja2009exploring/klasnja2009exploring.pdf
+
+A survey on privacy in mobile participatory sensing applications
+http://www.sciencedirect.com/science/article/pii/S0164121211001701
+
+Privacy risks emerging from the adoption of innocuous wearable sensors in the mobile environment
+http://dl.acm.org/citation.cfm?id=1978945
+
+I also have strong concerns about the methodology used. A survey could yield valuable information here but the scenario questions do not speak to the utility of the data gathering or other app behaviors and so may bias participants toward responding negatively. This is quite important -- some of the previous research listed above demonstrates how sensitive user sentiment is to perceived benefit.
+
+The authors do not explain the codes for their free-text responses sufficiently. Some of the categories sound like they may overlap -- e.g. 'social impact' and 'social stigma'.
+
+===========================================================================
+                          PETS 2016.1 Review #17C
+                     Updated 22 May 2015 19:15:58 UTC
+---------------------------------------------------------------------------
+             Paper #17: Risk Perceptions for Wearable Devices
+---------------------------------------------------------------------------
+
+                      Overall merit: 3. Accept with Minor Revisions (with
+                                        Shepherding)
+                 Reviewer expertise: 3. Knowledgeable
+                  Relevance to PETS: 3. Directly related to privacy
+                                        (definitely fits into PETS)
+
+                         ===== Paper summary =====
+
+This paper reports on the results of a Mechanical Turk survey (1,782
+respondents) that sought to better understand individuals' concerns
+and risk perceptions as they relate to wearable computing.  The
+authors survey respondents' sentiments on accidental disclosures of 72
+types of data that could be collected by a wearable device across four
+categories of recipients, and code and report on free-form concerns
+reported by respondents.
+
+                      ===== Comments for author =====
+
+Strengths of the paper include:
+
+- This is an interesting and timely area of study.  The use of
+  wearables is on the rise, and we're seeing more frequent reports of
+  accidental disclosures and other privacy violation that are either
+  made possible or exacerbated by mobile/wearable devices.
+
+- Overall the design of the authors' study was well executed.  They did a good
+  job of outlining the format and content of their survey instrument,
+  and the data analysis presented appears quite rigorous.
+
+- I found several of the authors' findings to be interesting.  In
+  particular, (i) that individuals were more concerned about
+  inadvertent disclosures made to humans as opposed to computers, (ii)
+  that there were no data types that caused bimodal sentiment
+  regarding inadvertent disclosure, and (iii) that being `unaware' of
+  what a wearable was doing was the second most frequently
+  self-reported concern.
+
+  This latter finding is particularly interesting; while I have always
+  (personally) been uneasy about technology that I don't understand, I
+  have always chalked this up to the fact that I am a technologist.
+  It would have been interesting to see how this particular concern
+  was split across demographic backgrounds: i.e., is this more often a
+  concern of the technically curious, or is a concern of the
+  population in general?
+
+Areas for improvement include:
+
+- It is unclear what the reader is supposed to take away from the risk
+  analysis section of this paper.  Nearly every technology had a risk
+  assessment of `10', while utility varied.  More discussion or
+  interpretation of these findings would be worthwhile.
+
+- It would have been interesting to examine the discomfort associated
+  with the disclosure of various data types in the situation where
+  these disclosures were separated from the user's identity.  That is,
+  disclosures of the form "Someone's Fitbit is detecting sexual
+  activity" or "Someone's PIN is 2468."  
+
+  Also missing are questions related to third-party concerns regarding
+  wearables.  Note that most of the outrage re: Google Glass was not
+  raised by adopters of this technology, but rather by third parties
+  who felt that their privacy was being invaded.
+
+- There was very little interpretation of the findings in this paper.
+  Many findings were rather mudane, so doing a bit more separation of
+  the wheat from the chaff would be useful.  Given the lofty goals
+  stated in the abstract/intro regarding informing the design of
+  future wearables, I had expected to read a detailed discussion
+  section breaking down the authors' findings and positing potential
+  design implications and *concrete* directions for future work.  The
+  main body of the paper is only 9 pages, which leaves sufficient
+  space for such a discussion.
+
+===========================================================================
+                          PETS 2016.1 Review #17D
+                     Updated 25 May 2015 01:43:51 UTC
+---------------------------------------------------------------------------
+             Paper #17: Risk Perceptions for Wearable Devices
+---------------------------------------------------------------------------
+
+                      Overall merit: 4. Accept with Minor Revisions (no
+                                        Shepherding needed)
+                 Reviewer expertise: 2. Some familiarity
+                  Relevance to PETS: 3. Directly related to privacy
+                                        (definitely fits into PETS)
+
+                         ===== Paper summary =====
+
+This paper reports on a survey designed to extract people's privacy preferences with respect to wearable devices.
+
+                      ===== Comments for author =====
+
+I am a 4 (accept with minor revisions) for this paper because I think it's valuable to periodically get the pulse of the public with respect to privacy preferences.  However, I spent a long time debating whether to give this paper a 1 (reject) because (1) the results do reflect past works on (albeit perhaps not focused on wearables) and (2) I am a little concerned about the methodology / survey contents.  I don't think there's a way to address (1), but as noted above, I do think it's valuable to periodically assess the public's view of privacy.  With respect to (2), I am OK accepting the paper as long as the authors discuss the methodological issues (noted below).
+
+Elaborating on the methodological issues:  (A) the questions in Section 2.2.3 could be interpreted as leading.  A better way to ask the first question might be:  "Suppose an app could vibrate your phone without your permission.  Some users might feel [negatively, one way] about this, other users might feel [positively, another way] about this.  How do you feel?"  Note that this phrasing makes it more OK for survey respondents to say that they don't care / don't feel negative.  The same issue also applies to the questions in Section 2.2.2.
+
+Did the questions in 2.2.4 come after the questions in 2.2.2 and 2.2.3?  If so, I think the questions in 2.2.2 and 2.2.3 could have primed users to think in certain ways with respect to wearable devices.
+
+In my opinion, the authors need to comment on the above methodological issues, and the potential impact of those issues to the results of the study.
+
+Regarding (1), the authors should consider other past works, like Choe, Consolvo, Jung, Harrison, Patel, and Kientz, "Investigating Receptiveness to Sensing and Inference in the Home Using Sensor Proxies", Ubicomp 2012.  And Massimi, Truong, Dearman, and Hayes, "Understanding Recording Technologies in Everyday Life," IEEE Pervasive 2010.  And Nguyen, Bedford, Bretana, and Hayes, "Situating the Concern for Information Privacy Through an Empirical Study of Responses to Video Recording," CHI 2011.
