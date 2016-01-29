@@ -1,0 +1,87 @@
+----------------------- REVIEW 1 ---------------------
+PAPER: 6
+TITLE: Risk Perceptions for Wearable Devices
+AUTHORS: Linda N. Lee, Joong Hwa Lee, Serge Egelman and David Wagner
+
+
+----------- REVIEW -----------
+The study gives results of an MTurk survey on potential data capture and sharing scenarios from wearables. The documentation of the methodology and results is strong.
+
+As a reviewer, I believe in the importance of studying risk perception information. I would have liked the authors to situate their work better in the landscape of other risk perception work, as they did with the Felt at al study. I found myself wondering how likely it was that the work would aid in the design of notifications, access control, and permissions, then wondering what other work in risk perception in general had done so, then wondering how often such studies impact consumer design, then wondering about the relationship with market research. All but the desire to see this study positioned with related work in risk perception seems a bit off topic, I realize. A quick search turned up User acceptance of wearable devices by Yang et al as very directly related work. Slovic's work on perception of risk also comes to mind. The User Perceptions section in Related Work shows me that others may have had the same reactions.
+
+
+The paper does a good job of situating its strengths and drawback throughout, including the potential for heightened awareness of risks in the open ended question.
+
+The most concerning type of data being video, then photos, then audio might have implications for both collection and sharing of wearable data. As well as aligning with the success of wearables that do none of that (fitbit) and the lack of success of those that do some of that (google glass).
+
+
+----------------------- REVIEW 2 ---------------------
+PAPER: 6
+TITLE: Risk Perceptions for Wearable Devices
+AUTHORS: Linda N. Lee, Joong Hwa Lee, Serge Egelman and David Wagner
+
+
+----------- REVIEW -----------
+The paper title suggests that the paper will investigate risk perceptions for wearable devices which I don’t believe the paper actually achieves. Rather the paper explores whether or not a person would be “upset” by different types (72 types) of information (which could be collected on a wearable device) automatically being made available to different types of recipient (friends, family, coworkers and the app itself), this just happens to have been set in the context of a wearable. The paper only gives a superficial coverage of user perception of risk and how the authors created categories of risk.
+My first concern is the use of the term “risks” and what exactly the authors are referring to. In the abstract the authors talk about “potential risks that could expose users’ activities without their awareness or consent”. Here it is unclear if the authors see the exposure of the information as a risk, or if there are other risks which lead to exposure . The two seem to be interchanged within the paper. Later in the paper the authors then talk about risks (eg physical harm) that result from disclosure. The paper would benefit from making a clearer distinction. Within the study users are only asked about how upsetting it would be if a particular piece of information was made available to a particular receipient. This suggests that the risk (or rather consequence) they are exploring is a negative emotional reaction from users. They are then asked about any concerns they have with wearables (after being exposed to the different disclosure scenarios) and open ended re!
+ sponses were very varied to this and covered many general issues about wearables rather than data.
+Later, in the results, the authors place data types into 5 risk categories. In this case these categories are potential consequences arising from the disclosure. It is unclear if these are mutually exclusive groupings, or if data types can appear in more than one grouping.  The final mapping between types and risk categories is not provided, which would have been useful. I am particularly concerned when the authors state that age and gender are categorised in the medical risk category, this does not seem to fit with what people would see as medical information. 4 of these groupings have named a potential consequence such as loss of money, where as the medical information only has disclosure of the information as the risk, which of course could then overlap with image, relationships and even physical harm depending on what happens as a result of the disclosure.  It is completely unclear to me what disclosures may lead to physical harm, or if this is drawn from the general con!
+ cerns raised by participants about wearable devices rather than disclosure.
+The section in the results on the open responses to concerns about wearables does not flow well. In its current form it distracts from the main bulk of the paper on information disclosure. There are suggestions that it is starting to get at what participants perceive risks (consequence based) to be of wearables in general rather than just leaking information. However more in depth analysis would be required to explore this fully. For  the current paper, I would suggest that it is not adding anything.
+With regards the IUPC rating and its relationship with how upset the participant is with different disclosures, I feel this is worthy of clearer discussion around this and where the risk lies  (i.e. technology set up that leads to disclosure, the disclosure itself, and a consequence arising from the disclosure). i.e. for those with privacy concerns, the disclosure is the risk.
+Overall I think the paper has some interesting ideas and is starting to tease out the relationship between devices, disclosure and consequences. I like the use of the % of participants giving the top score rather than the mean, a measure often used in market research. However, the title needs to change - to make it clear that we are not talking about 'risk' here.   Perhaps 'privacy violations' would be a better phrase to use - as I feel the paper does deliver in terms of the acceptability of different forms of privacy violation.   With this change, the paper is acceptable.
+
+
+----------------------- REVIEW 3 ---------------------
+PAPER: 6
+TITLE: Risk Perceptions for Wearable Devices
+AUTHORS: Linda N. Lee, Joong Hwa Lee, Serge Egelman and David Wagner
+
+
+----------- REVIEW -----------
+The paper examines perceptions of various potential risks associated with wearable devices able to communicate data to a range of recipients. Building upon a scenario where each survey participant considered using a wearable device with a range of capabilities, a survey explores how upset individuals would be if the data the device collected were disclosed without their permission. The findings are valuable for distinguishing between different forms of data and different recipients, and how these affect any perceived impact of potential disclosure.
+
+The core outcomes of the paper seem to explore the elements of disclosure underpinning risk, more than the risks themselves (participants do not appear to directly explain their levels of upset for each scenario, but upset is assumed to be associated with any risks described in the open-ended questions). Focusing on risk perception (as in the paper title) distracts from the main findings around perception of _disclosure_, so perhaps a change in terminology is needed.
+
+2.1: it is not clear how the ‘representative’ list of scenarios is compiled, what conditions a scenario had to meet to be included, and more so how the scenario set was deemed to be complete. 72 scenarios seems quite a lot, although this is acknowledged by way of presenting a subset of questions to each participant. The acknowledgement that some of the survey questions didn’t work out, combined with presentation of the related study elements, is laudable.
+
+2.1.2: it would’ve been informative to have some set of questions to moderate the “worst case” framing of the questions, for instance ending with “... but asked you first?”. The range of Recipient classes implies that there would normally be a capacity to negotiate how information would be shared with them, and this distinction is not made. In contrast the scenario is framed to emphasise how the user can exploit the capabilities of the device to achieve various things and save them effort. Perception of risks is moderated somewhat with the open-ended question, and the issue is touched on in Section 3 when discussing the greater influence that data type has than data recipient.
+
+3: Interesting results, logically organised and easy to navigate. Appreciate the efforts to check the data with supporting methods (e.g., testing individual randomly-selected data points), which should support reproducibility of results (as technologies emerge and the risk landscape develops).
+
+It was a little odd to see hypotheses and speculation sprinkled through the results, such as that regarding biometric authentication amongst home users. These distract a bit from the work described.
+
+Discussion: some direct comparison of wearable-owners vs those who do not own wearables may have been informative.
+“with of studies” – typo.
+Consideration of user-centered design – good, as user concerns should not be ignored.
+Benefits vs risks: relates to earlier comment – users may be willing to share data if it is part of some mediated service where both sides benefit.
+
+General: clearly structured, and acknowledges its flaws (and makes some attempt to identify their effect).
+
+
+----------------------- REVIEW 4 ---------------------
+PAPER: 6
+TITLE: Risk Perceptions for Wearable Devices
+AUTHORS: Linda N. Lee, Joong Hwa Lee, Serge Egelman and David Wagner
+
+
+----------- REVIEW -----------
+This paper describes a large scale study (1782 people) with the goal of
+eliciting the risks that end users perceive due to the use of wearable
+technology.  These risks were extracted via a quantitative survey asking
+participants to imagine they are using a fictional wearable device that
+has the same capabilities as the FitBit, Google Glass and the Pebble Watch.
+
+The results of the study show that users are particularly concerned with
+the accidental release of videos and financial data, and mimic the results
+found by other researchers regarding smart phones.
+
+The study was well designed and well analyzed, and provides initial
+information for anyone who wishes to design appropriate access controls
+for wearable devices.  The one short-coming I would note is that the
+study addresses only the data collected by wearables about the user, and
+does not address the risk perception regarding other people releasing
+information about the user (e.g., someone else is using Google Glass, makes
+a video of the user, and then releases that video).  It would be interesting
+to see both the risk perceptions people have regarding these possibilities,
+and how thinking about these risks might change attitudes.
