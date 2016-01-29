@@ -135,7 +135,7 @@ We presented scenarios involving data captured by the Cubetastic3000 and asked p
 
 \begin{quotation}
 \noindent
-\textit{``How would you feel if an app on your Cubetastic3000 learned <data> and shared it with <recipient>, without asking you first?''}
+\textit{``How would you feel if an app on your Cubetastic3000 learned (data) and shared it with (recipient), without asking you first?''}
 \end{quotation}
 
 \begin{figure}[t]
@@ -145,7 +145,7 @@ We presented scenarios involving data captured by the Cubetastic3000 and asked p
 	\label{fig:prompt}
 \end{figure}
 
-We combined 72 data types (<data>) with 4 data recipients (<recipient>) to form a pool of 288 scenarios (Table \ref{all-vur}). Each participant answered 6 questions that were randomly drawn from this pool, displayed in random order. We clarified for our participants that ``app'' meant the app's server, and that the data was not shared with anyone else. 
+We combined 72 data types, ({\it data}), with 4 data recipients, ({\it recipient}), to form a pool of 288 scenarios (Table \ref{all-vur}). Each participant answered 6 questions that were randomly drawn from this pool, displayed in random order. We clarified for our participants that ``app'' meant the app's server, and that the data was not shared with anyone else. 
 
 \subsubsection{Additional Questions}
 The exit portion of the survey contained demographic questions (age, gender, and education), and then asked about wearable device ownership so we could control for prior exposure. An open-ended question on what would be the most likely risks associated with wearable devices was included to capture user concerns more broadly. To avoid biasing the open-ended question, we asked before concluding with the 10-question Internet Users' Information Privacy Concerns (IUIPC) index~\cite{malhotra2004internet}, which was included so we could control for participants' general privacy attitudes. However, we do realize that we asked this open-ended question after we had exposed our participants to a variety of wearables scenarios, which may have heightened their awareness of the possible risks. We talk about this more in Section 4. 
@@ -206,7 +206,7 @@ Rank & Data & VUR & $\sigma$ & Distribution \\
 \end{center}
 \end{table*}
 
-%A statistical analysis regarding the significance and confidence of <data> types with respect to all 72 was not performed due to the space constraints of the paper. We do consider all <data> categories in our statistical model, which provides an analysis of what factors had contributed to the perceived severity of a particular situation. 
+%A statistical analysis regarding the significance and confidence of data types with respect to all 72 was not performed due to the space constraints of the paper. We do consider all data categories in our statistical model, which provides an analysis of what factors had contributed to the perceived severity of a particular situation. 
 
 \noindent {\bfseries Data Recipient}
 A statistically significant difference in VUR exists between data shared with an application versus human recipients. On average, 42\% of participants stated that they would be ``very upset'' if their data was shared with only an application's servers, whereas the VURs for friends (70\%), work contacts (75\%), and the public (72\%) were almost double (Table \ref{recipient-vur}). A chi-square test indicated that these differences were statistically significant (Table \ref{recipient-chi}). However, these effect sizes were small: the largest effect was between work contacts and an app's server ($\phi=0.11$); while the VUR for sharing with work contacts was significantly higher than sharing with friends, the effect size was negligible ($\phi=0.004$). 
@@ -242,12 +242,12 @@ Rank & Recipient & VUR & sigma & Distribution \\
 \hline
 Recipients	& $\chi^2$ & p-value 	& n & $\phi$ \\
 \hline
-Work-App	& 565.910 & <0.0001 & 5,083 & 0.111\\
-Public-App	& 481.776 & <0.0001 & 5,1988& 0.093\\
-Friends-App & 381.653 & <0.0001 & 5,096 & 0.075\\
-Friends-Work & 20.39 & <0.0001 & 5,037 & 0.004\\
-Friends-Public & 5.41 & <0.0200 & 5,142 & 0.001\\
-Work-Public&  5.00 & <0.0253 & 5,129	& 0.001\\
+Work-App	& 565.910 & \textless0.0001 & 5,083 & 0.111\\
+Public-App	& 481.776 & \textless0.0001 & 5,1988& 0.093\\
+Friends-App & 381.653 & \textless0.0001 & 5,096 & 0.075\\
+Friends-Work & 20.39 & \textless0.0001 & 5,037 & 0.004\\
+Friends-Public & 5.41 & \textless0.0200 & 5,142 & 0.001\\
+Work-Public&  5.00 & \textless0.0253 & 5,129	& 0.001\\
 \hline
 \end{tabular}
 \caption{Results of a chi-square test to examine VUR based on data recipient, across all data points.}
@@ -328,9 +328,9 @@ Don't care 	& 11 & 0.62\%\\
 \end{table}
 
 \noindent {\bfseries Demographics Factors}
-We see that privacy is a main concern for wearables users. Additionally, we show that privacy preferences should also be a consideration when configuring a user's device. A participant's self-reported level of privacy concern---as determined by the IUIPC scale~\cite{malhotra2004internet}---is the biggest demographic predictor of VURs. A Spearman correlation yielded a statistically significant effect between average IUIPC scores and average VUR ($\rho=0.446$, $p<0.0005$), which suggests responses to questions were mostly based on privacy preferences. Additionally, we observed that age was another significant predictor of VUR ($\rho=0.121$, $p<0.0005$), but we suspect that this effect is due to the significant correlation between age and IUIPC scores ($\rho=0.188$, $p<0.0005$). Others have observed that older individuals tend to be more privacy protective~\cite{varian2005demographics}.
+We see that privacy is a main concern for wearables users. Additionally, we show that privacy preferences should also be a consideration when configuring a user's device. A participant's self-reported level of privacy concern---as determined by the IUIPC scale~\cite{malhotra2004internet}---is the biggest demographic predictor of VURs. A Spearman correlation yielded a statistically significant effect between average IUIPC scores and average VUR ($\rho=0.446$, $p\textless0.0005$), which suggests responses to questions were mostly based on privacy preferences. Additionally, we observed that age was another significant predictor of VUR ($\rho=0.121$, $p\textless0.0005$), but we suspect that this effect is due to the significant correlation between age and IUIPC scores ($\rho=0.188$, $p\textless0.0005$). Others have observed that older individuals tend to be more privacy protective~\cite{varian2005demographics}.
 
-While we initially observed an effect on VURs based on whether or not participants claimed to already own wearables (57.0\% vs. 60.8\%, respectively; Mann-Whitney $U=202,896$, $p<0.032$), this difference did not remain significant upon correcting for multiple testing (Bonferroni corrected $\alpha=0.01$). The effect of a participant's gender also did not remain significant upon correcting for multiple testing. We observed no correlation between a participant's education level and VUR.\\
+While we initially observed an effect on VURs based on whether or not participants claimed to already own wearables (57.0\% vs. 60.8\%, respectively; Mann-Whitney $U=202,896$, $p\textless0.032$), this difference did not remain significant upon correcting for multiple testing (Bonferroni corrected $\alpha=0.01$). The effect of a participant's gender also did not remain significant upon correcting for multiple testing. We observed no correlation between a participant's education level and VUR.\\
 
 \noindent {\bfseries Regression Models}
 \label{sec:regression}
@@ -363,7 +363,7 @@ Gender (covariate) & 9.74 & 1 & \\
 IUIPC $\times$ Gender & 8.33 & 1 &\\
 \hline
 \end{tabular}
-\caption{Goodness-of-fit metrics for various binary logistic models of our data using general estimating equations to account for repeated measures. The columns represent the Wald test statistic for each parameter and the overall Quasi-Akaike Information Criterion (QIC) for each model. Each parameter listed was statistically significant at $p<0.005$.}
+\caption{Goodness-of-fit metrics for various binary logistic models of our data using general estimating equations to account for repeated measures. The columns represent the Wald test statistic for each parameter and the overall Quasi-Akaike Information Criterion (QIC) for each model. Each parameter listed was statistically significant at $p\textless0.005$.}
 \label{regression}
 \end{table}
 
@@ -430,7 +430,7 @@ Risk $\times$ Data Category & 303.44 & 8 & \\
 Recipient $\times$ Risk & 39.14 & 12 & \\
 \hline
 \end{tabular}
-\caption{Metrics for additional binary logistic models of our data using general estimating equations to account for repeated measures. The columns represent the Wald test statistic for each parameter and the overall Quasi-Akaike Information Criterion (QIC) for each model. Each parameter listed was statistically significant at $p<0.005$.}
+\caption{Metrics for additional binary logistic models of our data using general estimating equations to account for repeated measures. The columns represent the Wald test statistic for each parameter and the overall Quasi-Akaike Information Criterion (QIC) for each model. Each parameter listed was statistically significant at $p\textless0.005$.}
 \label{regression2}
 \end{table}
 
