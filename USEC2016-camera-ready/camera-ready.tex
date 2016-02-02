@@ -5,7 +5,7 @@
 \usepackage[hyphens]{url}
 \usepackage{longtable}
 \usepackage{graphicx}
-\usepackage{enumitem}
+%\usepackage{enumitem}
 \usepackage{pdfpages}
 \pagestyle{plain}
 
@@ -40,7 +40,7 @@
 % affiliations
 \author{\IEEEauthorblockN{Linda Lee, JoongHwa Lee, Serge Egelman, David Wagner}
 \IEEEauthorblockA{University of California, Berkeley\\
-\{lnl@,dlwndghk94,egelman,daw\}@cs.berkeley.edu}}
+\{lnl,dlwndghk94,egelman,daw\}@cs.berkeley.edu}}
 %\and
 %\IEEEauthorblockN{JoongHwa Lee}
 %\IEEEauthorblockA{University of California, Berkeley\\
@@ -213,7 +213,7 @@ A statistically significant difference in VUR exists between data shared with an
 
 The statistical significance arises for two distinct reasons. Firstly, sharing data only with a server carries less social impact. For our participants, it may seem that it is shared with fewer people. Additionally, there is a class of data which may be considered odd for a human to know, but completely normal for a wearable device to know (e.g., it's okay if your Fitbit knows when you sleep, but maybe less so for your friends).
 
-We note that this chi-square test violates the assumption of independent observations, since participants responded to multiple scenarios with multiple recipients. But based on the randomization of treatments and large sample size, we do not believe that this significantly impacted our results. Similarly, we are unaware of a more appropriate test (beyond using mixed effects modeling), given our data format. Cochran's Q requires binary outcomes (i.e., participants would have had to answer only one question for each data recipient, preventing us from adequately controlling for data type) and a repeated measures ANOVA requires normality (our data was not normally distributed). Nonetheless, we repeated our analysis using one randomly-selected data point per participant and found that our selected test was robust to this violation. Therefore, we conclude that participants were significantly more concerned about having their data seen by a human than an application, though differences between human groups such as the public, friends, and work contacts were not as significant. Our results motivate mechanisms for data taint tracking and accidental data sharing prevention.
+This chi-square test violates the assumption of independent observations, since participants responded to multiple scenarios with multiple recipients. But based on the randomization of treatments and large sample size, we do not believe that this significantly impacted our results. Similarly, we are unaware of a more appropriate test (beyond using mixed effects modeling), given our data format. Cochran's Q requires binary outcomes (i.e., participants would have had to answer only one question for each data recipient, preventing us from adequately controlling for data type) and a repeated measures ANOVA requires normality. Nonetheless, we repeated our analysis using one randomly-selected data point per participant and found that our selected test was robust to this violation. Therefore, we conclude that participants were significantly more concerned about having their data seen by a human than an application, though differences between human groups such as the public, friends, and work contacts were negligible.
 
 However, we do not claim that there are no distinctions between the friends, public, and work contact recipients. People are more comfortable sharing certain data types with certain human recipients. For instance, participants were significantly more uncomfortable sharing if they were lying, nervous, or stressed to work contacts compared to the rest of the data recipients. We believe a more fine-grained study is required to measure these effects accurately, although we have insight into the existence of these trends. Table \ref{all-vur} shows the complete VURs and rankings of all data types by recipient.\\
 
@@ -250,17 +250,18 @@ Friends-Public & 5.41 & \textless0.0200 & 5,142 & 0.001\\
 Work-Public&  5.00 & \textless0.0253 & 5,129	& 0.001\\
 \hline
 \end{tabular}
-\caption{Chi-square tests to examine VUR based on data recipient.}
+\caption{Chi-square tests to examine VUR based on data recipient, across all data points.}
 \label{recipient-chi}
 \end{center}
 \end{table}
 
+
 \noindent {\bfseries Open-Ended Concerns}
-We asked participants the following open-ended question:
+To examine privacy and security concerns that may have otherwise not been captured by our scenarios, we asked participants an open-ended question:
 
 \begin{quotation}
 \noindent
-\textit{What do you think are the most likely risks associated with wearable devices?}\\
+\textit{What do you think are the most likely risks associated with wearable devices?}
 \end{quotation}
 
 Participants did not receive any additional prompts and responded using a text box that did not have a character limit. Table \ref{openresponses} shows common user concerns related to wearable devices. The appendix details the coding of responses. Note that participants were especially concerned with privacy and security; many answers mentioned scenarios not included in the study, but prior exposure to our questions may have heightened sensitivity to information disclosure risks:\\
@@ -371,7 +372,7 @@ We created several models using two independent variables as predictors: data an
 
 While these models illustrate the relative weights that users place on information when determining whether a scenario is truly upsetting, one shortcoming is this approach's generalizability: data types are limited to what we specifically chose for this study. To make our data set more generalizable to other use cases, we coded each data type in two ways: in terms of broad descriptions of the type of data (e.g., video, audio, etc.) and the type of risk it presents. Two researchers agreed on a codebook and independently coded each of the 72 data types. The data types fell into six categories:
 
-\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+\begin{enumerate}%[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
 \item Photo
 \item Video
 \item Audio
@@ -384,7 +385,7 @@ While the first three categories are self-explanatory, the latter three categori
 
 The risks for data types fell into five categories:
 
-\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+\begin{enumerate}%[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
 \item {\bf Financial:} the loss of money or property
 \item {\bf Image:} the loss of control over one's self-image (e.g., publicizing something embarrassing)
 \item {\bf Medical:} the disclosure of medical information
@@ -468,7 +469,11 @@ Felt {\it et al.} previously studied the security concerns of smartphone users b
 
  Our survey of 1,784 Internet users is the first large-scale study to investigate user-centric information disclosure concerns in the age of wearable computing. We contribute a comprehensive ranking of possible risks associated with wearable devices, across various recipients. Our open-ended responses show that privacy and security are at the top of users' overall concerns. While wearables are still in their infancy, perceptions of situations and capabilities are likely to change rapidly with advancements and increased exposure. Our examination of possible data concerns corroborate previous studies of smartphone users that found that video capture and financial data are the most sensitive data types, and least acceptable to be disclosed without user consent. Various systems which detect and take actions for sensitive objects in photos and videos will be critical as wearables and other devices become more ubiquitous. We also found that users' self-reported privacy preferences are correlated with how they may react, even with respect to situations that they are unfamiliar with. Our results may be used by system designers to create permissions and access control mechanisms that do not directly depend on users' inputs. We hope that this work has given an insight into user acceptability in information disclosure and general user concerns about wearable devices, and that this study motivates future privacy and security work for wearable devices. 
 
-\bibliographystyle{IEEEtran}
+\section*{Acknowledgements}
+
+We would like to thank the National Science Foundation (NSF) for supporting the first author through a Graduate Research Fellowship. This work was also made possible by the Intel Science and Technology Center for Secure Computing and NSF awards CNS-1514211 and CNS-1514457.
+
+\bibliographystyle{IEEEtranS}
 \bibliography{bibliography.bib} 
 
 \input{tex-inputs/appendixes.tex}
